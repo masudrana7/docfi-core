@@ -46,16 +46,6 @@ class Docs_Isotope extends Custom_Widget_Base {
                 'id'      => 'sec_general',
                 'label'   => esc_html__( 'General', 'docfi-core' ),
             ),
-            array(
-                'type'    => Controls_Manager::SELECT2,
-                'id'      => 'layout',
-                'label'   => esc_html__( 'Layout', 'docfi-core' ),
-                'options' => array(
-                    'layout1' => esc_html__( 'Isotope layout 1', 'docfi-core' ),
-                    'layout2' => esc_html__( 'Isotope layout 2', 'docfi-core' ),
-                ),
-                'default' => 'layout1',
-            ),
             
             /*category select( box Multi )*/
             array (
@@ -264,19 +254,8 @@ class Docs_Isotope extends Custom_Widget_Base {
     }
 
     protected function render() {
-        $data = $this->get_settings();
-
-        $this->rt_load_scripts();
-
-        switch ( $data['layout'] ) {
-            case 'layout2':
-            $template = 'docs-isotope-2';
-            break;
-            default:
-            $template = 'docs-isotope-1';
-            break;
-        }
-
-        return $this->rt_template( $template, $data );
-    }
+		$data = $this->get_settings();
+		$template = 'docs-isotope-1';
+		return $this->rt_template( $template, $data );
+	}
 }

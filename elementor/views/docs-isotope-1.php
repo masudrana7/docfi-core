@@ -14,11 +14,12 @@ $gap_class = '';
 if ( $data['column_no_gutters'] == 'hide' ) {
    $gap_class  = 'no-gutters';
 }
-$col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['col_sm']} col-xs-{$data['col_xs']} ";
-?>
-<div class="docs-default docs-multi-layout-1 docs-isotope-<?php echo esc_attr( $data['layout'] );?> <?php if ( $data['all_button'] == 'hide' ) {?>hide-all<?php } ?> rt-isotope-wrapper">
+$col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['col_sm']} col-xs-{$data['col_xs']} "; ?>
+<div class="docs-default docs-multi-layout-1 <?php if ( $data['all_button'] == 'hide' ) {?>hide-all<?php } ?> rt-isotope-wrapper">
     <div class="text-center">
         <div class="rt-docs-tab rt-isotope-tab">
+
+
             <?php
                 $docs_terms = get_terms( 'docfi_docs_category', array(
                     'hide_empty' => true,
@@ -48,6 +49,9 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                 <a style="--docfi-red: <?php echo absint( $r ); ?>;--docfi-green: <?php echo absint( $g ); ?>; --docfi-blue: <?php echo absint( $b ); ?>;" class="<?php if ( $count == 1 ) { ?>current<?php } ?>" href="#" data-filter=".<?php echo esc_attr( $cat_filter );?>"><?php echo esc_html( $term_name->name ); ?></a>
 
             <?php } } }  ?>
+
+
+            
         </div>
     </div>  
 
@@ -66,12 +70,11 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                 'taxonomy'   => 'docfi_docs_group',
                 'hide_empty' => false, 
             );
-
+            $post_count = 0;
             $docs_groups = get_categories($args);
             if ($docs_groups) {
-                foreach ($docs_groups as $docs_group) { 
-              
-                    
+                foreach ($docs_groups as $docs_group) {
+                    $post_count = $docs_group->count;
                     $get_item_bg  = get_term_meta( $docs_group->term_id, 'rt_item_bg', true ); 
                     $get_color    = get_term_meta( $docs_group->term_id, 'rt_group_color', true ); 
 
@@ -83,12 +86,14 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                     $get_image = get_term_meta( $docs_group->term_id, 'rt_term_image', true );
                     $image_id = wp_get_attachment_image_src( $get_image, 'full' );
 
-                    $category_link = get_category_link($docs_group->cat_ID);
-                    $cat_id = $category_link;
-
+                    $group_link = get_category_link($docs_group->cat_ID);
+                    $group_id = $group_link;
                     ob_start();
+
+
                         $args = array(
                             'post_type' => 'docfi_docs',
+                            'posts_per_page' => 5,
                             'tax_query' => array(
                                 array(
                                     'taxonomy' => 'docfi_docs_group',
@@ -97,19 +102,17 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                                 ),
                             ),
                         );
+
+
                         $query = new WP_Query( $args );
                         $term_links = [];
-                         $post_count = 0;
                         if ( $query->have_posts() ) {
                             while ( $query->have_posts() ) {  
-                                $post_count++;
                                 $query->the_post(); 
                                 $item_terms = get_the_terms( get_the_ID(), 'docfi_docs_category' );
-                                $terms_of_item = ' ';
                                 foreach ( $item_terms as $term ) {
                                     $term_links[] = $term->slug;
-                                }
-                                ?>
+                                } ?>
                                 <li>
                                     <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.96799 10L10.5 5.5L5.96799 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 10L5.53201 5.5L1 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -117,13 +120,8 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                                 <?php 
                             }
                         } wp_reset_postdata(); 
-                        
-                        
                         $term_slug = join( ' ', array_unique( $term_links ) );
-                       
                     $topicsItem = ob_get_clean();
-
-                    
                 ?>
 
                 <div class="<?php echo esc_attr( $col_class . ' ' . $term_slug ); ?> rt-grid-item">
@@ -146,10 +144,10 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                                     ?>
                                 </div>
                                 <h3 class="title">
-                                    <a href="<?php echo esc_url($cat_id); ?>"><?php echo esc_html( $docs_group->name );?></a>
+                                    <a href="<?php echo esc_url($group_id); ?>"><?php echo esc_html( $docs_group->name );?></a>
                                 </h3>
                             </div>
-                            <a href="<?php echo esc_url($cat_id); ?>" class="number-of-article">
+                            <a href="<?php echo esc_url($group_id); ?>" class="number-of-article">
                                <?php echo esc_html($post_count);  echo esc_html_e(' articles', 'docfi'); ?> 
                             </a>
                         </div>
@@ -159,7 +157,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                             </ul>
                         </div>
                         <?php if ( $data['more_button'] == 'show' ) { ?>
-                        <a href="<?php echo esc_url($cat_id); ?>" class="view-all-btn"><?php echo esc_html( $data['see_button_text'] );?></a>
+                        <a href="<?php echo esc_url($group_id); ?>" class="view-all-btn"><?php echo esc_html( $data['see_button_text'] );?></a>
                         <?php } ?>
                     </div>
                 </div>

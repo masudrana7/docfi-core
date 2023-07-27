@@ -433,13 +433,20 @@ $Postmeta->add_meta_box( 'docfi_portfolio_info', __( 'Portfolio Project Informat
 
 
 /*-------------------------------------
-#. WooCommerce
+#. Docs Post
 ---------------------------------------*/
-$Postmeta->add_meta_box( 'docfi_woo_product', __( 'Product Background', 'docfi-core' ), array( 'docfi_docs' ), '', '', 'high', array(
+$Postmeta->add_meta_box( 'docfi_docs', __( 'Docs Post Background', 'docfi-core' ), array( 'docfi_docs' ), '', '', 'high', array(
 	'fields' => array(
-		'docfi_product_bgc' => array(
-			'label' => __( 'Product Background Color', 'docfi-core' ),
+
+		'docfi_icon_bg' => array(
+			'label' => __( 'Icon Background', 'docfi-core' ),
 			'type'  => 'color_picker',
+		),
+
+		'docfi_icon_img' => array(
+			'label' => __( 'Icon Image', 'docfi-core' ),
+			'type'  => 'image',
+			'desc'  => __( 'If not selected, default will be used', 'docfi-core' ),
 		),
 	)
 ) );
