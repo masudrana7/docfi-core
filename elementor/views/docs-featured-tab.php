@@ -15,33 +15,42 @@ $number_of_post = $data['itemnumber'];
 $post_sorting = $data['orderby'];
 // order
 $post_ordering = $data['post_ordering'];
-$title_count = $data['title_count'];
 $excerpt_count = $data['excerpt_count'];
+$p_ids = array();
+foreach ( $data['posts_not_in'] as $p_idsn ) {
+	$p_ids[] = $p_idsn['post_not_in'];
+}
 ?>
-
 <div class="best-online-documentation-section section-padding">
     <div class="row">
         <div class="col-lg-12 col-xl-4">
             <div class="tab-btn-wrapper">
                 <ul class="theme-logo-wrapper nav nav-pills" id="pills-tab" role="tablist">
-
                     <?php
-                        $docs_terms = get_terms( 'docfi_docs_category', array(
-                            'hide_empty' => true,
-                        ) );
-                        foreach ( $docs_terms as $docs_term ){
-                            $cats[] = array(
-                                'cat_multi_box' => $docs_term->term_id,
-                            );
+                        if ( !empty( $data['category_list'] ) ) {
+                            foreach ( $data['category_list'] as $cat ) {
+                                $cats[] = array(
+                                    'cat_multi_box' => $cat['cat_multi_box'],
+                                );
+                            }
+                        } else {
+                            $docs_terms = get_terms( 'docfi_docs_category', array(
+                                'hide_empty' => true,
+                            ) );
+                            foreach ( $docs_terms as $docs_term ){
+                                $cats[] = array(
+                                    'cat_multi_box' => $docs_term->term_id,
+                                );
+                            }	
                         }
+
                         if ( !empty( $cats ) ) {
                         // Category
                         $category_number = count( $cats );
                             $count = 0;
                             foreach ( $cats as $cat ) {
-
+                                if ( $cat['cat_multi_box'] != 0 ) {
                                 $get_image = get_term_meta( $cat['cat_multi_box'], 'rt_term_image', true );
-
                                 $image_id = wp_get_attachment_image_src( $get_image, 'full' );
                                 $count++; 
                             ?>
@@ -63,9 +72,8 @@ $excerpt_count = $data['excerpt_count'];
                                         </svg>
                                     </a>
                                 </div>
-                            </li>   
-                    <?php } } ?>
-
+                            </li>
+                    <?php } } } ?>
                 </ul>
             </div>
         </div>
@@ -73,63 +81,43 @@ $excerpt_count = $data['excerpt_count'];
         <div class="col-lg-12 col-xl-8 wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms">
             <div class="tab-content" id="pills-tabContent">
                <?php
-                    $docstext_terms = get_terms( 'docfi_docs_category', array(
-                        'hide_empty' => true,
-                    ) );
-                    foreach ( $docstext_terms as $docs_term ){
-                        $cat_text[] = array(
-                            'cat_multi_box' => $docs_term->term_id,
+                    $i = 0; 
+                    foreach ( $cats as $cat ) {
+                        $i++;  
+                        $args = array(
+                            'post_type' => 'docfi_docs',
+                            'posts_per_page' => $number_of_post,
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'docfi_docs_category',
+                                    'field' => 'id',
+                                    'terms' => $cat['cat_multi_box'],
+                                ),
+                            ),
+                            
                         );
-                    }
-                    $args = array(
-                        'taxonomy'   => 'docfi_docs_category',
-                        'hide_empty' => false, 
-                    );
-                    $cat_text = get_categories($args);
-
-                    if ( !empty( $cat_text) ) {
-                    
-                    $category_number = count( $cat_text );
-                        $i = 0; 
-                        foreach ( $cat_text as $cat ) {
-                            $i++;  
-                        ?>
-                        <div class="tab-pane fade<?php if ( $i == 1 ) { ?> show active<?php } ?>" id="pills-list-<?php echo esc_attr($i); ?>" role="tabpanel" aria-labelledby="pills-list-<?php echo esc_attr($i); ?>-tab">
-                            <div class="best-documentation-info-wrapper">
-                                <div class="row">
-                                    <?php 
-                                        $args = array(
-                                            'post_type' => 'docfi_docs',
-                                            'posts_per_page' => $number_of_post,
-                                            'tax_query' => array(
-                                                array(
-                                                    'taxonomy' => 'docfi_docs_category',
-                                                    'field' => 'slug',
-                                                    'terms' => $cat->name,
-                                                ),
-                                            ),
-                                        );
-                                        $query = new WP_Query( $args );
-                                        $term_links = [];
-                                        if ( $query->have_posts() ) {
-                                            while ( $query->have_posts() ) {  
-                                                $query->the_post(); 
-                                                $excerpt = wp_trim_words( get_the_excerpt(), $excerpt_count, '' );
-                                                $id            	= get_the_id();
- 
-
-
-				                                $p_color   	= get_post_meta( $id, 'docfi_icon_bg', true );
-				                                $icon_path   	= get_post_meta( $id, 'docfi_icon_img', true );
-
-
-                                                $icon_id = wp_get_attachment_image_src( $icon_path, 'full' );
-                                              
-                                                ?>
-
+                        $args['orderby'] = $post_sorting;
+                        $query = new WP_Query( $args );
+                    ?>
+                    <div class="tab-pane fade<?php if ( $i == 1 ) { ?> show active<?php } ?>" id="pills-list-<?php echo esc_attr($i); ?>" role="tabpanel" aria-labelledby="pills-list-<?php echo esc_attr($i); ?>-tab">
+                        <div class="best-documentation-info-wrapper">
+                            <div class="row">
+                                <?php 
+                        
+                                    if ( $query->have_posts() ) {
+                                        while ( $query->have_posts() ) {  
+                                            $query->the_post(); 
+                                            $id            	= get_the_id();
+                                            $excerpt        = wp_trim_words( get_the_excerpt(), $excerpt_count, '' );
+                                            $p_checkbox  = get_post_meta($id, 'docly_check_post', true);
+                                            $p_color3   	= get_post_meta( $id, 'docfi_icon_bg', true );
+                                            $icon_path   	= get_post_meta( $id, 'docfi_icon_img', true );
+                                            $icon_id        = wp_get_attachment_image_src( $icon_path, 'full' );
+                                            ?>
+                                            <?php if($p_checkbox == 'on'){?>
                                                 <div class="col-xl-6 child">
                                                     <div class="rt-card rt-card--style-3 rt-color-shade1-bg rt-border-radius-style-1">
-                                                        <div class="icon d-flex justify-content-center align-items-center rt-color-shade4-bg rt-border-radius-style-2" style="--post-color: <?php echo absint( $p_color ); ?>">
+                                                        <div class="icon d-flex justify-content-center align-items-center rt-color-shade4-bg rt-border-radius-style-2" style="--docfi-post-color: <?php echo esc_attr($p_color3); ?>;">
                                                             <?php 
                                                             if (!empty($icon_id[0])) { ?>
                                                                 <img src="<?php echo $icon_id[0]; ?>" />
@@ -151,21 +139,22 @@ $excerpt_count = $data['excerpt_count'];
                                                             <?php echo wp_kses_post( $excerpt );?>
                                                         </p>
                                                     </div>
-                                                </div>   
-                                                <?php 
-                                            }
-                                        } wp_reset_postdata(); 
-                                    ?>
-
-                                </div>
+                                                </div>  
+                                            <?php } ?> 
+                                            <?php 
+                                        }
+                                    } wp_reset_postdata(); 
+                                ?>
                             </div>
-                        </div>  
-                    <?php } }  ?>                                 
+                        </div>
+                    </div> 
+                <?php } ?>                                 
             </div>
         </div>
         <!-- col end -->
     </div>
 </div>
+
 
 
 

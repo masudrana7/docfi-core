@@ -47,6 +47,7 @@ class Custom_Widget_Init {
 			'content-toggle'		=> 'Content_Toggle',
 			'docs-isotope'		    => 'Docs_Isotope',
 			'docs-featured-tabs'	=> 'Docs_Featured_Post',
+			'docs-cat-list'			=> 'Docs_Cat_List',
 			'rt-button'				=> 'RT_Button',
 			'rt-cta'				=> 'RT_Call_Action',
 			'rt-info-box'			=> 'RT_Info_Box',

@@ -8,13 +8,14 @@
 namespace radiustheme\Docfi_Core;
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class Docs_Isotope extends Custom_Widget_Base {
+class Docs_Cat_List extends Custom_Widget_Base {
 
     public function __construct( $data = [], $args = null ){
-        $this->rt_name = esc_html__( 'RT Docs Isotope', 'docfi-core' );
-        $this->rt_base = 'rt-docs-isotope';
+        $this->rt_name = esc_html__( 'RT Docs Cat List', 'docfi-core' );
+        $this->rt_base = 'rt-docs-cat-list';
         $this->rt_translate = array(
             'cols'  => array(
                 '12' => esc_html__( '1 Col', 'docfi-core' ),
@@ -62,7 +63,15 @@ class Docs_Isotope extends Custom_Widget_Base {
                         'default' => '1',
                     ),
                 ),
-            ),      
+            ),  
+
+            array (
+                'type'    => Controls_Manager::TEXT,
+                'id'      => 'cat_text',
+                'label'   => esc_html__( 'Category Title', 'docfi-core' ),
+                'default' => esc_html__( 'Featured Products New', 'docfi-core' ),
+            ),
+
             /*Post Order*/
             array(
                 'type'    => Controls_Manager::SELECT2,
@@ -98,51 +107,6 @@ class Docs_Isotope extends Custom_Widget_Base {
                         'default' => '0',
                     ),
                 ),
-            ),
-            array(
-                'type'    => Controls_Manager::SELECT2,
-                'id'      => 'column_no_gutters',
-                'label'   => esc_html__( 'Display column gap', 'docfi-core' ),
-                'options' => array(
-                    'show'        => esc_html__( 'Gap', 'docfi-core' ),
-                    'hide'        => esc_html__( 'No Gap', 'docfi-core' ),
-                ),
-                'default' => 'show',
-            ),
-            array(
-                'type'    => Controls_Manager::NUMBER,
-                'id'      => 'itemnumber',
-                'label'   => esc_html__( 'Item Number', 'docfi-core' ),
-                'default' => -1,
-                'description' => esc_html__( 'Use -1 for showing all items( Showing items per category )', 'docfi-core' ),
-            ),
-        
-            array(
-                'type'    => Controls_Manager::SELECT2,
-                'id'      => 'all_button',
-                'label'   => esc_html__( 'Show View All Button', 'docfi-core' ),
-                'options' => array(
-                    'show'        => esc_html__( 'Show', 'docfi-core' ),
-                    'hide'        => esc_html__( 'Hide', 'docfi-core' ),
-                ),
-                'default' => 'show',
-            ),
-            array(
-                'type'    => Controls_Manager::SELECT2,
-                'id'      => 'more_button',
-                'label'   => esc_html__( 'More Button', 'docfi-core' ),
-                'options' => array(
-                    'show'        => esc_html__( 'Show', 'docfi-core' ),
-                    'hide'        => esc_html__( 'Hide', 'docfi-core' ),
-                ),
-                'default' => 'show',                
-            ),
-            array (
-                'type'    => Controls_Manager::TEXT,
-                'id'      => 'see_button_text',
-                'label'   => esc_html__( 'View All Text', 'docfi-core' ),
-                'condition'   => array( 'more_button' => array( 'show' ) ),
-                'default' => esc_html__( 'View All', 'docfi-core' ),
             ),
             array(
                 'mode' => 'section_end',
@@ -185,19 +149,21 @@ class Docs_Isotope extends Custom_Widget_Base {
             array(
                 'mode' => 'section_end',
             ),
+
+
             // Box Style
 			array(
 				'mode'    => 'section_start',
 				'id'      => 'style_area',
-				'label'   => esc_html__( 'Post List Style', 'docfi-core' ),
+				'label'   => esc_html__( 'Logo Style', 'docfi-core' ),
 				'tab'     => Controls_Manager::TAB_STYLE,
 			),
             array(
 				'mode'    => 'group',
 				'type'    => Group_Control_Typography::get_type(),
-				'name'    => 'title_typo2',
+				'name'    => 'button_typo2',
 				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .title-area .title a',
+				'selector' => '{{WRAPPER}} .logo-card .logo .text',
 			),
             array (
                 'type'    => Controls_Manager::COLOR,
@@ -205,43 +171,43 @@ class Docs_Isotope extends Custom_Widget_Base {
                 'label'   => esc_html__( 'Title Color', 'docfi-core' ),
                 'default' => '',
                 'selectors' => array( 
-                    '{{WRAPPER}} .title-area .title a' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .logo-card .logo .text' => 'color: {{VALUE}}',
                 ),
             ),
             array (
                 'type'    => Controls_Manager::COLOR,
-                'id'      => 'articles_color',
-                'label'   => esc_html__( 'Articles  Color', 'docfi-core' ),
+                'id'      => 'icon_color',
+                'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
                 'default' => '',
                 'selectors' => array( 
-                    '{{WRAPPER}} .explore-topics-header .number-of-article' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .nav .nav-link .logo-card-btn svg' => 'fill: {{VALUE}}',
                 ),
             ),
             array (
                 'type'    => Controls_Manager::COLOR,
-                'id'      => 'post_list_color',
-                'label'   => esc_html__( 'Post List Color', 'docfi-core' ),
+                'id'      => 'icon_active_color',
+                'label'   => esc_html__( 'Icon Active Color', 'docfi-core' ),
                 'default' => '',
                 'selectors' => array( 
-                    '{{WRAPPER}} .explore-topics-list li a' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .nav .nav-link.active .logo-card-btn svg' => 'fill: {{VALUE}}',
                 ),
             ),
             array (
                 'type'    => Controls_Manager::COLOR,
-                'id'      => 'post_list_hover_color',
-                'label'   => esc_html__( 'Post List Hover Color', 'docfi-core' ),
+                'id'      => 'item_bg_color',
+                'label'   => esc_html__( 'Item Background Color', 'docfi-core' ),
                 'default' => '',
                 'selectors' => array( 
-                    '{{WRAPPER}} .explore-topics-list li a:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .best-online-documentation-section .nav .nav-link' => 'background: {{VALUE}}',
                 ),
             ),
             array (
                 'type'    => Controls_Manager::COLOR,
-                'id'      => 'list_icon_color',
-                'label'   => esc_html__( 'Post Icon Color', 'docfi-core' ),
+                'id'      => 'item_bg_hover_color',
+                'label'   => esc_html__( 'Item Hover Background Color', 'docfi-core' ),
                 'default' => '',
                 'selectors' => array( 
-                    '{{WRAPPER}} .explore-topics-body ul.explore-topics-list li svg path' => 'stroke: {{VALUE}}',
+                    '{{WRAPPER}} .best-online-documentation-section .nav .nav-link:hover' => 'background: {{VALUE}}',
                 ),
             ),
             array (
@@ -250,7 +216,7 @@ class Docs_Isotope extends Custom_Widget_Base {
                 'label'   => esc_html__( 'Item Border Color', 'docfi-core' ),
                 'default' => '',
                 'selectors' => array( 
-                    '{{WRAPPER}} .explore-topics-card' => 'border-color: {{VALUE}}',
+                    '{{WRAPPER}} .best-online-documentation-section .nav .nav-link' => 'border-color: {{VALUE}}',
                 ),
             ),
             array(
@@ -260,19 +226,75 @@ class Docs_Isotope extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Padding', 'docfi-core' ),
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} .explore-topics-card' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .best-online-documentation-section .nav .nav-link' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			),
             array(
                 'mode' => 'section_end',
             ),
+
+            // Content Style
+			array(
+				'mode'    => 'section_start',
+				'id'      => 'content_style_area',
+				'label'   => esc_html__( 'Content Style', 'docfi-core' ),
+				'tab'     => Controls_Manager::TAB_STYLE,
+			),
+            array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'box_title_typ',
+				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-card .card-title a',
+			),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'box_title_color',
+                'label'   => esc_html__( 'Title Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .rt-card .card-title a' => 'color: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'box_bg_color',
+                'label'   => esc_html__( 'Item Background Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .best-documentation-info-wrapper' => 'background: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'box_border_color',
+                'label'   => esc_html__( 'Item Border Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .best-documentation-info-wrapper' => 'border-color: {{VALUE}}',
+                ),
+            ),
+            array(
+				'type'    => Controls_Manager::DIMENSIONS,
+				'id'      => 'box_padding',
+				'mode'    => 'responsive',
+				'label'   => esc_html__( 'Padding', 'docfi-core' ),
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .best-documentation-info-wrapper' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			),
+            array(
+                'mode' => 'section_end',
+            ),
+            
         );
         return $fields;
     }
 
     protected function render() {
 		$data = $this->get_settings();
-		$template = 'docs-isotope-1';
+		$template = 'docs-cat-list';
 		return $this->rt_template( $template, $data );
 	}
 }

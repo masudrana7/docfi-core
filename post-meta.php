@@ -438,6 +438,12 @@ $Postmeta->add_meta_box( 'docfi_portfolio_info', __( 'Portfolio Project Informat
 $Postmeta->add_meta_box( 'docfi_docs', __( 'Docs Post Background', 'docfi-core' ), array( 'docfi_docs' ), '', '', 'high', array(
 	'fields' => array(
 
+		'docly_check_post' => array(
+			'label' => __( 'Featured Post', 'docfi-core' ),
+			'type'  => 'checkbox',
+			'desc'  => __('If you are interested this post featured ? Please checkbox select now.', 'docfi-core'),
+		),
+
 		'docfi_icon_bg' => array(
 			'label' => __( 'Icon Background', 'docfi-core' ),
 			'type'  => 'color_picker',
@@ -448,5 +454,7 @@ $Postmeta->add_meta_box( 'docfi_docs', __( 'Docs Post Background', 'docfi-core' 
 			'type'  => 'image',
 			'desc'  => __( 'If not selected, default will be used', 'docfi-core' ),
 		),
+
+		
 	)
 ) );

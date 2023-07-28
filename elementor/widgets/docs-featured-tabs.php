@@ -7,6 +7,7 @@
 
 namespace radiustheme\Docfi_Core;
 use Elementor\Controls_Manager;
+use Elementor\Group_Control_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
@@ -107,89 +108,159 @@ class Docs_Featured_Post extends Custom_Widget_Base {
                     ),
                 ),
             ),
-            array (
-                'type'        => Controls_Manager::SWITCHER,
-                'id'          => 'cat_display',
-                'label'       => esc_html__( 'Category Name Display', 'docfi-core' ),
-                'label_on'    => esc_html__( 'Show', 'docfi-core' ),
-                'label_off'   => esc_html__( 'Hide', 'docfi-core' ),
-                'default'     => 'yes',
-            ),
-            array(
-                'type'    => Controls_Manager::SELECT2,
-                'id'      => 'column_no_gutters',
-                'label'   => esc_html__( 'Display column gap', 'docfi-core' ),
-                'options' => array(
-                    'show'        => esc_html__( 'Gap', 'docfi-core' ),
-                    'hide'        => esc_html__( 'No Gap', 'docfi-core' ),
-                ),
-                'default' => 'show',
-            ),
             array(
                 'type'    => Controls_Manager::NUMBER,
                 'id'      => 'itemnumber',
                 'label'   => esc_html__( 'Item Number', 'docfi-core' ),
                 'default' => -1,
-                'description' => esc_html__( 'Use -1 for showing all items( Showing items per category )', 'docfi-core' ),
+                'description' => esc_html__( 'Use -1 for showing all items( Showing items per Group )', 'docfi-core' ),
             ),
             array(
-                'type'    => Controls_Manager::NUMBER,
-                'id'      => 'title_size',
-                'label'   => esc_html__( 'Title Font Size', 'docfi-core' ),
-                'default' => 22,
-            ),
+				'type'    => Controls_Manager::NUMBER,
+				'id'      => 'excerpt_count',
+				'label'   => esc_html__( 'Word count', 'consulty-core' ),
+				'default' => 15,
+				'description' => esc_html__( 'Maximum number of words', 'consulty-core' ),
+				'condition'   => array( 'excerpt_display' =>'yes' ),
+			),
             array(
-                'type'    => Controls_Manager::NUMBER,
-                'id'      => 'title_count',
-                'label'   => esc_html__( 'Title count', 'docfi-core' ),
-                'default' => 5,
-                'description' => esc_html__( 'Maximum number of words', 'docfi-core' ),             
+                'mode' => 'section_end',
             ),
-            array (
-                'type'        => Controls_Manager::SWITCHER,
-                'id'          => 'excerpt_display',
-                'label'       => esc_html__( 'Excerpt/Content Display', 'docfi-core' ),
-                'label_on'    => esc_html__( 'Show', 'docfi-core' ),
-                'label_off'   => esc_html__( 'Hide', 'docfi-core' ),
-                'default'     => 'yes',
-            ),
+
+
+            // Box Style
+			array(
+				'mode'    => 'section_start',
+				'id'      => 'style_area',
+				'label'   => esc_html__( 'Logo Style', 'docfi-core' ),
+				'tab'     => Controls_Manager::TAB_STYLE,
+			),
             array(
-                'type'    => Controls_Manager::NUMBER,
-                'id'      => 'excerpt_count',
-                'label'   => esc_html__( 'Word count', 'docfi-core' ),
-                'default' => 15,
-                'description' => esc_html__( 'Maximum number of words', 'docfi-core' ),
-                'condition'   => array( 'excerpt_display' =>'yes' ),
-            ),
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'button_typo2',
+				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .logo-card .logo .text',
+			),
             array (
                 'type'    => Controls_Manager::COLOR,
-                'id'      => 'item_title_color',
-                'label'   => esc_html__( 'Item Title Color', 'docfi-core' ),
+                'id'      => 'title_color',
+                'label'   => esc_html__( 'Title Color', 'docfi-core' ),
                 'default' => '',
                 'selectors' => array( 
-                    '{{WRAPPER}} .docs-default .rtin-content h3 a' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .logo-card .logo .text' => 'color: {{VALUE}}',
                 ),
             ),
             array (
                 'type'    => Controls_Manager::COLOR,
-                'id'      => 'item_title_color_hover',
-                'label'   => esc_html__( 'Item Title Hover Color', 'docfi-core' ),
+                'id'      => 'icon_color',
+                'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
                 'default' => '',
-                'selectors' => array(
-                    '{{WRAPPER}} .docs-default .rtin-content h3 a:hover' => 'color: {{VALUE}}',
+                'selectors' => array( 
+                    '{{WRAPPER}} .nav .nav-link .logo-card-btn svg' => 'fill: {{VALUE}}',
                 ),
             ),
             array (
                 'type'    => Controls_Manager::COLOR,
-                'id'      => 'item_content_color',
-                'label'   => esc_html__( 'Item Content Color', 'docfi-core' ),
+                'id'      => 'icon_active_color',
+                'label'   => esc_html__( 'Icon Active Color', 'docfi-core' ),
                 'default' => '',
-                'selectors' => array(
-                    '{{WRAPPER}} .docs-default .rtin-item .rtin-content p' => 'color: {{VALUE}}',
-                    '{{WRAPPER}} .docs-default .rtin-item .rtin-cat a' => 'color: {{VALUE}}',
+                'selectors' => array( 
+                    '{{WRAPPER}} .nav .nav-link.active .logo-card-btn svg' => 'fill: {{VALUE}}',
                 ),
             ),
-            
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'item_bg_color',
+                'label'   => esc_html__( 'Item Background Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .best-online-documentation-section .nav .nav-link' => 'background: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'item_bg_hover_color',
+                'label'   => esc_html__( 'Item Hover Background Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .best-online-documentation-section .nav .nav-link:hover' => 'background: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'item_border_color',
+                'label'   => esc_html__( 'Item Border Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .best-online-documentation-section .nav .nav-link' => 'border-color: {{VALUE}}',
+                ),
+            ),
+            array(
+				'type'    => Controls_Manager::DIMENSIONS,
+				'id'      => 'item_padding',
+				'mode'    => 'responsive',
+				'label'   => esc_html__( 'Padding', 'docfi-core' ),
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .best-online-documentation-section .nav .nav-link' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			),
+            array(
+                'mode' => 'section_end',
+            ),
+
+            // Content Style
+			array(
+				'mode'    => 'section_start',
+				'id'      => 'content_style_area',
+				'label'   => esc_html__( 'Content Style', 'docfi-core' ),
+				'tab'     => Controls_Manager::TAB_STYLE,
+			),
+            array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'box_title_typ',
+				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-card .card-title a',
+			),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'box_title_color',
+                'label'   => esc_html__( 'Title Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .rt-card .card-title a' => 'color: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'box_bg_color',
+                'label'   => esc_html__( 'Item Background Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .best-documentation-info-wrapper' => 'background: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'box_border_color',
+                'label'   => esc_html__( 'Item Border Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .best-documentation-info-wrapper' => 'border-color: {{VALUE}}',
+                ),
+            ),
+            array(
+				'type'    => Controls_Manager::DIMENSIONS,
+				'id'      => 'box_padding',
+				'mode'    => 'responsive',
+				'label'   => esc_html__( 'Padding', 'docfi-core' ),
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .best-documentation-info-wrapper' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			),
             array(
                 'mode' => 'section_end',
             ),

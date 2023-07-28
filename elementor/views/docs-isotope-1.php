@@ -9,6 +9,17 @@ namespace radiustheme\Docfi_Core;
 use DocfiTheme;
 use DocfiTheme_Helper;
 use \WP_Query;
+use Elementor\Group_Control_Typography;
+$number_of_post = $data['itemnumber'];
+// sort
+$post_sorting = $data['orderby'];
+// order
+$post_ordering = $data['post_ordering'];
+$p_ids = array();
+
+foreach ( $data['posts_not_in'] as $p_idsn ) {
+	$p_ids[] = $p_idsn['post_not_in'];
+}
 
 $gap_class = '';
 if ( $data['column_no_gutters'] == 'hide' ) {
@@ -18,16 +29,22 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 <div class="docs-default docs-multi-layout-1 <?php if ( $data['all_button'] == 'hide' ) {?>hide-all<?php } ?> rt-isotope-wrapper">
     <div class="text-center">
         <div class="rt-docs-tab rt-isotope-tab">
-
-
             <?php
-                $docs_terms = get_terms( 'docfi_docs_category', array(
-                    'hide_empty' => true,
-                ) );
-                foreach ( $docs_terms as $docs_term ){
-                    $cats[] = array(
-                        'cat_multi_box' => $docs_term->term_id,
-                    );
+                if ( !empty( $data['category_list'] ) ) {
+                    foreach ( $data['category_list'] as $cat ) {
+                        $cats[] = array(
+                            'cat_multi_box' => $cat['cat_multi_box'],
+                        );
+                    }
+                } else {
+                    $docs_terms = get_terms( 'docfi_docs_category', array(
+                        'hide_empty' => true,
+                    ) );
+                    foreach ( $docs_terms as $docs_term ){
+                        $cats[] = array(
+                            'cat_multi_box' => $docs_term->term_id,
+                        );
+                    }	
                 }
 
             if ( !empty( $cats ) ) {
@@ -47,11 +64,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                 $cat_filter = $term_name->slug; ?>
 
                 <a style="--docfi-red: <?php echo absint( $r ); ?>;--docfi-green: <?php echo absint( $g ); ?>; --docfi-blue: <?php echo absint( $b ); ?>;" class="<?php if ( $count == 1 ) { ?>current<?php } ?>" href="#" data-filter=".<?php echo esc_attr( $cat_filter );?>"><?php echo esc_html( $term_name->name ); ?></a>
-
             <?php } } }  ?>
-
-
-            
         </div>
     </div>  
 
@@ -74,26 +87,23 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
             $docs_groups = get_categories($args);
             if ($docs_groups) {
                 foreach ($docs_groups as $docs_group) {
+
                     $post_count = $docs_group->count;
+                    
                     $get_item_bg  = get_term_meta( $docs_group->term_id, 'rt_item_bg', true ); 
                     $get_color    = get_term_meta( $docs_group->term_id, 'rt_group_color', true ); 
-
                     $hexcolor     = DocfiTheme_Helper::hex2rgb( $get_item_bg );
                     $r = hexdec(substr($get_item_bg,0,2));
                     $g = hexdec(substr($get_item_bg,2,2));
                     $b = hexdec(substr($get_item_bg,4,2));
-                    
                     $get_image = get_term_meta( $docs_group->term_id, 'rt_term_image', true );
                     $image_id = wp_get_attachment_image_src( $get_image, 'full' );
-
                     $group_link = get_category_link($docs_group->cat_ID);
                     $group_id = $group_link;
                     ob_start();
-
-
                         $args = array(
                             'post_type' => 'docfi_docs',
-                            'posts_per_page' => 5,
+                            'posts_per_page' => $number_of_post,
                             'tax_query' => array(
                                 array(
                                     'taxonomy' => 'docfi_docs_group',
@@ -101,9 +111,10 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                                     'terms' => $docs_group->name,
                                 ),
                             ),
+                            'post__not_in'   => $p_ids,
                         );
-
-
+                        $args['orderby'] = $post_sorting;
+                        
                         $query = new WP_Query( $args );
                         $term_links = [];
                         if ( $query->have_posts() ) {
@@ -128,9 +139,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                     <div class="explore-topics-card" style="--docfi-red2: <?php echo absint( $r ); ?>;--docfi-green2: <?php echo absint( $g ); ?>;--docfi-blue2: <?php echo absint( $b ); ?>">
                         <div class="explore-topics-header d-flex justify-content-between align-items-center">
                             <div class="title-area d-flex align-items-center">
-
                                 <div style="background:#<?php echo esc_attr( $get_color ); ?>" class="icon d-flex justify-content-center align-items-center rt-color-shade12-bg">
-
                                     <?php 
                                         if ( $image_id ) { ?>
                                         <img src="<?php echo $image_id[0]; ?>" />
@@ -163,9 +172,6 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                 </div>
                 <?php  }
             }
-
         ?> 
-       
-
     </div>             
 </div>
