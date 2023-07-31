@@ -36,18 +36,15 @@ class Docs_Cat_List extends Custom_Widget_Base {
         
         $terms  = get_terms( array( 'taxonomy' => 'docfi_docs_category', 'fields' => 'id=>name' ) );
         $category_dropdown = array( '0' => __( 'Please Selecet category', 'docfi-core' ) );
-
         foreach ( $terms as $id => $name ) {
             $category_dropdown[$id] = $name;
         }
-        
         $fields = array(
             array(
                 'mode'    => 'section_start',
                 'id'      => 'sec_general',
                 'label'   => esc_html__( 'General', 'docfi-core' ),
             ),
-            
             /*category select( box Multi )*/
             array (
                 'type'    => Controls_Manager::REPEATER,
@@ -68,9 +65,29 @@ class Docs_Cat_List extends Custom_Widget_Base {
             array (
                 'type'    => Controls_Manager::TEXT,
                 'id'      => 'cat_text',
-                'label'   => esc_html__( 'Category Title', 'docfi-core' ),
+                'label'   => esc_html__( 'Category Featured Title', 'docfi-core' ),
                 'default' => esc_html__( 'Featured Products New', 'docfi-core' ),
             ),
+
+            array(
+				'type'        => Controls_Manager::SWITCHER,
+				'id'          => 'icon_display',
+				'label'       => esc_html__( 'Icon Display', 'docfi-core' ),
+				'label_on'    => esc_html__( 'On', 'docfi-core' ),
+				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
+				'default'     => 'yes',
+				'description' => esc_html__( 'Show or Hide Content. Default: Show', 'docfi-core' ),
+			),
+
+            array(
+				'type'        => Controls_Manager::SWITCHER,
+				'id'          => 'cat_desc_display',
+				'label'       => esc_html__( 'Cat Description Display', 'docfi-core' ),
+				'label_on'    => esc_html__( 'On', 'docfi-core' ),
+				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
+				'default'     => 'no',
+				'description' => esc_html__( 'Show or Hide Cat Content. Default: off', 'docfi-core' ),
+			),
 
             /*Post Order*/
             array(
@@ -150,7 +167,6 @@ class Docs_Cat_List extends Custom_Widget_Base {
                 'mode' => 'section_end',
             ),
 
-
             // Box Style
 			array(
 				'mode'    => 'section_start',
@@ -161,7 +177,7 @@ class Docs_Cat_List extends Custom_Widget_Base {
             array(
 				'mode'    => 'group',
 				'type'    => Group_Control_Typography::get_type(),
-				'name'    => 'button_typo2',
+				'name'    => 'cattitle_typo2',
 				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
 				'selector' => '{{WRAPPER}} .logo-card .logo .text',
 			),
@@ -172,6 +188,22 @@ class Docs_Cat_List extends Custom_Widget_Base {
                 'default' => '',
                 'selectors' => array( 
                     '{{WRAPPER}} .logo-card .logo .text' => 'color: {{VALUE}}',
+                ),
+            ),
+            array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'cat_desc_typo',
+				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-cat-list .logo-card .cat_desc',
+			),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'cat_desc_color',
+                'label'   => esc_html__( 'Title Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .rt-cat-list .logo-card .cat_desc' => 'color: {{VALUE}}',
                 ),
             ),
             array (
@@ -232,62 +264,6 @@ class Docs_Cat_List extends Custom_Widget_Base {
             array(
                 'mode' => 'section_end',
             ),
-
-            // Content Style
-			array(
-				'mode'    => 'section_start',
-				'id'      => 'content_style_area',
-				'label'   => esc_html__( 'Content Style', 'docfi-core' ),
-				'tab'     => Controls_Manager::TAB_STYLE,
-			),
-            array(
-				'mode'    => 'group',
-				'type'    => Group_Control_Typography::get_type(),
-				'name'    => 'box_title_typ',
-				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .rt-card .card-title a',
-			),
-            array (
-                'type'    => Controls_Manager::COLOR,
-                'id'      => 'box_title_color',
-                'label'   => esc_html__( 'Title Color', 'docfi-core' ),
-                'default' => '',
-                'selectors' => array( 
-                    '{{WRAPPER}} .rt-card .card-title a' => 'color: {{VALUE}}',
-                ),
-            ),
-            array (
-                'type'    => Controls_Manager::COLOR,
-                'id'      => 'box_bg_color',
-                'label'   => esc_html__( 'Item Background Color', 'docfi-core' ),
-                'default' => '',
-                'selectors' => array( 
-                    '{{WRAPPER}} .best-documentation-info-wrapper' => 'background: {{VALUE}}',
-                ),
-            ),
-            array (
-                'type'    => Controls_Manager::COLOR,
-                'id'      => 'box_border_color',
-                'label'   => esc_html__( 'Item Border Color', 'docfi-core' ),
-                'default' => '',
-                'selectors' => array( 
-                    '{{WRAPPER}} .best-documentation-info-wrapper' => 'border-color: {{VALUE}}',
-                ),
-            ),
-            array(
-				'type'    => Controls_Manager::DIMENSIONS,
-				'id'      => 'box_padding',
-				'mode'    => 'responsive',
-				'label'   => esc_html__( 'Padding', 'docfi-core' ),
-				'size_units' => [ 'px', '%' ],
-				'selectors' => [
-					'{{WRAPPER}} .best-documentation-info-wrapper' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-				],
-			),
-            array(
-                'mode' => 'section_end',
-            ),
-            
         );
         return $fields;
     }

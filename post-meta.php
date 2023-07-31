@@ -24,8 +24,12 @@ $prefix = DOCFI_CORE_CPT_PREFIX;
 /*-------------------------------------
 #. Layout Settings
 ---------------------------------------*/
+$group_name  = array( 'default' => __( 'Default', 'docfi-core' ) ) + DocfiTheme_Helper::custom_group_list();
+
+
 $nav_menus = wp_get_nav_menus( array( 'fields' => 'id=>name' ) );
 $nav_menus = array( 'default' => __( 'Default', 'docfi-core' ) ) + $nav_menus;
+
 $sidebars  = array( 'default' => __( 'Default', 'docfi-core' ) ) + DocfiTheme_Helper::custom_sidebar_fields();
 
 $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docfi-core' ), array( 'page', 'post', 'docfi_team', 'docfi_portfolio', 'docfi_service', 'product' ), '', '', 'high', array(
@@ -435,26 +439,31 @@ $Postmeta->add_meta_box( 'docfi_portfolio_info', __( 'Portfolio Project Informat
 /*-------------------------------------
 #. Docs Post
 ---------------------------------------*/
-$Postmeta->add_meta_box( 'docfi_docs', __( 'Docs Post Background', 'docfi-core' ), array( 'docfi_docs' ), '', '', 'high', array(
+$Postmeta->add_meta_box( 'docfi_docs', __( 'Docs Post Meta', 'docfi-core' ), array( 'docfi_docs' ), '', '', 'high', array(
 	'fields' => array(
 
 		'docly_check_post' => array(
 			'label' => __( 'Featured Post', 'docfi-core' ),
 			'type'  => 'checkbox',
-			'desc'  => __('If you are interested this post featured ? Please checkbox select now.', 'docfi-core'),
 		),
 
 		'docfi_icon_bg' => array(
 			'label' => __( 'Icon Background', 'docfi-core' ),
 			'type'  => 'color_picker',
 		),
-
+		
 		'docfi_icon_img' => array(
 			'label' => __( 'Icon Image', 'docfi-core' ),
 			'type'  => 'image',
 			'desc'  => __( 'If not selected, default will be used', 'docfi-core' ),
 		),
 
-		
+		'group_post_select' => array(
+			'label'    => __( 'Select Group', 'docfi-core' ),
+			'type'     => 'select',
+			'options'  => $group_name,
+			'default'  => 'default',
+		),
+
 	)
 ) );
