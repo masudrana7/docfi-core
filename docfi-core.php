@@ -28,7 +28,12 @@ class Docfi_Core {
 
 		add_action( 'plugins_loaded', array( $this, 'demo_importer' ), 15 );
 		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ), 16 );
-		add_action( 'after_setup_theme', array( $this, 'post_meta' ), 15 );
+		
+		
+		add_action( 'init', array( $this, 'post_types' ) );
+
+		add_action( 'admin_init', array( $this, 'post_meta' ), 15 );
+
 		add_action( 'after_setup_theme', array( $this, 'elementor_widgets' ) );
 		add_action( $this->action,       array( $this, 'after_theme_loaded' ) );
 
@@ -136,12 +141,15 @@ class Docfi_Core {
 	public function load_textdomain() {
 		load_plugin_textdomain( $this->plugin , false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
+	public function post_types(){
+		require_once 'post-types.php';
+	}
+	
 	public function post_meta(){
 		if ( !did_action( $this->action ) || ! defined( 'RT_FRAMEWORK_VERSION' ) ) {
 			return;
 		}
 		require_once 'post-meta.php';
-		require_once 'post-types.php';
 	}
 	public function elementor_widgets(){
 		if ( did_action( $this->action ) && did_action( 'elementor/loaded' ) ) {

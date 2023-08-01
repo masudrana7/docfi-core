@@ -87,9 +87,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
             $docs_groups = get_categories($args);
             if ($docs_groups) {
                 foreach ($docs_groups as $docs_group) {
-
                     $post_count = $docs_group->count;
-                    
                     $get_item_bg  = get_term_meta( $docs_group->term_id, 'rt_item_bg', true ); 
                     $get_color    = get_term_meta( $docs_group->term_id, 'rt_group_color', true ); 
                     $hexcolor     = DocfiTheme_Helper::hex2rgb( $get_item_bg );
