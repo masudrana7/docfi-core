@@ -65,6 +65,7 @@ $taxonomies = array(
 		'title'        => __( 'Docs Group', 'docfi-core' ),
 		'plural_title' => __( 'Docs Groups', 'docfi-core' ),
 		'post_types'   => 'docfi_docs',
+		'rewrite'      => array( 'slug' => DocfiTheme::$options['docs_group_slug'] ),
 	),
 );
 

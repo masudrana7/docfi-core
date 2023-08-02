@@ -30,7 +30,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 	}
 
 	public function rt_fields(){
-		$terms = get_terms( array( 'taxonomy' => 'docfi_portfolio_category', 'fields' => 'id=>name' ) );
+		$terms = get_terms( array( 'taxonomy' => 'docfi_docs_category', 'fields' => 'id=>name' ) );
 		$category_dropdown = array( '0' => esc_html__( 'All Categories', 'docfi-core' ) );
 
 		foreach ( $terms as $id => $name ) {

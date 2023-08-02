@@ -28,7 +28,7 @@ $group_name  = DocfiTheme_Helper::docs_group_name();
 $nav_menus = wp_get_nav_menus( array( 'fields' => 'id=>name' ) );
 $nav_menus = array( 'default' => __( 'Default', 'docfi-core' ) ) + $nav_menus;
 $sidebars  = array( 'default' => __( 'Default', 'docfi-core' ) ) + DocfiTheme_Helper::custom_sidebar_fields();
-$Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docfi-core' ), array( 'page', 'post', 'docfi_team', 'docfi_portfolio', 'docfi_service', 'product' ), '', '', 'high', array(
+$Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docfi-core' ), array( 'page', 'post', 'docfi_team', 'docfi_docs', 'docfi_service', 'product' ), '', '', 'high', array(
 	'fields' => array(
 	
 		"{$prefix}_layout_settings" => array(
@@ -385,51 +385,7 @@ $Postmeta->add_meta_box( 'docfi_team_contact', __( 'Team Member Contact', 'docfi
 	)
 ) );
 
-/*-------------------------------------
-#. Portfolio
----------------------------------------*/
-$Postmeta->add_meta_box( 'docfi_portfolio_info', __( 'Portfolio Project Information', 'docfi-core' ), array( 'docfi_portfolio' ), '', '', 'high', array(
-	'fields' => array(
-		'docfi_project_title' => array(
-			'label' => __( 'Project Title', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_project_text' => array(
-			'label' => __( 'Project Text', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_project_client' => array(
-			'label' => __( 'Project Client', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_project_start' => array(
-			'label' => __( 'Project Start', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_project_end' => array(
-			'label' => __( 'Project End', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_project_web' => array(
-			'label' => __( 'Project Web', 'docfi-core' ),
-			'type'  => 'text',
-			'default'  => '',
-		),				
-		'docfi_project_rating' => array(
-			'label' => __( 'Select the Rating', 'docfi-core' ),
-			'type'  => 'select',
-			'options' => array(
-				'-1' => __( 'Default', 'docfi-core' ),
-				'1'    => '1',
-				'2'    => '2',
-				'3'    => '3',
-				'4'    => '4',
-				'5'    => '5'
-				),
-			'default'  => '-1',
-		),
-	)
-) );
+
 
 
 /*-------------------------------------

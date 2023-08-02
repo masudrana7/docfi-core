@@ -94,19 +94,23 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                     $r = hexdec(substr($get_item_bg,0,2));
                     $g = hexdec(substr($get_item_bg,2,2));
                     $b = hexdec(substr($get_item_bg,4,2));
+
+                    
                     $get_image = get_term_meta( $docs_group->term_id, 'rt_term_image', true );
                     $image_id = wp_get_attachment_image_src( $get_image, 'full' );
                     $group_link = get_category_link($docs_group->cat_ID);
                     $group_id = $group_link;
+
                     ob_start();
                         $args = array(
                             'post_type' => 'docfi_docs',
                             'posts_per_page' => $number_of_post,
-                            'tax_query' => array(
+                            'meta_query' => array(
                                 array(
-                                    'taxonomy' => 'docfi_docs_group',
-                                    'field' => 'slug',
-                                    'terms' => $docs_group->name,
+                                    'key'     => 'group_post_select', 
+                                    'value'   => $docs_group->term_id, 
+                                    'compare' => 'LIKE', 
+                                    'type'    => 'CHAR', 
                                 ),
                             ),
                             'post__not_in'   => $p_ids,
@@ -114,14 +118,19 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                         $args['orderby'] = $post_sorting;
                         
                         $query = new WP_Query( $args );
+                        $post_count = $query->found_posts;
                         $term_links = [];
                         if ( $query->have_posts() ) {
                             while ( $query->have_posts() ) {  
                                 $query->the_post(); 
+
+
                                 $item_terms = get_the_terms( get_the_ID(), 'docfi_docs_category' );
+                                
                                 foreach ( $item_terms as $term ) {
                                     $term_links[] = $term->slug;
                                 } ?>
+                                
                                 <li>
                                     <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.96799 10L10.5 5.5L5.96799 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 10L5.53201 5.5L1 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -130,7 +139,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                             }
                         } wp_reset_postdata(); 
                         $term_slug = join( ' ', array_unique( $term_links ) );
-                    $topicsItem = ob_get_clean();
+                    $RTDocsItem = ob_get_clean();
                 ?>
 
                 <div class="<?php echo esc_attr( $col_class . ' ' . $term_slug ); ?> rt-grid-item">
@@ -160,7 +169,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                         </div>
                         <div class="explore-topics-body">
                             <ul class="explore-topics-list">
-                                <?php echo $topicsItem; ?>
+                                <?php echo $RTDocsItem; ?>
                             </ul>
                         </div>
                         <?php if ( $data['more_button'] == 'show' ) { ?>

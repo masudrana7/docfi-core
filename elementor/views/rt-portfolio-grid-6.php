@@ -22,7 +22,7 @@ else {
 }
 
 $args = array(
-	'post_type'      	=> 'docfi_portfolio',
+	'post_type'      	=> 'docfi_docs',
 	'posts_per_page' 	=> $data['number'],
 	'order' 			=> $data['post_ordering'],
 	'orderby' 			=> $data['post_orderby'],
@@ -32,7 +32,7 @@ $args = array(
 if ( !empty( $data['cat'] ) ) {
 	$args['tax_query'] = array(
 		array(
-			'taxonomy' => 'docfi_portfolio_category',
+			'taxonomy' => 'docfi_docs_category',
 			'field' => 'term_id',
 			'terms' => $data['cat'],
 		)
@@ -85,10 +85,10 @@ $temp = DocfiTheme_Helper::wp_set_temp_query( $query );
 						<?php if ( $data['category_display']  == 'yes' ) { ?>
 						<span class="portfolio-cat"><?php
 							$i = 1;
-							$term_lists = get_the_terms( get_the_ID(), 'docfi_portfolio_category' );
+							$term_lists = get_the_terms( get_the_ID(), 'docfi_docs_category' );
 							if( $term_lists ) {
 							foreach ( $term_lists as $term_list ){ 
-							$link = get_term_link( $term_list->term_id, 'docfi_portfolio_category' ); ?><?php if ( $i > 1 ){ echo esc_html( ', ' ); } ?><a aria-label="Portfolio" href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $term_list->name ); ?></a><?php $i++; } } ?>
+							$link = get_term_link( $term_list->term_id, 'docfi_docs_category' ); ?><?php if ( $i > 1 ){ echo esc_html( ', ' ); } ?><a aria-label="Portfolio" href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $term_list->name ); ?></a><?php $i++; } } ?>
 						</span>
 						<?php } ?>
 						<?php if ( $data['content_display']  == 'yes' ) { ?>

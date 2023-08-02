@@ -106,6 +106,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                         
                                     if ( $query->have_posts() ) {
                                         while ( $query->have_posts() ) {  
+                                           
                                             $query->the_post(); 
                                             $id            	= get_the_id();
                                             $excerpt        = wp_trim_words( get_the_excerpt(), $excerpt_count, '' );
