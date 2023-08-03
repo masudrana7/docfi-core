@@ -39,13 +39,13 @@ class DocfiTheme_Social_Widget extends WP_Widget {
 					?><li><a href="<?php echo esc_url( $instance['facebook'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-facebook-f"></i></a></li><?php
 				}
 				if( !empty( $instance['twitter'] ) ){
-					?><li><a href="<?php echo esc_url( $instance['twitter'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-twitter"></i></a></li><?php
+					?><li class="twitter"><a href="<?php echo esc_url( $instance['twitter'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-twitter"></i></a></li><?php
 				}
 				if( !empty( $instance['linkedin'] ) ){
-					?><li><a href="<?php echo esc_url( $instance['linkedin'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-linkedin-in"></i></a></li><?php
+					?><li class="linkedin"><a href="<?php echo esc_url( $instance['linkedin'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-linkedin-in"></i></a></li><?php
 				}
 				if( !empty( $instance['pinterest'] ) ){
-					?><li><a href="<?php echo esc_url( $instance['pinterest'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-pinterest-p"></i></a></li><?php
+					?><li class="pinterest"><a href="<?php echo esc_url( $instance['pinterest'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-pinterest-p"></i></a></li><?php
 				}
 				if( !empty( $instance['skype'] ) ){
 					?><li><a href="<?php echo esc_url( $instance['skype'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-skype"></i></a></li><?php
@@ -54,7 +54,7 @@ class DocfiTheme_Social_Widget extends WP_Widget {
 					?><li><a href="<?php echo esc_url( $instance['youtube'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-youtube"></i></a></li><?php
 				}
 				if( !empty( $instance['instagram'] ) ){
-					?><li><a href="<?php echo esc_url( $instance['instagram'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-instagram"></i></a></li><?php
+					?><li class="instagram"><a href="<?php echo esc_url( $instance['instagram'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-instagram"></i></a></li><?php
 				}
 				if( !empty( $instance['behance'] ) ){
 					?><li><a href="<?php echo esc_url( $instance['behance'] ); ?>" target="_blank" aria-label="Social Link"><i class="fab fa-behance"></i></a></li><?php

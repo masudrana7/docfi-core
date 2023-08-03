@@ -28,7 +28,7 @@ $group_name  = DocfiTheme_Helper::docs_group_name();
 $nav_menus = wp_get_nav_menus( array( 'fields' => 'id=>name' ) );
 $nav_menus = array( 'default' => __( 'Default', 'docfi-core' ) ) + $nav_menus;
 $sidebars  = array( 'default' => __( 'Default', 'docfi-core' ) ) + DocfiTheme_Helper::custom_sidebar_fields();
-$Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docfi-core' ), array( 'page', 'post', 'docfi_team', 'docfi_docs', 'docfi_service', 'product' ), '', '', 'high', array(
+$Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docfi-core' ), array( 'page', 'post', 'docfi_team', 'docfi_service', 'product' ), '', '', 'high', array(
 	'fields' => array(
 	
 		"{$prefix}_layout_settings" => array(

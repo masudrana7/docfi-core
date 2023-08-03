@@ -44,17 +44,20 @@ class Custom_Widget_Init {
 		// Widgets -- filename=>classname /@dev
 		$widgets1 = array(
 			
-			'content-toggle'		=> 'Content_Toggle',
-			'docs-isotope'		    => 'Docs_Isotope',
-			'docs-featured-tabs'	=> 'Docs_Featured_Post',
-			'docs-cat-list'			=> 'Docs_Cat_List',
-			'rt-button'				=> 'RT_Button',
-			'rt-cta'				=> 'RT_Call_Action',
-			'rt-info-box'			=> 'RT_Info_Box',
-			'rt-contact-info'		=> 'RT_Contact_Info',
-			'rt-counter'			=> 'RT_Counter',
-			'rt-testimonial'		=> 'RT_Testimonials',
-			'rt-accordion'			=> 'RT_Accordion',
+			'content-toggle'			=> 'Content_Toggle',
+			'docs-isotope'		    	=> 'Docs_Isotope',
+			'docs-featured-tabs'		=> 'Docs_Featured_Post',
+			'docs-cat-list'				=> 'Docs_Cat_List',
+			'docs-group-list'			=> 'Docs_Group_list',
+			'docs-group-list-content'	=> 'Docs_Group_listContent',
+			'docs-group-single'			=> 'Docs_Group_Single',
+			'rt-button'					=> 'RT_Button',
+			'rt-cta'					=> 'RT_Call_Action',
+			'rt-info-box'				=> 'RT_Info_Box',
+			'rt-contact-info'			=> 'RT_Contact_Info',
+			'rt-counter'				=> 'RT_Counter',
+			'rt-testimonial'			=> 'RT_Testimonials',
+			'rt-accordion'				=> 'RT_Accordion',
 		);
 		
 
