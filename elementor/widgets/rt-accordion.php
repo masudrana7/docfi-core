@@ -239,6 +239,17 @@ class RT_Accordion extends Custom_Widget_Base{
 	            'separator' => 'before',
 	        ),            
 			array(
+	            'type'    => Controls_Manager::DIMENSIONS,
+	            'mode'          => 'responsive',
+	            'size_units' => [ 'px', '%', 'em' ],
+	            'id'      => 'title_margin',
+	            'label'   => __( 'Margin', 'docfi-core' ),                 
+	            'selectors' => array(
+	                '{{WRAPPER}} .rt-accordion .rt-accordion-header' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
+	            ),
+	            'separator' => 'before',
+	        ),            
+			array(
 				'mode' => 'section_end',
 			),
 			// Description

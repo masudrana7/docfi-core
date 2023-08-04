@@ -38,6 +38,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 					'style2' => esc_html__( 'Info Style 2', 'docfi-core' ),
 					'style3' => esc_html__( 'Info Style 3', 'docfi-core' ),
 					'style4' => esc_html__( 'Info Style 4', 'docfi-core' ),
+					'style5' => esc_html__( 'Info Style 5', 'docfi-core' ),
 				),
 				'default' => 'style1',
 			),
@@ -62,7 +63,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				),
 				'default' => '',
 				'selectors' => array(
-					'{{WRAPPER}} .rt-info-box' => 'text-align: {{VALUE}};',
+					'.rt-info-box' => 'text-align: {{VALUE}};',
 				),
 			),
 			/*Icon Start*/
@@ -315,7 +316,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'id'      => 'sec_icon',
 				'label'   => esc_html__( 'Icon Style', 'docfi-core' ),
 				'tab'     => Controls_Manager::TAB_STYLE,
-				'condition'   => array( 'style' => array( 'style1' ) ),
+				'condition'   => array( 'style' => array( 'style1', 'style5' ) ),
 			),			
 			array(
 				'type'    => Controls_Manager::NUMBER,
@@ -625,6 +626,9 @@ class RT_Info_Box extends Custom_Widget_Base {
 		$data = $this->get_settings();
 
 		switch ( $data['style'] ) {
+			case 'style5':
+			$template = 'rt-info-box-5';
+			break;
 			case 'style4':
 			$template = 'rt-info-box-4';
 			break;
