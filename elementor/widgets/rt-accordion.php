@@ -179,7 +179,6 @@ class RT_Accordion extends Custom_Widget_Base{
 				'selector' => '{{WRAPPER}} .rt-accordion-item'
 
 			),
-
 			array(
 	            'type'    => Controls_Manager::DIMENSIONS,
 	            'mode'          => 'responsive',
@@ -191,7 +190,16 @@ class RT_Accordion extends Custom_Widget_Base{
 	            ),
 	            'separator' => 'before',
 	        ),   
-
+			array(
+				'type'    => Controls_Manager::DIMENSIONS,
+				'id'      => 'area_border_radius',
+				'mode'    => 'responsive',
+				'label'   => esc_html__( 'Content Radius', 'docfi-core' ),
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .rt-accordion-item' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			),
 			array(
 				'mode' => 'section_end',
 			),
@@ -216,6 +224,15 @@ class RT_Accordion extends Custom_Widget_Base{
 				'default' => '',
 				'selectors' => array(
 					'{{WRAPPER}} .rt-accordion .rt-accordion-header .rt-accordion-button' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'title_bg_color',
+				'label'   => esc_html__( 'Background Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-accordion .rt-accordion-header' => 'background: {{VALUE}}',
 				),
 			),
             array(
@@ -248,7 +265,15 @@ class RT_Accordion extends Custom_Widget_Base{
 	                '{{WRAPPER}} .rt-accordion .rt-accordion-header' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
 	            ),
 	            'separator' => 'before',
-	        ),            
+	        ),   
+			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Border::get_type(),
+				'name'      => 'title_border',
+				'label'   => esc_html__( 'Title Border', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-accordion .rt-accordion-header'
+
+			),        
 			array(
 				'mode' => 'section_end',
 			),
@@ -283,6 +308,17 @@ class RT_Accordion extends Custom_Widget_Base{
 	            'label'   => __( 'Padding', 'docfi-core' ),                 
 	            'selectors' => array(
 	                '{{WRAPPER}} .rt-accordion .accordion-body' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
+	            ),
+	            'separator' => 'before',
+	        ),
+			array(
+	            'type'    => Controls_Manager::DIMENSIONS,
+	            'mode'          => 'responsive',
+	            'size_units' => [ 'px', '%', 'em' ],
+	            'id'      => 'content_margin',
+	            'label'   => __( 'Margin', 'docfi-core' ),                 
+	            'selectors' => array(
+	                '{{WRAPPER}} .rt-accordion .accordion-body' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
 	            ),
 	            'separator' => 'before',
 	        ),

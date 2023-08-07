@@ -33,8 +33,8 @@ $has_icon = ( ! $is_new || ! empty( $data['selected_icon']['value'] ) );
       $unique_id = uniqid();
     ?>
    <div class="rt-accordion-item">
-        <h2 class="rt-accordion-header <?php if ( $i == 1 ) { ?>active<?php } ?>" id="rtaccordion-<?php echo esc_attr($uid); ?>-<?php echo esc_attr($unique_id); ?>" >
-            <button class="rt-accordion-button <?php echo esc_attr( $collapse ); ?>" type="button" data-bs-toggle="collapse" data-bs-target="#rtaccordion-collapse-<?php echo esc_attr( $uid ); ?>-<?php echo esc_attr($unique_id); ?>" aria-expanded="true">
+        <h2 class="rt-accordion-header <?php if ( $i == 1 ) { ?>active<?php } ?>" id="rtaccordion-<?php echo esc_attr($unique_id); ?>" >
+            <button class="rt-accordion-button <?php echo esc_attr( $collapse ); ?>" type="button" data-bs-toggle="collapse" data-bs-target="#rtaccordion-collapse-<?php echo esc_attr($unique_id); ?>" aria-expanded="true">
                 <span class="rt-accordion-icon rt-accordion-icon-<?php echo esc_attr( $data['icon_align'] ); ?>" aria-hidden="true">
                     <?php
                     if ( $is_new || $migrated ) { ?>
@@ -48,7 +48,7 @@ $has_icon = ( ! $is_new || ! empty( $data['selected_icon']['value'] ) );
                 <span class="rt-accordion-title rt-title-<?php echo esc_attr( $data['icon_align'] ); ?>"><?php echo wp_kses_post( $accordion['title'] ); ?></span>
             </button>
        </h2>       
-        <div id="rtaccordion-collapse-<?php echo esc_attr( $uid ); ?>-<?php echo esc_attr($unique_id); ?>" class="accordion-collapse collapse <?php echo esc_attr( $show ); ?>" aria-labelledby="rtaccordion-<?php echo esc_attr($uid); ?>-<?php echo esc_attr($unique_id); ?>" data-bs-parent="#<?php echo esc_attr( $accordian_id ) ?>">
+        <div id="rtaccordion-collapse-<?php echo esc_attr($unique_id); ?>" class="accordion-collapse collapse <?php echo esc_attr( $show ); ?>" aria-labelledby="rtaccordion-<?php echo esc_attr($unique_id); ?>" data-bs-parent="#<?php echo esc_attr( $accordian_id ) ?>">
             <div class="accordion-body">
               <?php echo wp_kses_post( $accordion['accodion_text'] ) ?>
             </div>

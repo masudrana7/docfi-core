@@ -29,8 +29,9 @@ class RT_Logo_Slider extends Custom_Widget_Base {
 	}
 
 	public function rt_fields(){
+
+
 		$repeater = new \Elementor\Repeater(); 
-		
 		$repeater->add_control(
 			'image', [
 				'type'  => Controls_Manager::MEDIA,
