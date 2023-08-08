@@ -396,6 +396,17 @@ class RT_Post_Slider extends Custom_Widget_Base {
 	            'type'    => Controls_Manager::DIMENSIONS,
 	            'mode'          => 'responsive',
 	            'size_units' => [ 'px', '%', 'em' ],
+	            'id'      => 'content_padding',
+	            'label'   => __( 'Padding', 'docfi-core' ),                 
+	            'selectors' => array(
+	                '{{WRAPPER}} .rt-item .entry-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
+	            ),
+	            'separator' => 'before',
+	        ),
+			array(
+	            'type'    => Controls_Manager::DIMENSIONS,
+	            'mode'          => 'responsive',
+	            'size_units' => [ 'px', '%', 'em' ],
 	            'id'      => 'content_margin',
 	            'label'   => __( 'Margin', 'docfi-core' ),                 
 	            'selectors' => array(
@@ -418,7 +429,7 @@ class RT_Post_Slider extends Custom_Widget_Base {
 				'type'    => Group_Control_Typography::get_type(),
 				'name'    => 'meta_typo',
 				'label'   => esc_html__( 'Meta Typo', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .rt-post-slider-default ul.entry-meta li',
+				'selector' => '{{WRAPPER}} .rt-post-slider-default ul.entry-meta li a, {{WRAPPER}} .rt-post-slider-default ul.entry-meta li',
 			),
 			array(
 				'type'    => Controls_Manager::COLOR,

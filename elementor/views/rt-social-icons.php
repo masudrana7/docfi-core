@@ -7,13 +7,10 @@
 
 namespace radiustheme\Docfi_Core;
 use Elementor\Icons_Manager;
-
-
-
 ?>
-<div class="rt-social-links">
+<div class="rt_footer_social_widget">
 	<div class="social-label"><?php echo wp_kses_post( $data['social_label'] ); ?></div>
-	<div class="rt-social-item">		
+	<div class="rt-about-widget rt-social-widget">		
 		<?php foreach ( $data['social_icon_list'] as $social_icons ): 
 			$attr = '';
 	        if ( !empty( $social_icons['link']['url'] ) ) {
@@ -22,7 +19,7 @@ use Elementor\Icons_Manager;
 	            $attr .= !empty( $social_icons['link']['nofollow'] ) ? ' rel="nofollow"' : '';
 	        }
 		?>
-		<div class="rt-social">
+		<div class="footer-social">
 			<a aria-label="Social Link" class="<?php echo wp_kses_post( $social_icons['title'] ); ?>" <?php echo $attr; ?> ><?php Icons_Manager::render_icon( $social_icons['social_icon'] ); ?></a>
 		</div>
 		<?php endforeach; ?> 

@@ -6,7 +6,6 @@
  */
 
 namespace radiustheme\Docfi_Core;
-
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Utils;

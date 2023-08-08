@@ -154,7 +154,7 @@ class RT_Title extends Custom_Widget_Base {
 			array(
 	            'mode'    => 'section_start',
 	            'id'      => 'sec_subtitle_style',
-	            'label'   => esc_html__( 'Content Title', 'docfi-core' ),
+	            'label'   => esc_html__( 'Content', 'docfi-core' ),
 	            'tab'     => Controls_Manager::TAB_STYLE,
 	        ),
 			array(

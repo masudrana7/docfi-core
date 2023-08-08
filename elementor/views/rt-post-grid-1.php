@@ -92,7 +92,7 @@ $col_class = "col-xl-{$data['col_xl']} col-lg-{$data['col_lg']} col-md-{$data['c
 						<?php if ( $docfi_has_entry_meta ) { ?>
 						<ul class="entry-meta">
 							<?php if ( $data['post_author'] == 'yes' ) { ?>
-							<li class="post-author"><i class="icon-docfi-user"></i><?php esc_html_e( 'by ', 'docfi' );?><?php the_author_posts_link(); ?></li>
+							<li class="post-author"><i class="icon-docfi-user"></i><?php the_author_posts_link(); ?></li>
 							<?php } if ( $data['post_category'] == 'yes' ) { ?>
 							<li class="entry-categories"><i class="icon-docfi-tags"></i><?php echo the_category( ', ' );?></li>
 							<?php } if ( $data['post_date'] == 'yes' ) { ?>	
