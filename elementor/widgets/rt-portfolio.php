@@ -152,7 +152,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 				'type'    => Group_Control_Typography::get_type(),
 				'name'    => 'title_typo',
 				'label'   => esc_html__( 'Title Typo', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .rt-portfolio-default .entry-title',
+				'selector' => '{{WRAPPER}} .rt-docs-default .entry-title',
 			),
 			array(
 				'type'    => Controls_Manager::SLIDER,
@@ -171,7 +171,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 					),
 				),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-portfolio-default .entry-title' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .rt-docs-default .entry-title' => 'margin-bottom: {{SIZE}}{{UNIT}};',
 				),
 			),
 			array(
@@ -227,7 +227,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 				'mode'    => 'group',				
 				'label'   => esc_html__( 'Image Blend', 'docfi-core' ),	
 				'name' => 'blend', 
-				'selector' => '{{WRAPPER}} .rt-portfolio-default .portfolio-figure img',		
+				'selector' => '{{WRAPPER}} .rt-docs-default .docs-figure img',		
 			),
 			array(
 	            'type'    => Controls_Manager::DIMENSIONS,
@@ -236,7 +236,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 	            'id'      => 'border_radius',
 	            'label'   => __( 'Box Radius', 'docfi-core' ),                 
 	            'selectors' => array(
-	                '{{WRAPPER}} .rt-portfolio-default .portfolio-item' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                 
+	                '{{WRAPPER}} .rt-docs-default .docs-item' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                 
 	            ),
 	            'separator' => 'before',
 	        ),
@@ -247,7 +247,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 	            'id'      => 'border_image_radius',
 	            'label'   => __( 'Image Radius', 'docfi-core' ),                 
 	            'selectors' => array(
-	                '{{WRAPPER}} .rt-portfolio-multi-layout-7 .rt-portfolio-grid .portfolio-figure' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                 
+	                '{{WRAPPER}} .rt-docs-multi-layout-7 .rt-docs-grid .docs-figure' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                 
 	            ),
 				'condition'   => array( 'style' => array( 'style11' ) ),
 	        ),
@@ -267,7 +267,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Title Color', 'docfi-core' ),
 				'default' => '',
 				'selectors' => array(
-					'{{WRAPPER}} .rt-portfolio-default .entry-title a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-docs-default .entry-title a' => 'color: {{VALUE}}',
 				),
 			),
 			array(
@@ -276,7 +276,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Title Hover Color', 'docfi-core' ),
 				'default' => '',
 				'selectors' => array(
-					'{{WRAPPER}} .rt-portfolio-default .entry-title a:hover' => 'color: {{VALUE}} !important',
+					'{{WRAPPER}} .rt-docs-default .entry-title a:hover' => 'color: {{VALUE}} !important',
 				),
 			),
 			array(
@@ -285,7 +285,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Category Color', 'docfi-core' ),
 				'default' => '',
 				'selectors' => array(
-					'{{WRAPPER}} .rt-portfolio-default .portfolio-cat a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-docs-default .docs-cat a' => 'color: {{VALUE}}',
 				),
 			),
 			array(
@@ -294,7 +294,7 @@ class RT_Portfolio extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Category Hover Color', 'docfi-core' ),
 				'default' => '',
 				'selectors' => array(
-					'{{WRAPPER}} .rt-portfolio-default .portfolio-cat a:hover' => 'color: {{VALUE}} !important',
+					'{{WRAPPER}} .rt-docs-default .docs-cat a:hover' => 'color: {{VALUE}} !important',
 				),
 			),
 			
@@ -808,40 +808,40 @@ class RT_Portfolio extends Custom_Widget_Base {
 		switch ( $data['style'] ) {
 			case 'style9':
 			$data['swiper_data'] = json_encode( $swiper_data ); 
-			$template = 'rt-portfolio-slider-4';
+			$template = 'rt-docs-slider-4';
 			break;
 			case 'style6':
 			$data['swiper_data'] = json_encode( $swiper_data ); 
-			$template = 'rt-portfolio-slider-3';
+			$template = 'rt-docs-slider-3';
 			break;
 			case 'style5':
 			$data['swiper_data'] = json_encode( $swiper_data ); 
-			$template = 'rt-portfolio-slider-2';
+			$template = 'rt-docs-slider-2';
 			break;
 			case 'style4':
 			$data['swiper_data'] = json_encode( $swiper_data ); 
-			$template = 'rt-portfolio-slider-1';
+			$template = 'rt-docs-slider-1';
 			break;
 			case 'style11':
-			$template = 'rt-portfolio-grid-7';
+			$template = 'rt-docs-grid-7';
 			break;
 			case 'style10':
-			$template = 'rt-portfolio-grid-6';
+			$template = 'rt-docs-grid-6';
 			break;
 			case 'style8':
-			$template = 'rt-portfolio-grid-5';
+			$template = 'rt-docs-grid-5';
 			break;
 			case 'style7':
-			$template = 'rt-portfolio-grid-4';
+			$template = 'rt-docs-grid-4';
 			break;
 			case 'style3':
-			$template = 'rt-portfolio-grid-3';
+			$template = 'rt-docs-grid-3';
 			break;
 			case 'style2':
-			$template = 'rt-portfolio-grid-2';
+			$template = 'rt-docs-grid-2';
 			break;
 			default:
-			$template = 'rt-portfolio-grid-1';
+			$template = 'rt-docs-grid-1';
 			break;
 		}
 

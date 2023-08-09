@@ -6,7 +6,7 @@
  */
 
 /**
-* About Widget with Social for footer by DocfiTheme
+* Font-Size controller for sidebar by DocfiTheme
 **/
 class DocfiTheme_FontSize_Controller_Widget extends WP_Widget {
 
@@ -16,24 +16,29 @@ class DocfiTheme_FontSize_Controller_Widget extends WP_Widget {
 			'description' => esc_html__( 'Font-Size Controller' , 'docfi-core' ),
 			'customize_selective_refresh' => true,
 		);
-		parent::__construct( 'rt-about-social', esc_html__( 'Docfi : Font-Size Controller' , 'docfi-core' ), $widget_ops );
-		$this->alt_option_name = 'docfi_about_widget';
+		parent::__construct( 'rt-fontsize-controller', esc_html__( 'Docfi : Font-Size Controller' , 'docfi-core' ), $widget_ops );
+		$this->alt_option_name = 'docfi_fontsize_controller_widget';
 	}
 
 	public function widget( $args, $instance ){
-		echo wp_kses_post( $args['before_widget'] );
 		if ( ! empty( $instance['title'] ) ) {
 			echo wp_kses_post( $args['before_title'] ) . apply_filters( 'widget_title', esc_html( $instance['title'] ) ) . wp_kses_post( $args['after_title'] );
 		}
 		?>
-		<div class="rt-about-widget">
+		<div class="rt-fontsize-controller-widget">
 			<?php if( !empty( $instance['text_label'] ) ) { ?>
 				<h3 class="social-label"><?php echo wp_kses_post( $instance['text_label'] ); ?></h3>
 			<?php } ?>
+			<div class="font-size-controller-btn-area">
+				<div class="font-size-controller-btn-wrapper d-flex align-items-center">
+					<button class="font-size-minus"><?php echo esc_html__( 'A-' , 'docfi' ) ?></button>
+					<button class="active font-size-normal"><?php echo esc_html__( 'A' , 'docfi' ) ?></button>
+					<button class="font-size-plus"><?php echo esc_html__( 'A+' , 'docfi' ) ?></button>
+				</div>
+			</div>
 		</div>
 
-		<?php
-		echo wp_kses_post( $args['after_widget'] );
+		<?php 
 	}
 
 	public function update( $new_instance, $old_instance ){
@@ -49,7 +54,6 @@ class DocfiTheme_FontSize_Controller_Widget extends WP_Widget {
 			'text_label'=> '',
 		);
 		$instance = wp_parse_args( (array) $instance, $defaults );
-
 		$fields = array(
 			'title'        => array(
 				'label'    => esc_html__( 'Title', 'docfi-core' ),

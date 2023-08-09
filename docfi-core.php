@@ -54,6 +54,8 @@ class Docfi_Core {
 		require_once 'module/rt-post-length.php';
 
 		// Widgets
+		require_once 'widget/rt-docs-post-list.php';
+		require_once 'widget/font-size-controller.php';
 		require_once 'widget/about-widget.php';
 		require_once 'widget/address-widget.php';
 		require_once 'widget/social-widget.php';

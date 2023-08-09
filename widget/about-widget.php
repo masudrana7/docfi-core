@@ -11,7 +11,7 @@ class DocfiTheme_About_Widget extends WP_Widget {
             'docfi_about_author', // Base ID
             esc_html__( 'Docfi : About Author', 'docfi-core' ), // Name
             array( 'description' => esc_html__( 'About Author Widget', 'docfi-core' ) ) // Args
-            );
+        );
 	}
 
 	public function widget( $args, $instance ){

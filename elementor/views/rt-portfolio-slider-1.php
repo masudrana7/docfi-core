@@ -32,7 +32,7 @@ if ( !empty( $data['cat'] ) ) {
 $query = new WP_Query( $args );
 
 ?>
-<div class="rt-portfolio-default rt-portfolio-multi-layout-1 portfolio-slider-<?php echo esc_attr( $data['style'] );?> <?php echo esc_attr( $data['nav_position'] ) ?>">
+<div class="rt-docs-default rt-docs-multi-layout-1 docs-slider-<?php echo esc_attr( $data['style'] );?> <?php echo esc_attr( $data['nav_position'] ) ?>">
 	<div class="rt-swiper-slider swiper-slider rt-swiper-nav" data-xld ="<?php echo esc_attr( $data['swiper_data'] );?>">
 		<div class="swiper-wrapper">
 		<?php $m = $data['delay']; $n = $data['duration'];
@@ -49,8 +49,8 @@ $query = new WP_Query( $args );
 				$content = wp_trim_words( $content, $data['count'], '' );
 				$content = "$content";
 				?>
-				<div class="portfolio-item swiper-slide <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $m );?>s" data-wow-duration="<?php echo esc_attr( $n );?>s">
-					<div class="portfolio-figure">
+				<div class="docs-item swiper-slide <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $m );?>s" data-wow-duration="<?php echo esc_attr( $n );?>s">
+					<div class="docs-figure">
 						<a aria-label="Portfolio" href="<?php the_permalink(); ?>">
 							<?php
 								if ( has_post_thumbnail() ){
@@ -65,11 +65,11 @@ $query = new WP_Query( $args );
 							?>
 						</a>
 					</div>
-					<div class="portfolio-content">
+					<div class="docs-content">
 						<div class="content-info">
 							<h3 class="entry-title"><a aria-label="Portfolio" href="<?php the_permalink();?>"><?php the_title();?></a></h3>
 							<?php if ( $data['category_display']  == 'yes' ) { ?>
-							<span class="portfolio-cat"><?php
+							<span class="docs-cat"><?php
 								$i = 1;
 								$term_lists = get_the_terms( get_the_ID(), 'docfi_docs_category' );
 								if( $term_lists ) {

@@ -43,8 +43,8 @@ if ( !empty( $data['cat'] ) ) {
 $query = new WP_Query( $args );
 $temp = DocfiTheme_Helper::wp_set_temp_query( $query );
 ?>
-<div class="rt-portfolio-default rt-portfolio-multi-layout-7 portfolio-grid-<?php echo esc_attr( $data['style'] );?>">
-	<div class="row rt-portfolio-grid <?php echo esc_attr( $data['item_space'] );?>">
+<div class="rt-docs-default rt-docs-multi-layout-7 docs-grid-<?php echo esc_attr( $data['style'] );?>">
+	<div class="row rt-docs-grid <?php echo esc_attr( $data['item_space'] );?>">
 		<?php $count = 1; $m = $data['delay']; $n = $data['duration']; 
 			if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) {
@@ -53,8 +53,8 @@ $temp = DocfiTheme_Helper::wp_set_temp_query( $query );
 		?>
         <div class="grid-item grid-item-<?php echo esc_attr($count) ?>">
 		<div class="<?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $m );?>s" data-wow-duration="<?php echo esc_attr( $n );?>s">
-			<div class="portfolio-item">
-				<div class="portfolio-figure">
+			<div class="docs-item">
+				<div class="docs-figure">
 					<a href="<?php the_permalink(); ?>" aria-label="Portfolio">
 						<?php
 							if ( has_post_thumbnail() ){
@@ -69,11 +69,11 @@ $temp = DocfiTheme_Helper::wp_set_temp_query( $query );
 						?>
 					</a>			
 				</div>
-				<div class="portfolio-content">
+				<div class="docs-content">
 					<div class="content-info">
 						<h3 class="entry-title"><a aria-label="Portfolio" href="<?php the_permalink();?>"><?php the_title();?></a></h3>
 						<?php if ( $data['category_display']  == 'yes' ) { ?>
-						<span class="portfolio-cat"><?php
+						<span class="docs-cat"><?php
 							$i = 1;
 							$term_lists = get_the_terms( get_the_ID(), 'docfi_docs_category' );
 							if( $term_lists ) {
@@ -96,7 +96,7 @@ $temp = DocfiTheme_Helper::wp_set_temp_query( $query );
 	</div>
 	<?php if ( $data['more_button'] == 'show' ) { ?>
 		<?php if ( !empty( $data['see_button_text'] ) ) { ?>
-		<div class="portfolio-button"><a class="button-style-2 btn-common" aria-label="Portfolio" href="<?php echo esc_url( $data['see_button_link'] );?>"><?php echo esc_html( $data['see_button_text'] );?><i class="icon-docfi-right-arrow"></i></a></div>
+		<div class="docs-button"><a class="button-style-2 btn-common" aria-label="Portfolio" href="<?php echo esc_url( $data['see_button_link'] );?>"><?php echo esc_html( $data['see_button_text'] );?><i class="icon-docfi-right-arrow"></i></a></div>
 		<?php } ?>
 	<?php } else { ?>
 		<?php DocfiTheme_Helper::pagination(); ?>

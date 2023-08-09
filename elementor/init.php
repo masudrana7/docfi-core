@@ -58,6 +58,7 @@ class Custom_Widget_Init {
 			'rt-post-slider'			=> 'RT_Post_Slider',
 			'rt-social-icons'			=> 'RT_Social_Icons',
 			'rt-font-size-controller'	=> 'RT_FontSizeController',
+			'rt-docs-search'			=> 'RT_Docs_Search',
 			'rt-button'					=> 'RT_Button',
 			'rt-cta'					=> 'RT_Call_Action',
 			'rt-info-box'				=> 'RT_Info_Box',

@@ -8,6 +8,8 @@
 add_action( 'widgets_init', 'docfi_widgets_init' );
 function docfi_widgets_init() {
 	// Register Custom Widgets
+	register_widget( 'DocfiTheme_FontSize_Controller_Widget' );
+	register_widget( 'DocfiTheme_DocsList_Widget' );
 	register_widget( 'DocfiTheme_About_Widget' );
 	register_widget( 'DocfiTheme_Address_Widget' );
 	register_widget( 'DocfiTheme_Social_Widget' );
