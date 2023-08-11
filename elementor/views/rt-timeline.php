@@ -15,11 +15,7 @@ extract($data);
 		$i = 0;
 		$add_class =" ";
     	foreach ( $data['timeline_repeat'] as $timeline ) { 
-			if($i % 2 == 0){
-				$add_class = "right";
-			}else{
-				$add_class = "left";
-			}
+			$add_class = ($i % 2 == 0) ? 'right':'left';
 		?>
 		<div class="content-container <?php echo esc_attr($add_class); ?>">
 			<div class="content">

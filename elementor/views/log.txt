@@ -1,0 +1,62 @@
+Array
+(
+    [0] => Array
+        (
+            [title] => WordPress
+            [_id] => 2ff8d79
+            [searches_word] => WordPress
+        )
+
+    [1] => Array
+        (
+            [title] => WordPress
+            [searches_word] => WordPress
+            [_id] => dca7681
+        )
+
+    [2] => Array
+        (
+            [title] => WordPress
+            [searches_word] => WordPress
+            [_id] => ee2fa52
+        )
+
+    [3] => Array
+        (
+            [title] => WordPress
+            [searches_word] => WordPress
+            [_id] => a24e9ca
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [title] => WordPress
+            [_id] => 2ff8d79
+            [searches_word] => WordPress
+        )
+
+    [1] => Array
+        (
+            [title] => WordPress
+            [searches_word] => WordPress
+            [_id] => dca7681
+        )
+
+    [2] => Array
+        (
+            [title] => WordPress
+            [searches_word] => WordPress
+            [_id] => ee2fa52
+        )
+
+    [3] => Array
+        (
+            [title] => WordPress
+            [searches_word] => WordPress
+            [_id] => a24e9ca
+        )
+
+)

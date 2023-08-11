@@ -4,15 +4,15 @@
  * @since   1.0
  * @version 1.0
  */
-
-
-$terms = get_terms( array('taxonomy' => 'docfi_docs_group' ) );
-    $category_dropdown = array(  0 => __( 'All', 'docfi-core' ) );
+namespace radiustheme\Docfi_Core;
+use Elementor\Utils;
+    extract($data);
+    $terms = get_terms( array('taxonomy' => 'docfi_docs_group' ) );
+    $category_dropdown = array(  0 => __( 'All Docs', 'docfi-core' ) );
     foreach ( $terms as $category ) {
         $category_dropdown[$category->term_id] = $category->name;
     }
 ?>
-
 <div class="rt-hero-section-content-wrapper">
     <div class="searchbox-container searchbox-container--style-1 <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s">
     <form class="rt-searchbox-form d-flex justify-content-between align-items-center" role="search" method="get" action="<?php echo esc_url( get_post_type_archive_link( 'docfi_docs' ) ); ?>">
@@ -25,14 +25,15 @@ $terms = get_terms( array('taxonomy' => 'docfi_docs_group' ) );
                     </svg>
                 </span>
                 <div class="input-group-addon rt-input-wrap flex-grow-1">
-                    <input type="text"  class="searchbox-input" name="search" id="searchInput" placeholder="Search in...">
+                    <input type="text" class="searchbox-input" name="search" id="searchInput" placeholder="Search in..." autocomplete="off">
+                    <span id="cleanText">x</span>
                 </div>   
             </div>
         </div>
         <div class="category-selector">
             <select name="categories" id="categories">
                 <?php foreach ( $category_dropdown as $key => $value ): ?>
-                <option value="<?php echo esc_attr( $key );?>" selected><?php echo esc_html( $value );?></option>
+                <option value="<?php echo esc_attr( $key );?>"><?php echo esc_html( $value );?></option>
                 <?php endforeach; ?>
             </select>
         </div>
@@ -42,14 +43,12 @@ $terms = get_terms( array('taxonomy' => 'docfi_docs_group' ) );
         <div id="rt_datafetch"></div>
     </form>
     </div>
-
     <div class="search-text d-none d-sm-flex wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="900ms">
-        <p><span>Popular:</span> 
+        <p><span><?php echo wp_kses_post( $data['popular_text'] ); ?></span> 
             <ul class="rt-search-key">
-                <li><a href="#">Code</a></li>
-                <li><a href="#">Basic</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">WordPress</a></li>
+                <?php foreach ( $data['word_repeat'] as $rtword ) {?>
+                    <li class="keyword"><a href="#"><?php echo wp_kses_post($rtword['searches_word']); ?></a></li>
+                <?php } ?>
             </ul>
         </p>
     </div>
