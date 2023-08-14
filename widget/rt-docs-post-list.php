@@ -50,9 +50,7 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 						$term_name = get_term( $docs_group, 'docfi_docs_group' ); 
 						$tl = $term_name->name;
 						$uid = strtolower(str_replace(array('%', ':', '\\', '/', '*', '?', '.', ';', ' '), '', $tl));
-
 						$current_inner_posts = [];
-						
 					ob_start();
 					?>
 					<ul class="explore-topics-list">

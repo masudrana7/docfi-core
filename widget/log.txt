@@ -1,0 +1,40 @@
+WP_Error Object
+(
+    [errors] => Array
+        (
+            [invalid_taxonomy] => Array
+                (
+                    [0] => Invalid taxonomy.
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+WP_Error Object
+(
+    [errors] => Array
+        (
+            [invalid_taxonomy] => Array
+                (
+                    [0] => Invalid taxonomy.
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
