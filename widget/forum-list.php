@@ -30,7 +30,7 @@ class DocfiTheme_ForumList_Widget extends WP_Widget {
 				<?php 
 				$args = array(
 					'post_type' => 'forum',
-					'posts_per_page' => -1,
+					'posts_per_page' => 9,
 				);
 				$query = new WP_Query( $args );
 				$page_id = get_the_ID();
