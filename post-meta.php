@@ -385,15 +385,12 @@ $Postmeta->add_meta_box( 'docfi_team_contact', __( 'Team Member Contact', 'docfi
 	)
 ) );
 
-
-
-
 /*-------------------------------------
 #. Docs Post
 ---------------------------------------*/
+
 $Postmeta->add_meta_box( 'docfi_docs', __( 'Docs Post Meta', 'docfi-core' ), array( 'docfi_docs' ), '', '', 'high', array(
 	'fields' => array(
-
 		'docly_check_post' => array(
 			'label' => __( 'Featured Post', 'docfi-core' ),
 			'type'  => 'checkbox',
@@ -416,6 +413,26 @@ $Postmeta->add_meta_box( 'docfi_docs', __( 'Docs Post Meta', 'docfi-core' ), arr
 			'options'  => $group_name,
 			'default'  => 'default',
 		),
+	)
+) );
 
+
+/*-------------------------------------
+#. Forum Post
+---------------------------------------*/
+
+$Postmeta->add_meta_box( 'docfi_forum', __( 'Forum Post Meta', 'docfi-core' ), array( 'forum' ), '', '', 'high', array(
+	'fields' => array(
+
+		'forum_icon_bg' => array(
+			'label' => __( 'Icon Background', 'docfi-core' ),
+			'type'  => 'color_picker',
+		),
+
+		'forum_icon_img' => array(
+			'label' => __( 'Icon Image', 'docfi-core' ),
+			'type'  => 'image',
+			'desc'  => __( 'If not selected, default will be used', 'docfi-core' ),
+		),
 	)
 ) );

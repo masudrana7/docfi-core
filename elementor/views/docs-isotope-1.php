@@ -26,7 +26,9 @@ if ( $data['column_no_gutters'] == 'hide' ) {
    $gap_class  = 'no-gutters';
 }
 $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['col_sm']} col-xs-{$data['col_xs']} "; ?>
-<div class="docs-default docs-multi-layout-1 <?php if ( $data['all_button'] == 'hide' ) {?>hide-all<?php } ?> rt-isotope-wrapper">
+<div class="docs-default docs-multi-layout-1 rt-isotope-wrapper">
+
+    <?php if ( $data['all_button'] == 'show' ) {?>
     <div class="text-center">
         <div class="rt-docs-tab rt-isotope-tab">
             <?php
@@ -67,6 +69,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
             <?php } } }  ?>
         </div>
     </div>  
+    <?php } ?>
 
     <div class="row <?php echo esc_attr( $gap_class ); ?> rt-docs-content rt-isotope-content rt-masonry-grid"> 
         <?php 
@@ -123,14 +126,11 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                         if ( $query->have_posts() ) {
                             while ( $query->have_posts() ) {  
                                 $query->the_post(); 
-
-
                                 $item_terms = get_the_terms( get_the_ID(), 'docfi_docs_category' );
                                 
                                 foreach ( $item_terms as $term ) {
                                     $term_links[] = $term->slug;
                                 } ?>
-                                
                                 <li>
                                     <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.96799 10L10.5 5.5L5.96799 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 10L5.53201 5.5L1 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -167,11 +167,15 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                                <?php echo esc_html($post_count);  echo esc_html_e(' articles', 'docfi'); ?> 
                             </a>
                         </div>
+
+
+
                         <div class="explore-topics-body">
                             <ul class="explore-topics-list">
                                 <?php echo $RTDocsItem; ?>
                             </ul>
                         </div>
+
                         <?php if ( $data['more_button'] == 'show' ) { ?>
                         <a href="<?php echo esc_url($group_id); ?>" class="view-all-btn"><?php echo esc_html( $data['see_button_text'] );?></a>
                         <?php } ?>

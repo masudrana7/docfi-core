@@ -120,7 +120,7 @@ class Docs_Isotope extends Custom_Widget_Base {
             array(
                 'type'    => Controls_Manager::SELECT2,
                 'id'      => 'all_button',
-                'label'   => esc_html__( 'Show View All Button', 'docfi-core' ),
+                'label'   => esc_html__( 'Show/Hide Category', 'docfi-core' ),
                 'options' => array(
                     'show'        => esc_html__( 'Show', 'docfi-core' ),
                     'hide'        => esc_html__( 'Hide', 'docfi-core' ),
