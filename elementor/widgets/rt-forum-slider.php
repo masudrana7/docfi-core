@@ -11,11 +11,11 @@ use Elementor\Group_Control_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class RT_Logo_Slider extends Custom_Widget_Base {
+class RT_Forum_Slider extends Custom_Widget_Base {
 
 	public function __construct( $data = [], $args = null ){
-		$this->rt_name = esc_html__( 'RT Logo Grid & Slider', 'docfi-core' );
-		$this->rt_base = 'rt-logo-slider';
+		$this->rt_name = esc_html__( 'RT Forum Slider', 'docfi-core' );
+		$this->rt_base = 'rt-forum-slider';
 		$this->rt_translate = array(
 			'cols'  => array(
 				'12' => esc_html__( '1 Col', 'docfi-core' ),
@@ -30,125 +30,219 @@ class RT_Logo_Slider extends Custom_Widget_Base {
 
 	public function rt_fields(){
 
-
-		$repeater = new \Elementor\Repeater(); 
-		$repeater->add_control(
-			'image', [
-				'type'  => Controls_Manager::MEDIA,
-				'label' => esc_html__( 'Image', 'docfi-core' ),
-				'label_block' => true,
-			]
-		);
-		$repeater->add_control(
-			'url', [
-				'type'  => Controls_Manager::TEXT,
-				'label' => esc_html__( 'URL(optional)', 'docfi-core' ),
-				'label_block' => true,
-			]
-		);
-		$repeater->add_control(
-			'title', [
-				'type'  => Controls_Manager::TEXT,
-				'label' => esc_html__( 'Title', 'docfi-core' ),
-				'label_block' => true,
-			]
-		);
 		$fields = array(
+			// Responsive Slider Columns
 			array(
-				'mode'    => 'section_start',
-				'id'      => 'sec_general',
-				'label'   => esc_html__( 'General', 'docfi-core' ),
-			),	
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'style',
-				'label'   => esc_html__( 'Style', 'docfi-core' ),
-				'options' => array(
-					'style1' => esc_html__( 'Logo Slider', 'docfi-core' ),
-					'style2' => esc_html__( 'Logo Grid', 'docfi-core' ),
-				),
-				'default' => 'style1',
+				'mode'        => 'section_start',
+				'id'          => 'sec_slider_pervice',
+				'label'       => esc_html__( 'PerView Options', 'docfi-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'logo_color_mode',
-				'label'   => esc_html__( 'Logo Color Mode', 'docfi-core' ),				
+				'id'      => 'desktop',
+				'label'   => esc_html__( 'Desktops: > 1600px', 'docfi-core' ),
+				'default' => '4',
 				'options' => array(
-					'normal' 		=> esc_html__( 'Default Color', 'docfi-core' ),
-					'gray' 		=> esc_html__( 'Gray Scale', 'docfi-core' ),
+					'1' => esc_html__( '1', 'docfi-core' ),
+					'2' => esc_html__( '2', 'docfi-core' ),
+					'3' => esc_html__( '3',  'docfi-core' ),
+					'4' => esc_html__( '4',  'docfi-core' ),
+					'5' => esc_html__( '5',  'docfi-core' ),
+					'6' => esc_html__( '6',  'docfi-core' ),
 				),
-				'default' => 'gray',
-			),			
+			),
+
 			array(
 				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'item_space',
-				'label'   => esc_html__( 'Item Space', 'docfi-core' ),
+				'id'      => 'md_desktop',
+				'label'   => esc_html__( 'Desktops: > 1200px', 'docfi-core' ),
+				'default' => '4',
 				'options' => array(
-					'g-0' => esc_html__( 'Gutters 0', 'docfi-core' ),
-					'g-1' => esc_html__( 'Gutters 1', 'docfi-core' ),
-					'g-2' => esc_html__( 'Gutters 2', 'docfi-core' ),
-					'g-3' => esc_html__( 'Gutters 3', 'docfi-core' ),
-					'g-4' => esc_html__( 'Gutters 4', 'docfi-core' ),
-					'g-5' => esc_html__( 'Gutters 5', 'docfi-core' ),
+					'1' => esc_html__( '1', 'docfi-core' ),
+					'2' => esc_html__( '2', 'docfi-core' ),
+					'3' => esc_html__( '3',  'docfi-core' ),
+					'4' => esc_html__( '4',  'docfi-core' ),
+					'5' => esc_html__( '5',  'docfi-core' ),
+					'6' => esc_html__( '6',  'docfi-core' ),
 				),
-				'default' => 'g-4',
-				'condition'   => array( 'style' => array( 'style2' ) ),
-			),			
-			array(
-				'type' => Controls_Manager::CHOOSE,
-				'id'      => 'content_align',
-				'mode'    => 'responsive',
-				'label'   => esc_html__( 'Alignment', 'docfi-core' ),
-				'options' => array(
-					'left' => array(
-						'title' => __( 'Left', 'elementor' ),
-						'icon' => 'eicon-text-align-left',
-					),
-					'center' => array(
-						'title' => __( 'Center', 'elementor' ),
-						'icon' => 'eicon-text-align-center',
-					),
-					'right' => array(
-						'title' => __( 'Right', 'elementor' ),
-						'icon' => 'eicon-text-align-right',
-					),
-				),
-				'default' => '',
-				'selectors' => array(
-					'{{WRAPPER}} .rt-logo-grid .row' => 'justify-content: {{VALUE}};',
-				),
-				'condition'   => array( 'style' => array( 'style2' ) ),
 			),
 			array(
-				'type'    => Controls_Manager::REPEATER,
-				'id'      => 'logos',
-				'label'   => esc_html__( 'Add as many logos as you want', 'docfi-core' ),
-				'fields' => $repeater->get_controls(),				
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'sm_desktop',
+				'label'   => esc_html__( 'Desktops: > 992px', 'docfi-core' ),
+				'default' => '3',
+				'options' => array(
+					'1' => esc_html__( '1', 'docfi-core' ),
+					'2' => esc_html__( '2', 'docfi-core' ),
+					'3' => esc_html__( '3',  'docfi-core' ),
+					'4' => esc_html__( '4',  'docfi-core' ),
+				),
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'tablet',
+				'label'   => esc_html__( 'Tablets: > 768px', 'docfi-core' ),
+				'default' => '2',
+				'options' => array(
+					'1' => esc_html__( '1', 'docfi-core' ),
+					'2' => esc_html__( '2', 'docfi-core' ),
+					'3' => esc_html__( '3',  'docfi-core' ),
+				),
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'mobile',
+				'label'   => esc_html__( 'Phones: > 576px', 'docfi-core' ),
+				'default' => '1',
+				'options' => array(
+					'1' => esc_html__( '1', 'docfi-core' ),
+					'2' => esc_html__( '2', 'docfi-core' ),
+					'3' => esc_html__( '3',  'docfi-core' ),
+					'4' => esc_html__( '4',  'docfi-core' ),
+				),
 			),
 			array(
 				'mode' => 'section_end',
 			),
-			
+			// Slider options
+			array(
+				'mode'        => 'section_start',
+				'id'          => 'sec_slider',
+				'label'       => esc_html__( 'Slider Options', 'docfi-core' ),
+			),			
+			array(
+				'type'        => Controls_Manager::SWITCHER,
+				'id'          => 'slider_autoplay',
+				'label'       => esc_html__( 'Autoplay', 'docfi-core' ),
+				'label_on'    => esc_html__( 'On', 'docfi-core' ),
+				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
+				'default'     => 'yes',
+				'description' => esc_html__( 'Enable or disable autoplay. Default: On', 'docfi-core' ),
+			),
+			array(
+				'type'    => Controls_Manager::SLIDER,
+				'mode' 			=> 'responsive',
+				'id'      => 'slides_per_group',
+				'label'   => esc_html__( 'slides Per Group', 'docfi-core' ),
+				'default' => array(
+					'size' => 1,
+				),
+				'description' => esc_html__( 'slides Per Group. Default: 1', 'docfi-core' ),
+			),
+			array(
+				'type'        => Controls_Manager::SWITCHER,
+				'id'          => 'centered_slides',
+				'label'       => esc_html__( 'Centered Slides', 'docfi-core' ),
+				'label_on'    => esc_html__( 'On', 'docfi-core' ),
+				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
+				'default'     => 'no',
+				'description' => esc_html__( 'Centered Slides. Default: On', 'docfi-core' ),
+				
+			),
+			array(
+				'type'        => Controls_Manager::NUMBER,
+				'id'          => 'slides_space',
+				'label'       => esc_html__( 'Slides Space', 'docfi-core' ),
+				'default'     => 24,
+				'description' => esc_html__( 'Slides Space. Default: 10', 'docfi-core' ),
+			),		
+			array(
+				'type'    => Controls_Manager::NUMBER,
+				'id'      => 'slider_autoplay_delay',
+				'label'   => esc_html__( 'Autoplay Slide Delay', 'docfi-core' ),
+				'default' => 5000,
+				'description' => esc_html__( 'Set any value for example 5 seconds to play it in every 5 seconds. Default: 5 Seconds', 'docfi-core' ),
+				'condition'   => array( 'slider_autoplay' => 'yes' ),
+			),
+			array(
+				'type'    => Controls_Manager::NUMBER,
+				'id'      => 'slider_autoplay_speed',
+				'label'   => esc_html__( 'Autoplay Slide Speed', 'docfi-core' ),
+				'default' => 1000,
+				'description' => esc_html__( 'Set any value for example .8 seconds to play it in every 2 seconds. Default: .8 Seconds', 'docfi-core' ),
+				'condition'   => array( 'slider_autoplay' => 'yes' ),
+			),
+			array(
+				'type'        => Controls_Manager::SWITCHER,
+				'id'          => 'slider_loop',
+				'label'       => esc_html__( 'Loop', 'docfi-core' ),
+				'label_on'    => esc_html__( 'On', 'docfi-core' ),
+				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
+				'default'     => 'yes',
+				'description' => esc_html__( 'Loop to first item. Default: On', 'docfi-core' ),
+			),
+			array(
+				'mode' => 'section_end',
+			),
+
+			// Global style
+
+			array(
+	            'mode'    => 'section_start',
+	            'id'      => 'global_style',
+	            'label'   => esc_html__( 'Item Typo', 'docfi-core' ),
+	            'tab'     => Controls_Manager::TAB_STYLE,
+	        ),
+
+			array(
+				'type'    => Controls_Manager::DIMENSIONS,
+				'id'      => 'item_padding',
+				'mode'    => 'responsive',
+				'label'   => esc_html__( 'Padding', 'docfi-core' ),
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .rt-card--style-4' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			),
+
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'item_border',				
+				'label'   => esc_html__( 'Item Border Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4' => 'border-color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'hover_item_border',				
+				'label'   => esc_html__( 'Item Hover Border Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4:hover' => 'border-color: {{VALUE}}',
+				),
+			),
+			array(
+				'mode' => 'section_end',
+			),
+
 			// Title style
 			array(
 	            'mode'    => 'section_start',
 	            'id'      => 'sec_title_style',
-	            'label'   => esc_html__( 'Title Typo', 'docfi-core' ),
+	            'label'   => esc_html__( 'Title & Topics Style', 'docfi-core' ),
 	            'tab'     => Controls_Manager::TAB_STYLE,
 	        ),
 	        array(
 				'mode'    => 'group',
 				'type'    => Group_Control_Typography::get_type(),
 				'name'    => 'title_typo',
-				'label'   => esc_html__( 'Title Style', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .rt-logo-default .logo-box .entry-title',
+				'label'   => esc_html__( 'Title Typography', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-card--style-4 .card-title a',
 			),
 			array(
 				'type'    => Controls_Manager::COLOR,
 			 	'id'      => 'title_color',				
 				'label'   => esc_html__( 'Title Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-logo-default .logo-box .entry-title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-card--style-4 .card-title a' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'title_hover_color',				
+				'label'   => esc_html__( 'Title Hover Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-title a:hover' => 'color: {{VALUE}}',
 				),
 			),
 			array(
@@ -158,62 +252,77 @@ class RT_Logo_Slider extends Custom_Widget_Base {
 	            'id'      => 'title_margin',
 	            'label'   => __( 'Title Margin', 'docfi-core' ),                 
 	            'selectors' => array(
-	                '{{WRAPPER}} .rt-logo-default .logo-box .entry-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
+	                '{{WRAPPER}} .rt-card--style-4 .card-title a' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
 	            ),
 	        ),
 			array(
-				'type'    => Controls_Manager::SLIDER,
-				'id'      => 'image_width',
-				'mode'          => 'responsive',
-				'label'   => esc_html__( 'Logo Width', 'docfi-core' ),
-				'size_units' => array( '%', 'px' ),
-				'range' => array(
-					'%' => array(
-						'min' => 1,
-						'max' => 100,
-					),
-					'px' => array(
-						'min' => 1,
-						'max' => 300,
-					),
-				),
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'topics_count',				
+				'label'   => esc_html__( 'Topics Count Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-logo-default .logo-box img' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .rt-card--style-4 .card-info' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'mode' => 'section_end',
+			),
+
+			// Icon style
+			array(
+	            'mode'    => 'section_start',
+	            'id'      => 'sec_icon_style',
+	            'label'   => esc_html__( 'Icon Style', 'docfi-core' ),
+	            'tab'     => Controls_Manager::TAB_STYLE,
+	        ),
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'icon_color',				
+				'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn fill' => 'svg: {{VALUE}}',
 				),
 			),
 			array(
 				'type'    => Controls_Manager::COLOR,
-			 	'id'      => 'box_bg_color',				
-				'label'   => esc_html__( 'Box BG Color', 'docfi-core' ),
+			 	'id'      => 'icon_bg_color',				
+				'label'   => esc_html__( 'Icon BG Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-logo-grid .logo-box' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .rt-card--style-4 .card-btn' => 'background: {{VALUE}}',
 				),
-				'separator' => 'before',
-				'condition'   => array( 'style' => array( 'style2' ) ),
 			),
 			array(
-	            'type'    => Controls_Manager::DIMENSIONS,
-	            'mode'          => 'responsive',
-	            'size_units' => [ 'px', '%', 'em' ],
-	            'id'      => 'box_padding',
-	            'label'   => __( 'Box Padding', 'docfi-core' ),                 
-	            'selectors' => array(
-	                '{{WRAPPER}} .rt-logo-grid .logo-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
-	            ),				
-				'condition'   => array( 'style' => array( 'style2' ) ),
-	        ),
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'icon_border_color',				
+				'label'   => esc_html__( 'Border Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card .card-btn' => 'border-color: {{VALUE}}',
+				),
+			),
+			
 			array(
-	            'type'    => Controls_Manager::DIMENSIONS,
-	            'mode'          => 'responsive',
-	            'size_units' => [ 'px', '%', 'em' ],
-	            'id'      => 'box_radius',
-	            'label'   => __( 'Box Radius', 'docfi-core' ),                 
-	            'selectors' => array(
-	                '{{WRAPPER}} .rt-logo-grid .logo-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                    
-	            ),
-				'separator' => 'before',
-				'condition'   => array( 'style' => array( 'style2' ) ),
-	        ),
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'icon_hover_color',				
+				'label'   => esc_html__( 'Icon Hover Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn:hover svg' => 'fill: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'icon_hover_bg_color',				
+				'label'   => esc_html__( 'Icon Hover BG Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn:hover' => 'background: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'icon_hover_border_color',				
+				'label'   => esc_html__( 'Hover Border Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card .card-btn:hover' => 'border-color: {{VALUE}}',
+				),
+			),
 			array(
 				'mode' => 'section_end',
 			),
@@ -224,7 +333,6 @@ class RT_Logo_Slider extends Custom_Widget_Base {
 				'id'      => 'sec_nav_option',
 				'label'   => esc_html__( 'Nav Option', 'docfi-core' ),
 				'tab'     => Controls_Manager::TAB_STYLE,
-				'condition'   => array( 'style' => array( 'style1' ) ),
 			),
 			array(
 				'type'        => Controls_Manager::SWITCHER,
@@ -490,196 +598,8 @@ class RT_Logo_Slider extends Custom_Widget_Base {
 			array(
 				'mode' => 'section_end',
 			),
-			// Responsive Grid Columns
-			array(
-				'mode'    => 'section_start',
-				'id'      => 'sec_responsive',
-				'label'   => esc_html__( 'Number of Responsive Columns', 'docfi-core' ),
-				'condition'   => array( 'style' => array( 'style2' ) ),
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'col_xl',
-				'label'   => esc_html__( 'Desktops: > 1199px', 'docfi-core' ),
-				'options' => $this->rt_translate['cols'],
-				'default' => '3',
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'col_lg',
-				'label'   => esc_html__( 'Desktops: > 991px', 'docfi-core' ),
-				'options' => $this->rt_translate['cols'],
-				'default' => '3',
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'col_md',
-				'label'   => esc_html__( 'Tablets: > 767px', 'docfi-core' ),
-				'options' => $this->rt_translate['cols'],
-				'default' => '4',
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'col_sm',
-				'label'   => esc_html__( 'Phones: < 768px', 'docfi-core' ),
-				'options' => $this->rt_translate['cols'],
-				'default' => '6',
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'col_xs',
-				'label'   => esc_html__( 'Small Phones: < 480px', 'docfi-core' ),
-				'options' => $this->rt_translate['cols'],
-				'default' => '12',
-			),
-			array(
-				'mode' => 'section_end',
-			),
-			// Responsive Slider Columns
-			array(
-				'mode'        => 'section_start',
-				'id'          => 'sec_slider_pervice',
-				'label'       => esc_html__( 'PerView Options', 'docfi-core' ),
-				'condition'   => array( 'style' => array( 'style1' ) ),
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'desktop',
-				'label'   => esc_html__( 'Desktops: > 1600px', 'docfi-core' ),
-				'default' => '5',
-				'options' => array(
-					'1' => esc_html__( '1', 'docfi-core' ),
-					'2' => esc_html__( '2', 'docfi-core' ),
-					'3' => esc_html__( '3',  'docfi-core' ),
-					'4' => esc_html__( '4',  'docfi-core' ),
-					'5' => esc_html__( '5',  'docfi-core' ),
-					'6' => esc_html__( '6',  'docfi-core' ),
-				),
-			),
 
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'md_desktop',
-				'label'   => esc_html__( 'Desktops: > 1200px', 'docfi-core' ),
-				'default' => '4',
-				'options' => array(
-					'1' => esc_html__( '1', 'docfi-core' ),
-					'2' => esc_html__( '2', 'docfi-core' ),
-					'3' => esc_html__( '3',  'docfi-core' ),
-					'4' => esc_html__( '4',  'docfi-core' ),
-					'5' => esc_html__( '5',  'docfi-core' ),
-					'6' => esc_html__( '6',  'docfi-core' ),
-				),
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'sm_desktop',
-				'label'   => esc_html__( 'Desktops: > 992px', 'docfi-core' ),
-				'default' => '3',
-				'options' => array(
-					'1' => esc_html__( '1', 'docfi-core' ),
-					'2' => esc_html__( '2', 'docfi-core' ),
-					'3' => esc_html__( '3',  'docfi-core' ),
-					'4' => esc_html__( '4',  'docfi-core' ),
-				),
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'tablet',
-				'label'   => esc_html__( 'Tablets: > 768px', 'docfi-core' ),
-				'default' => '2',
-				'options' => array(
-					'1' => esc_html__( '1', 'docfi-core' ),
-					'2' => esc_html__( '2', 'docfi-core' ),
-					'3' => esc_html__( '3',  'docfi-core' ),
-				),
-			),
-			array(
-				'type'    => Controls_Manager::SELECT2,
-				'id'      => 'mobile',
-				'label'   => esc_html__( 'Phones: > 576px', 'docfi-core' ),
-				'default' => '1',
-				'options' => array(
-					'1' => esc_html__( '1', 'docfi-core' ),
-					'2' => esc_html__( '2', 'docfi-core' ),
-					'3' => esc_html__( '3',  'docfi-core' ),
-					'4' => esc_html__( '4',  'docfi-core' ),
-				),
-			),
-			array(
-				'mode' => 'section_end',
-			),
-			// Slider options
-			array(
-				'mode'        => 'section_start',
-				'id'          => 'sec_slider',
-				'label'       => esc_html__( 'Slider Options', 'docfi-core' ),
-				'condition'   => array( 'style' => array( 'style1' ) ),
-			),			
-			array(
-				'type'        => Controls_Manager::SWITCHER,
-				'id'          => 'slider_autoplay',
-				'label'       => esc_html__( 'Autoplay', 'docfi-core' ),
-				'label_on'    => esc_html__( 'On', 'docfi-core' ),
-				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
-				'default'     => 'yes',
-				'description' => esc_html__( 'Enable or disable autoplay. Default: On', 'docfi-core' ),
-			),
-			array(
-				'type'    => Controls_Manager::SLIDER,
-				'mode' 			=> 'responsive',
-				'id'      => 'slides_per_group',
-				'label'   => esc_html__( 'slides Per Group', 'docfi-core' ),
-				'default' => array(
-					'size' => 1,
-				),
-				'description' => esc_html__( 'slides Per Group. Default: 1', 'docfi-core' ),
-			),
-			array(
-				'type'        => Controls_Manager::SWITCHER,
-				'id'          => 'centered_slides',
-				'label'       => esc_html__( 'Centered Slides', 'docfi-core' ),
-				'label_on'    => esc_html__( 'On', 'docfi-core' ),
-				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
-				'default'     => 'no',
-				'description' => esc_html__( 'Centered Slides. Default: On', 'docfi-core' ),
-				
-			),
-			array(
-				'type'        => Controls_Manager::NUMBER,
-				'id'          => 'slides_space',
-				'label'       => esc_html__( 'Slides Space', 'docfi-core' ),
-				'default'     => 24,
-				'description' => esc_html__( 'Slides Space. Default: 10', 'docfi-core' ),
-			),		
-			array(
-				'type'    => Controls_Manager::NUMBER,
-				'id'      => 'slider_autoplay_delay',
-				'label'   => esc_html__( 'Autoplay Slide Delay', 'docfi-core' ),
-				'default' => 5000,
-				'description' => esc_html__( 'Set any value for example 5 seconds to play it in every 5 seconds. Default: 5 Seconds', 'docfi-core' ),
-				'condition'   => array( 'slider_autoplay' => 'yes' ),
-			),
-			array(
-				'type'    => Controls_Manager::NUMBER,
-				'id'      => 'slider_autoplay_speed',
-				'label'   => esc_html__( 'Autoplay Slide Speed', 'docfi-core' ),
-				'default' => 1000,
-				'description' => esc_html__( 'Set any value for example .8 seconds to play it in every 2 seconds. Default: .8 Seconds', 'docfi-core' ),
-				'condition'   => array( 'slider_autoplay' => 'yes' ),
-			),
-			array(
-				'type'        => Controls_Manager::SWITCHER,
-				'id'          => 'slider_loop',
-				'label'       => esc_html__( 'Loop', 'docfi-core' ),
-				'label_on'    => esc_html__( 'On', 'docfi-core' ),
-				'label_off'   => esc_html__( 'Off', 'docfi-core' ),
-				'default'     => 'yes',
-				'description' => esc_html__( 'Loop to first item. Default: On', 'docfi-core' ),
-			),
-			array(
-				'mode' => 'section_end',
-			),
+			
 		);
 		return $fields;
 	}
@@ -716,16 +636,8 @@ class RT_Logo_Slider extends Custom_Widget_Base {
 			'auto'   =>$data['slider_autoplay']
 		);
 
-		switch ( $data['style'] ) {
-			case 'style2':
-			$template = 'rt-logo-grid';
-			break;
-			default:
-			$data['swiper_data'] = json_encode( $swiper_data ); 
-			$template = 'rt-logo-slider';
-			break;
-		}
-		
+		$template = 'rt-forum-slider';
+		$data['swiper_data'] = json_encode( $swiper_data );
 		return $this->rt_template( $template, $data );
 	}
 }

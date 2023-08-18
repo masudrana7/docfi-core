@@ -13,6 +13,10 @@ use \WP_Query;
 $col_class = "col-xl-{$data['col_xl']} col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['col_sm']} col-xs-{$data['col_xs']}";
 
 ?>
+
+
+
+
 <div class="rt-logo-default rt-logo-grid">
 	<div class="row <?php echo esc_attr( $data['item_space'] );?>">		
         <?php $i = $data['delay']; $j = $data['duration']; ?>

@@ -36,11 +36,7 @@ class RT_Image extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Image Style', 'docfi-core' ),
 				'options' => array(
 					'style1' => esc_html__( 'Single Image' , 'docfi-core' ),
-					'style2' => esc_html__( 'Image Shape 01', 'docfi-core' ),
-					'style3' => esc_html__( 'Image Shape 02', 'docfi-core' ),
-					'style4' => esc_html__( 'Image Shape 03', 'docfi-core' ),
-					'style5' => esc_html__( 'Image Shape 04', 'docfi-core' ),
-					'style6' => esc_html__( 'Image Shape 05', 'docfi-core' ),
+					'flicker-animation' => esc_html__( 'Flicker Animation' , 'docfi-core' ),
 				),
 				'default' => 'style1',
 			),
@@ -77,16 +73,6 @@ class RT_Image extends Custom_Widget_Base {
                     'url' => Utils::get_placeholder_image_src(),
                 ),
 				'description' => esc_html__( 'Recommended full image', 'docfi-core' ),
-			),
-			array(
-				'type'    => Controls_Manager::MEDIA,
-				'id'      => 'rt_image2',
-				'label'   => esc_html__( 'Image Shape', 'docfi-core' ),
-				'default' => array(
-                    'url' => Utils::get_placeholder_image_src(),
-                ),
-				'description' => esc_html__( 'Recommended full image', 'docfi-core' ),
-				'condition'   => array( 'style' => array( 'style2', 'style3', 'style6' ) ),
 			),
 			array(
 				'type'    => Group_Control_Image_Size::get_type(),
@@ -183,31 +169,9 @@ class RT_Image extends Custom_Widget_Base {
 		);
 		return $fields;
 	}
-
 	protected function render() {
 		$data = $this->get_settings();
-
-		switch ( $data['style'] ) {
-			case 'style6':
-			$template = 'rt-image-6';
-			break;
-			case 'style5':
-			$template = 'rt-image-5';
-			break;
-			case 'style4':
-			$template = 'rt-image-4';
-			break;
-			case 'style3':
-			$template = 'rt-image-3';
-			break;
-			case 'style2':			
-			$template = 'rt-image-2';
-			break;
-			default:
-			$template = 'rt-image-1';
-			break;
-		}
-	
+		$template = 'rt-image-1';
 		return $this->rt_template( $template, $data );
 	}
 }

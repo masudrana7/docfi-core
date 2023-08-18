@@ -45,7 +45,7 @@ use Elementor\Utils;
     </div>
     <div class="search-text d-sm-flex wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="900ms">
         <p><span><?php echo wp_kses_post( $data['popular_text'] ); ?></span> 
-            <ul class="rt-search-key">
+            <ul class="rt-search-key rt-addon-search">
                 <?php foreach ( $data['word_repeat'] as $rtword ) {?>
                     <li class="keyword"><a href="#"><?php echo wp_kses_post($rtword['searches_word']); ?></a></li>
                 <?php } ?>

@@ -35,16 +35,12 @@ class RT_Docs_Search extends Custom_Widget_Base {
 				'id'    => 'section_general',
 				'label' => __( 'General', 'docfi-core' )
 			),
-			
 			array(
 				'type'    => Controls_Manager::TEXT,
 				'id'      => 'popular_text',
 				'label'   => esc_html__( 'Popular Text', 'docfi-core' ),
 				'default' => 'Popular:',
 			),
-
-		
-
 			array(
 				'type'    => Controls_Manager::REPEATER,
 				'id'      => 'word_repeat',
@@ -55,7 +51,6 @@ class RT_Docs_Search extends Custom_Widget_Base {
 					['title' => 'January', ],
 				),
 			),
-
 			array(
 				'mode'  => 'section_end'
 			),
@@ -71,30 +66,44 @@ class RT_Docs_Search extends Custom_Widget_Base {
 				'type'    => Group_Control_Typography::get_type(),
 				'name'    => 'cat_typo',
 				'label'   => esc_html__( 'Category Typo', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .rt-docs-search .rt-dropdown .rt-btn',
-			),
-			array(
-				'mode'    => 'group',
-				'type'    => Group_Control_Typography::get_type(),
-				'name'    => 'button_typo',
-				'label'   => esc_html__( 'Button Typo', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .rt-docs-search .input-group-append button',
+				'selector' => '{{WRAPPER}} .rt-searchbox-container .current',
 			),
 			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'cat_color',
 				'label'   => __( 'Category Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-docs-search .rt-drop-menu li a' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .rt-docs-search .rt-dropdown .rt-btn' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-searchbox-container .current' => 'color: {{VALUE}}',
 				),
+			),
+			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'cat_typo_drop',
+				'label'   => esc_html__( 'Dropdown Category Typo', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-searchbox-container .list li',
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'cat_color_drop',
+				'label'   => __( 'Dropdown Category Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-searchbox-container .list li' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'button_typo',
+				'label'   => esc_html__( 'Button Typo', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .searchbox-submit .rt-searchbox-btn',
 			),
 			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'button_color',
 				'label'   => __( 'Button Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-docs-search .input-group-append button' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .searchbox-submit .rt-searchbox-btn' => 'color: {{VALUE}}',
 				),
 			),
 			array(
@@ -102,7 +111,24 @@ class RT_Docs_Search extends Custom_Widget_Base {
 				'id'      => 'button_bg_color',
 				'label'   => __( 'Button BG Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-docs-search .input-group-append button' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .searchbox-submit .rt-searchbox-btn' => 'background-color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'searchkey',
+				'label'   => __( 'Search Key Title Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-search-key li:before' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-hero-section-content-wrapper .search-text span' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'searchkey_text',
+				'label'   => __( 'Search Key Text Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-search-key li a' => 'color: {{VALUE}}',
 				),
 			),
 			array(
