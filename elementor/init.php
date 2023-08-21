@@ -55,6 +55,8 @@ class Custom_Widget_Init {
 			'rt-image'					=> 'RT_Image',
 			'rt-forum-slider'			=> 'RT_Forum_Slider',
 			'rt-forum-list'				=> 'RT_Forum_List',
+			'rt-topic-list'				=> 'RT_Topics_List',
+			'rt-forum-status'			=> 'RT_Forum_Status',
 			'rt-table'					=> 'RT_Table',
 			'rt-timeline'				=> 'RT_TimeLine',
 			'rt-post-grid'				=> 'RT_Post_Grid',

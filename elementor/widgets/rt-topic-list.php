@@ -11,11 +11,11 @@ use Elementor\Group_Control_Typography;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class RT_Forum_List extends Custom_Widget_Base {
+class RT_Topics_List extends Custom_Widget_Base {
 
 	public function __construct( $data = [], $args = null ){
-		$this->rt_name = esc_html__( 'RT Forum List', 'docfi-core' );
-		$this->rt_base = 'rt-forum-list';
+		$this->rt_name = esc_html__( 'RT Topic List', 'docfi-core' );
+		$this->rt_base = 'rt-topic-list';
 		parent::__construct( $data, $args );
 	}
 
@@ -265,7 +265,7 @@ class RT_Forum_List extends Custom_Widget_Base {
 
 	protected function render() {
 		$data = $this->get_settings();		
-		$template = 'rt-forum-list';
+		$template = 'rt-topic-list';
 		return $this->rt_template( $template, $data );
 	}
 }

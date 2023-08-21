@@ -6,16 +6,13 @@
  */
 
 namespace radiustheme\Docfi_Core;
-use NiftricTheme;
-use NiftricTheme_Helper;
+use DocfiTheme;
+use DocfiTheme_Helper;
 use \WP_Query;
 
 $col_class = "col-xl-{$data['col_xl']} col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['col_sm']} col-xs-{$data['col_xs']}";
 
 ?>
-
-
-
 
 <div class="rt-logo-default rt-logo-grid">
 	<div class="row <?php echo esc_attr( $data['item_space'] );?>">		

@@ -6,13 +6,10 @@
  */
 
 namespace radiustheme\Docfi_Core;
-use NiftricTheme;
-use NiftricTheme_Helper;
+use DocfiTheme;
+use DocfiTheme_Helper;
 use \WP_Query;
 ?>
-
-
-
 
 <div class="rt-forum-wrapper rt-swiper-nav">
 	<div class="rt-swiper-slider" data-xld ="<?php echo esc_attr( $data['swiper_data'] );?>">
