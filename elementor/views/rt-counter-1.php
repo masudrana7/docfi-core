@@ -17,8 +17,8 @@ if ( is_array( $icon_class['value'] ) ) {
 }
 ?>
 
-<div class="rt-counter-box">
-	<div class="rt-item d-flex align-items-center <?php if( $data['item_angle'] == 'yes' ) { ?>item-angle<?php } ?> <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
+<div class="rt-counter-box <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
+	<div class="rt-item d-flex align-items-center <?php if( $data['item_angle'] == 'yes' ) { ?>item-angle<?php } ?>">
 		<?php if ( $data['showhide'] == 'yes' ) { ?>
 		<div class="icon">
 			<?php if ( $final_icon_image_url ): ?>

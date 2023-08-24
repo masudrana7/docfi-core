@@ -121,7 +121,6 @@ class Docs_Featured_Post extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Word count', 'consulty-core' ),
 				'default' => 15,
 				'description' => esc_html__( 'Maximum number of words', 'consulty-core' ),
-				'condition'   => array( 'excerpt_display' =>'yes' ),
 			),
             array(
                 'mode' => 'section_end',

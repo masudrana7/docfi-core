@@ -45,6 +45,14 @@ class RT_Social_Icons extends Custom_Widget_Base {
 			]
 		);
 		$repeater->add_control(
+			'title', array(
+				'type' => Controls_Manager::TEXT,
+				'label' => esc_html__( 'Title', 'docfi-core' ),
+				'default' => esc_html__( 'Social' , 'docfi-core' ),
+				'label_block' => true,
+            )
+		);
+		$repeater->add_control(
 			'icon_color', [
 				'type' => Controls_Manager::COLOR,
 				'label'   => esc_html__( 'Icon Color', 'techkit-core' ),
@@ -53,12 +61,12 @@ class RT_Social_Icons extends Custom_Widget_Base {
 			]
 		);
 		$repeater->add_control(
-			'title', array(
-				'type' => Controls_Manager::TEXT,
-				'label' => esc_html__( 'Title', 'docfi-core' ),
-				'default' => esc_html__( 'Social' , 'docfi-core' ),
+			'icon_bg', [
+				'type' => Controls_Manager::COLOR,
+				'label'   => esc_html__( 'Icon BG Color', 'techkit-core' ),
+				'default'  => '',
 				'label_block' => true,
-            )
+			]
 		);
 		$fields = array(
 			array(

@@ -36,10 +36,12 @@ class RT_Image extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Image Style', 'docfi-core' ),
 				'options' => array(
 					'style1' => esc_html__( 'Single Image' , 'docfi-core' ),
+					'parallax-image' => esc_html__( 'Parallax Image' , 'docfi-core' ),
 					'flicker-animation' => esc_html__( 'Flicker Animation' , 'docfi-core' ),
 				),
 				'default' => 'style1',
 			),
+			
 			array(
 				'type' => Controls_Manager::CHOOSE,
 				'id'      => 'content_align',
@@ -97,6 +99,22 @@ class RT_Image extends Custom_Widget_Base {
 					'{{WRAPPER}} .rt-image-banner .rt-banner-item img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			),
+
+			array(
+				'id'      => 'image_opacity',
+				'label' => esc_html__( 'Image Opacity', 'elementor' ),
+				'type' => Controls_Manager::SLIDER,
+				'range' => [
+					'px' => [
+						'min' => 0.01,
+						'max' => 1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .rt-image-banner img' => 'opacity: {{SIZE}};',
+				],
+			),
+
 			array(
 				'mode' => 'section_end',
 			),

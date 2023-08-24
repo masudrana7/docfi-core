@@ -28,7 +28,6 @@ $has_icon = ( ! $is_new || ! empty( $testimonial['selected_icon']['value'] ) );
 						<div class="<?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $m );?>s" data-wow-duration="<?php echo esc_attr( $n );?>s">			
 							<div class="item-content" <?php if( $testimonial['item_color'] ) { ?> style="background-color: <?php echo esc_attr( $testimonial['item_color'] ); ?>" <?php } ?>>
 
-
 								<?php if( $data['quote_display'] == 'yes' ) { ?>
 								<span class="tquote"><?php Icons_Manager::render_icon( $data['selected_icon'] ); ?></span>
 								<?php } ?>

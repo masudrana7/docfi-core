@@ -20,13 +20,10 @@ $getimg = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_imag
 
 <div class="join-community-wrapper d-flex justify-content-around align-items-center flex-wrap">
 	<div class="join-community-text-content d-flex justify-content-center align-items-center flex-wrap text-center text-md-start">
-		<div class="icon wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms">
-			<img src="images/icons/problem-solve1.svg" alt="">
-		</div>
 		<?php if( !empty( $getimg ) ) { ?>
-		<div class="icon wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms"><?php echo wp_kses_post($getimg);?></div>
+		<div class="icon wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms"><?php echo wp_kses_post($getimg);?></div>
 		<?php } ?>
-		<div class="title-area wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="500ms">
+		<div class="title-area wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
 			<h3 class="title">
 				<?php echo wp_kses_post( $data['title'] ) ?>
 			</h3>
@@ -37,6 +34,6 @@ $getimg = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_imag
 	</div>
 
 	<?php if( !empty( $data['buttontext'] ) ) { ?>
-		<a <?php echo $attr; ?> class="coolBeans join-community-btn wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="600ms"><?php echo esc_html( $data['buttontext'] );?></a>
+		<a <?php echo $attr; ?> class="coolBeans join-community-btn wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms"><?php echo esc_html( $data['buttontext'] );?></a>
 	<?php } ?>
 </div>

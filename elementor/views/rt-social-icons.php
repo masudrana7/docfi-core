@@ -20,7 +20,7 @@ use Elementor\Icons_Manager;
 	        }
 		?>
 		<div class="footer-social">
-			<a aria-label="Social Link" class="<?php echo wp_kses_post( $social_icons['title'] ); ?>" <?php echo $attr; ?> ><?php Icons_Manager::render_icon( $social_icons['social_icon'] ); ?></a>
+			<a <?php if( $social_icons['icon_color'] || $social_icons['icon_bg'] ) { ?> style="color: <?php echo esc_attr( $social_icons['icon_color'] ); ?>; background:<?php echo esc_attr( $social_icons['icon_bg'] ); ?>" <?php } ?> aria-label="Social Link" class="<?php echo wp_kses_post( $social_icons['title'] ); ?>" <?php echo $attr; ?> ><?php Icons_Manager::render_icon( $social_icons['social_icon'] ); ?></a>
 		</div>
 		<?php endforeach; ?> 
 	</div>

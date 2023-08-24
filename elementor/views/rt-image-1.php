@@ -28,8 +28,18 @@ else {
 
 ?>
 
-<div class="rt-image-banner rt-banner-<?php echo esc_attr( $data['style'] );?>">
+<?php if($data['style'] !== 'parallax-image'){?>
+<div class="rt-image-banner rt-banner-<?php echo esc_attr( $data['style'] );?> ">
 	<div class="rt-banner-item <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
 		<div class="rt-image bouncing-bubble-animation"><?php echo wp_kses_post($getimg);?></div>
 	</div>
 </div>
+<?php }else { ?>
+	<div class="rt-mouse-parallax">
+		<div data-depth="5.00">
+			<?php echo wp_kses_post($getimg);?>
+		</div>
+	</div>
+<?php } ?>
+
+

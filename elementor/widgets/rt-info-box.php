@@ -192,7 +192,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'selector' => '{{WRAPPER}} .rt-card, {{WRAPPER}} .rt-info-box'
 
 			),
-
 			array(
 				'mode'    => 'group',
 				'type'    => Group_Control_Box_Shadow::get_type(),
@@ -201,8 +200,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'selector' => '{{WRAPPER}} .rt-card:hover, {{WRAPPER}} .rt-info-box:hover'
 
 			),
-
-
 			array(
 				'mode' => 'section_end',
 			),

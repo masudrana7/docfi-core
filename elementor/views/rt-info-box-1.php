@@ -40,7 +40,6 @@ if ( is_array( $icon_class['value'] ) ) {
 }
 ?>
 
-
 <div class="rt-card rt-card--style-1 rt-color-shade1-bg rt-border-radius-style-1 <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
 	<div class="icon rt-color-shade4-bg rt-border-radius-style-2">
 		<?php if ( !empty( $data['icontype']== 'image' ) ) { ?>		            

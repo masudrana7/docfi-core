@@ -71,6 +71,7 @@ class Custom_Widget_Init {
 			'rt-counter'				=> 'RT_Counter',
 			'rt-testimonial'			=> 'RT_Testimonials',
 			'rt-accordion'				=> 'RT_Accordion',
+			'rt-tab'					=> 'RT_Tab',
 		);
 		
 

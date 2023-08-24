@@ -110,7 +110,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                                             $query->the_post(); 
                                             $id            	= get_the_id();
                                             $excerpt        = wp_trim_words( get_the_excerpt(), $excerpt_count, '' );
-                                            $p_checkbox  = get_post_meta($id, 'docly_check_post', true);
+                                            $p_checkbox     = get_post_meta($id, 'docly_check_post', true);
                                             $p_color3   	= get_post_meta( $id, 'docfi_icon_bg', true );
                                             $icon_path   	= get_post_meta( $id, 'docfi_icon_img', true );
                                             $icon_id        = wp_get_attachment_image_src( $icon_path, 'full' );

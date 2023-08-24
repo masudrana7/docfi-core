@@ -27,14 +27,14 @@ $has_icon = ( ! $is_new || ! empty( $testimonial['selected_icon']['value'] ) );
                 <div class="row">
                     <?php if ( !empty( $testimonial['image']['id'] ) ) { ?>
                     <div class="col-md-12 col-lg-6 col-xl-6">
-                        <div class="testimonial-img-area d-none d-lg-block">
+                        <div class="testimonial-img-area d-none d-lg-block wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
                             <?php echo wp_get_attachment_image($testimonial['image']['id'],'full');?>
                         </div>
                     </div>
                     <?php } ?>
 
                     <!-- col end -->
-                    <div class="col-md-12 col-lg-6 col-xl-6 wow animate__fadeInRight animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms">
+                    <div class="col-md-12 col-lg-6 col-xl-6 wow fadeInRight" data-wow-duration="1200ms" data-wow-delay="400ms">
                         <div class="testimonial-item testimonial-item--style-2 text-center">
 
                             <?php if( $data['quote_display'] == 'yes' ) { ?>

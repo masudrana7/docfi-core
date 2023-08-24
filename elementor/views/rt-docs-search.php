@@ -14,7 +14,7 @@ use Elementor\Utils;
     }
 ?>
 <div class="rt-hero-section-content-wrapper">
-    <div class="rt-searchbox-container <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s">
+    <div class="rt-searchbox-container">
         <form class="rt-searchbox-form d-flex justify-content-between align-items-center" role="search" method="get" action="<?php echo esc_url( get_post_type_archive_link( 'docfi_docs' ) ); ?>">
             <div class="searchbox-textfield">
                 <div class="input-area d-flex align-items-center">
@@ -38,12 +38,12 @@ use Elementor\Utils;
                 </select>
             </div>
             <div class="searchbox-submit">
-                <button class="coolBeans btn-dark rt-searchbox-btn" type="submit" class="search-btn"><?php esc_html_e( 'submit', 'docfi-core' );?>  
+                <button class="coolBeans btn-dark rt-searchbox-btn" type="submit" class="search-btn"><?php esc_html_e( 'Search', 'docfi-core' );?>  
             </div>
             <div id="rt_datafetch"></div>
         </form>
     </div>
-    <div class="search-text d-sm-flex wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="900ms">
+    <div class="search-text d-sm-flex">
         <p><span><?php echo wp_kses_post( $data['popular_text'] ); ?></span> 
             <ul class="rt-search-key rt-addon-search">
                 <?php foreach ( $data['word_repeat'] as $rtword ) {?>
