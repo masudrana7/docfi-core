@@ -23,7 +23,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
 ?>
 <div class="best-online-documentation-section section-padding">
     <div class="row">
-        <div class="col-lg-12 col-xl-4">
+        <div class="col-md-12 col-lg-4">
             <div class="tab-btn-wrapper">
                 <ul class="theme-logo-wrapper nav nav-pills" id="pills-tab" role="tablist">
                     <?php
@@ -78,7 +78,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
             </div>
         </div>
         <!-- col end -->
-        <div class="col-lg-12 col-xl-8 wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms">
+        <div class="col-md-12 col-lg-8 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
             <div class="tab-content" id="pills-tabContent">
                <?php
                     $i = 0; 

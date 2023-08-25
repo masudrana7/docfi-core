@@ -25,7 +25,7 @@ $gap_class = '';
 if ( $data['column_no_gutters'] == 'hide' ) {
    $gap_class  = 'no-gutters';
 }
-$col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['col_sm']} col-xs-{$data['col_xs']} "; ?>
+$col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['col_sm']} col-sm-{$data['col_xs']} "; ?>
 <div class="docs-default docs-multi-layout-1 rt-isotope-wrapper">
 
     <?php if ( $data['all_button'] == 'show' ) {?>
@@ -167,15 +167,11 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                                <?php echo esc_html($post_count);  echo esc_html_e(' articles', 'docfi'); ?> 
                             </a>
                         </div>
-
-
-
                         <div class="explore-topics-body">
                             <ul class="explore-topics-list">
                                 <?php echo $RTDocsItem; ?>
                             </ul>
                         </div>
-
                         <?php if ( $data['more_button'] == 'show' ) { ?>
                         <a href="<?php echo esc_url($group_id); ?>" class="view-all-btn"><?php echo esc_html( $data['see_button_text'] );?></a>
                         <?php } ?>

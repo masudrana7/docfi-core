@@ -52,7 +52,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                 <div class="<?php echo esc_attr( $col_class ); ?>">
                         
                     <a href="<?php echo esc_url($group_link); ?>">
-                        <div class="logo-card logo-card--style-1 d-flex justify-content-between align-items-center wow animate__fadeInLeft animate__animated">
+                        <div class="logo-card logo-card--style-1 d-flex justify-content-between align-items-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
                             <div class="logo">
                                 <?php if ( $image_id ) { ?>
                                     <img src="<?php echo $image_id[0]; ?>" />
