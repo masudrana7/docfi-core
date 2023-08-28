@@ -41,7 +41,7 @@ use \WP_Query;
 		));
 		$i = 0;
 		while($forums->have_posts()): $forums->the_post(); ?>
-			<ul id="bbp-forum-<?php echo esc_attr($i);?>" class="loop-item-0 bbp-forum-status-open bbp-forum-visibility-publish odd  post-3066 forum type-forum status-publish has-post-thumbnail hentry <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-duration="1200ms" data-wow-delay="500ms" data-wow-delay="<?php echo esc_attr( $i );?>s" data-wow-duration="<?php echo esc_attr( $j );?>s">
+			<ul id="bbp-forum-<?php echo esc_attr($i);?>" class="loop-item-0 bbp-forum-status-open bbp-forum-visibility-publish odd  post-3066 forum type-forum status-publish has-post-thumbnail hentry <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
 				<li class="bbp-forum-info rt-title-inner">
 					<?php if(has_post_thumbnail()){?>
 					<div class="rt-author-image">

@@ -55,9 +55,9 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                         <div class="logo-card logo-card--style-1 d-flex justify-content-between align-items-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
                             <div class="logo">
                                 <?php if ( $image_id ) { ?>
-                                    <img src="<?php echo $image_id[0]; ?>" />
+                                    <img src="<?php echo $image_id[0]; ?>" alt="logo" />
                                         <?php } else { ?>
-                                            <img src="assets/img/logo.svg" alt="">
+                                            <img src="assets/img/logo.svg" alt="logo">
                                         <?php }
                                     ?>
 

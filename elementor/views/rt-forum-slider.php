@@ -24,7 +24,7 @@ use \WP_Query;
 			?>
 
 			<!-- slide end -->
-			<div class="swiper-slide <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-duration="1200ms" data-wow-delay="500ms" data-wow-delay="<?php echo esc_attr( $i );?>s" data-wow-duration="<?php echo esc_attr( $j );?>s">	
+			<div class="swiper-slide <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $i );?>s" data-wow-duration="<?php echo esc_attr( $j );?>s">	
 				<div class="rt-card rt-card--style-4 text-center">
 					<?php if(has_post_thumbnail()){?>
 					<div class="icon d-flex justify-content-center align-items-center rt-border-radius-style-2">

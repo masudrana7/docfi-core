@@ -38,18 +38,17 @@ use Elementor\Utils;
                 </select>
             </div>
             <div class="searchbox-submit">
-                <button class="coolBeans btn-dark rt-searchbox-btn" type="submit" class="search-btn"><?php esc_html_e( 'Search', 'docfi-core' );?>  
+                <button class="search-btn coolBeans btn-dark rt-searchbox-btn" type="submit"><?php esc_html_e( 'Search', 'docfi-core' );?></button>  
             </div>
             <div id="rt_datafetch"></div>
         </form>
     </div>
-    <div class="search-text d-sm-flex">
-        <p><span><?php echo wp_kses_post( $data['popular_text'] ); ?></span> 
-            <ul class="rt-search-key rt-addon-search">
-                <?php foreach ( $data['word_repeat'] as $rtword ) {?>
-                    <li class="keyword"><a href="#"><?php echo wp_kses_post($rtword['searches_word']); ?></a></li>
-                <?php } ?>
-            </ul>
-        </p>
+    <div class="search-text d-md-flex">
+        <p><span><?php echo wp_kses_post( $data['popular_text'] ); ?></span> </p>
+        <ul class="rt-search-key rt-addon-search">
+            <?php foreach ( $data['word_repeat'] as $rtword ) {?>
+                <li class="keyword"><a href="#"><?php echo wp_kses_post($rtword['searches_word']); ?></a></li>
+            <?php } ?>
+        </ul>
     </div>
 </div>

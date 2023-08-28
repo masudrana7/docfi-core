@@ -55,13 +55,13 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                                 $count++; 
                             ?>
                             <li class="nav-item" role="presentation">
-                                <div class="logo-card logo-card--style-1 nav-link <?php if ( $count == 1 ) { ?>active<?php } ?> d-flex justify-content-between align-items-center wow animate__fadeInLeft animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms" id="pills-list--tab" data-bs-toggle="pill" data-bs-target="#pills-list-<?php echo esc_attr($count); ?>" type="button" role="tab" aria-controls="pills-list-" aria-selected="true">
+                                <div class="logo-card logo-card--style-1 nav-link <?php if ( $count == 1 ) { ?>active<?php } ?> d-flex justify-content-between align-items-center wow animate__fadeInLeft animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms" data-bs-toggle="pill" data-bs-target="#pills-list-<?php echo esc_attr($count); ?>" role="tab" aria-selected="true">
                                     <div class="logo">
                                         <?php 
                                             if ( $image_id ) { ?>
-                                                <img src="<?php echo $image_id[0]; ?>" />
+                                                <img src="<?php echo $image_id[0]; ?>" alt="logo"/>
                                                 <?php } else { ?>
-                                                    <img src="assets/img/logo.svg" alt="">
+                                                    <img src="assets/img/logo.svg" alt="logo">
                                                 <?php }
                                             ?>
                                         <p class="text"><?php echo esc_html( $data['cat_text'] );?></p>
@@ -99,14 +99,13 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                         $args['orderby'] = $post_sorting;
                         $query = new WP_Query( $args );
                     ?>
-                    <div class="tab-pane fade<?php if ( $i == 1 ) { ?> show active<?php } ?>" id="pills-list-<?php echo esc_attr($i); ?>" role="tabpanel" aria-labelledby="pills-list-<?php echo esc_attr($i); ?>-tab">
+                    <div class="tab-pane fade<?php if ( $i == 1 ) { ?> show active<?php } ?>" id="pills-list-<?php echo esc_attr($i); ?>" role="tabpanel">
                         <div class="best-documentation-info-wrapper">
                             <div class="row">
                                 <?php 
                         
                                     if ( $query->have_posts() ) {
                                         while ( $query->have_posts() ) {  
-                                           
                                             $query->the_post(); 
                                             $id            	= get_the_id();
                                             $excerpt        = wp_trim_words( get_the_excerpt(), $excerpt_count, '' );
@@ -121,7 +120,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                                                         <div class="icon d-flex justify-content-center align-items-center rt-color-shade4-bg rt-border-radius-style-2" style="--docfi-post-color: <?php echo esc_attr($p_color3); ?>;">
                                                             <?php 
                                                             if (!empty($icon_id[0])) { ?>
-                                                                <img src="<?php echo $icon_id[0]; ?>" />
+                                                                <img src="<?php echo $icon_id[0]; ?>" alt="icon" />
                                                                 <?php } else { ?>
                                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M6.66667 18.3333H13.3333C16.6833 18.3333 17.2833 16.9917 17.4583 15.3583L18.0833 8.69167C18.3083 6.65833 17.725 5 14.1667 5H5.83333C2.275 5 1.69166 6.65833 1.91666 8.69167L2.54166 15.3583C2.71666 16.9917 3.31666 18.3333 6.66667 18.3333Z" stroke="#F84436" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -144,7 +143,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                                             <?php } ?> 
                                             <?php 
                                         }
-                                    } wp_reset_postdata(); 
+                                    } $i++; wp_reset_postdata(); 
                                 ?>
                             </div>
                         </div>
