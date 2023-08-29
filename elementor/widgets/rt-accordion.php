@@ -19,6 +19,8 @@ class RT_Accordion extends Custom_Widget_Base{
 		parent::__construct( $data, $args );
 	}
     public function rt_fields(){
+
+
         $repeater = new \Elementor\Repeater();
         $repeater->add_control(
 			'title', array(
@@ -232,7 +234,7 @@ class RT_Accordion extends Custom_Widget_Base{
 				'label'   => esc_html__( 'Background Color', 'docfi-core' ),
 				'default' => '',
 				'selectors' => array(
-					'{{WRAPPER}} .rt-accordion .rt-accordion-header' => 'background: {{VALUE}}',
+					'{{WRAPPER}} .rt-accordion .rt-accordion-header .rt-accordion-button' => 'background: {{VALUE}}',
 				),
 			),
             array(
