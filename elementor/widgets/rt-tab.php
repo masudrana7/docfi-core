@@ -39,7 +39,9 @@ class RT_Tab extends Custom_Widget_Base {
 				'default' => esc_html__( 'Sed ut perspiciatis unde omnis iste natus error sittery voluptatem accusantium doloremque lauda awrntiu totam rem aperiam, eaque ipsa quaed ieawr nven tore veritatis et quasi architecto' , 'docfi-core' ),
 				'label_block' => true,
             )
-		);	
+		);
+		
+		
 		$fields = array(
 			array(
 				'mode'    => 'section_start',
