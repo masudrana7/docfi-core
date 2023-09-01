@@ -30,7 +30,10 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 			<?php if( !empty( $instance['text_label'] ) ) { ?>
 				<h3 class="social-label"><?php echo wp_kses_post( $instance['text_label'] ); ?></h3>
 			<?php } ?>
-				<div class="rt-group-single-list rt-group-lists">
+
+
+			<div class="rt-group-single-list rt-group-lists">
+
 				<?php 
 				$args = array(
 					'taxonomy'   => 'docfi_docs_group',
@@ -87,7 +90,6 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 					$classes = in_array( $page_id, $current_inner_posts ) ? 'active' : '';?>
 
 					<div class="rt-single-sidebar-list rs-docs-click <?php echo esc_attr( $classes );?>" style="--docfi-red2: <?php echo absint( $r ); ?>;--docfi-green2: <?php echo absint( $g ); ?>;--docfi-blue2: <?php echo absint( $b ); ?>">
-
 						<div class="explore-topics-header">
 							<a href="#rt-<?php echo esc_attr($uid); ?>">
 								<div class="title-area d-flex align-items-center">
@@ -119,6 +121,8 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 				}
 				?> 
 			</div>	
+
+			
 		</div>
 		<?php 
 	}

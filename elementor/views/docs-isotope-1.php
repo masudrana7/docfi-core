@@ -177,8 +177,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                         <?php } ?>
                     </div>
                 </div>
-                <?php  }
-            }
+                <?php  } }
         ?> 
     </div>             
 </div>
