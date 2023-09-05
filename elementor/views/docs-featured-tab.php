@@ -103,7 +103,6 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                         <div class="best-documentation-info-wrapper">
                             <div class="row">
                                 <?php 
-                        
                                     if ( $query->have_posts() ) {
                                         while ( $query->have_posts() ) {  
                                             $query->the_post(); 
@@ -143,7 +142,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                                             <?php } ?> 
                                             <?php 
                                         }
-                                    } $i++; wp_reset_postdata(); 
+                                    } wp_reset_postdata(); 
                                 ?>
                             </div>
                         </div>

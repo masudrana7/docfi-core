@@ -21,9 +21,9 @@ $getimg = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_imag
 <div class="join-community-wrapper d-flex justify-content-around align-items-center flex-wrap">
 	<div class="join-community-text-content d-flex justify-content-center align-items-center flex-wrap text-center text-md-start">
 		<?php if( !empty( $getimg ) ) { ?>
-		<div class="icon wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms"><?php echo wp_kses_post($getimg);?></div>
+		<div class="icon"><?php echo wp_kses_post($getimg);?></div>
 		<?php } ?>
-		<div class="title-area wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
+		<div class="title-area">
 			<h3 class="title">
 				<?php echo wp_kses_post( $data['title'] ) ?>
 			</h3>
@@ -34,6 +34,6 @@ $getimg = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_imag
 	</div>
 
 	<?php if( !empty( $data['buttontext'] ) ) { ?>
-		<a <?php echo $attr; ?> class="coolBeans join-community-btn wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms"><?php echo esc_html( $data['buttontext'] );?></a>
+		<a <?php echo $attr; ?> class="coolBeans join-community-btn"><?php echo esc_html( $data['buttontext'] );?></a>
 	<?php } ?>
 </div>

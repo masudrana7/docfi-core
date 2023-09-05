@@ -3,7 +3,7 @@
 Plugin Name: Docfi Core
 Plugin URI: https://www.radiustheme.com
 Description: Docfi Core Plugin for Docfi Theme
-Version: 1.3
+Version: 1.0
 Author: RadiusTheme
 Author URI: https://www.radiustheme.com
 */

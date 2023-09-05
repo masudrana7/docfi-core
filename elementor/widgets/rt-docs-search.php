@@ -120,7 +120,6 @@ class RT_Docs_Search extends Custom_Widget_Base {
 				'id'      => 'searchkey',
 				'label'   => __( 'Search Key Title Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-search-key li:before' => 'color: {{VALUE}}',
 					'{{WRAPPER}} .rt-hero-section-content-wrapper .search-text span' => 'color: {{VALUE}}',
 				),
 			),
@@ -129,7 +128,17 @@ class RT_Docs_Search extends Custom_Widget_Base {
 				'id'      => 'searchkey_text',
 				'label'   => __( 'Search Key Text Color', 'docfi-core' ),
 				'selectors' => array(
+					'{{WRAPPER}} .rt-search-key li:before' => 'color: {{VALUE}}',
 					'{{WRAPPER}} .rt-search-key li a' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'searchkey_text_hover',
+				'label'   => __( 'Search Key Text Hover Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-search-key li:hover:before' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-search-key li a:hover' => 'color: {{VALUE}}',
 				),
 			),
 			array(

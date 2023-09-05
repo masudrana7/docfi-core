@@ -63,7 +63,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				),
 				'default' => '',
 				'selectors' => array(
-					'.rt-info-box' => 'text-align: {{VALUE}};',
+					'{{WRAPPER}} .rt-card, {{WRAPPER}} .rt-info-box' => 'text-align: {{VALUE}};',
 				),
 			),
 			/*Icon Start*/

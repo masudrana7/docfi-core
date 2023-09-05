@@ -132,8 +132,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                                     $term_links[] = $term->slug;
                                 } ?>
                                 <li>
-                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.96799 10L10.5 5.5L5.96799 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 10L5.53201 5.5L1 1" stroke="#6B707F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <i class="fa-solid fa-angles-right"></i><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </li>    
                                 <?php 
                             }
@@ -169,7 +168,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                         </div>
                         <div class="explore-topics-body">
                             <ul class="explore-topics-list">
-                                <?php echo $RTDocsItem; ?>
+                                <?php echo wp_kses_post( $RTDocsItem ); ?>
                             </ul>
                         </div>
                         <?php if ( $data['more_button'] == 'show' ) { ?>
