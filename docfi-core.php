@@ -57,16 +57,13 @@ class Docfi_Core {
 		require_once 'widget/forum-list.php';
 		require_once 'widget/rt-docs-post-list.php';
 		require_once 'widget/font-size-controller.php';
-		require_once 'widget/about-widget.php';
+
 		require_once 'widget/address-widget.php';
 		require_once 'widget/social-widget.php';
 		require_once 'widget/rt-post-box.php';
-		require_once 'widget/rt-post-tab.php';
-		require_once 'widget/rt-feature-post.php';
 		require_once 'widget/search-widget.php';
 		require_once 'widget/rt-product-box.php';
 		require_once 'widget/rt-category.php';
-		require_once 'widget/rt-download.php';
 		require_once 'widget/rt-contact.php';
 
 		require_once 'widget/widget-settings.php';

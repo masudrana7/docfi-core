@@ -59,28 +59,6 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docf
 					'options'  => $nav_menus,
 					'default'  => 'default',
 				),
-				"{$prefix}_top_bar" => array(
-					'label' 	  => __( 'Top Bar', 'docfi-core' ),
-					'type'  	  => 'select',
-					'options' => array(
-						'default' => __( 'Default', 'docfi-core' ),
-						'on'      => __( 'Enabled', 'docfi-core' ),
-						'off'     => __( 'Disabled', 'docfi-core' ),
-					),
-					'default'  	  => 'default',
-				),
-				"{$prefix}_top_bar_style" => array(
-					'label' 	=> __( 'Top Bar Layout', 'docfi-core' ),
-					'type'  	=> 'select',
-					'options'	=> array(
-						'default' => __( 'Default', 'docfi-core' ),
-						'1'       => __( 'Layout 1', 'docfi-core' ),
-						'2'       => __( 'Layout 2', 'docfi-core' ),
-						'3'       => __( 'Layout 3', 'docfi-core' ),
-						'4'       => __( 'Layout 4', 'docfi-core' ),
-					),
-					'default'   => 'default',
-				),
 				"{$prefix}_header_opt" => array(
 					'label' 	  => __( 'Header On/Off', 'docfi-core' ),
 					'type'  	  => 'select',
@@ -91,6 +69,7 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docf
 					),
 					'default'  	  => 'default',
 				),
+
 
 				"{$prefix}_cutom_logo" => array(
 					'label' => __( 'Header Dark Logo', 'docfi-core' ),
@@ -121,14 +100,18 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docf
 						'default' => __( 'Default', 'docfi-core' ),
 						'1'       => __( 'Layout 1', 'docfi-core' ),
 						'2'       => __( 'Layout 2', 'docfi-core' ),
-						'3'       => __( 'Layout 3', 'docfi-core' ),
-						'4'       => __( 'Layout 4', 'docfi-core' ),
-						'5'       => __( 'Layout 5', 'docfi-core' ),
-						'6'       => __( 'Layout 6', 'docfi-core' ),
-						'7'       => __( 'Layout 7', 'docfi-core' ),
-						'8'       => __( 'Layout 8', 'docfi-core' ),
 					),
 					'default'  => 'default',
+				),
+				"{$prefix}_header_width" => array(
+					'label' 	  => __( 'Header Width', 'docfi-core' ),
+					'type'  	  => 'select',
+					'options' => array(
+						'default' => __( 'Default', 'docfi-core' ),
+						'off'      => __( 'Container', 'docfi-core' ),
+						'on'     => __( 'Full Width Container', 'docfi-core' ),
+					),
+					'default'  	  => 'default',
 				),
 				"{$prefix}_footer" => array(
 					'label'   => __( 'Footer Layout', 'docfi-core' ),
@@ -137,7 +120,6 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docf
 						'default' => __( 'Default', 'docfi-core' ),
 						'1'       => __( 'Layout 1', 'docfi-core' ),
 						'2'       => __( 'Layout 2', 'docfi-core' ),
-						'3'       => __( 'Layout 3', 'docfi-core' ),
 					),
 					'default'  => 'default',
 				),
@@ -308,81 +290,6 @@ $Postmeta->add_meta_box( 'docfi_post_info', __( 'Post Info', 'docfi-core' ), arr
 			'desc'  => __( 'Only work for the gallery post format', 'docfi-core' ),
 		),
 	),
-) );
-
-/*-------------------------------------
-#. Team
----------------------------------------*/
-$Postmeta->add_meta_box( 'docfi_team_settings', __( 'Team Member Settings', 'docfi-core' ), array( 'docfi_team' ), '', '', 'high', array(
-	'fields' => array(
-		'docfi_team_position' => array(
-			'label' => __( 'Position', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_team_website' => array(
-			'label' => __( 'Website', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_team_email' => array(
-			'label' => __( 'Email', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_team_phone' => array(
-			'label' => __( 'Phone', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_team_address' => array(
-			'label' => __( 'Address', 'docfi-core' ),
-			'type'  => 'text',
-		),
-		'docfi_team_socials_header' => array(
-			'label' => __( 'Socials', 'docfi-core' ),
-			'type'  => 'header',
-			'desc'  => __( 'Enter your social links here', 'docfi-core' ),
-		),
-		'docfi_team_socials' => array(
-			'type'  => 'group',
-			'value'  => DocfiTheme_Helper::team_socials()
-		),
-	)
-) );
-
-$Postmeta->add_meta_box( 'docfi_team_skills', __( 'Team Member Skills', 'docfi-core' ), array( 'docfi_team' ), '', '', 'high', array(
-	'fields' => array(
-		'docfi_team_skill_info' => array(
-			'label' => __( 'Skill Info', 'docfi-core' ),
-			'type'  => 'textarea',
-		),
-		'docfi_team_skill' => array(
-			'type'  => 'repeater',
-			'button' => __( 'Add New Skill', 'docfi-core' ),
-			'value'  => array(
-				'skill_name' => array(
-					'label' => __( 'Skill Name', 'docfi-core' ),
-					'type'  => 'text',
-					'desc'  => __( 'eg. Marketing', 'docfi-core' ),
-				),
-				'skill_value' => array(
-					'label' => __( 'Skill Percentage (%)', 'docfi-core' ),
-					'type'  => 'text',
-					'desc'  => __( 'eg. 75', 'docfi-core' ),
-				),
-				'skill_color' => array(
-					'label' => __( 'Skill Color', 'docfi-core' ),
-					'type'  => 'color_picker',
-					'desc'  => __( 'If not selected, primary color will be used', 'docfi-core' ),
-				),
-			)
-		),
-	)
-) );
-$Postmeta->add_meta_box( 'docfi_team_contact', __( 'Team Member Contact', 'docfi-core' ), array( 'docfi_team' ), '', '', 'high', array(
-	'fields' => array(
-		'docfi_team_contact_form' => array(
-			'label' => __( 'Contct Shortcode', 'docfi-core' ),
-			'type'  => 'text',
-		),
-	)
 ) );
 
 
