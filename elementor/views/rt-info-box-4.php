@@ -42,8 +42,7 @@ if ( is_array( $icon_class['value'] ) ) {
 
 
 <div class="rt-card rt-card--style-8 <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
-	<div class="card-title d-flex align-items-center">
-
+	<div class="card-title">
 		<div class="icon">
 			<?php if ( !empty( $data['icontype']== 'image' ) ) { ?>		            
 				<span class="rt-img"><?php echo wp_kses_post($getimg);?></span>  

@@ -36,7 +36,7 @@ use \WP_Query;
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h3>
 					<p class="card-info circle-radius">
-						<?php bbp_forum_topic_count(get_the_ID()); ?> <?php esc_html_e('Posts', 'docfi') ?> 
+						<?php bbp_forum_topic_count(get_the_ID()); ?> <?php esc_html_e('Posts', 'docfi-core') ?> 
 					</p>
 					<a href="<?php the_permalink(); ?>" class="card-btn d-inline-flex justify-content-center align-items-center">
 						<svg width="13" height="11" viewBox="0 0 13 11" fill="#1D2746" xmlns="http://www.w3.org/2000/svg">
