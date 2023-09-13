@@ -43,34 +43,19 @@ class Demo_Importer {
 				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/',
 			),
 			'demo2' => array(
-				'title' => __( 'Factory', 'docfi-core' ),
+				'title' => __( 'Help Desk Home', 'docfi-core' ),
 				'screenshot' => plugins_url( 'screenshots/screenshot2.jpg', __FILE__ ),
-				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-02/',
+				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-two/',
 			),
 			'demo3' => array(
-				'title' => __( 'Industry', 'docfi-core' ),
+				'title' => __( 'Focused Helpdesk Home', 'docfi-core' ),
 				'screenshot' => plugins_url( 'screenshots/screenshot3.jpg', __FILE__ ),
-				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-03/',
+				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-three/',
 			),
 			'demo4' => array(
-				'title' => __( 'Construction', 'docfi-core' ),
+				'title' => __( 'Support Forum Home', 'docfi-core' ),
 				'screenshot' => plugins_url( 'screenshots/screenshot4.jpg', __FILE__ ),
 				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-04/',
-			),
-			'demo5' => array(
-				'title' => __( 'Manufacture', 'docfi-core' ),
-				'screenshot' => plugins_url( 'screenshots/screenshot5.jpg', __FILE__ ),
-				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-05/',
-			),
-			'demo6' => array(
-				'title' => __( 'Industry 02', 'docfi-core' ),
-				'screenshot' => plugins_url( 'screenshots/screenshot6.jpg', __FILE__ ),
-				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-06/',
-			),
-			'demo7' => array(
-				'title' => __( 'Factory Black', 'docfi-core' ),
-				'screenshot' => plugins_url( 'screenshots/screenshot7.jpg', __FILE__ ),
-				'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/docfi/home-07/',
 			),
 		);
 
@@ -100,9 +85,6 @@ class Demo_Importer {
 			'demo2'  => 8,
 			'demo3'  => 3914,
 			'demo4'  => 4007,
-			'demo5'  => 4023,
-			'demo6'  => 4170,
-			'demo7'  => 4359,
 		);
 
 		$data = $collection->to_array();
