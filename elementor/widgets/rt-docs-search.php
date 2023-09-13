@@ -31,10 +31,17 @@ class RT_Docs_Search extends Custom_Widget_Base {
 			)
 		);
 		$fields = array(
+			
 			array(
 				'mode'  => 'section_start',
 				'id'    => 'section_general',
 				'label' => __( 'General', 'docfi-core' )
+			),
+			array(
+				'type'    => Controls_Manager::TEXTAREA,
+				'id'      => 'placeholder',
+				'label'   => esc_html__( 'Placeholder Text', 'docfi-core' ),
+				'default' => esc_html__( 'What are you looking for?', 'docfi-core' ),
 			),
 			array(
 				'type'    => Controls_Manager::TEXT,

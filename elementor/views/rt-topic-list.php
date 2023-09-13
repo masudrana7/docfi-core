@@ -35,12 +35,16 @@ else {
 		$topics = new WP_Query(array(
 			'post_type' => 'topic',
 			'posts_per_page' 	=> $data['number'],
+			'type' => 'both',
+			'size'       => 80,
 			'paged' 			=> $paged,
 		));
 		
-		$i = 0;
-		while($topics->have_posts()): $topics->the_post(); ?>
-
+		while($topics->have_posts()): $topics->the_post(); 
+		$topic_id = bbp_get_topic_id(); 
+		$author_image_url = get_avatar_url(bbp_get_topic_author_id(), array('size' => 80)); 
+		$author_name = bbp_get_topic_author_display_name($topic_id);
+		?>
 			<ul id="bbp-topic-<?php bbp_topic_id(get_the_ID()); ?>" <?php bbp_topic_class(get_the_ID()); ?>>
 				<li class="bbp-topic-title">
 					<div class="rt-topices-title">
@@ -53,30 +57,35 @@ else {
 							<?php the_title(); ?>
 						</h5>
 						<div class="user-meta">
-							<span class="author"><?php printf( esc_html__( '%1$s', 'docfi-core' ), bbp_get_topic_author_link( array( 'size' => '14' ) ) ); ?></span>
-							<span class="topics-meta"><?php echo esc_html__('In:', 'docfi-core'); ?>
-								<a href="<?php bbp_forum_permalink(bbp_get_topic_forum_id(get_the_ID())); ?>">
-										<?php bbp_forum_title(bbp_get_topic_forum_id(get_the_ID())); ?>
-									</a>
+							<?php if(!empty($author_image_url)){ ?>
+							<span class="author">
+								<?php if ($author_image_url) {
+									echo '<img src="' . esc_url($author_image_url) . '" alt="Author Image" />';
+								} ?>
 							</span>
+							<?php } ?>
+							<?php if(!empty($author_name)){?>
+							<span class="bbp-author-name"><?php echo wp_kses_post($author_name); ?></span>
+							<?php } ?>
+							<span class="topics-meta">
+								<?php echo esc_html__('In:', 'docfi-core'); ?>
+								<a href="<?php bbp_forum_permalink(bbp_get_topic_forum_id(get_the_ID())); ?>">
+									<?php bbp_forum_title(bbp_get_topic_forum_id(get_the_ID())); ?>
+								</a>
+							</span>
+								
+
 						</div>
 					</div>
 				</li>
 				<li class="bbp-topic-voice-count"><?php bbp_topic_voice_count(get_the_ID()); ?></li>
-
 				<li class="bbp-topic-reply-count"><?php bbp_show_lead_topic(get_the_ID()) ? bbp_topic_reply_count(get_the_ID()) : bbp_topic_post_count(get_the_ID()); ?></li>
 				<li class="bbp-topic-freshness">
 					<?php echo bbp_get_forum_last_active_time(bbp_get_topic_forum_id(get_the_ID())) ?>
-					<p class="bbp-topic-meta">
-						<?php do_action( 'bbp_theme_before_topic_freshness_author' ); ?>
-						<span class="bbp-topic-freshness-author"><?php bbp_author_link( array( 'post_id' => bbp_get_topic_last_active_id(get_the_ID()), 'size' => 14 ) ); ?></span>
-						<?php do_action( 'bbp_theme_after_topic_freshness_author' ); ?>
-					</p>
 				</li>
 			</ul>
-			<?php $i++; endwhile; wp_reset_postdata(); ?>
+			<?php endwhile; wp_reset_postdata(); ?>
 		</li>
 	</ul>
 	<?php DocfiTheme_Helper::pagination( $topics  ); ?>
-	
 </div>

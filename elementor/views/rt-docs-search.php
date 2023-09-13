@@ -19,7 +19,7 @@ use Elementor\Utils;
             <div class="searchbox-textfield">
                 <div class="input-area d-flex align-items-center">
                     <div class="input-group-addon rt-input-wrap flex-grow-1">
-                        <input type="text" class="searchbox-input" name="search" id="searchInput" placeholder="Search in..." autocomplete="off">
+                        <input type="text" class="searchbox-input" name="search" id="searchInput" placeholder="<?php echo wp_kses_post( $data['placeholder'] ); ?>" autocomplete="off">
                         <span id="cleanText">x</span>
                     </div>   
                 </div>
