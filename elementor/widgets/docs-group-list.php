@@ -32,8 +32,6 @@ class Docs_Group_list extends Custom_Widget_Base {
     }
 
     public function rt_fields(){
-
-        
         $terms  = get_terms( array( 'taxonomy' => 'docfi_docs_group', 'fields' => 'id=>name' ) );
         $category_dropdown = array( '0' => __( 'Please Selecet Group', 'docfi-core' ) );
 
@@ -67,8 +65,6 @@ class Docs_Group_list extends Custom_Widget_Base {
             array(
                 'mode' => 'section_end',
             ),
-
-
             // Box Style
 			array(
 				'mode'    => 'section_start',

@@ -65,7 +65,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                 $term_name = get_term( $cat['cat_multi_box'], 'docfi_docs_category' );						
                 $cat_filter = $term_name->slug; ?>
 
-                <a style="--docfi-red: <?php echo absint( $r ); ?>;--docfi-green: <?php echo absint( $g ); ?>; --docfi-blue: <?php echo absint( $b ); ?>;" class="<?php if ( $count == 1 ) { ?>current<?php } ?>" href="#" data-filter=".<?php echo esc_attr( $cat_filter );?>"><?php echo esc_html( $term_name->name ); ?></a>
+                <a <?php if ( $data['menu_style'] == 'dynamic' ) { ?>style="--docfi-red: <?php echo absint( $r ); ?>;--docfi-green: <?php echo absint( $g ); ?>; --docfi-blue: <?php echo absint( $b ); ?>;" <?php } ?> class="<?php if ( $count == 1 ) { ?>current<?php } ?>" href="#" data-filter=".<?php echo esc_attr( $cat_filter );?>"><?php echo esc_html( $term_name->name ); ?></a>
             <?php } } }  ?>
         </div>
     </div>  
@@ -132,7 +132,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                                     $term_links[] = $term->slug;
                                 } ?>
                                 <li>
-                                    <i class="fa-solid fa-angles-right"></i><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <i class="fa-regular fa-file-lines"></i><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </li>    
                                 <?php 
                             }
@@ -142,7 +142,9 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                 ?>
 
                 <div class="<?php echo esc_attr( $col_class . ' ' . $term_slug ); ?> rt-grid-item">
-                    <div class="explore-topics-card" style="--docfi-red2: <?php echo absint( $r ); ?>;--docfi-green2: <?php echo absint( $g ); ?>;--docfi-blue2: <?php echo absint( $b ); ?>">
+
+
+                    <div class="explore-topics-card" <?php if ( $data['menu_style'] == 'dynamic' ) { ?>style="--docfi-red2: <?php echo absint( $r ); ?>;--docfi-green2: <?php echo absint( $g ); ?>;--docfi-blue2: <?php echo absint( $b ); ?>" <?php } ?>>
                         <div class="explore-topics-header d-flex justify-content-between align-items-center">
                             <div class="title-area d-flex align-items-center">
                                 <div style="background:#<?php echo esc_attr( $get_color ); ?>" class="icon d-flex justify-content-center align-items-center rt-color-shade12-bg">
@@ -162,7 +164,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                                     <a href="<?php echo esc_url($group_id); ?>"><?php echo esc_html( $docs_group->name );?></a>
                                 </h3>
                             </div>
-                            <a href="<?php echo esc_url($group_id); ?>" class="number-of-article">
+                            <a href="<?php echo esc_url($group_id); ?>" class="rt-underline number-of-article">
                                <?php echo esc_html($post_count);  echo esc_html_e(' articles', 'docfi'); ?> 
                             </a>
                         </div>

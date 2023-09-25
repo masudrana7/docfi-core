@@ -129,6 +129,17 @@ class Docs_Isotope extends Custom_Widget_Base {
             ),
             array(
                 'type'    => Controls_Manager::SELECT2,
+                'id'      => 'menu_style',
+                'label'   => esc_html__( 'Menu Style', 'docfi-core' ),
+                'options' => array(
+                    'dynamic'        => esc_html__( 'Dynamic Style', 'docfi-core' ),
+                    'manually'        => esc_html__( 'Manually', 'docfi-core' ),
+                ),
+                'default' => 'manually',
+                'condition'   => array( 'all_button' => array( 'show' ) ),
+            ),
+            array(
+                'type'    => Controls_Manager::SELECT2,
                 'id'      => 'more_button',
                 'label'   => esc_html__( 'More Button', 'docfi-core' ),
                 'options' => array(
@@ -185,7 +196,63 @@ class Docs_Isotope extends Custom_Widget_Base {
             array(
                 'mode' => 'section_end',
             ),
-            // Box Style
+
+            // Isotope Menu Style
+
+            array(
+				'mode'    => 'section_start',
+				'id'      => 'isotope_menu',
+				'label'   => esc_html__( 'Isotope Menu', 'docfi-core' ),
+				'tab'     => Controls_Manager::TAB_STYLE,
+                'condition'   => array( 'menu_style' => array( 'manually' ) ),
+			),
+
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'menu_color',
+                'label'   => esc_html__( 'Menu Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .rt-isotope-tab a' => 'color: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'menu_bg',
+                'label'   => esc_html__( 'Menu Background', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .rt-isotope-tab a' => 'background: {{VALUE}}',
+                ),
+            ),
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'menu_hover_color',
+                'label'   => esc_html__( 'Menu Active Color', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .rt-isotope-tab a:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .rt-isotope-tab a.current' => 'color: {{VALUE}}',
+                ),
+            ),
+
+            array (
+                'type'    => Controls_Manager::COLOR,
+                'id'      => 'menu_active_g',
+                'label'   => esc_html__( 'Menu Active Background', 'docfi-core' ),
+                'default' => '',
+                'selectors' => array( 
+                    '{{WRAPPER}} .rt-isotope-tab a:hover' => 'background: {{VALUE}}',
+                    '{{WRAPPER}} .rt-isotope-tab a.current' => 'background: {{VALUE}}',
+                ),
+            ),
+
+            array(
+                'mode' => 'section_end',
+            ),
+
+             // Box Style
+
 			array(
 				'mode'    => 'section_start',
 				'id'      => 'style_area',

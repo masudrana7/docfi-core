@@ -8,14 +8,23 @@
 namespace radiustheme\Docfi_Core;
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
-use Elementor\Group_Control_Box_Shadow;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-class RT_Forum_List extends Custom_Widget_Base {
+class RT_Forum_Grid extends Custom_Widget_Base {
 
 	public function __construct( $data = [], $args = null ){
-		$this->rt_name = esc_html__( 'RT Forum List', 'docfi-core' );
-		$this->rt_base = 'rt-forum-list';
+		$this->rt_name = esc_html__( 'RT Forum Grid', 'docfi-core' );
+		$this->rt_base = 'rt-forum-grid';
+		$this->rt_translate = array(
+			'cols'  => array(
+				'12' => esc_html__( '1 Col', 'docfi-core' ),
+				'6'  => esc_html__( '2 Col', 'docfi-core' ),
+				'4'  => esc_html__( '3 Col', 'docfi-core' ),
+				'3'  => esc_html__( '4 Col', 'docfi-core' ),
+				'2'  => esc_html__( '6 Col', 'docfi-core' ),
+			),
+		);
 		parent::__construct( $data, $args );
 	}
 
@@ -31,29 +40,60 @@ class RT_Forum_List extends Custom_Widget_Base {
 			array(
 				'type'    => Controls_Manager::NUMBER,
 				'id'      => 'number',
-				'label'   => esc_html__( 'Total number of items', 'docfi-core' ),
-				'default' => 10,
-				'description' => esc_html__( 'Write -1 to show all', 'docfi-core' ),
+				'label'   => esc_html__( 'Total number of items', 'faktorie-core' ),
+				'default' => -1,
+				'description' => esc_html__( 'Write -1 to show all', 'faktorie-core' ),
+			),
+
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'col_xl',
+				'label'   => esc_html__( 'Desktops: > 1199px', 'docfi-core' ),
+				'options' => $this->rt_translate['cols'],
+				'default' => '4',
 			),
 			array(
-				'type'        => Controls_Manager::SWITCHER,
-				'id'          => 'topbar_show',
-				'label'       => esc_html__( 'Topbar Display', 'docfi-core' ),
-				'label_on'    => esc_html__( 'Show', 'docfi-core' ),
-				'label_off'   => esc_html__( 'Hide', 'docfi-core' ),
-				'default'     => 'yes',
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'col_lg',
+				'label'   => esc_html__( 'Desktops: > 991px', 'docfi-core' ),
+				'options' => $this->rt_translate['cols'],
+				'default' => '4',
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'col_md',
+				'label'   => esc_html__( 'Tablets: > 767px', 'docfi-core' ),
+				'options' => $this->rt_translate['cols'],
+				'default' => '6',
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'col_sm',
+				'label'   => esc_html__( 'Phones: < 768px', 'docfi-core' ),
+				'options' => $this->rt_translate['cols'],
+				'default' => '6',
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'col_xs',
+				'label'   => esc_html__( 'Small Phones: < 480px', 'docfi-core' ),
+				'options' => $this->rt_translate['cols'],
+				'default' => '12',
 			),
 			array(
 				'mode' => 'section_end',
 			),
 
 			// Global style
+
 			array(
 	            'mode'    => 'section_start',
 	            'id'      => 'global_style',
 	            'label'   => esc_html__( 'Item Typo', 'docfi-core' ),
 	            'tab'     => Controls_Manager::TAB_STYLE,
 	        ),
+
+			
 
 			array(
 				'type'    => Controls_Manager::DIMENSIONS,
@@ -62,69 +102,26 @@ class RT_Forum_List extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Padding', 'docfi-core' ),
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
-					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-				],
-			),
-
-			array(
-				'type'    => Controls_Manager::DIMENSIONS,
-				'id'      => 'item_margin',
-				'mode'    => 'responsive',
-				'label'   => esc_html__( 'Margin', 'docfi-core' ),
-				'size_units' => [ 'px', '%' ],
-				'selectors' => [
-					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .rt-card--style-4' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
 			),
 
 			array(
 				'type'    => Controls_Manager::COLOR,
 			 	'id'      => 'item_bg',				
-				'label'   => esc_html__( 'Item Background', 'docfi-core' ),
+				'label'   => esc_html__( 'Item Background Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} #bbpress-forums ul' => 'background: {{VALUE}}',
-					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum' => 'background: {{VALUE}}',
-				),
-			),
-
-			array(
-				'mode'    => 'group',
-				'type'    => Group_Control_Box_Shadow::get_type(),
-				'name'      => 'item_boxshadow',
-				'label'   => esc_html__( 'Box Shadow', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum'
-
-			),
-
-			array(
-				'type'    => Controls_Manager::COLOR,
-			 	'id'      => 'item_border',				
-				'label'   => esc_html__( 'Item Border Color', 'docfi-core' ),
-				'selectors' => array(
-					'{{WRAPPER}} #bbpress-forums ul.bbp-forums' => 'border-color: {{VALUE}}',
-					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum' => 'border-color: {{VALUE}}',
+					'{{WRAPPER}} .rt-card--style-4' => 'background: {{VALUE}}',
 				),
 			),
 			array(
 				'type'    => Controls_Manager::COLOR,
-			 	'id'      => 'hover_item_border',				
-				'label'   => esc_html__( 'Item Hover Border Color', 'docfi-core' ),
+			 	'id'      => 'hover_item_bg',				
+				'label'   => esc_html__( 'Item Hover Background Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} #bbpress-forums ul.bbp-forums:hover' => 'border-color: {{VALUE}}',
-					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum:hover' => 'border-color: {{VALUE}}',
+					'{{WRAPPER}} .rt-card--style-4:hover' => 'background: {{VALUE}}',
 				),
 			),
-			array(
-	            'type'    => Controls_Manager::DIMENSIONS,
-	            'mode'          => 'responsive',
-	            'size_units' => [ 'px', '%', 'em' ],
-	            'id'      => 'border_radius',
-	            'label'   => __( 'Box Radius', 'docfi-core' ),                 
-	            'selectors' => array(
-	                '{{WRAPPER}} #bbpress-forums ul' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                 
-	            ),
-	            'separator' => 'before',
-	        ),
 			array(
 				'mode' => 'section_end',
 			),
@@ -156,7 +153,7 @@ class RT_Forum_List extends Custom_Widget_Base {
 			 	'id'      => 'title_hover_color',				
 				'label'   => esc_html__( 'Title Hover Color', 'docfi-core' ),
 				'selectors' => array(
-					'{{WRAPPER}} .rt-card--style-4 .card-title a:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-card--style-4:hover .card-title a' => 'color: {{VALUE}}',
 				),
 			),
 			array(
@@ -175,6 +172,14 @@ class RT_Forum_List extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Topics Count Color', 'docfi-core' ),
 				'selectors' => array(
 					'{{WRAPPER}} .rt-card--style-4 .card-info' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'topics_count_hover',				
+				'label'   => esc_html__( 'Topics Count Hover Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4:hover .card-info' => 'color: {{VALUE}}',
 				),
 			),
 			array(
@@ -240,7 +245,7 @@ class RT_Forum_List extends Custom_Widget_Base {
 			array(
 				'mode' => 'section_end',
 			),
-			
+		
 			
 			// Animation style
 			array(
@@ -316,8 +321,7 @@ class RT_Forum_List extends Custom_Widget_Base {
 
 	protected function render() {
 		$data = $this->get_settings();		
-		$template = 'rt-forum-list';
+		$template = 'rt-forum-grid';
 		return $this->rt_template( $template, $data );
-		
 	}
 }

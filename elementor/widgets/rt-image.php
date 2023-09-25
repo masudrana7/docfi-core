@@ -126,6 +126,22 @@ class RT_Image extends Custom_Widget_Base {
 	            'tab'     => Controls_Manager::TAB_STYLE,
 	        ),
 			array(
+				'type'    => Controls_Manager::SLIDER,
+				'id'      => 'image_width',
+				'label'   => esc_html__( 'Icon Box Width', 'docfi-core' ),
+				'range' => [
+					'px' => [
+						'max' => 1000,
+						'min' => 5,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .rt-mouse-parallax img' => 'max-width: {{SIZE}}px',
+					'{{WRAPPER}} .rt-image img' => 'max-width: {{SIZE}}px',
+				],
+				
+			),
+			array(
 				'type'    => Controls_Manager::SELECT2,
 				'id'      => 'animation',
 				'label'   => esc_html__( 'Animation', 'docfi-core' ),

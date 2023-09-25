@@ -10,7 +10,7 @@ namespace radiustheme\Docfi_Core;
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Css_Filter;
-
+use Elementor\Group_Control_Border;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 class RT_Post_Grid extends Custom_Widget_Base {
@@ -337,6 +337,14 @@ class RT_Post_Grid extends Custom_Widget_Base {
 	            'separator' => 'before',
 	        ),
 			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Border::get_type(),
+				'name'      => 'item_border',
+				'label'   => esc_html__( 'Item Border', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-post-grid-default .rt-item'
+
+			),
+			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'box_bg_color',
 				'label'   => esc_html__( 'Box Background Color', 'docfi-core' ),
@@ -570,6 +578,17 @@ class RT_Post_Grid extends Custom_Widget_Base {
 					'{{WRAPPER}} .rt-post-grid-default .rt-item .rt-image img' => 'height: {{SIZE}}{{UNIT}};',
 				),
 			),
+			array(
+	            'type'    => Controls_Manager::DIMENSIONS,
+	            'mode'          => 'responsive',
+	            'size_units' => [ 'px', '%', 'em' ],
+	            'id'      => 'image_border_radius',
+	            'label'   => __( 'Box Radius', 'docfi-core' ),                 
+	            'selectors' => array(
+	                '{{WRAPPER}} .rt-post-grid-default .rt-item .rt-image' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',                 
+	            ),
+	            'separator' => 'before',
+	        ),
 	        array(
 				'mode' => 'section_end',
 			),

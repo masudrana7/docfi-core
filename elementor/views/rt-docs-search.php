@@ -13,6 +13,7 @@ use Elementor\Utils;
         $category_dropdown[$category->term_id] = $category->name;
     }
 ?>
+
 <div class="rt-hero-section-content-wrapper">
     <div class="rt-searchbox-container">
         <form class="rt-searchbox-form d-flex justify-content-between align-items-center" role="search" method="get" action="<?php echo esc_url( get_post_type_archive_link( 'docfi_docs' ) ); ?>">
@@ -24,6 +25,7 @@ use Elementor\Utils;
                     </div>   
                 </div>
             </div>
+            <?php if($data['category_show'] == 'yes'){?>
             <div class="category-selector">
                 <select name="categories" id="categories">
                     <?php foreach ( $category_dropdown as $key => $value ): ?>
@@ -31,9 +33,18 @@ use Elementor\Utils;
                     <?php endforeach; ?>
                 </select>
             </div>
+            <?php } ?>
             <div class="searchbox-submit">
-                <button class="search-btn coolBeans btn-dark rt-searchbox-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i><?php esc_html_e( 'Search', 'docfi-core' );?></button>  
-            </div>
+                <?php if($data['btn_text'] == 'yes'){  ?>
+                    <button class="search-btn coolBeans btn-dark rt-searchbox-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>
+                        <?php   
+                            esc_html_e( 'Search', 'docfi-core' );
+                        ?>
+                </button>  
+                <?php } else { ?>
+                    <button class="search-btn rt-search-hide-text coolBeans btn-dark rt-searchbox-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>  
+                <?php } ?>
+             </div>
             <div id="rt_datafetch"></div>
         </form>
     </div>
@@ -46,3 +57,5 @@ use Elementor\Utils;
         </ul>
     </div>
 </div>
+
+

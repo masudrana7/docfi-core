@@ -23,7 +23,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
 ?>
 <div class="best-online-documentation-section section-padding">
     <div class="row">
-        <div class="col-md-12 col-lg-4">
+        <div class="col-md-12 col-lg-4 pr-0">
             <div class="tab-btn-wrapper">
                 <ul class="theme-logo-wrapper nav nav-pills" id="pills-tab" role="tablist">
                     <?php
@@ -60,8 +60,6 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
                                         <?php 
                                             if ( $image_id ) { ?>
                                                 <img src="<?php echo $image_id[0]; ?>" alt="logo"/>
-                                                <?php } else { ?>
-                                                    <img src="assets/img/logo.svg" alt="logo">
                                                 <?php }
                                             ?>
                                         <p class="text"><?php echo esc_html( $data['cat_text'] );?></p>
@@ -78,7 +76,7 @@ foreach ( $data['posts_not_in'] as $p_idsn ) {
             </div>
         </div>
         <!-- col end -->
-        <div class="col-md-12 col-lg-8 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
+        <div class="col-md-12 pl-0 col-lg-8 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
             <div class="tab-content" id="pills-tabContent">
                <?php
                     $i = 0; 

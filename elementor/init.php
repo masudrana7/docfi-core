@@ -53,6 +53,7 @@ class Custom_Widget_Init {
 			'docs-group-single'			=> 'Docs_Group_Single',
 			'rt-title'					=> 'RT_Title',
 			'rt-image'					=> 'RT_Image',
+			'rt-forum-grid'				=> 'RT_Forum_Grid',
 			'rt-forum-slider'			=> 'RT_Forum_Slider',
 			'rt-forum-list'				=> 'RT_Forum_List',
 			'rt-topic-list'				=> 'RT_Topics_List',

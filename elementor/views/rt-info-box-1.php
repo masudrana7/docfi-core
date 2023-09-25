@@ -8,6 +8,7 @@
 namespace radiustheme\Docfi_Core;
 use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
+use Elementor\Icons_Manager;
 extract($data);
 
 $attr = '';
@@ -40,27 +41,33 @@ if ( is_array( $icon_class['value'] ) ) {
 }
 ?>
 
-<div class="rt-card rt-card--style-1 rt-color-shade1-bg rt-border-radius-style-1 <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
-	<div class="icon rt-color-shade4-bg rt-border-radius-style-2">
-		<?php if ( !empty( $data['icontype']== 'image' ) ) { ?>		            
-			<span class="rt-img"><?php echo wp_kses_post($getimg);?></span>  
-		<?php }else{?> 	
-		<?php if ( $final_icon_image_url ): ?>
-			<span class="rt-icon"><img src="<?php echo esc_url( $final_icon_image_url ); ?>" alt="SVG Icon"></span>
-		<?php else: ?>
-			<span class="rt-icon"><i class="<?php  echo esc_attr( $final_icon_class ); ?>"></i></span>
-		<?php endif ?>
-		<?php }  ?>
+<div class="rt-card rt-card--style-1 rt-color-shade1-bg rt-border-radius-style-1 icon_postion_<?php echo esc_attr( $data['icon_postion'] );?> <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
+	<div class="icon rt-border-radius-style-2">
+		<?php
+			if (!empty($data['icontype']) && $data['icontype'] == 'image') {
+				echo '<span class="rt-img">' . wp_kses_post($getimg) . '</span>';
+			} elseif ($data['icon_class']) {
+				echo '<span class="rt-icon">';
+				Icons_Manager::render_icon($data['icon_class']);
+				echo '</span>';
+			} else {
+				echo '<span class="rt-icon"><i>' . esc_attr($final_icon_class) . '</i></span>';
+			}
+		?>
 	</div>
-	<?php if(!empty($title)){?>		
-	<h3 class="card-title"><?php echo wp_kses_post( $title );?></h3>
-	<?php } ?>
-	<?php if(!empty($content)){?>		
-	<p class="card-info">
-		<?php echo wp_kses_post( $data['content'] );?>
-	</p>
-	<?php } ?>
-	<?php if(!empty($buttontext)){?>
-		<a <?php echo $attr; ?> class="coolBeans card-btn"><?php echo wp_kses_post( $data['buttontext'] );?></a>
-	<?php } ?>
+
+	<div class="rt-cart-content">		
+		<?php if(!empty($title)){?>		
+		<h3 class="card-title"><?php echo wp_kses_post( $title );?></h3>
+		<?php } ?>
+		<?php if(!empty($content)){?>		
+		<p class="card-info">
+			<?php echo wp_kses_post( $data['content'] );?>
+		</p>
+		<?php } ?>
+		<?php if(!empty($buttontext)){?>
+			<a <?php echo $attr; ?> class="coolBeans card-btn"><?php echo wp_kses_post( $data['buttontext'] );?></a>
+		<?php } ?>
+	</div>
+
 </div>

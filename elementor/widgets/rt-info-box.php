@@ -39,6 +39,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 					'style3' => esc_html__( 'Info Style 3', 'docfi-core' ),
 					'style4' => esc_html__( 'Info Style 4', 'docfi-core' ),
 					'style5' => esc_html__( 'Info Style 5', 'docfi-core' ),
+					'style6' => esc_html__( 'Info Style 6', 'docfi-core' ),
 				),
 				'default' => 'style1',
 			),
@@ -67,6 +68,19 @@ class RT_Info_Box extends Custom_Widget_Base {
 				),
 			),
 			/*Icon Start*/
+
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'icon_postion',
+				'label'   => esc_html__( 'Style', 'docfi-core' ),
+				'options' => array(
+					'left' => esc_html__( 'Icon Left', 'docfi-core' ),
+					'top' => esc_html__( 'Icon Top', 'docfi-core' ),
+				),
+				'default' => 'left',
+				'condition'   => array('style' => array( 'style1' ) ),
+			),
+			
 			array(					 
 			   'type'    => Controls_Manager::CHOOSE,
 			   'options' => array(
@@ -112,7 +126,9 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'name' => 'icon_image_size', 
 				'separator' => 'none',		
 				'condition'   => array('icontype' => array( 'image' ) ),
-			),			
+			),	
+			
+			
 			/*Icon end*/
 			array(
 				'type'    => Controls_Manager::TEXT,
@@ -155,10 +171,11 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'box_bg_color',
 				'label'   => esc_html__( 'Box Background Color', 'docfi-core' ),
-				'default' => '',
 				'selectors' => array(
 					'{{WRAPPER}} .rt-card' => 'background-color: {{VALUE}}',
 					'{{WRAPPER}} .rt-info-box' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-style6:before' => 'background: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-style6:after' => 'background: {{VALUE}}',
 				),
 			),
 			array(
@@ -201,6 +218,15 @@ class RT_Info_Box extends Custom_Widget_Base {
 
 			),
 			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'box_bg_hover_color',
+				'label'   => esc_html__( 'Box Hover BG Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-box:hover' => 'background-color: {{VALUE}}',
+				),
+			),
+			array(
 				'mode' => 'section_end',
 			),
 
@@ -216,7 +242,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'type'    => Group_Control_Typography::get_type(),
 				'name'    => 'title_typo',
 				'label'   => esc_html__( 'Title Typo', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} .rt-title, {{WRAPPER}} .card-title a, {{WRAPPER}} .card-title',
+				'selector' => '{{WRAPPER}} .card-title .title, {{WRAPPER}} .rt-title, {{WRAPPER}} .card-title',
 			),
 			array(
 				'type'    => Controls_Manager::COLOR,
@@ -225,6 +251,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'default' => '',
 				'selectors' => array(
 					'{{WRAPPER}} .rt-title, {{WRAPPER}} .card-title a, {{WRAPPER}} .card-title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-box .rt-button a:before' => 'background: {{VALUE}}',
 				),
 			),
 			array(
@@ -233,7 +260,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Title Hover Color', 'docfi-core' ),
 				'default' => '',
 				'selectors' => array(
-					'{{WRAPPER}} .card-title:hover a, {{WRAPPER}} .card-title:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-card:hover .card-title a, {{WRAPPER}} .rt-card:hover .card-title' => 'color: {{VALUE}}',
 				),
 				'condition'   => array( 'style' => array( 'style1' ) ),
 			),
@@ -285,6 +312,15 @@ class RT_Info_Box extends Custom_Widget_Base {
 				),
 			),
 			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'conent_hover_color',
+				'label'   => esc_html__( 'Content Hover Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover .card-info' => 'color: {{VALUE}}',
+				),
+			),
+			array(
 				'type'    => Controls_Manager::SLIDER,
 				'id'      => 'content_space',
 				'mode'          => 'responsive',
@@ -313,7 +349,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'id'      => 'sec_icon',
 				'label'   => esc_html__( 'Icon Style', 'docfi-core' ),
 				'tab'     => Controls_Manager::TAB_STYLE,
-				'condition'   => array( 'style' => array( 'style1', 'style5' ) ),
+				'condition'   => array( 'style' => array( 'style1', 'style6', 'style5' ) ),
 			),			
 			array(
 				'type'    => Controls_Manager::NUMBER,
@@ -325,27 +361,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 				),
 				'condition'   => array('icontype' => array( 'icon' ) ),
 			),
-			
-			array(
-				'type'    => Controls_Manager::COLOR,
-				'id'      => 'icon_bg_color',
-				'label'   => esc_html__( 'Icon BG Color', 'docfi-core' ),
-				'default' => '',
-				'selectors' => array(
-					'{{WRAPPER}} .rt-card .icon' => 'background-color: {{VALUE}}',
-				),
-			),
-			array(
-				'type'    => Controls_Manager::COLOR,
-				'id'      => 'icon_color',
-				'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
-				'default' => '',
-				'selectors' => array(
-					'{{WRAPPER}} .rt-icon svg' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .rt-icon i' => 'color: {{VALUE}}',
-				),
-				'condition'   => array('icontype' => array( 'icon' ) ),
-			),	
 			array(
 				'type'    => Controls_Manager::SLIDER,
 				'id'      => 'icon_width',
@@ -357,7 +372,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .rt-card--style-1 .icon' => 'max-width: {{SIZE}}px',
+					'{{WRAPPER}} .rt-card--style-1 .icon' => 'min-width: {{SIZE}}px',
 				],
 				
 			),
@@ -427,6 +442,189 @@ class RT_Info_Box extends Custom_Widget_Base {
 					'{{WRAPPER}} .rt-card--style-1 .icon' => 'margin-bottom: {{SIZE}}{{UNIT}};',
 				),
 			),
+			array(
+				'mode' => 'section_end',
+			),
+
+			// Icon style 4
+			array(
+				'mode'    => 'section_start',
+				'id'      => 'sec_icon_4',
+				'label'   => esc_html__( 'Icon Style', 'docfi-core' ),
+				'tab'     => Controls_Manager::TAB_STYLE,
+				'condition'   => array( 'style' => array('style4') ),
+			),			
+			array(
+				'type'    => Controls_Manager::SLIDER,
+				'id'      => 'icon_width_4',
+				'label'   => esc_html__( 'Icon Box Width', 'docfi-core' ),
+				'range' => [
+					'px' => [
+						'max' => 1500,
+						'min' => 5,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .card-title .icon .rt-icon' => 'min-width: {{SIZE}}px',
+				],
+				
+			),
+			array(
+				'type'    => Controls_Manager::SLIDER,
+				'id'      => 'icon_height_4',
+				'label'   => esc_html__( 'Icon Box Height', 'docfi-core' ),
+				'range' => [
+					'px' => [
+						'max' => 1500,
+						'min' => 5,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .card-title .icon .rt-icon' => 'height: {{SIZE}}px',
+				],
+				
+			),
+			array(
+				'type'    => Controls_Manager::SLIDER,
+				'id'      => 'line_height_4',
+				'label'   => esc_html__( 'Line Box Height', 'docfi-core' ),
+				'range' => [
+					'px' => [
+						'max' => 1500,
+						'min' => 5,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .card-title .icon .rt-icon' => 'line-height: {{SIZE}}px',
+				],
+				
+			),
+			array(
+				'type'    => Controls_Manager::SLIDER,
+				'id'      => 'icon_img_width_4',
+				'label'   => esc_html__( 'SVG & Image icon Width', 'docfi-core' ),
+				'range' => [
+					'px' => [
+						'max' => 1500,
+						'min' => 5,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .card-title .icon .rt-icon svg' => 'width: {{SIZE}}px',
+					'{{WRAPPER}} .card-title .icon .rt-icon img' => 'width: {{SIZE}}px',
+				],
+				
+			),
+			array(
+				'type'    => Controls_Manager::SLIDER,
+				'id'      => 'icon_space_4',
+				'mode'          => 'responsive',
+				'label'   => esc_html__( 'Icon Space', 'docfi-core' ),
+				'size_units' => array( '%', 'px' ),
+				'range' => array(
+					'%' => array(
+						'min' => 0,
+						'max' => 100,
+					),
+					'px' => array(
+						'min' => 0,
+						'max' => 100,
+					),
+				),
+				'selectors' => array( 
+					'{{WRAPPER}} .card-title .icon .rt-icon' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+				),
+			),
+
+			// Tab For Normal view.
+
+			array(
+				'mode' => 'tabs_start',
+				'id'   => 'icon_tab_area_4',
+			),			
+			array(
+				'mode'  => 'tab_start',
+				'id'    => 'icon_normarl_syle_4',
+				'label' => esc_html__( 'Normal', 'docfi-core' ),
+			),
+
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_color_4',
+				'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .card-title .icon .rt-icon svg' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .card-title .icon .rt-icon i' => 'color: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+				
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_stroke_color_4',
+				'label'   => esc_html__( 'Icon Stroke Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .card-title .icon .rt-icon path' => 'stroke: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_bg_color_4',
+				'label'   => esc_html__( 'Icon BG Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .card-title .icon .rt-icon' => 'background-color: {{VALUE}}',
+				),
+			),
+
+			array(
+				'mode' => 'tab_end',
+			),
+
+			array(
+				'mode'  => 'tab_start',
+				'id'    => 'icon_hover_syle_4',
+				'label' => esc_html__( 'Hover', 'docfi-core' ),
+			),
+
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_hover_color_4',
+				'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover .rt-icon svg' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .rt-card:hover .rt-icon i' => 'color: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+				
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_hover_stroke_color_4',
+				'label'   => esc_html__( 'Icon Stroke Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover .rt-icon path' => 'stroke: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_hover_bg_color_4',
+				'label'   => esc_html__( 'Icon BG Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover .card-title .icon .rt-icon' => 'background-color: {{VALUE}}',
+				),
+			),
+			
+			array(
+				'mode' => 'tab_end',
+			),
+
+			array(
+				'mode' => 'tabs_end',
+			),
+
+
 			array(
 				'mode' => 'section_end',
 			),
@@ -623,6 +821,9 @@ class RT_Info_Box extends Custom_Widget_Base {
 		$data = $this->get_settings();
 
 		switch ( $data['style'] ) {
+			case 'style6':
+			$template = 'rt-info-box-6';
+			break;
 			case 'style5':
 			$template = 'rt-info-box-5';
 			break;

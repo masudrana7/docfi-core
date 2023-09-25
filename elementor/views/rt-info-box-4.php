@@ -8,6 +8,7 @@
 namespace radiustheme\Docfi_Core;
 use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
+use Elementor\Icons_Manager;
 extract($data);
 
 $attr = '';
@@ -44,17 +45,19 @@ if ( is_array( $icon_class['value'] ) ) {
 <div class="rt-card rt-card--style-8 <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
 	<div class="card-title">
 		<div class="icon">
-			<?php if ( !empty( $data['icontype']== 'image' ) ) { ?>		            
-				<span class="rt-img"><?php echo wp_kses_post($getimg);?></span>  
-			<?php }else{?> 	
-			<?php if ( $final_icon_image_url ): ?>
-				<span class="rt-icon"><img src="<?php echo esc_url( $final_icon_image_url ); ?>" alt="SVG Icon"></span>
-			<?php else: ?>
-				<span class="rt-icon"><i class="<?php  echo esc_attr( $final_icon_class ); ?>"></i></span>
-			<?php endif ?>
-			<?php }  ?>	
+			<?php
+				if (!empty($data['icontype']) && $data['icontype'] == 'image') {
+					echo '<span class="rt-img">' . wp_kses_post($getimg) . '</span>';
+				} elseif ($data['icon_class']) {
+					echo '<span class="rt-icon">';
+					Icons_Manager::render_icon($data['icon_class']);
+					echo '</span>';
+				} else {
+					echo '<span class="rt-icon"><i>' . esc_attr($final_icon_class) . '</i></span>';
+				}
+			?>
 		</div>
-		<span class="title"><?php echo wp_kses_post( $data['title'] );?></span>
+		<h3 class="title"><?php echo wp_kses_post( $data['title'] );?></h3>
 	</div>
 	<?php if ( !empty( $data['content'] ) ) { ?>
 	<p class="card-info"><?php echo wp_kses_post( $data['content'] );?></p>
