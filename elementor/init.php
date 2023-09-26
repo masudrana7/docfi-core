@@ -43,7 +43,6 @@ class Custom_Widget_Init {
 		
 		// Widgets -- filename=>classname /@dev
 		$widgets1 = array(
-			
 			'content-toggle'			=> 'Content_Toggle',
 			'docs-isotope'		    	=> 'Docs_Isotope',
 			'docs-featured-tabs'		=> 'Docs_Featured_Post',
@@ -74,10 +73,7 @@ class Custom_Widget_Init {
 			'rt-accordion'				=> 'RT_Accordion',
 			'rt-tab'					=> 'RT_Tab',
 		);
-		
-
 		$widgets = array_merge( $widgets1 );
-		
 		foreach ( $widgets as $widget => $class ) {
 			$template_name = "/elementor-custom/widgets/{$widget}.php";
 			if ( file_exists( STYLESHEETPATH . $template_name ) ) {

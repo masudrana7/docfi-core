@@ -442,6 +442,93 @@ class RT_Info_Box extends Custom_Widget_Base {
 					'{{WRAPPER}} .rt-card--style-1 .icon' => 'margin-bottom: {{SIZE}}{{UNIT}};',
 				),
 			),
+
+			array(
+				'mode' => 'tabs_start',
+				'id'   => 'icon_tab_area',
+			),			
+			array(
+				'mode'  => 'tab_start',
+				'id'    => 'icon_normarl_syle',
+				'label' => esc_html__( 'Normal', 'docfi-core' ),
+			),
+
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_color',
+				'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card svg' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .rt-card i' => 'color: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+				
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_stroke_color',
+				'label'   => esc_html__( 'Icon Stroke Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card .rt-icon path' => 'stroke: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_bg_color',
+				'label'   => esc_html__( 'Icon BG Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card .icon' => 'background-color: {{VALUE}}',
+				),
+			),
+
+			array(
+				'mode' => 'tab_end',
+			),
+
+			array(
+				'mode'  => 'tab_start',
+				'id'    => 'icon_hover_syle',
+				'label' => esc_html__( 'Hover', 'docfi-core' ),
+			),
+
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_hover_color',
+				'label'   => esc_html__( 'Icon Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover .rt-icon svg' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .rt-card:hover .rt-icon i' => 'color: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+				
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_hover_stroke_color',
+				'label'   => esc_html__( 'Icon Stroke Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover .rt-icon path' => 'stroke: {{VALUE}}',
+				),
+				'condition'   => array('icontype' => array( 'icon' ) ),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'icon_hover_bg_color',
+				'label'   => esc_html__( 'Icon BG Color', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card:hover .icon' => 'background-color: {{VALUE}}',
+				),
+			),
+			
+			array(
+				'mode' => 'tab_end',
+			),
+
+			array(
+				'mode' => 'tabs_end',
+			),
+
 			array(
 				'mode' => 'section_end',
 			),
