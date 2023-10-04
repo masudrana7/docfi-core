@@ -36,10 +36,8 @@ use Elementor\Utils;
             <?php } ?>
             <div class="searchbox-submit">
                 <?php if($data['btn_text'] == 'yes'){  ?>
-                    <button class="search-btn coolBeans btn-dark rt-searchbox-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>
-                        <?php   
-                            esc_html_e( 'Search', 'docfi-core' );
-                        ?>
+                    <button class="search-btn coolBeans btn-dark rt-searchbox-btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i><?php esc_html_e( 'Search', 'docfi-core' ); ?>
                 </button>  
                 <?php } else { ?>
                     <button class="search-btn rt-search-hide-text coolBeans btn-dark rt-searchbox-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>  

@@ -119,7 +119,6 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                             'post__not_in'   => $p_ids,
                         );
                         $args['orderby'] = $post_sorting;
-                        
                         $query = new WP_Query( $args );
                         $post_count = $query->found_posts;
                         $term_links = [];
@@ -132,7 +131,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                                     $term_links[] = $term->slug;
                                 } ?>
                                 <li>
-                                    <i class="fa-regular fa-file-lines"></i><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/img/file-icon.svg" alt="icon"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </li>    
                                 <?php 
                             }

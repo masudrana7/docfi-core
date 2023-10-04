@@ -65,25 +65,25 @@ if ( is_string( $icon_class5['value'] ) && $dynamic_icon_class =  $icon_class5['
 					</button>
 					<?php } ?>
 					<?php if(!empty($section_2_heading)){?>
-					<button class="nav-link" id="al_<?php echo esc_attr( $content_2_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_2_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_2_id ); ?>" aria-selected="false">
+					<button class="nav-link" id="al_<?php echo esc_attr( $content_2_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_2_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_2_id ); ?>">
 						<?php echo esc_html( $section_2_heading ); ?><i class="fa-solid fa-arrow-right"></i>
 					</button>
 					<?php } ?>
 
 					<?php if(!empty($section_3_heading)){?>	
-					<button class="nav-link" id="al_<?php echo esc_attr( $content_3_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_3_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_3_id ); ?>" aria-selected="false">
+					<button class="nav-link" id="al_<?php echo esc_attr( $content_3_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_3_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_3_id ); ?>">
 						<?php echo esc_html( $section_3_heading ); ?><i class="fa-solid fa-arrow-right"></i>
 					</button>
 					<?php } ?>
 
 					<?php if(!empty($section_4_heading)){?>	
-					<button class="nav-link" id="al_<?php echo esc_attr( $content_4_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_4_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_4_id ); ?>" aria-selected="false">
+					<button class="nav-link" id="al_<?php echo esc_attr( $content_4_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_4_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_4_id ); ?>">
 						<?php echo esc_html( $section_4_heading ); ?><i class="fa-solid fa-arrow-right"></i>
 					</button>
 					<?php } ?>
 
 					<?php if(!empty($section_5_heading)){?>	
-					<button class="nav-link" id="al_<?php echo esc_attr( $content_5_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_5_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_5_id ); ?>" aria-selected="false"> 
+					<button class="nav-link" id="al_<?php echo esc_attr( $content_5_id ); ?>" data-bs-toggle="pill" data-bs-target="#<?php echo esc_attr( $content_5_id ); ?>" type="button" role="tab" aria-controls="<?php echo esc_attr( $content_5_id ); ?>"> 
 						<?php echo esc_html( $section_5_heading ); ?><i class="fa-solid fa-arrow-right"></i>
 					</button>
 					<?php } ?>

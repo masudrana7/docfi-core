@@ -72,6 +72,7 @@ class Custom_Widget_Init {
 			'rt-testimonial'			=> 'RT_Testimonials',
 			'rt-accordion'				=> 'RT_Accordion',
 			'rt-tab'					=> 'RT_Tab',
+			'rt-code-syntax'			=> 'RT_code_syntax',
 		);
 		$widgets = array_merge( $widgets1 );
 		foreach ( $widgets as $widget => $class ) {

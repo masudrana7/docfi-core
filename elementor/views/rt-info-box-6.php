@@ -40,31 +40,32 @@ if ( is_array( $icon_class['value'] ) ) {
   $final_icon_image_url = $icon_class['value']['url'];
 }
 ?>
+<div class="rt-info-inner6">
+	<div class="rt-info-box rt-info-<?php echo esc_attr( $data['style'] );?> <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
+		<div class="rt-media">
+			<?php
+				if (!empty($data['icontype']) && $data['icontype'] == 'image') {
+					echo '<span class="rt-img">' . wp_kses_post($getimg) . '</span>';
+				} elseif ($data['icon_class']) {
+					echo '<span class="rt-icon">';
+					Icons_Manager::render_icon($data['icon_class']);
+					echo '</span>';
+				} else {
+					echo '<span class="rt-icon"><i>' . esc_attr($final_icon_class) . '</i></span>';
+				}
+			?>
 
-<div class="rt-info-box rt-info-<?php echo esc_attr( $data['style'] );?> <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $data['delay'] );?>s" data-wow-duration="<?php echo esc_attr( $data['duration'] );?>s">
-	<div class="rt-media">
-		<?php
-			if (!empty($data['icontype']) && $data['icontype'] == 'image') {
-				echo '<span class="rt-img">' . wp_kses_post($getimg) . '</span>';
-			} elseif ($data['icon_class']) {
-				echo '<span class="rt-icon">';
-				Icons_Manager::render_icon($data['icon_class']);
-				echo '</span>';
-			} else {
-				echo '<span class="rt-icon"><i>' . esc_attr($final_icon_class) . '</i></span>';
-			}
-		?>
-
+		</div>
+		<h3 class="rt-title"><?php echo wp_kses_post( $data['title'] );?></h3>
+		<?php if(!empty($content)){?>		
+		<p class="card-info">
+			<?php echo wp_kses_post( $data['content'] );?>
+		</p>
+		<?php } ?>
+		<?php if (!empty($buttontext)) { ?>
+			<div class="rt-button"><a <?php echo $attr; ?> class="text-link" ><?php echo wp_kses_post( $buttontext );?></a></div>		
+		<?php } ?>
 	</div>
-	<h3 class="rt-title"><?php echo wp_kses_post( $data['title'] );?></h3>
-	<?php if(!empty($content)){?>		
-	<p class="card-info">
-		<?php echo wp_kses_post( $data['content'] );?>
-	</p>
-	<?php } ?>
-	<?php if (!empty($buttontext)) { ?>
-		<div class="rt-button"><a <?php echo $attr; ?> class="text-link" ><?php echo wp_kses_post( $buttontext );?></a></div>		
-	<?php } ?>
 </div>
 
 

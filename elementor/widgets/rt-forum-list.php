@@ -9,6 +9,7 @@ namespace radiustheme\Docfi_Core;
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Box_Shadow;
+use Elementor\Group_Control_Border;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 class RT_Forum_List extends Custom_Widget_Base {
@@ -27,6 +28,16 @@ class RT_Forum_List extends Custom_Widget_Base {
 				'mode'        => 'section_start',
 				'id'          => 'sec_slider_pervice',
 				'label'       => esc_html__( 'PerView Options', 'docfi-core' ),
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'style',
+				'label'   => esc_html__( 'Style', 'docfi-core' ),
+				'options' => array(
+					'style1' => esc_html__( 'Style 1', 'docfi-core' ),
+					'style2' => esc_html__( 'Style 2', 'docfi-core' ),
+				),
+				'default' => 'style1',
 			),
 			array(
 				'type'    => Controls_Manager::NUMBER,
@@ -54,6 +65,55 @@ class RT_Forum_List extends Custom_Widget_Base {
 	            'label'   => esc_html__( 'Item Typo', 'docfi-core' ),
 	            'tab'     => Controls_Manager::TAB_STYLE,
 	        ),
+
+			array(
+				'type'    => Controls_Manager::DIMENSIONS,
+				'id'      => 'item_padding_top',
+				'mode'    => 'responsive',
+				'label'   => esc_html__( 'Topbar Padding', 'docfi-core' ),
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} #bbpress-forums.docfi-wrapper-forums li.bbp-header' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			),
+
+			array(
+				'type'    => Controls_Manager::DIMENSIONS,
+				'id'      => 'item_margin_topbar',
+				'mode'    => 'responsive',
+				'label'   => esc_html__( 'Topbar Margin', 'docfi-core' ),
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} #bbpress-forums.docfi-wrapper-forums .rt-forum-info li.bbp-header' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			),
+
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'item_bg_topbar',				
+				'label'   => esc_html__( 'Topbar Background', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} #bbpress-forums.docfi-wrapper-forums li.bbp-header' => 'background: {{VALUE}}',
+				),
+			),
+
+			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'item_bg_hover_topbar',				
+				'label'   => esc_html__( 'Topbar Hover Background', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} #bbpress-forums.docfi-wrapper-forums li.bbp-header:hover' => 'background: {{VALUE}}',
+				),
+			),
+
+			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Border::get_type(),
+				'name'      => 'item_border_topbar',
+				'label'   => esc_html__( 'Topbar Border', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} #bbpress-forums.docfi-wrapper-forums li.bbp-header'
+
+			),
 
 			array(
 				'type'    => Controls_Manager::DIMENSIONS,
@@ -88,11 +148,20 @@ class RT_Forum_List extends Custom_Widget_Base {
 			),
 
 			array(
+				'type'    => Controls_Manager::COLOR,
+			 	'id'      => 'item_bg_hover',				
+				'label'   => esc_html__( 'Item Hover Background', 'docfi-core' ),
+				'selectors' => array(
+					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum:hover' => 'background: {{VALUE}}',
+				),
+			),
+
+			array(
 				'mode'    => 'group',
 				'type'    => Group_Control_Box_Shadow::get_type(),
 				'name'      => 'item_boxshadow',
 				'label'   => esc_html__( 'Box Shadow', 'docfi-core' ),
-				'selector' => '{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum'
+				'selector' => '#bbpress-forums.docfi-wrapper-forums li.bbp-header, {{WRAPPER}} #bbpress-forums li.bbp-body ul.forum'
 
 			),
 
@@ -110,6 +179,7 @@ class RT_Forum_List extends Custom_Widget_Base {
 			 	'id'      => 'hover_item_border',				
 				'label'   => esc_html__( 'Item Hover Border Color', 'docfi-core' ),
 				'selectors' => array(
+					'{{WRAPPER}} #bbpress-forums.docfi-wrapper-forums li.bbp-header:hover' => 'border-color: {{VALUE}}',
 					'{{WRAPPER}} #bbpress-forums ul.bbp-forums:hover' => 'border-color: {{VALUE}}',
 					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum:hover' => 'border-color: {{VALUE}}',
 				),
@@ -315,9 +385,15 @@ class RT_Forum_List extends Custom_Widget_Base {
 	}
 
 	protected function render() {
-		$data = $this->get_settings();		
-		$template = 'rt-forum-list';
+		$data = $this->get_settings();
+		switch ( $data['style'] ) {
+			case 'style2':
+			$template = 'rt-forum-list-2';
+			break;
+			default:
+			$template = 'rt-forum-list';
+			break;
+		}
 		return $this->rt_template( $template, $data );
-		
 	}
 }

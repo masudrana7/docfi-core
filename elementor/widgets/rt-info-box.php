@@ -174,8 +174,8 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'selectors' => array(
 					'{{WRAPPER}} .rt-card' => 'background-color: {{VALUE}}',
 					'{{WRAPPER}} .rt-info-box' => 'background-color: {{VALUE}}',
-					'{{WRAPPER}} .rt-info-style6:before' => 'background: {{VALUE}}',
-					'{{WRAPPER}} .rt-info-style6:after' => 'background: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-inner6:before' => 'background: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-inner6:after' => 'background: {{VALUE}}',
 				),
 			),
 			array(
@@ -261,9 +261,11 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'default' => '',
 				'selectors' => array(
 					'{{WRAPPER}} .rt-card:hover .card-title a, {{WRAPPER}} .rt-card:hover .card-title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-style6:hover .rt-title' => 'color: {{VALUE}}',
 				),
-				'condition'   => array( 'style' => array( 'style1' ) ),
+				'condition'   => array( 'style' => array( 'style1', 'style6' ) ),
 			),
+
 			array(
 				'type'    => Controls_Manager::SLIDER,
 				'id'      => 'title_space',
@@ -318,6 +320,7 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'default' => '',
 				'selectors' => array(
 					'{{WRAPPER}} .rt-card:hover .card-info' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-style6:hover .card-info' => 'color: {{VALUE}}',
 				),
 			),
 			array(
@@ -624,7 +627,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 			),
 
 			// Tab For Normal view.
-
 			array(
 				'mode' => 'tabs_start',
 				'id'   => 'icon_tab_area_4',
@@ -634,7 +636,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'id'    => 'icon_normarl_syle_4',
 				'label' => esc_html__( 'Normal', 'docfi-core' ),
 			),
-
 			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'icon_color_4',
@@ -645,7 +646,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 				),
 				'condition'   => array('icontype' => array( 'icon' ) ),
 			),
-				
 			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'icon_stroke_color_4',
@@ -663,17 +663,14 @@ class RT_Info_Box extends Custom_Widget_Base {
 					'{{WRAPPER}} .card-title .icon .rt-icon' => 'background-color: {{VALUE}}',
 				),
 			),
-
 			array(
 				'mode' => 'tab_end',
 			),
-
 			array(
 				'mode'  => 'tab_start',
 				'id'    => 'icon_hover_syle_4',
 				'label' => esc_html__( 'Hover', 'docfi-core' ),
 			),
-
 			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'icon_hover_color_4',
@@ -684,7 +681,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 				),
 				'condition'   => array('icontype' => array( 'icon' ) ),
 			),
-				
 			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'icon_hover_stroke_color_4',
@@ -702,16 +698,12 @@ class RT_Info_Box extends Custom_Widget_Base {
 					'{{WRAPPER}} .rt-card:hover .card-title .icon .rt-icon' => 'background-color: {{VALUE}}',
 				),
 			),
-			
 			array(
 				'mode' => 'tab_end',
 			),
-
 			array(
 				'mode' => 'tabs_end',
 			),
-
-
 			array(
 				'mode' => 'section_end',
 			),
@@ -804,6 +796,8 @@ class RT_Info_Box extends Custom_Widget_Base {
 				'default' => '',
 				'selectors' => array(
 					'{{WRAPPER}} .rt-button .text-link:hover, {{WRAPPER}} .card-btn:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-style6:hover .rt-button a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .rt-info-style6 .rt-button a:before' => 'background: {{VALUE}}',
 				),
 			),
 			array(
@@ -906,7 +900,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 
 	protected function render() {
 		$data = $this->get_settings();
-
 		switch ( $data['style'] ) {
 			case 'style6':
 			$template = 'rt-info-box-6';
@@ -927,7 +920,6 @@ class RT_Info_Box extends Custom_Widget_Base {
 			$template = 'rt-info-box-1';
 			break;
 		}
-
 		return $this->rt_template( $template, $data );
 	}
 }

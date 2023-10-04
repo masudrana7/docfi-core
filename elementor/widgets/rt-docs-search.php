@@ -25,7 +25,7 @@ class RT_Docs_Search extends Custom_Widget_Base {
 		$repeater->add_control(
 			'searches_word', array(
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'label' => esc_html__( 'Searches Word', 'docfi-core' ),
+				'label' => esc_html__( 'Search Word', 'docfi-core' ),
 				'default' => esc_html__( 'WordPress' , 'docfi-core' ),
 				'label_block' => true,
 			)
@@ -35,6 +35,16 @@ class RT_Docs_Search extends Custom_Widget_Base {
 				'mode'  => 'section_start',
 				'id'    => 'section_general',
 				'label' => __( 'General', 'docfi-core' )
+			),
+			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'style',
+				'label'   => esc_html__( 'Style', 'docfi-core' ),
+				'options' => array(
+					'style1' => esc_html__( 'Style 1', 'docfi-core' ),
+					'style2' => esc_html__( 'Style 2', 'docfi-core' ),
+				),
+				'default' => 'style1',
 			),
 			array(
 				'type'    => Controls_Manager::TEXTAREA,
@@ -127,6 +137,7 @@ class RT_Docs_Search extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Button Typo', 'docfi-core' ),
 				'selector' => '{{WRAPPER}} .searchbox-submit .rt-searchbox-btn',
 			),
+			
 			array(
 				'type'    => Controls_Manager::COLOR,
 				'id'      => 'button_color',
@@ -211,6 +222,13 @@ class RT_Docs_Search extends Custom_Widget_Base {
 	                '{{WRAPPER}} .searchbox-submit .rt-searchbox-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',                    
 	            ),
 	        ),
+			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'button_typo_icon',
+				'label'   => esc_html__( 'Button Icon Typo', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .searchbox-submit .rt-searchbox-btn i',
+			),
 			
 			array(
 				'mode'  => 'section_end'
@@ -219,9 +237,17 @@ class RT_Docs_Search extends Custom_Widget_Base {
 		return $fields;
        
     }
+
 	protected function render() {
 		$data = $this->get_settings();
-		$template = 'rt-docs-search';
+		switch ( $data['style'] ) {
+			case 'style2':
+			$template = 'rt-docs-search-2';
+			break;
+			default:
+			$template = 'rt-docs-search';
+			break;
+		}
 		return $this->rt_template( $template, $data );
 	}
 

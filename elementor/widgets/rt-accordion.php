@@ -203,6 +203,30 @@ class RT_Accordion extends Custom_Widget_Base{
 				],
 			),
 			array(
+				'type' => Controls_Manager::CHOOSE,
+				'id'      => 'content_align',
+				'mode'	  => 'responsive',
+				'label'   => esc_html__( 'Alignment', 'docfi-core' ),
+				'options' => array(
+					'left' => array(
+						'title' => __( 'Left', 'elementor' ),
+						'icon' => 'eicon-text-align-left',
+					),
+					'center' => array(
+						'title' => __( 'Center', 'elementor' ),
+						'icon' => 'eicon-text-align-center',
+					),
+					'right' => array(
+						'title' => __( 'Right', 'elementor' ),
+						'icon' => 'eicon-text-align-right',
+					),
+				),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-accordion-item' => 'text-align: {{VALUE}};',
+				),
+			),
+			array(
 				'mode' => 'section_end',
 			),
 			// Title

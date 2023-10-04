@@ -23,9 +23,15 @@ $count = get_post_meta($post_id, $count_key, true);
 	<?php } ?>	
 
 	<?php if( !empty ( $data['title_content'] ) ) { ?>
-	<div class="sub-title"><?php echo wp_kses_post( $data['title_content'] ); ?> 
+	<div class="sub-title">
+
+	<span class="strong">	
+	<?php echo wp_kses_post( $data['title_content'] ); ?> 
+	</span>	
 	<?php if ( $data['minutes_display'] == 'yes' ) { echo esc_html($minutes_elapsed." minutes", 'docfi'); } ?> 
-	<?php if ( $data['views_display'] == 'yes' ) { echo $count . esc_attr('views', 'docfi'); } ?>
+	<?php if ( $data['views_display'] == 'yes' ) { 
+		echo wp_kses_post('<span class="strong">Views:</span>', 'docfi') . $count; 
+	} ?>
 
 </div>
 	<?php } ?>

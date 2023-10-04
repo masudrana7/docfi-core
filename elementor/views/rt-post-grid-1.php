@@ -69,9 +69,11 @@ $col_class = "col-xl-{$data['col_xl']} col-lg-{$data['col_lg']} col-md-{$data['c
 			<div class="rt-grid-item <?php echo esc_attr( $col_class );?> <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $i );?>s" data-wow-duration="<?php echo esc_attr( $j );?>s">
 				<div class="rt-item">
 					<div class="rt-image">
+						
 						<?php if ( ( $data['post_video'] == 'yes' && 'video' == get_post_format( $id ) && !empty( $youtube_link ) ) ) { ?>
 							<div class="rt-video"><a class="rt-play <?php echo esc_attr( $data['video_layout'] );?> rt-video-popup" href="<?php echo esc_url( $youtube_link );?>"><i class="fas fa-play"></i></a></div>
 						<?php } ?>
+
 						<a href="<?php the_permalink(); ?>" class="img-opacity-hover" aria-label="<?php echo esc_html( $title );?>"><?php if ( has_post_thumbnail() ) { ?>
 						<?php the_post_thumbnail( $thumb_size, ['class' => 'img-responsive'] ); ?>
 						<?php } else {
@@ -89,6 +91,7 @@ $col_class = "col-xl-{$data['col_xl']} col-lg-{$data['col_lg']} col-md-{$data['c
 					</a>
 					</div>
 					<div class="entry-content">
+						<h3 class="entry-title"><a href="<?php the_permalink();?>"><?php echo esc_html( $title );?></a></h3>
 						<?php if ( $docfi_has_entry_meta ) { ?>
 						<ul class="entry-meta">
 							<?php if ( $data['post_author'] == 'yes' ) { ?>
@@ -106,7 +109,7 @@ $col_class = "col-xl-{$data['col_xl']} col-lg-{$data['col_lg']} col-md-{$data['c
 							<?php } ?>
 						</ul>
 						<?php } ?>
-						<h3 class="entry-title"><a href="<?php the_permalink();?>"><?php echo esc_html( $title );?></a></h3>
+						
 						<?php if ( $data['content_display'] == 'yes' ) { ?>
 							<div class="post_excerpt"><?php echo wp_kses_post( $content );?></div>
 						<?php } ?>

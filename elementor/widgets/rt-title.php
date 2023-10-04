@@ -29,6 +29,16 @@ class RT_Title extends Custom_Widget_Base {
 				'label'   => esc_html__( 'Docs Title', 'docfi-core' ),
 			),
 			array(
+				'type'    => Controls_Manager::SELECT2,
+				'id'      => 'style',
+				'label'   => esc_html__( 'Style', 'docfi-core' ),
+				'options' => array(
+					'style1' => esc_html__( 'Style 1', 'docfi-core' ),
+					'style2' => esc_html__( 'Style 2', 'docfi-core' ),
+				),
+				'default' => 'style1',
+			),
+			array(
 				'type' => Controls_Manager::CHOOSE,
 				'id'      => 'content_align',
 				'mode'    => 'responsive',
@@ -258,7 +268,14 @@ class RT_Title extends Custom_Widget_Base {
 	}
 	protected function render() {
 		$data = $this->get_settings();
-		$template = 'title-1';
+		switch ( $data['style'] ) {
+			case 'style2':
+			$template = 'title-2';
+			break;
+			default:
+			$template = 'title-1';
+			break;
+		}
 		return $this->rt_template( $template, $data );
 	}
 }

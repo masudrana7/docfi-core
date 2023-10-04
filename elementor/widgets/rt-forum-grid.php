@@ -93,8 +93,6 @@ class RT_Forum_Grid extends Custom_Widget_Base {
 	            'tab'     => Controls_Manager::TAB_STYLE,
 	        ),
 
-			
-
 			array(
 				'type'    => Controls_Manager::DIMENSIONS,
 				'id'      => 'item_padding',
@@ -241,6 +239,125 @@ class RT_Forum_Grid extends Custom_Widget_Base {
 				'selectors' => array(
 					'{{WRAPPER}} .rt-card .card-btn:hover' => 'border-color: {{VALUE}}',
 				),
+			),
+			array(
+				'mode' => 'section_end',
+			),
+
+			// Button style
+			array(
+				'mode'    => 'section_start',
+				'id'      => 'btn_icon',
+				'label'   => esc_html__( 'Button Style', 'docfi-core' ),
+				'tab'     => Controls_Manager::TAB_STYLE,
+			),	
+			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Typography::get_type(),
+				'name'    => 'btn_typo',
+				'label'   => esc_html__( 'Button Typo', 'docfi-core' ),
+				'selector' => '{{WRAPPER}} .rt-button .text-link, {{WRAPPER}} .card-btn',
+			),		
+			array(
+	            'type'    => Controls_Manager::DIMENSIONS,
+	            'mode'          => 'responsive',
+	            'size_units' => [ 'px', '%', 'em' ],
+	            'id'      => 'btn_padding',
+	            'label'   => __( 'Button Padding', 'docfi-core' ),                 
+	            'selectors' => array(
+	                '{{WRAPPER}} .rt-button .text-link, {{WRAPPER}} .card-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',                    
+	            ),
+	            'separator' => 'before',
+	        ),
+
+			// Tab For Normal view.
+			array(
+				'mode' => 'tabs_start',
+				'id'   => 'meta_tabs_start',
+			),			
+			array(
+				'mode'  => 'tab_start',
+				'id'    => 'rt_tab_1',
+				'label' => esc_html__( 'Normal', 'docfi-core' ),
+			),
+			
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'button_text_color',
+				'label'   => esc_html__( 'Button Text Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn path' => 'fill: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'btn2_bg_color',
+				'label'   => esc_html__( 'Background Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn' => 'background: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'btn2_bg_hover_color',
+				'label'   => esc_html__( 'Background Hover Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn' => 'background-color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'btn_border_color',
+				'label'   => esc_html__( 'Border Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn' => 'border-color: {{VALUE}}',
+				),
+			),
+			array(
+				'mode' => 'tab_end',
+			),
+			array(
+				'mode'  => 'tab_start',
+				'id'    => 'rt_tab_2',
+				'label' => esc_html__( 'Hover', 'docfi-core' ),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'button_text_hover_color',
+				'label'   => esc_html__( 'Button Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn:hover path' => 'color: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'btn_bg_hover_color',
+				'label'   => esc_html__( 'Background Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4 .card-btn:hover' => 'background: {{VALUE}}',
+				),
+			),
+			array(
+				'type'    => Controls_Manager::COLOR,
+				'id'      => 'btn_border_hover_color',
+				'label'   => esc_html__( 'Border Color', 'docfi-core' ),
+				'default' => '',
+				'selectors' => array(
+					'{{WRAPPER}} .rt-card--style-4:hover .card-btn' => 'border-color: {{VALUE}}',
+				),
+			),
+		
+			array(
+				'mode' => 'tab_end',
+			),
+			array(
+				'mode' => 'tabs_end',
 			),
 			array(
 				'mode' => 'section_end',

@@ -13,10 +13,9 @@ use \WP_Query;
 
 ?>
 
-<div id="bbpress-forums" class="rt-forum-list-wrapper docfi-wrapper-forums">
-	<ul id="forums-list-0" class="rt-forum-info bbp-forums">
+<div id="bbpress-forums" class="rt-forum-list-<?php echo esc_attr( $data['style'] );?> rt-forum-list-wrapper docfi-wrapper-forums">
+	<ul id="forums-list-0" class="rt-forum-info bbp-forums rt-forums-addons">
 
-		
 		<?php if($data['topbar_show'] == 'yes'){ ?>
 		<li class="bbp-header">
 			<ul class="forum-titles">

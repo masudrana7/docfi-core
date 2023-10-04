@@ -1,0 +1,3747 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Docfi Core\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-29 04:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.3.1\n"
+"X-Domain: docfi-core"
+
+#: elementor/widgets/rt-info-box.php:216
+msgid " Hover Box Shadow"
+msgstr ""
+
+#: module/rt-post-length.php:29
+#, php-format
+msgid "%s minutes read"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:94
+msgid "+"
+msgstr ""
+
+#: post-meta.php:174 post-meta.php:195
+msgid "0px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:46
+#: elementor/widgets/rt-forum-slider.php:61
+#: elementor/widgets/rt-forum-slider.php:75
+#: elementor/widgets/rt-forum-slider.php:87
+#: elementor/widgets/rt-forum-slider.php:98
+#: elementor/widgets/rt-post-slider.php:801
+#: elementor/widgets/rt-post-slider.php:815
+#: elementor/widgets/rt-post-slider.php:827
+#: elementor/widgets/rt-post-slider.php:839
+#: elementor/widgets/rt-post-slider.php:851 elementor/widgets/rt-table.php:30
+#: elementor/widgets/rt-testimonial.php:608
+#: elementor/widgets/rt-testimonial.php:622
+#: elementor/widgets/rt-testimonial.php:636
+#: elementor/widgets/rt-testimonial.php:648
+#: elementor/widgets/rt-testimonial.php:660
+msgid "1"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:21
+#: elementor/widgets/docs-featured-tabs.php:21
+#: elementor/widgets/docs-group-list-content.php:20
+#: elementor/widgets/docs-group-list.php:20
+#: elementor/widgets/docs-group-single.php:20
+#: elementor/widgets/docs-isotope.php:20 elementor/widgets/rt-forum-grid.php:21
+#: elementor/widgets/rt-forum-slider.php:21
+#: elementor/widgets/rt-post-grid.php:23
+#: elementor/widgets/rt-testimonial.php:22
+msgid "1 Col"
+msgstr ""
+
+#: module/rt-post-length.php:27
+msgid "1 minute read"
+msgstr ""
+
+#: post-meta.php:184 post-meta.php:205
+msgid "100px"
+msgstr ""
+
+#: post-meta.php:175 post-meta.php:196
+msgid "10px"
+msgstr ""
+
+#: post-meta.php:185 post-meta.php:206
+msgid "110px"
+msgstr ""
+
+#: post-meta.php:186 post-meta.php:207
+msgid "120px"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:54
+msgid "1457"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:47
+#: elementor/widgets/rt-forum-slider.php:62
+#: elementor/widgets/rt-forum-slider.php:76
+#: elementor/widgets/rt-forum-slider.php:88
+#: elementor/widgets/rt-forum-slider.php:99
+#: elementor/widgets/rt-post-slider.php:802
+#: elementor/widgets/rt-post-slider.php:816
+#: elementor/widgets/rt-post-slider.php:828
+#: elementor/widgets/rt-post-slider.php:840
+#: elementor/widgets/rt-post-slider.php:852
+#: elementor/widgets/rt-testimonial.php:609
+#: elementor/widgets/rt-testimonial.php:623
+#: elementor/widgets/rt-testimonial.php:637
+#: elementor/widgets/rt-testimonial.php:649
+#: elementor/widgets/rt-testimonial.php:661
+msgid "2"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:22
+#: elementor/widgets/docs-featured-tabs.php:22
+#: elementor/widgets/docs-group-list-content.php:21
+#: elementor/widgets/docs-group-list.php:21
+#: elementor/widgets/docs-group-single.php:21
+#: elementor/widgets/docs-isotope.php:21 elementor/widgets/rt-forum-grid.php:22
+#: elementor/widgets/rt-forum-slider.php:22
+#: elementor/widgets/rt-post-grid.php:24
+#: elementor/widgets/rt-testimonial.php:23
+msgid "2 Col"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:38
+msgid "2 list type available here. (default list is normal text list)"
+msgstr ""
+
+#: post-meta.php:176 post-meta.php:197
+msgid "20px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:48
+#: elementor/widgets/rt-forum-slider.php:63
+#: elementor/widgets/rt-forum-slider.php:77
+#: elementor/widgets/rt-forum-slider.php:89
+#: elementor/widgets/rt-forum-slider.php:100
+#: elementor/widgets/rt-post-slider.php:803
+#: elementor/widgets/rt-post-slider.php:817
+#: elementor/widgets/rt-post-slider.php:829
+#: elementor/widgets/rt-post-slider.php:841
+#: elementor/widgets/rt-post-slider.php:853
+#: elementor/widgets/rt-testimonial.php:610
+#: elementor/widgets/rt-testimonial.php:624
+#: elementor/widgets/rt-testimonial.php:638
+#: elementor/widgets/rt-testimonial.php:650
+#: elementor/widgets/rt-testimonial.php:662
+msgid "3"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:23
+#: elementor/widgets/docs-featured-tabs.php:23
+#: elementor/widgets/docs-group-list-content.php:22
+#: elementor/widgets/docs-group-list.php:22
+#: elementor/widgets/docs-group-single.php:22
+#: elementor/widgets/docs-isotope.php:22 elementor/widgets/rt-forum-grid.php:23
+#: elementor/widgets/rt-forum-slider.php:23
+#: elementor/widgets/rt-post-grid.php:25
+#: elementor/widgets/rt-testimonial.php:24
+msgid "3 Col"
+msgstr ""
+
+#: post-meta.php:177 post-meta.php:198
+msgid "30px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:49
+#: elementor/widgets/rt-forum-slider.php:64
+#: elementor/widgets/rt-forum-slider.php:78
+#: elementor/widgets/rt-forum-slider.php:101
+#: elementor/widgets/rt-post-slider.php:804
+#: elementor/widgets/rt-post-slider.php:818
+#: elementor/widgets/rt-post-slider.php:830
+#: elementor/widgets/rt-post-slider.php:842
+#: elementor/widgets/rt-post-slider.php:854
+#: elementor/widgets/rt-testimonial.php:611
+#: elementor/widgets/rt-testimonial.php:625
+#: elementor/widgets/rt-testimonial.php:639
+#: elementor/widgets/rt-testimonial.php:651
+#: elementor/widgets/rt-testimonial.php:663
+msgid "4"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:24
+#: elementor/widgets/docs-featured-tabs.php:24
+#: elementor/widgets/docs-group-list-content.php:23
+#: elementor/widgets/docs-group-list.php:23
+#: elementor/widgets/docs-group-single.php:23
+#: elementor/widgets/docs-isotope.php:23 elementor/widgets/rt-forum-grid.php:24
+#: elementor/widgets/rt-forum-slider.php:24
+#: elementor/widgets/rt-post-grid.php:26
+#: elementor/widgets/rt-testimonial.php:25
+msgid "4 Col"
+msgstr ""
+
+#: post-meta.php:178 post-meta.php:199
+msgid "40px"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:38
+msgid "475"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:50
+#: elementor/widgets/rt-forum-slider.php:65
+#: elementor/widgets/rt-post-slider.php:805
+#: elementor/widgets/rt-testimonial.php:612
+#: elementor/widgets/rt-testimonial.php:626
+msgid "5"
+msgstr ""
+
+#: post-meta.php:179 post-meta.php:200
+msgid "50px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:51
+#: elementor/widgets/rt-forum-slider.php:66
+#: elementor/widgets/rt-post-slider.php:806
+#: elementor/widgets/rt-testimonial.php:613
+#: elementor/widgets/rt-testimonial.php:627
+msgid "6"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:25
+#: elementor/widgets/docs-featured-tabs.php:25
+#: elementor/widgets/docs-group-list-content.php:24
+#: elementor/widgets/docs-group-list.php:24
+#: elementor/widgets/docs-group-single.php:24
+#: elementor/widgets/docs-isotope.php:24 elementor/widgets/rt-forum-grid.php:25
+#: elementor/widgets/rt-forum-slider.php:25
+#: elementor/widgets/rt-post-grid.php:27
+#: elementor/widgets/rt-testimonial.php:26
+msgid "6 Col"
+msgstr ""
+
+#: post-meta.php:180 post-meta.php:201
+msgid "60px"
+msgstr ""
+
+#: post-meta.php:181 post-meta.php:202
+msgid "70px"
+msgstr ""
+
+#: post-meta.php:182 post-meta.php:203
+msgid "80px"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:46
+msgid "854"
+msgstr ""
+
+#: post-meta.php:183 post-meta.php:204
+msgid "90px"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:62
+msgid "985"
+msgstr ""
+
+#: widget/social-widget.php:92
+msgid "About Company"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:129
+msgid "Accordion"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:286
+msgid "Active"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:366
+msgid "Active  Color"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:243
+msgid "Active Color"
+msgstr ""
+
+#: elementor/views/rt-topic-list.php:30
+msgid "Activity"
+msgstr ""
+
+#: widget/sidebar-generator.php:40
+msgid "Add"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:52
+#: elementor/widgets/docs-featured-tabs.php:55
+#: elementor/widgets/docs-group-list-content.php:55
+#: elementor/widgets/docs-group-list.php:53
+#: elementor/widgets/docs-group-single.php:55
+#: elementor/widgets/docs-isotope.php:54
+msgid "Add as many Categories as you want"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:128
+msgid "Add as many testimonials as you want"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:160
+msgid "Add Image"
+msgstr ""
+
+#: widget/sidebar-generator.php:31
+msgid "Add New Sidebar"
+msgstr ""
+
+#: widget/address-widget.php:81 elementor/widgets/rt-accordion.php:60
+#: elementor/widgets/rt-contact-info.php:106 elementor/widgets/rt-tab.php:65
+#: elementor/widgets/rt-table.php:106 elementor/widgets/rt-timeline.php:49
+msgid "Address"
+msgstr ""
+
+#: widget/address-widget.php:13
+msgid "Address Widget"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:46 elementor/widgets/rt-contact-info.php:81
+#: elementor/widgets/rt-counter.php:39 elementor/widgets/rt-forum-status.php:53
+#: elementor/widgets/rt-image.php:49 elementor/widgets/rt-info-box.php:50
+#: elementor/widgets/rt-post-grid.php:62
+#: elementor/widgets/rt-post-slider.php:52
+#: elementor/widgets/rt-testimonial.php:94 elementor/widgets/rt-title.php:35
+msgid "Alignment"
+msgstr ""
+
+#: elementor/views/rt-docs-search-2.php:11
+#: elementor/views/rt-docs-search.php:11
+msgid "All Docs"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:539 elementor/widgets/rt-button.php:545
+#: elementor/widgets/rt-contact-info.php:460
+#: elementor/widgets/rt-contact-info.php:466
+#: elementor/widgets/rt-counter.php:295 elementor/widgets/rt-counter.php:301
+#: elementor/widgets/rt-forum-grid.php:371
+#: elementor/widgets/rt-forum-grid.php:377
+#: elementor/widgets/rt-forum-list.php:293
+#: elementor/widgets/rt-forum-list.php:299
+#: elementor/widgets/rt-forum-slider.php:539
+#: elementor/widgets/rt-forum-slider.php:545 elementor/widgets/rt-image.php:125
+#: elementor/widgets/rt-image.php:147 elementor/widgets/rt-info-box.php:835
+#: elementor/widgets/rt-info-box.php:841 elementor/widgets/rt-post-grid.php:599
+#: elementor/widgets/rt-post-grid.php:605
+#: elementor/widgets/rt-post-slider.php:726
+#: elementor/widgets/rt-post-slider.php:732
+#: elementor/widgets/rt-testimonial.php:487
+#: elementor/widgets/rt-testimonial.php:493
+#: elementor/widgets/rt-topic-list.php:198
+#: elementor/widgets/rt-topic-list.php:204
+msgid "Animation"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:99
+msgid "Animation Speed"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:106
+msgid "Animation Steps"
+msgstr ""
+
+#: widget/sidebar-generator.php:194
+msgid "Are you sure you want to remove this custom sidebar"
+msgstr ""
+
+#: elementor/widgets/docs-group-list-content.php:98
+#: elementor/widgets/docs-group-list.php:94
+#: elementor/widgets/docs-group-single.php:98
+#: elementor/widgets/docs-isotope.php:281
+msgid "Articles  Color"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:99
+#: elementor/widgets/docs-featured-tabs.php:82
+#: elementor/widgets/docs-isotope.php:73 elementor/widgets/rt-post-grid.php:185
+#: elementor/widgets/rt-post-slider.php:135
+msgid "Ascending"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:39
+msgid "Author"
+msgstr ""
+
+#: docfi-core.php:90
+msgid "Author Designation"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:116
+#: elementor/widgets/rt-post-slider.php:870
+#: elementor/widgets/rt-testimonial.php:679
+msgid "Autoplay"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:152
+#: elementor/widgets/rt-post-slider.php:910
+#: elementor/widgets/rt-testimonial.php:719
+msgid "Autoplay Slide Delay"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:160
+#: elementor/widgets/rt-post-slider.php:918
+#: elementor/widgets/rt-testimonial.php:727
+msgid "Autoplay Slide Speed"
+msgstr ""
+
+#: post-meta.php:237 elementor/widgets/rt-accordion.php:162
+#: elementor/widgets/rt-accordion.php:234 elementor/widgets/rt-button.php:144
+#: elementor/widgets/rt-button.php:219 elementor/widgets/rt-button.php:322
+#: elementor/widgets/rt-button.php:407
+#: elementor/widgets/rt-contact-info.php:180
+#: elementor/widgets/rt-font-size-controller.php:60
+#: elementor/widgets/rt-forum-grid.php:296
+#: elementor/widgets/rt-forum-grid.php:340
+#: elementor/widgets/rt-info-box.php:760 elementor/widgets/rt-info-box.php:806
+#: elementor/widgets/rt-testimonial.php:188
+msgid "Background Color"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:228 elementor/widgets/rt-button.php:331
+#: elementor/widgets/rt-button.php:416
+#: elementor/widgets/rt-contact-info.php:189
+#: elementor/widgets/rt-forum-grid.php:305
+#: elementor/widgets/rt-info-box.php:769
+msgid "Background Hover Color"
+msgstr ""
+
+#: post-meta.php:236
+msgid "Background Image"
+msgstr ""
+
+#: post-meta.php:212
+msgid "Banner"
+msgstr ""
+
+#: post-meta.php:247
+msgid "Banner Background Color"
+msgstr ""
+
+#: post-meta.php:242
+msgid "Banner Background Image"
+msgstr ""
+
+#: post-meta.php:232
+msgid "Banner Background Type"
+msgstr ""
+
+#: widget/social-widget.php:149
+msgid "Behance Plus URL"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:273
+#: elementor/widgets/content-toggle.php:310
+#: elementor/widgets/rt-accordion.php:151 elementor/widgets/rt-button.php:162
+#: elementor/widgets/rt-forum-grid.php:213
+#: elementor/widgets/rt-forum-grid.php:314
+#: elementor/widgets/rt-forum-grid.php:349
+#: elementor/widgets/rt-forum-list.php:254
+#: elementor/widgets/rt-forum-slider.php:296
+#: elementor/widgets/rt-info-box.php:778 elementor/widgets/rt-info-box.php:815
+#: elementor/widgets/rt-topic-list.php:159
+msgid "Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:171
+msgid "Border Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:96
+msgid "Border Radius"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:558
+#: elementor/widgets/rt-contact-info.php:479
+#: elementor/widgets/rt-counter.php:314 elementor/widgets/rt-forum-grid.php:390
+#: elementor/widgets/rt-forum-list.php:312
+#: elementor/widgets/rt-forum-slider.php:558 elementor/widgets/rt-image.php:160
+#: elementor/widgets/rt-info-box.php:854 elementor/widgets/rt-post-grid.php:618
+#: elementor/widgets/rt-post-slider.php:745
+#: elementor/widgets/rt-testimonial.php:506
+#: elementor/widgets/rt-topic-list.php:217
+msgid "bounce"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:571
+#: elementor/widgets/rt-contact-info.php:492
+#: elementor/widgets/rt-counter.php:327 elementor/widgets/rt-forum-grid.php:403
+#: elementor/widgets/rt-forum-list.php:325
+#: elementor/widgets/rt-forum-slider.php:571 elementor/widgets/rt-image.php:173
+#: elementor/widgets/rt-info-box.php:867 elementor/widgets/rt-post-grid.php:631
+#: elementor/widgets/rt-post-slider.php:758
+#: elementor/widgets/rt-testimonial.php:519
+#: elementor/widgets/rt-topic-list.php:230
+msgid "bounceIn"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:572
+#: elementor/widgets/rt-contact-info.php:493
+#: elementor/widgets/rt-counter.php:328 elementor/widgets/rt-forum-grid.php:404
+#: elementor/widgets/rt-forum-list.php:326
+#: elementor/widgets/rt-forum-slider.php:572 elementor/widgets/rt-image.php:174
+#: elementor/widgets/rt-info-box.php:868 elementor/widgets/rt-post-grid.php:632
+#: elementor/widgets/rt-post-slider.php:759
+#: elementor/widgets/rt-testimonial.php:520
+#: elementor/widgets/rt-topic-list.php:231
+msgid "bounceInDown"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:573
+#: elementor/widgets/rt-contact-info.php:494
+#: elementor/widgets/rt-counter.php:329 elementor/widgets/rt-forum-grid.php:405
+#: elementor/widgets/rt-forum-list.php:327
+#: elementor/widgets/rt-forum-slider.php:573 elementor/widgets/rt-image.php:175
+#: elementor/widgets/rt-info-box.php:869 elementor/widgets/rt-post-grid.php:633
+#: elementor/widgets/rt-post-slider.php:760
+#: elementor/widgets/rt-testimonial.php:521
+#: elementor/widgets/rt-topic-list.php:232
+msgid "bounceInLeft"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:574
+#: elementor/widgets/rt-contact-info.php:495
+#: elementor/widgets/rt-counter.php:330 elementor/widgets/rt-forum-grid.php:406
+#: elementor/widgets/rt-forum-list.php:328
+#: elementor/widgets/rt-forum-slider.php:574 elementor/widgets/rt-image.php:176
+#: elementor/widgets/rt-info-box.php:870 elementor/widgets/rt-post-grid.php:634
+#: elementor/widgets/rt-post-slider.php:761
+#: elementor/widgets/rt-testimonial.php:522
+#: elementor/widgets/rt-topic-list.php:233
+msgid "bounceInRight"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:575
+#: elementor/widgets/rt-contact-info.php:496
+#: elementor/widgets/rt-counter.php:331 elementor/widgets/rt-forum-grid.php:407
+#: elementor/widgets/rt-forum-list.php:329
+#: elementor/widgets/rt-forum-slider.php:575 elementor/widgets/rt-image.php:177
+#: elementor/widgets/rt-info-box.php:871 elementor/widgets/rt-post-grid.php:635
+#: elementor/widgets/rt-post-slider.php:762
+#: elementor/widgets/rt-testimonial.php:523
+#: elementor/widgets/rt-topic-list.php:234
+msgid "bounceInUp"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:126
+msgid "Box background"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:132 elementor/widgets/rt-counter.php:160
+#: elementor/widgets/rt-forum-status.php:87
+#: elementor/widgets/rt-info-box.php:173 elementor/widgets/rt-post-grid.php:350
+#: elementor/widgets/rt-post-slider.php:292
+msgid "Box Background Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:87
+msgid "Box BG Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:359
+#: elementor/widgets/rt-post-slider.php:301
+msgid "Box Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:141
+msgid "Box Height"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:223
+msgid "Box Hover BG Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:117
+msgid "Box Margin"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:172 elementor/widgets/rt-cta.php:107
+#: elementor/widgets/rt-forum-status.php:98
+#: elementor/widgets/rt-info-box.php:186
+#: elementor/widgets/rt-testimonial.php:200
+msgid "Box Padding"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:219
+#: elementor/widgets/rt-forum-list.php:166
+#: elementor/widgets/rt-forum-status.php:109
+#: elementor/widgets/rt-info-box.php:198 elementor/widgets/rt-post-grid.php:333
+#: elementor/widgets/rt-post-grid.php:586
+#: elementor/widgets/rt-post-slider.php:283
+#: elementor/widgets/rt-testimonial.php:211
+msgid "Box Radius"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:180
+#: elementor/widgets/rt-docs-search.php:210
+#: elementor/widgets/rt-forum-list.php:137
+#: elementor/widgets/rt-info-box.php:208
+msgid "Box Shadow"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:174
+#: elementor/widgets/rt-forum-status.php:81
+#: elementor/widgets/rt-info-box.php:167
+msgid "Box Style"
+msgstr ""
+
+#: post-meta.php:222
+msgid "Breadcrumb"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:99
+#: elementor/widgets/rt-post-slider.php:89
+msgid "Button 01"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:100
+#: elementor/widgets/rt-post-slider.php:90
+msgid "Button 02"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:101
+#: elementor/widgets/rt-post-slider.php:91
+msgid "Button 03"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:102
+#: elementor/widgets/rt-post-slider.php:92
+msgid "Button 04"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:103
+#: elementor/widgets/rt-post-slider.php:93
+msgid "Button 05"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:172
+msgid "Button Active Background"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:163
+msgid "Button Active Color"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:154
+msgid "Button Background"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:152
+msgid "Button BG Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:197
+msgid "Button Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:179 elementor/widgets/rt-docs-search.php:144
+#: elementor/widgets/rt-forum-grid.php:331
+#: elementor/widgets/rt-info-box.php:795 elementor/widgets/rt-tab.php:145
+msgid "Button Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:215 elementor/widgets/rt-docs-search.php:161
+msgid "Button Hover BG Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:206
+msgid "Button Hover Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:188
+msgid "Button Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:229
+msgid "Button Icon Typo"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:156
+msgid "Button Link"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:256 elementor/widgets/rt-button.php:341
+#: elementor/widgets/rt-button.php:426
+msgid "Button Margin"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:191 elementor/widgets/rt-button.php:266
+#: elementor/widgets/rt-button.php:351 elementor/widgets/rt-button.php:436
+#: elementor/widgets/rt-docs-search.php:173
+#: elementor/widgets/rt-forum-grid.php:266
+#: elementor/widgets/rt-info-box.php:730
+msgid "Button Padding"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:181 elementor/widgets/rt-button.php:276
+#: elementor/widgets/rt-button.php:361 elementor/widgets/rt-button.php:446
+msgid "Button Radius"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:33 elementor/widgets/rt-button.php:112
+#: elementor/widgets/rt-button.php:205 elementor/widgets/rt-button.php:290
+#: elementor/widgets/rt-button.php:375 elementor/widgets/rt-cta.php:173
+#: elementor/widgets/rt-forum-grid.php:251
+#: elementor/widgets/rt-info-box.php:715
+msgid "Button Style"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:69 elementor/widgets/rt-cta.php:63
+#: elementor/widgets/rt-info-box.php:149
+msgid "Button Text"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:287
+#: elementor/widgets/rt-info-box.php:751
+msgid "Button Text Color"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:120 elementor/widgets/rt-button.php:213
+#: elementor/widgets/rt-button.php:298 elementor/widgets/rt-button.php:383
+#: elementor/widgets/rt-docs-search.php:137
+#: elementor/widgets/rt-forum-grid.php:258
+#: elementor/widgets/rt-info-box.php:722 elementor/widgets/rt-tab.php:139
+msgid "Button Typo"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:75 elementor/widgets/rt-cta.php:69
+msgid "Button URL"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:111
+#: elementor/widgets/docs-featured-tabs.php:94
+#: elementor/widgets/docs-isotope.php:85 elementor/widgets/rt-post-grid.php:196
+#: elementor/widgets/rt-post-slider.php:146
+msgid "By Name"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:85
+msgid "Cat Description Display"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:57
+#: elementor/widgets/docs-featured-tabs.php:60
+#: elementor/widgets/docs-group-list-content.php:60
+#: elementor/widgets/docs-group-list.php:58
+#: elementor/widgets/docs-group-single.php:60
+#: elementor/widgets/docs-isotope.php:59 elementor/widgets/rt-post-grid.php:224
+#: elementor/widgets/rt-post-slider.php:174
+msgid "Categories"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:207
+#: elementor/widgets/rt-post-slider.php:157
+msgid "Category"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:110
+msgid "Category Color"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:68
+msgid "Category Featured Title"
+msgstr ""
+
+#: elementor/widgets/docs-featured-tabs.php:71
+msgid "Category Title"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:102
+msgid "Category Typo"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:92
+msgid "Center"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:135
+#: elementor/widgets/rt-post-slider.php:889
+#: elementor/widgets/rt-testimonial.php:698
+msgid "Centered Slides"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:893
+#: elementor/widgets/rt-testimonial.php:702
+msgid "Centered Slides. Default: Off"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:139
+msgid "Centered Slides. Default: On"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:423
+msgid "Circle Color"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:433
+msgid "Circle Hover Color"
+msgstr ""
+
+#: module/rt-post-share.php:50
+msgid "Cloud"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:225
+#: elementor/widgets/rt-accordion.php:299
+#: elementor/widgets/rt-accordion.php:357 elementor/widgets/rt-button.php:490
+#: elementor/widgets/rt-counter.php:207 elementor/widgets/rt-counter.php:272
+msgid "Color"
+msgstr ""
+
+#: elementor/views/rt-post-grid-1.php:62 elementor/views/rt-post-grid-2.php:62
+#: elementor/views/rt-post-slider-1.php:65
+#: elementor/views/rt-post-slider-2.php:65
+msgid "Comment"
+msgstr ""
+
+#: elementor/views/rt-post-grid-1.php:62 elementor/views/rt-post-grid-2.php:62
+#: elementor/views/rt-post-slider-1.php:65
+#: elementor/views/rt-post-slider-2.php:65
+msgid "Comments"
+msgstr ""
+
+#: widget/rt-contact.php:52
+msgid "Contact Address"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:70
+msgid "Contact Us"
+msgstr ""
+
+#: widget/rt-contact.php:13
+msgid "Contact Widget"
+msgstr ""
+
+#: post-meta.php:111
+msgid "Container"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:62
+#: elementor/widgets/rt-accordion.php:36 elementor/widgets/rt-info-box.php:143
+#: elementor/widgets/rt-tab.php:38 elementor/widgets/rt-tab.php:186
+#: elementor/widgets/rt-table.php:124 elementor/widgets/rt-timeline.php:36
+#: elementor/widgets/rt-title.php:64 elementor/widgets/rt-title.php:157
+msgid "Content"
+msgstr ""
+
+#: elementor/widgets/rt-title.php:226
+msgid "Content Background"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:208
+msgid "Content Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:282
+#: elementor/widgets/rt-forum-status.php:182
+#: elementor/widgets/rt-info-box.php:310 elementor/widgets/rt-post-grid.php:447
+#: elementor/widgets/rt-post-slider.php:389 elementor/widgets/rt-tab.php:199
+#: elementor/widgets/rt-testimonial.php:336
+#: elementor/widgets/rt-timeline.php:124 elementor/widgets/rt-title.php:170
+#: elementor/widgets/rt-title.php:217
+msgid "Content Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:424
+#: elementor/widgets/rt-post-slider.php:366
+msgid "Content Display"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:319
+msgid "Content Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:220 elementor/widgets/rt-title.php:236
+msgid "Content Padding"
+msgstr ""
+
+#: post-meta.php:191
+msgid "Content Padding Bottom"
+msgstr ""
+
+#: post-meta.php:170
+msgid "Content Padding Top"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:199 elementor/widgets/rt-title.php:246
+msgid "Content Radius"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:330
+#: elementor/widgets/rt-testimonial.php:346
+#: elementor/widgets/rt-timeline.php:134 elementor/widgets/rt-title.php:180
+msgid "Content Space"
+msgstr ""
+
+#: elementor/widgets/docs-featured-tabs.php:216
+#: elementor/widgets/rt-contact-info.php:224
+#: elementor/widgets/rt-forum-status.php:169
+#: elementor/widgets/rt-info-box.php:297 elementor/widgets/rt-post-grid.php:418
+#: elementor/widgets/rt-post-grid.php:441
+#: elementor/widgets/rt-post-slider.php:360
+#: elementor/widgets/rt-testimonial.php:323
+msgid "Content Style"
+msgstr ""
+
+#: elementor/widgets/rt-timeline.php:111
+msgid "Content Title"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:18
+msgid "Content toggle"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:267
+#: elementor/widgets/rt-forum-status.php:176
+#: elementor/widgets/rt-info-box.php:304 elementor/widgets/rt-tab.php:193
+#: elementor/widgets/rt-testimonial.php:330
+#: elementor/widgets/rt-timeline.php:118 elementor/widgets/rt-title.php:164
+#: elementor/widgets/rt-title.php:211
+msgid "Content Typo"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:383
+msgid "Content_typo"
+msgstr ""
+
+#: post-meta.php:160
+msgid "Copyright Area"
+msgstr ""
+
+#: widget/address-widget.php:62
+msgid "Corporate Office"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:220
+msgid "Counter"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:233
+msgid "Counter Color"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:87
+msgid "Counter Number"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:243
+msgid "Counter Space"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:108
+msgid "Counter steps eg. 10"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:227
+msgid "Counter Style"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:93
+msgid "Counter Unit"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:81
+msgid "CTA Style"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:110
+#: elementor/widgets/docs-featured-tabs.php:93
+#: elementor/widgets/docs-isotope.php:84
+msgid "Custom Order"
+msgstr ""
+
+#: post-meta.php:51
+msgid "Custom Sidebar"
+msgstr ""
+
+#: post-meta.php:29 post-meta.php:30 post-meta.php:43 post-meta.php:66
+#: post-meta.php:90 post-meta.php:100 post-meta.php:110 post-meta.php:120
+#: post-meta.php:131 post-meta.php:142 post-meta.php:153 post-meta.php:163
+#: post-meta.php:173 post-meta.php:194 post-meta.php:215 post-meta.php:225
+#: post-meta.php:235 elementor/widgets/rt-forum-slider.php:351
+#: elementor/widgets/rt-post-slider.php:538
+#: elementor/widgets/rt-testimonial.php:765
+msgid "Default"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:112
+msgid "Default Layout"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:33
+msgid "Default List"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:587
+#: elementor/widgets/rt-contact-info.php:508
+#: elementor/widgets/rt-counter.php:343 elementor/widgets/rt-forum-grid.php:419
+#: elementor/widgets/rt-forum-list.php:341
+#: elementor/widgets/rt-forum-slider.php:587 elementor/widgets/rt-image.php:189
+#: elementor/widgets/rt-info-box.php:883 elementor/widgets/rt-post-grid.php:647
+#: elementor/widgets/rt-post-slider.php:774
+#: elementor/widgets/rt-testimonial.php:535
+#: elementor/widgets/rt-topic-list.php:246
+msgid "Delay"
+msgstr ""
+
+#: widget/address-widget.php:77 widget/social-widget.php:113
+#: elementor/widgets/rt-accordion.php:286
+msgid "Description"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:159
+msgid "Description Color"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:41
+msgid "Description Text"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:153
+msgid "Description Typo"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:98
+#: elementor/widgets/docs-featured-tabs.php:81
+#: elementor/widgets/docs-isotope.php:72 elementor/widgets/rt-post-grid.php:184
+#: elementor/widgets/rt-post-slider.php:134
+msgid "Desecending"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:55
+msgid "Designation"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:290
+msgid "Designation Color"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:300
+msgid "Designation Space"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:277
+msgid "Designation Style"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:284
+msgid "Designation Typo"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:141
+#: elementor/widgets/docs-isotope.php:171
+#: elementor/widgets/rt-forum-grid.php:51
+#: elementor/widgets/rt-post-grid.php:671
+#: elementor/widgets/rt-testimonial.php:559
+msgid "Desktops: > 1199px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:58
+#: elementor/widgets/rt-post-slider.php:812
+#: elementor/widgets/rt-testimonial.php:619
+msgid "Desktops: > 1200px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:43
+#: elementor/widgets/rt-post-slider.php:798
+#: elementor/widgets/rt-testimonial.php:605
+msgid "Desktops: > 1600px"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:148
+#: elementor/widgets/docs-isotope.php:178
+#: elementor/widgets/rt-forum-grid.php:58
+#: elementor/widgets/rt-post-grid.php:678
+#: elementor/widgets/rt-testimonial.php:566
+msgid "Desktops: > 991px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:72
+#: elementor/widgets/rt-post-slider.php:824
+#: elementor/widgets/rt-testimonial.php:633
+msgid "Desktops: > 992px"
+msgstr ""
+
+#: post-meta.php:217 post-meta.php:227
+msgid "Disable"
+msgstr ""
+
+#: post-meta.php:68 post-meta.php:92 post-meta.php:133 post-meta.php:144
+#: post-meta.php:155 post-meta.php:165
+msgid "Disabled"
+msgstr ""
+
+#: widget/rt-post-box.php:217 widget/rt-product-box.php:227
+msgid "Display"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:66
+msgid "Display Button"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:58
+msgid "Display Category"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:105
+msgid "Display column gap"
+msgstr ""
+
+#: widget/rt-post-box.php:204
+msgid "Display post category?"
+msgstr ""
+
+#: widget/rt-post-box.php:201
+msgid "Display post date?"
+msgstr ""
+
+#: widget/rt-product-box.php:215
+msgid "Display product category?"
+msgstr ""
+
+#: widget/rt-product-box.php:212
+msgid "Display product price?"
+msgstr ""
+
+#: widget/social-widget.php:16
+msgid "Docfi : (For Footer) Social Link widget with Description"
+msgstr ""
+
+#. Base ID
+#: widget/address-widget.php:12
+msgid "Docfi : Address Info"
+msgstr ""
+
+#. Base ID
+#: widget/rt-contact.php:12
+msgid "Docfi : Contact"
+msgstr ""
+
+#: widget/rt-docs-post-list.php:19
+msgid "Docfi : Docs Post List"
+msgstr ""
+
+#: widget/font-size-controller.php:19
+msgid "Docfi : Font-Size Controller"
+msgstr ""
+
+#: widget/forum-list.php:19
+msgid "Docfi : Forum List"
+msgstr ""
+
+#: widget/rt-post-box.php:14
+msgid "Docfi : Posts display Box"
+msgstr ""
+
+#: widget/rt-product-box.php:13
+msgid "Docfi : Product display Box"
+msgstr ""
+
+#: widget/social-widget.php:19
+msgid "Docfi : Social Widget"
+msgstr ""
+
+#: widget/rt-category.php:17
+msgid "Docfi Category Widget"
+msgstr ""
+
+#. Name of the plugin
+msgid "Docfi Core"
+msgstr ""
+
+#. Description of the plugin
+msgid "Docfi Core Plugin for Docfi Theme"
+msgstr ""
+
+#: elementor/init.php:122
+msgid "Docfi Icon"
+msgstr ""
+
+#: post-types.php:19 post-types.php:20
+msgid "Docs"
+msgstr ""
+
+#: post-types.php:31
+msgid "Docs Categories"
+msgstr ""
+
+#: post-types.php:30
+msgid "Docs Category"
+msgstr ""
+
+#: post-types.php:36
+msgid "Docs Group"
+msgstr ""
+
+#: elementor/widgets/docs-group-list.php:16
+msgid "Docs Group List"
+msgstr ""
+
+#: elementor/widgets/docs-group-list-content.php:16
+msgid "Docs Group List Content"
+msgstr ""
+
+#: elementor/widgets/docs-group-single.php:16
+msgid "Docs Group Single"
+msgstr ""
+
+#: post-types.php:37
+msgid "Docs Groups"
+msgstr ""
+
+#: widget/rt-docs-post-list.php:16 widget/rt-docs-post-list.php:140
+msgid "Docs Post List"
+msgstr ""
+
+#: post-meta.php:300
+msgid "Docs Post Meta"
+msgstr ""
+
+#: elementor/widgets/rt-timeline.php:44 elementor/widgets/rt-title.php:29
+msgid "Docs Title"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:264
+#: elementor/widgets/content-toggle.php:301
+msgid "Dots Color"
+msgstr ""
+
+#: widget/social-widget.php:153
+msgid "Dribbble Plus URL"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:127
+msgid "Dropdown Category Color"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:120
+msgid "Dropdown Category Typo"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:594
+#: elementor/widgets/rt-contact-info.php:515
+#: elementor/widgets/rt-counter.php:350 elementor/widgets/rt-forum-grid.php:426
+#: elementor/widgets/rt-forum-list.php:348
+#: elementor/widgets/rt-forum-slider.php:594 elementor/widgets/rt-image.php:196
+#: elementor/widgets/rt-info-box.php:890 elementor/widgets/rt-post-grid.php:654
+#: elementor/widgets/rt-post-slider.php:781
+#: elementor/widgets/rt-testimonial.php:542
+#: elementor/widgets/rt-topic-list.php:253
+msgid "Duration"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:135
+msgid "Dynamic Style"
+msgstr ""
+
+#: widget/address-widget.php:89
+msgid "Email"
+msgstr ""
+
+#: widget/sidebar-generator.php:69 widget/sidebar-generator.php:116
+msgid "Empty nonce"
+msgstr ""
+
+#: post-meta.php:216 post-meta.php:226
+msgid "Enable"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:120
+#: elementor/widgets/rt-post-slider.php:874
+#: elementor/widgets/rt-testimonial.php:683
+msgid "Enable or disable autoplay. Default: On"
+msgstr ""
+
+#: post-meta.php:67 post-meta.php:91 post-meta.php:132 post-meta.php:143
+#: post-meta.php:154 post-meta.php:164
+msgid "Enabled"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:118
+#: elementor/widgets/docs-featured-tabs.php:101
+#: elementor/widgets/docs-isotope.php:92
+msgid "Enter Post ID that will not display"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:555
+#: elementor/widgets/rt-contact-info.php:476
+#: elementor/widgets/rt-counter.php:311 elementor/widgets/rt-forum-grid.php:387
+#: elementor/widgets/rt-forum-list.php:309
+#: elementor/widgets/rt-forum-slider.php:555 elementor/widgets/rt-image.php:157
+#: elementor/widgets/rt-info-box.php:851 elementor/widgets/rt-post-grid.php:615
+#: elementor/widgets/rt-post-slider.php:742
+#: elementor/widgets/rt-testimonial.php:503
+#: elementor/widgets/rt-topic-list.php:214
+msgid "Entrance Animation"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:125 elementor/widgets/rt-title.php:65
+msgid "Estimated reading:"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:244
+#: elementor/widgets/rt-post-slider.php:194
+msgid "Exclude Post by ID"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:82
+msgid "Experiences"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:150
+msgid "Explore Topics"
+msgstr ""
+
+#: docfi-core.php:97 module/rt-post-share.php:20
+msgid "Facebook"
+msgstr ""
+
+#: widget/social-widget.php:121
+msgid "Facebook URL"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:566
+#: elementor/widgets/rt-contact-info.php:487
+#: elementor/widgets/rt-counter.php:322 elementor/widgets/rt-forum-grid.php:398
+#: elementor/widgets/rt-forum-list.php:320
+#: elementor/widgets/rt-forum-slider.php:566 elementor/widgets/rt-image.php:168
+#: elementor/widgets/rt-info-box.php:862 elementor/widgets/rt-post-grid.php:626
+#: elementor/widgets/rt-post-slider.php:753
+#: elementor/widgets/rt-testimonial.php:514
+#: elementor/widgets/rt-topic-list.php:225
+msgid "fadeIn"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:567
+#: elementor/widgets/rt-contact-info.php:488
+#: elementor/widgets/rt-counter.php:323 elementor/widgets/rt-forum-grid.php:399
+#: elementor/widgets/rt-forum-list.php:321
+#: elementor/widgets/rt-forum-slider.php:567 elementor/widgets/rt-image.php:169
+#: elementor/widgets/rt-info-box.php:863 elementor/widgets/rt-post-grid.php:627
+#: elementor/widgets/rt-post-slider.php:754
+#: elementor/widgets/rt-testimonial.php:515
+#: elementor/widgets/rt-topic-list.php:226
+msgid "fadeInDown"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:568
+#: elementor/widgets/rt-contact-info.php:489
+#: elementor/widgets/rt-counter.php:324 elementor/widgets/rt-forum-grid.php:400
+#: elementor/widgets/rt-forum-list.php:322
+#: elementor/widgets/rt-forum-slider.php:568 elementor/widgets/rt-image.php:170
+#: elementor/widgets/rt-info-box.php:864 elementor/widgets/rt-post-grid.php:628
+#: elementor/widgets/rt-post-slider.php:755
+#: elementor/widgets/rt-testimonial.php:516
+#: elementor/widgets/rt-topic-list.php:227
+msgid "fadeInLeft"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:569
+#: elementor/widgets/rt-contact-info.php:490
+#: elementor/widgets/rt-counter.php:325 elementor/widgets/rt-forum-grid.php:401
+#: elementor/widgets/rt-forum-list.php:323
+#: elementor/widgets/rt-forum-slider.php:569 elementor/widgets/rt-image.php:171
+#: elementor/widgets/rt-info-box.php:865 elementor/widgets/rt-post-grid.php:629
+#: elementor/widgets/rt-post-slider.php:756
+#: elementor/widgets/rt-testimonial.php:517
+#: elementor/widgets/rt-topic-list.php:228
+msgid "fadeInRight"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:570
+#: elementor/widgets/rt-contact-info.php:491
+#: elementor/widgets/rt-counter.php:326 elementor/widgets/rt-forum-grid.php:402
+#: elementor/widgets/rt-forum-list.php:324
+#: elementor/widgets/rt-forum-slider.php:570 elementor/widgets/rt-image.php:172
+#: elementor/widgets/rt-info-box.php:866 elementor/widgets/rt-post-grid.php:630
+#: elementor/widgets/rt-post-slider.php:757
+#: elementor/widgets/rt-testimonial.php:518
+#: elementor/widgets/rt-topic-list.php:229
+msgid "fadeInUp"
+msgstr ""
+
+#: widget/address-widget.php:93
+msgid "Fax"
+msgstr ""
+
+#: post-meta.php:303
+msgid "Featured Post"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:69
+#: elementor/widgets/docs-featured-tabs.php:72
+msgid "Featured Products New"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:559
+#: elementor/widgets/rt-contact-info.php:480
+#: elementor/widgets/rt-counter.php:315 elementor/widgets/rt-forum-grid.php:391
+#: elementor/widgets/rt-forum-list.php:313
+#: elementor/widgets/rt-forum-slider.php:559 elementor/widgets/rt-image.php:161
+#: elementor/widgets/rt-info-box.php:855 elementor/widgets/rt-post-grid.php:619
+#: elementor/widgets/rt-post-slider.php:746
+#: elementor/widgets/rt-testimonial.php:507
+#: elementor/widgets/rt-topic-list.php:218
+msgid "flash"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:40
+msgid "Flicker Animation"
+msgstr ""
+
+#: demo-importer.php:51
+msgid "Focused Helpdesk Home"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:282
+msgid "Font Size"
+msgstr ""
+
+#: widget/font-size-controller.php:16
+msgid "Font-Size Controller"
+msgstr ""
+
+#: widget/font-size-controller.php:53 widget/forum-list.php:63
+msgid "Font-Size: Controller"
+msgstr ""
+
+#: post-meta.php:150
+msgid "Footer Area"
+msgstr ""
+
+#: post-meta.php:117
+msgid "Footer Layout"
+msgstr ""
+
+#: post-meta.php:128
+msgid "Footer Newsletter"
+msgstr ""
+
+#: post-meta.php:139
+msgid "Footer Shape"
+msgstr ""
+
+#: widget/forum-list.php:16
+msgid "Forum List"
+msgstr ""
+
+#: elementor/widgets/rt-forum-status.php:47
+msgid "Forum Stats"
+msgstr ""
+
+#: post-meta.php:44
+msgid "Full Width"
+msgstr ""
+
+#: post-meta.php:112
+msgid "Full Width Container"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:107
+msgid "Gap"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:46
+#: elementor/widgets/docs-featured-tabs.php:48
+#: elementor/widgets/docs-group-list-content.php:48
+#: elementor/widgets/docs-group-list.php:46
+#: elementor/widgets/docs-group-single.php:48
+#: elementor/widgets/docs-isotope.php:47 elementor/widgets/rt-accordion.php:45
+#: elementor/widgets/rt-button.php:28 elementor/widgets/rt-contact-info.php:76
+#: elementor/widgets/rt-counter.php:33 elementor/widgets/rt-cta.php:30
+#: elementor/widgets/rt-docs-search.php:37
+#: elementor/widgets/rt-forum-status.php:30 elementor/widgets/rt-image.php:31
+#: elementor/widgets/rt-info-box.php:30 elementor/widgets/rt-post-grid.php:46
+#: elementor/widgets/rt-post-slider.php:36 elementor/widgets/rt-tab.php:49
+#: elementor/widgets/rt-testimonial.php:77
+msgid "General"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:110
+msgid "Grid Layout"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:53
+msgid "Grid Layout 1"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:54
+msgid "Grid Layout 2"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:160
+#: elementor/widgets/rt-testimonial.php:154
+msgid "Gutters 0"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:161
+#: elementor/widgets/rt-testimonial.php:155
+msgid "Gutters 1"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:162
+#: elementor/widgets/rt-testimonial.php:156
+msgid "Gutters 2"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:163
+#: elementor/widgets/rt-testimonial.php:157
+msgid "Gutters 3"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:164
+#: elementor/widgets/rt-testimonial.php:158
+msgid "Gutters 4"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:165
+#: elementor/widgets/rt-testimonial.php:159
+msgid "Gutters 5"
+msgstr ""
+
+#: post-meta.php:75
+msgid "Header Dark Logo"
+msgstr ""
+
+#: post-meta.php:97
+msgid "Header Layout"
+msgstr ""
+
+#: post-meta.php:81
+msgid "Header Light Logo"
+msgstr ""
+
+#: post-meta.php:63
+msgid "Header On/Off"
+msgstr ""
+
+#: post-meta.php:107
+msgid "Header Width"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:96
+#: elementor/widgets/content-toggle.php:123
+#: elementor/widgets/content-toggle.php:150
+#: elementor/widgets/content-toggle.php:177
+#: elementor/widgets/content-toggle.php:205
+msgid "Heading"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:564
+#: elementor/widgets/rt-contact-info.php:485
+#: elementor/widgets/rt-counter.php:320 elementor/widgets/rt-forum-grid.php:396
+#: elementor/widgets/rt-forum-list.php:318
+#: elementor/widgets/rt-forum-slider.php:564 elementor/widgets/rt-image.php:166
+#: elementor/widgets/rt-info-box.php:860 elementor/widgets/rt-post-grid.php:624
+#: elementor/widgets/rt-post-slider.php:751
+#: elementor/widgets/rt-testimonial.php:512
+#: elementor/widgets/rt-topic-list.php:223
+msgid "headShake"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:565
+#: elementor/widgets/rt-post-slider.php:498
+msgid "Height"
+msgstr ""
+
+#: demo-importer.php:46
+msgid "Help Desk Home"
+msgstr ""
+
+#: widget/rt-post-box.php:193 widget/rt-post-box.php:218
+#: widget/rt-product-box.php:204 widget/rt-product-box.php:228
+#: elementor/widgets/docs-isotope.php:126
+#: elementor/widgets/docs-isotope.php:147 elementor/widgets/rt-counter.php:65
+#: elementor/widgets/rt-counter.php:116 elementor/widgets/rt-counter.php:134
+#: elementor/widgets/rt-docs-search.php:60
+#: elementor/widgets/rt-docs-search.php:68
+#: elementor/widgets/rt-forum-list.php:54
+#: elementor/widgets/rt-post-grid.php:262
+#: elementor/widgets/rt-post-grid.php:270
+#: elementor/widgets/rt-post-grid.php:278
+#: elementor/widgets/rt-post-grid.php:286
+#: elementor/widgets/rt-post-grid.php:294
+#: elementor/widgets/rt-post-grid.php:302
+#: elementor/widgets/rt-post-grid.php:310
+#: elementor/widgets/rt-post-grid.php:318
+#: elementor/widgets/rt-post-grid.php:426
+#: elementor/widgets/rt-post-slider.php:212
+#: elementor/widgets/rt-post-slider.php:220
+#: elementor/widgets/rt-post-slider.php:228
+#: elementor/widgets/rt-post-slider.php:236
+#: elementor/widgets/rt-post-slider.php:244
+#: elementor/widgets/rt-post-slider.php:252
+#: elementor/widgets/rt-post-slider.php:260
+#: elementor/widgets/rt-post-slider.php:268
+#: elementor/widgets/rt-post-slider.php:368
+msgid "Hide"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:326
+#: elementor/widgets/rt-info-box.php:495 elementor/widgets/rt-info-box.php:672
+#: elementor/widgets/rt-info-box.php:790
+msgid "Hover"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:500
+msgid "Hover  Color"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:153
+msgid "Hover Background Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:238
+#: elementor/widgets/rt-forum-list.php:279
+#: elementor/widgets/rt-forum-slider.php:321
+#: elementor/widgets/rt-topic-list.php:184
+msgid "Hover Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:130 elementor/widgets/rt-title.php:70
+msgid "HTML Tag"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.radiustheme.com"
+msgstr ""
+
+#: elementor/widgets/rt-social-icons.php:44
+msgid "https://your-link.com"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:109
+#: elementor/widgets/content-toggle.php:136
+#: elementor/widgets/content-toggle.php:163
+#: elementor/widgets/content-toggle.php:190
+#: elementor/widgets/content-toggle.php:218
+#: elementor/widgets/rt-accordion.php:72 elementor/widgets/rt-accordion.php:334
+#: elementor/widgets/rt-button.php:460 elementor/widgets/rt-contact-info.php:54
+#: elementor/widgets/rt-contact-info.php:114
+#: elementor/widgets/rt-contact-info.php:131
+#: elementor/widgets/rt-counter.php:63 elementor/widgets/rt-counter.php:71
+#: elementor/widgets/rt-counter.php:266 elementor/widgets/rt-info-box.php:105
+#: elementor/widgets/rt-social-icons.php:29
+#: elementor/widgets/rt-testimonial.php:118
+msgid "Icon"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:221
+#: elementor/widgets/docs-featured-tabs.php:165
+msgid "Icon Active Color"
+msgstr ""
+
+#: post-meta.php:308
+msgid "Icon Background"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:364
+#: elementor/widgets/rt-forum-grid.php:205
+#: elementor/widgets/rt-forum-list.php:246
+#: elementor/widgets/rt-forum-slider.php:288
+#: elementor/widgets/rt-forum-status.php:211
+#: elementor/widgets/rt-info-box.php:482 elementor/widgets/rt-info-box.php:521
+#: elementor/widgets/rt-info-box.php:661 elementor/widgets/rt-info-box.php:696
+#: elementor/widgets/rt-topic-list.php:151
+msgid "Icon BG Color"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:373
+msgid "Icon BG Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:385 elementor/widgets/rt-info-box.php:565
+msgid "Icon Box Height"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:131 elementor/widgets/rt-info-box.php:370
+#: elementor/widgets/rt-info-box.php:550
+msgid "Icon Box Width"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:212
+#: elementor/widgets/docs-featured-tabs.php:156
+#: elementor/widgets/rt-contact-info.php:299
+#: elementor/widgets/rt-contact-info.php:346
+#: elementor/widgets/rt-forum-grid.php:197
+#: elementor/widgets/rt-forum-list.php:238
+#: elementor/widgets/rt-forum-slider.php:280
+#: elementor/widgets/rt-forum-status.php:220
+#: elementor/widgets/rt-info-box.php:462 elementor/widgets/rt-info-box.php:501
+#: elementor/widgets/rt-info-box.php:642 elementor/widgets/rt-info-box.php:677
+#: elementor/widgets/rt-topic-list.php:143
+msgid "Icon Color"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:75
+msgid "Icon Display"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:230
+#: elementor/widgets/rt-forum-list.php:271
+#: elementor/widgets/rt-forum-slider.php:313
+#: elementor/widgets/rt-topic-list.php:176
+msgid "Icon Hover BG Color"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:355
+#: elementor/widgets/rt-forum-grid.php:222
+#: elementor/widgets/rt-forum-list.php:263
+#: elementor/widgets/rt-forum-slider.php:305
+#: elementor/widgets/rt-topic-list.php:168
+msgid "Icon Hover Color"
+msgstr ""
+
+#: post-meta.php:313
+msgid "Icon Image"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:77
+msgid "Icon Left"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:35
+msgid "Icon List"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:446
+msgid "Icon Radius"
+msgstr ""
+
+#: elementor/widgets/rt-forum-status.php:201
+#: elementor/widgets/rt-info-box.php:360
+msgid "Icon Size"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:432 elementor/widgets/rt-info-box.php:612
+msgid "Icon Space"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:383
+msgid "Icon Spacing"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:473 elementor/widgets/rt-info-box.php:512
+#: elementor/widgets/rt-info-box.php:652 elementor/widgets/rt-info-box.php:687
+msgid "Icon Stroke Color"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:333
+#: elementor/widgets/rt-forum-grid.php:191
+#: elementor/widgets/rt-forum-list.php:232
+#: elementor/widgets/rt-forum-slider.php:274
+#: elementor/widgets/rt-forum-status.php:195
+#: elementor/widgets/rt-info-box.php:353 elementor/widgets/rt-info-box.php:543
+#: elementor/widgets/rt-topic-list.php:137
+msgid "Icon Style"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:78
+msgid "Icon Top"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:484
+#: elementor/widgets/rt-contact-info.php:293
+#: elementor/widgets/rt-contact-info.php:340
+msgid "Icon Typo"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:75 elementor/widgets/rt-table.php:76
+msgid "ID"
+msgstr ""
+
+#: post-meta.php:77 post-meta.php:83 post-meta.php:244 post-meta.php:249
+#: post-meta.php:254 post-meta.php:259 post-meta.php:264 post-meta.php:269
+#: post-meta.php:315
+msgid "If not selected, default will be used"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:118
+#: elementor/widgets/rt-contact-info.php:141 elementor/widgets/rt-cta.php:47
+#: elementor/widgets/rt-image.php:73 elementor/widgets/rt-info-box.php:115
+#: elementor/widgets/rt-post-grid.php:538
+#: elementor/widgets/rt-post-slider.php:471
+msgid "Image"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:89 elementor/widgets/rt-post-grid.php:324
+#: elementor/widgets/rt-post-slider.php:274
+#: elementor/widgets/rt-testimonial.php:220
+msgid "Image Blend"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:151 elementor/widgets/rt-cta.php:56
+#: elementor/widgets/rt-image.php:82 elementor/widgets/rt-info-box.php:125
+msgid "image size"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:43
+msgid "Image size should be 90x90px"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:36
+msgid "Image Style"
+msgstr ""
+
+#: elementor/views/rt-topic-list.php:71
+msgid "In:"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:37
+msgid "Info Style 1"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:38
+msgid "Info Style 2"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:39
+msgid "Info Style 3"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:40
+msgid "Info Style 4"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:41
+msgid "Info Style 5"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:42
+msgid "Info Style 6"
+msgstr ""
+
+#: docfi-core.php:109
+msgid "Instagram"
+msgstr ""
+
+#: widget/social-widget.php:145
+msgid "Instagram URL"
+msgstr ""
+
+#: demo-importer.php:26
+msgid "Install Demo Contents"
+msgstr ""
+
+#: widget/sidebar-generator.php:72 widget/sidebar-generator.php:119
+msgid "Invalid nonce"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:205
+msgid "Isotope Menu"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:56
+msgid "It seems that, you have not saved any template yet."
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:114
+msgid "Item Angle"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:125
+msgid "Item Background"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:230
+#: elementor/widgets/docs-featured-tabs.php:174
+#: elementor/widgets/docs-featured-tabs.php:238
+#: elementor/widgets/rt-forum-grid.php:110
+msgid "Item Background Color"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:172
+#: elementor/widgets/rt-post-grid.php:343
+msgid "Item Border"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:248
+#: elementor/widgets/docs-featured-tabs.php:192
+#: elementor/widgets/docs-featured-tabs.php:247
+#: elementor/widgets/docs-group-list-content.php:134
+#: elementor/widgets/docs-group-list.php:130
+#: elementor/widgets/docs-group-single.php:134
+#: elementor/widgets/docs-isotope.php:317
+#: elementor/widgets/rt-forum-list.php:145
+#: elementor/widgets/rt-forum-slider.php:201
+#: elementor/widgets/rt-topic-list.php:64
+msgid "Item Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:158
+#: elementor/widgets/rt-testimonial.php:152
+msgid "Item Gutter"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:239
+#: elementor/widgets/docs-featured-tabs.php:183
+#: elementor/widgets/rt-forum-grid.php:118
+msgid "Item Hover Background Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:154
+#: elementor/widgets/rt-forum-slider.php:209
+#: elementor/widgets/rt-topic-list.php:72
+msgid "Item Hover Border Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:121
+#: elementor/widgets/rt-post-slider.php:100
+msgid "Item Limit"
+msgstr ""
+
+#: elementor/widgets/docs-featured-tabs.php:114
+#: elementor/widgets/docs-isotope.php:115
+msgid "Item Number"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:143
+msgid "Item Padding"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:138
+msgid "Item Spacing"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:92
+#: elementor/widgets/rt-forum-list.php:65
+#: elementor/widgets/rt-forum-slider.php:183
+#: elementor/widgets/rt-topic-list.php:46
+msgid "Item Typo"
+msgstr ""
+
+#: elementor/widgets/rt-timeline.php:29
+msgid "January"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:64
+msgid "Join the community"
+msgstr ""
+
+#: widget/font-size-controller.php:63 widget/forum-list.php:73
+#: widget/rt-docs-post-list.php:150
+msgid "Label"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:273
+msgid "Label Color"
+msgstr ""
+
+#: post-meta.php:40 elementor/widgets/rt-tab.php:55
+#: elementor/widgets/rt-testimonial.php:83
+msgid "Layout"
+msgstr ""
+
+#: post-meta.php:101 post-meta.php:121
+msgid "Layout 1"
+msgstr ""
+
+#: post-meta.php:102 post-meta.php:122
+msgid "Layout 2"
+msgstr ""
+
+#: post-meta.php:31
+msgid "Layout Settings"
+msgstr ""
+
+#: post-meta.php:35
+msgid "Layouts"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:88
+msgid "Left"
+msgstr ""
+
+#: post-meta.php:45
+msgid "Left Sidebar"
+msgstr ""
+
+#: module/rt-post-length.php:21
+msgid "Less than a minute"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:510
+msgid "Line  Color"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:400 elementor/widgets/rt-info-box.php:580
+msgid "Line Box Height"
+msgstr ""
+
+#: docfi-core.php:105 module/rt-post-share.php:35
+msgid "LinkedIn"
+msgstr ""
+
+#: widget/social-widget.php:129
+msgid "LinkedIn URL"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:67
+msgid "List Text"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:29
+msgid "List Title"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:31
+msgid "List Type"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:174
+#: elementor/widgets/docs-featured-tabs.php:134
+msgid "Logo Style"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:168
+#: elementor/widgets/rt-post-slider.php:926
+#: elementor/widgets/rt-testimonial.php:735
+msgid "Loop"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:172
+#: elementor/widgets/rt-post-slider.php:930
+#: elementor/widgets/rt-testimonial.php:739
+msgid "Loop to first item. Default: On"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:37
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium accumsan "
+"risus orci in tellus velit rhoncus turpis. Massa varius venenatis felis in "
+"non non fusce."
+msgstr ""
+
+#: demo-importer.php:41
+msgid "Main Home"
+msgstr ""
+
+#: post-meta.php:57
+msgid "Main Menu"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:136
+msgid "Manually"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:189
+#: elementor/widgets/rt-accordion.php:265
+#: elementor/widgets/rt-accordion.php:321
+#: elementor/widgets/rt-forum-list.php:115
+#: elementor/widgets/rt-post-grid.php:405
+#: elementor/widgets/rt-post-grid.php:469
+#: elementor/widgets/rt-post-grid.php:525
+#: elementor/widgets/rt-post-slider.php:347
+#: elementor/widgets/rt-post-slider.php:411
+#: elementor/widgets/rt-post-slider.php:458
+msgid "Margin"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:113
+msgid "Masonry Layout"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:131
+msgid "Maximum number of Item"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:110
+msgid "Maximum number of Item 27"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:153
+#: elementor/widgets/rt-post-slider.php:117
+msgid "Maximum number of title"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:435
+#: elementor/widgets/rt-post-slider.php:377
+msgid "Maximum number of words"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:123
+#: elementor/widgets/rt-info-box.php:97
+msgid "Media Type"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:242
+msgid "Menu Active Background"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:231
+msgid "Menu Active Color"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:222
+msgid "Menu Background"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:213
+msgid "Menu Color"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:133
+msgid "Menu Style"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:514
+#: elementor/widgets/rt-post-slider.php:447
+msgid "Meta Author Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:495
+#: elementor/widgets/rt-post-slider.php:437
+msgid "Meta Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:505
+msgid "Meta Icon Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:482
+#: elementor/widgets/rt-post-slider.php:424
+msgid "Meta Style"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:489
+#: elementor/widgets/rt-post-slider.php:431
+msgid "Meta Typo"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:144
+msgid "More Button"
+msgstr ""
+
+#: widget/rt-post-box.php:186 widget/rt-product-box.php:198
+msgid "Most Commented"
+msgstr ""
+
+#: widget/rt-post-box.php:187
+msgid "Most Rating"
+msgstr ""
+
+#: widget/rt-post-box.php:185 widget/rt-product-box.php:197
+msgid "Most Viewed"
+msgstr ""
+
+#: widget/sidebar-generator.php:38
+msgid "Name"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:450
+#: elementor/widgets/rt-post-slider.php:637
+#: elementor/widgets/rt-testimonial.php:866
+msgid "Nav Background Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:459
+#: elementor/widgets/rt-post-slider.php:646
+#: elementor/widgets/rt-testimonial.php:875
+msgid "Nav Background Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:432
+#: elementor/widgets/rt-post-slider.php:619
+#: elementor/widgets/rt-testimonial.php:846
+msgid "Nav Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:477
+#: elementor/widgets/rt-post-slider.php:664
+#: elementor/widgets/rt-testimonial.php:893
+msgid "Nav Height"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:441
+#: elementor/widgets/rt-post-slider.php:628
+#: elementor/widgets/rt-testimonial.php:856
+msgid "Nav Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:334
+#: elementor/widgets/rt-post-slider.php:521
+#: elementor/widgets/rt-testimonial.php:748
+msgid "Nav Option"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:349
+#: elementor/widgets/rt-post-slider.php:536
+#: elementor/widgets/rt-testimonial.php:763
+msgid "Nav Position"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:487
+#: elementor/widgets/rt-post-slider.php:674
+#: elementor/widgets/rt-testimonial.php:903
+msgid "Nav Radius"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:361
+#: elementor/widgets/rt-post-slider.php:548
+#: elementor/widgets/rt-testimonial.php:775
+msgid "Nav Space"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:468
+#: elementor/widgets/rt-post-slider.php:655
+#: elementor/widgets/rt-testimonial.php:884
+msgid "Nav Width"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:340
+#: elementor/widgets/rt-post-slider.php:527
+#: elementor/widgets/rt-testimonial.php:754
+msgid "Navigation Arrow"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:427
+#: elementor/widgets/rt-post-slider.php:614
+msgid "Navigation Arrow. Default: Off"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:344
+#: elementor/widgets/rt-post-slider.php:531
+#: elementor/widgets/rt-testimonial.php:758
+#: elementor/widgets/rt-testimonial.php:841
+msgid "Navigation Arrow. Default: On"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:403
+#: elementor/widgets/rt-post-slider.php:590
+#: elementor/widgets/rt-testimonial.php:817
+msgid "Next Arrow"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:108
+msgid "No Gap"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:557
+#: elementor/widgets/rt-contact-info.php:478
+#: elementor/widgets/rt-counter.php:313 elementor/widgets/rt-forum-grid.php:389
+#: elementor/widgets/rt-forum-list.php:311
+#: elementor/widgets/rt-forum-slider.php:557 elementor/widgets/rt-image.php:159
+#: elementor/widgets/rt-info-box.php:853 elementor/widgets/rt-post-grid.php:617
+#: elementor/widgets/rt-post-slider.php:744
+#: elementor/widgets/rt-testimonial.php:505
+#: elementor/widgets/rt-topic-list.php:216
+msgid "none"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:249
+#: elementor/widgets/rt-forum-grid.php:281
+#: elementor/widgets/rt-info-box.php:456 elementor/widgets/rt-info-box.php:637
+#: elementor/widgets/rt-info-box.php:745
+msgid "Normal"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:117
+msgid "Number Active Background"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:108
+msgid "Number Active Color"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:99
+msgid "Number Background"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:90
+msgid "Number Color"
+msgstr ""
+
+#: widget/rt-post-box.php:197
+msgid "Number of posts to show:"
+msgstr ""
+
+#: widget/rt-product-box.php:208
+msgid "Number of Product to show:"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:136
+#: elementor/widgets/docs-isotope.php:166
+#: elementor/widgets/rt-post-grid.php:666
+#: elementor/widgets/rt-testimonial.php:553
+msgid "Number of Responsive Columns"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:82
+msgid "Number Style"
+msgstr ""
+
+#: elementor/init.php:143 elementor/init.php:171
+#: elementor/widgets/docs-cat-list.php:77
+#: elementor/widgets/docs-cat-list.php:87 elementor/widgets/rt-button.php:548
+#: elementor/widgets/rt-contact-info.php:469
+#: elementor/widgets/rt-counter.php:304 elementor/widgets/rt-forum-grid.php:380
+#: elementor/widgets/rt-forum-list.php:302
+#: elementor/widgets/rt-forum-slider.php:118
+#: elementor/widgets/rt-forum-slider.php:137
+#: elementor/widgets/rt-forum-slider.php:170
+#: elementor/widgets/rt-forum-slider.php:342
+#: elementor/widgets/rt-forum-slider.php:425
+#: elementor/widgets/rt-forum-slider.php:548 elementor/widgets/rt-image.php:150
+#: elementor/widgets/rt-info-box.php:844 elementor/widgets/rt-post-grid.php:608
+#: elementor/widgets/rt-post-slider.php:529
+#: elementor/widgets/rt-post-slider.php:612
+#: elementor/widgets/rt-post-slider.php:735
+#: elementor/widgets/rt-post-slider.php:872
+#: elementor/widgets/rt-post-slider.php:891
+#: elementor/widgets/rt-post-slider.php:928
+#: elementor/widgets/rt-testimonial.php:181
+#: elementor/widgets/rt-testimonial.php:496
+#: elementor/widgets/rt-testimonial.php:681
+#: elementor/widgets/rt-testimonial.php:700
+#: elementor/widgets/rt-testimonial.php:737
+#: elementor/widgets/rt-testimonial.php:756
+#: elementor/widgets/rt-testimonial.php:839 elementor/widgets/rt-title.php:89
+#: elementor/widgets/rt-title.php:98 elementor/widgets/rt-topic-list.php:207
+msgid "Off"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:237
+#: elementor/widgets/rt-post-slider.php:187
+msgid "Offset ( No of Posts )"
+msgstr ""
+
+#: elementor/init.php:144 elementor/widgets/docs-cat-list.php:76
+#: elementor/widgets/docs-cat-list.php:86 elementor/widgets/rt-button.php:547
+#: elementor/widgets/rt-contact-info.php:468
+#: elementor/widgets/rt-counter.php:303 elementor/widgets/rt-forum-grid.php:379
+#: elementor/widgets/rt-forum-list.php:301
+#: elementor/widgets/rt-forum-slider.php:117
+#: elementor/widgets/rt-forum-slider.php:136
+#: elementor/widgets/rt-forum-slider.php:169
+#: elementor/widgets/rt-forum-slider.php:341
+#: elementor/widgets/rt-forum-slider.php:424
+#: elementor/widgets/rt-forum-slider.php:547 elementor/widgets/rt-image.php:149
+#: elementor/widgets/rt-info-box.php:843 elementor/widgets/rt-post-grid.php:607
+#: elementor/widgets/rt-post-slider.php:528
+#: elementor/widgets/rt-post-slider.php:611
+#: elementor/widgets/rt-post-slider.php:734
+#: elementor/widgets/rt-post-slider.php:871
+#: elementor/widgets/rt-post-slider.php:890
+#: elementor/widgets/rt-post-slider.php:927
+#: elementor/widgets/rt-testimonial.php:180
+#: elementor/widgets/rt-testimonial.php:495
+#: elementor/widgets/rt-testimonial.php:680
+#: elementor/widgets/rt-testimonial.php:699
+#: elementor/widgets/rt-testimonial.php:736
+#: elementor/widgets/rt-testimonial.php:755
+#: elementor/widgets/rt-testimonial.php:838 elementor/widgets/rt-title.php:88
+#: elementor/widgets/rt-title.php:97 elementor/widgets/rt-topic-list.php:206
+msgid "On"
+msgstr ""
+
+#: elementor/init.php:170
+msgid "on"
+msgstr ""
+
+#: post-meta.php:290
+msgid "Only work for the gallery post format"
+msgstr ""
+
+#: post-meta.php:285
+msgid "Only work for the video post format"
+msgstr ""
+
+#: widget/sidebar-generator.php:172 widget/sidebar-generator.php:211
+msgid "Operation failed"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:254
+#: elementor/widgets/rt-post-slider.php:204
+#: elementor/widgets/rt-testimonial.php:172
+msgid "Option"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:258
+#: elementor/widgets/docs-featured-tabs.php:202
+#: elementor/widgets/docs-featured-tabs.php:257
+#: elementor/widgets/docs-group-list-content.php:144
+#: elementor/widgets/docs-group-list.php:140
+#: elementor/widgets/docs-group-single.php:144
+#: elementor/widgets/docs-isotope.php:327
+#: elementor/widgets/rt-accordion.php:254
+#: elementor/widgets/rt-accordion.php:310
+#: elementor/widgets/rt-contact-info.php:200
+#: elementor/widgets/rt-forum-grid.php:100
+#: elementor/widgets/rt-forum-list.php:104
+#: elementor/widgets/rt-forum-slider.php:191
+#: elementor/widgets/rt-post-grid.php:458
+#: elementor/widgets/rt-post-slider.php:400
+#: elementor/widgets/rt-topic-list.php:54
+msgid "Padding"
+msgstr ""
+
+#: post-meta.php:257
+msgid "Page/Post Background Color"
+msgstr ""
+
+#: post-meta.php:252
+msgid "Page/Post Background Image"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:423
+#: elementor/widgets/rt-post-slider.php:610
+#: elementor/widgets/rt-testimonial.php:837
+msgid "Pagination"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:506
+#: elementor/widgets/rt-post-slider.php:693
+#: elementor/widgets/rt-testimonial.php:922
+msgid "Pagination BG Active Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:497
+#: elementor/widgets/rt-post-slider.php:684
+#: elementor/widgets/rt-testimonial.php:913
+msgid "Pagination BG Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:516
+#: elementor/widgets/rt-post-slider.php:703
+#: elementor/widgets/rt-testimonial.php:932
+msgid "Pagination Space"
+msgstr ""
+
+#: elementor/init.php:141
+msgid "Parallax"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:39
+msgid "Parallax Image"
+msgstr ""
+
+#: elementor/init.php:168
+msgid "Parallax Transition off?"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:793
+#: elementor/widgets/rt-testimonial.php:599
+msgid "Per View Options"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:38
+#: elementor/widgets/rt-forum-list.php:30
+#: elementor/widgets/rt-forum-slider.php:38
+#: elementor/widgets/rt-topic-list.php:29
+msgid "PerView Options"
+msgstr ""
+
+#: widget/address-widget.php:85 widget/rt-contact.php:68
+msgid "Phone Number"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:587
+msgid "Phones: < 576px"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:162
+#: elementor/widgets/docs-isotope.php:192
+#: elementor/widgets/rt-forum-grid.php:72
+#: elementor/widgets/rt-post-grid.php:692
+msgid "Phones: < 768px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:95
+#: elementor/widgets/rt-post-slider.php:848
+#: elementor/widgets/rt-testimonial.php:580
+#: elementor/widgets/rt-testimonial.php:657
+msgid "Phones: > 576px"
+msgstr ""
+
+#: docfi-core.php:113 module/rt-post-share.php:40
+msgid "Pinterest"
+msgstr ""
+
+#: widget/social-widget.php:133
+msgid "Pinterest URL"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:52
+msgid "Placeholder Text"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:85
+#: elementor/widgets/rt-post-slider.php:75
+msgid "Play Button"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:87
+#: elementor/widgets/rt-post-slider.php:77
+msgid "Play Primary"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:90
+#: elementor/widgets/rt-post-slider.php:80
+msgid "Play transparent"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:88
+#: elementor/widgets/rt-post-slider.php:78
+msgid "Play White"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:89
+#: elementor/widgets/rt-post-slider.php:79
+msgid "Play White-lg"
+msgstr ""
+
+#: docfi-core.php:91
+msgid "Please enter your Author Designation"
+msgstr ""
+
+#: docfi-core.php:98
+msgid "Please enter your facebook URL."
+msgstr ""
+
+#: docfi-core.php:110
+msgid "Please enter your Instagram Profile"
+msgstr ""
+
+#: docfi-core.php:106
+msgid "Please enter your LinkedIn Profile"
+msgstr ""
+
+#: docfi-core.php:114
+msgid "Please enter your Pinterest Profile"
+msgstr ""
+
+#: docfi-core.php:102
+msgid "Please enter your Twitter username."
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:38
+#: elementor/widgets/docs-featured-tabs.php:38
+#: elementor/widgets/docs-isotope.php:37
+msgid "Please Selecet category"
+msgstr ""
+
+#: elementor/widgets/docs-group-list-content.php:38
+#: elementor/widgets/docs-group-list.php:36
+#: elementor/widgets/docs-group-single.php:38
+msgid "Please Selecet Group"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:74
+msgid "Popular Text"
+msgstr ""
+
+#: widget/rt-post-box.php:182 widget/rt-product-box.php:194
+msgid "Post Display Order : "
+msgstr ""
+
+#: widget/rt-post-box.php:11
+msgid "Post Display Widget"
+msgstr ""
+
+#: post-meta.php:288
+msgid "Post Gallery"
+msgstr ""
+
+#: elementor/widgets/docs-group-list-content.php:125
+#: elementor/widgets/docs-group-list.php:121
+#: elementor/widgets/docs-group-single.php:125
+#: elementor/widgets/docs-isotope.php:308
+msgid "Post Icon Color"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:123
+#: elementor/widgets/docs-featured-tabs.php:106
+#: elementor/widgets/docs-isotope.php:97 elementor/widgets/rt-post-grid.php:38
+#: elementor/widgets/rt-post-slider.php:28
+msgid "Post ID"
+msgstr ""
+
+#: post-meta.php:279
+msgid "Post Info"
+msgstr ""
+
+#: elementor/widgets/docs-group-list-content.php:107
+#: elementor/widgets/docs-group-list.php:103
+#: elementor/widgets/docs-group-single.php:107
+#: elementor/widgets/docs-isotope.php:290
+msgid "Post List Color"
+msgstr ""
+
+#: elementor/widgets/docs-group-list-content.php:116
+#: elementor/widgets/docs-group-list.php:112
+#: elementor/widgets/docs-group-single.php:116
+#: elementor/widgets/docs-isotope.php:299
+msgid "Post List Hover Color"
+msgstr ""
+
+#: elementor/widgets/docs-group-list-content.php:76
+#: elementor/widgets/docs-group-list.php:72
+#: elementor/widgets/docs-group-single.php:76
+#: elementor/widgets/docs-isotope.php:259
+msgid "Post List Style"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:96
+#: elementor/widgets/docs-featured-tabs.php:79
+#: elementor/widgets/docs-isotope.php:70 elementor/widgets/rt-post-grid.php:182
+#: elementor/widgets/rt-post-slider.php:132
+msgid "Post Ordering"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:106
+#: elementor/widgets/docs-featured-tabs.php:89
+#: elementor/widgets/docs-isotope.php:80 elementor/widgets/rt-post-grid.php:192
+#: elementor/widgets/rt-post-slider.php:142
+msgid "Post Sorting"
+msgstr ""
+
+#: elementor/views/rt-forum-grid.php:39 elementor/views/rt-forum-slider.php:41
+#: elementor/widgets/rt-post-grid.php:208
+#: elementor/widgets/rt-post-slider.php:158
+msgid "Posts"
+msgstr ""
+
+#. %s: Author's display name.
+#: module/authors-info.php:60
+#, php-format
+msgid "Posts by %s"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:382
+#: elementor/widgets/rt-post-slider.php:569
+#: elementor/widgets/rt-testimonial.php:796
+msgid "Prev Arrow"
+msgstr ""
+
+#: post-meta.php:262
+msgid "Primary Color"
+msgstr ""
+
+#: module/rt-post-share.php:71
+msgid "Print"
+msgstr ""
+
+#: widget/rt-product-box.php:10
+msgid "Product Display Widget"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:144
+msgid ""
+"psum is simply dummy text the pritypesetting industry Lorem Ipsum has been "
+"the industry’s standard many more."
+msgstr ""
+
+#: elementor/widgets/rt-title.php:87
+msgid "Public Minutes Display"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:560
+#: elementor/widgets/rt-contact-info.php:481
+#: elementor/widgets/rt-counter.php:316 elementor/widgets/rt-forum-grid.php:392
+#: elementor/widgets/rt-forum-list.php:314
+#: elementor/widgets/rt-forum-slider.php:560 elementor/widgets/rt-image.php:162
+#: elementor/widgets/rt-info-box.php:856 elementor/widgets/rt-post-grid.php:620
+#: elementor/widgets/rt-post-slider.php:747
+#: elementor/widgets/rt-testimonial.php:508
+#: elementor/widgets/rt-topic-list.php:219
+msgid "pulse"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:176
+#: elementor/widgets/rt-post-slider.php:126
+msgid "Query Settings"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:203
+#: elementor/widgets/rt-post-slider.php:153
+msgid "Query type"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:382
+msgid "Quote Color"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:179
+msgid "Quote Display"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:393
+msgid "Quote Space"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:369
+msgid "Quote Style"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:376
+msgid "Quote Typo"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:211
+#: elementor/widgets/rt-counter.php:182
+msgid "Radius"
+msgstr ""
+
+#. Author of the plugin
+msgid "RadiusTheme"
+msgstr ""
+
+#: elementor/init.php:99
+msgid "RadiusTheme Elements"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:109
+#: elementor/widgets/docs-featured-tabs.php:92
+#: elementor/widgets/docs-isotope.php:83 elementor/widgets/rt-post-grid.php:195
+#: elementor/widgets/rt-post-slider.php:145
+msgid "Random Post"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:81 elementor/widgets/rt-table.php:82
+msgid "Reading #1"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:87 elementor/widgets/rt-table.php:88
+msgid "Reading #2"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:93 elementor/widgets/rt-table.php:94
+msgid "Reading #3"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:99 elementor/widgets/rt-table.php:100
+msgid "Reading #4"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:37
+msgid "Reading Number 1"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:45
+msgid "Reading Number 2"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:53
+msgid "Reading Number 3"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:61
+msgid "Reading Number 4"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:97
+#: elementor/widgets/rt-post-slider.php:87
+msgid "Readmore Button"
+msgstr ""
+
+#: widget/rt-post-box.php:184 widget/rt-product-box.php:196
+msgid "Recent"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:108
+#: elementor/widgets/docs-featured-tabs.php:91
+#: elementor/widgets/docs-isotope.php:82 elementor/widgets/rt-post-grid.php:194
+#: elementor/widgets/rt-post-slider.php:144
+msgid "Recent Post"
+msgstr ""
+
+#: widget/rt-product-box.php:20
+msgid "Recent Product"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:145 elementor/widgets/rt-cta.php:51
+#: elementor/widgets/rt-image.php:77 elementor/widgets/rt-info-box.php:119
+msgid "Recommended full image"
+msgstr ""
+
+#: module/rt-post-share.php:66
+msgid "Reddit"
+msgstr ""
+
+#: elementor/views/rt-forum-grid.php:44 elementor/views/rt-forum-slider.php:46
+#: elementor/views/rt-topic-list.php:28
+msgid "Replies"
+msgstr ""
+
+#: post-meta.php:46
+msgid "Right Sidebar"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:17
+msgid "RT Accordion"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:18
+msgid "RT Button"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:20
+msgid "RT Contact Info"
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:18
+msgid "RT Counter"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:20
+msgid "RT CTA"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:17
+msgid "RT Docs Cat List"
+msgstr ""
+
+#: elementor/widgets/docs-featured-tabs.php:17
+msgid "RT Docs Featured Post"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:16
+msgid "RT Docs Isotope"
+msgstr ""
+
+#: elementor/widgets/rt-title.php:19
+msgid "RT Docs Title"
+msgstr ""
+
+#: elementor/widgets/rt-font-size-controller.php:19
+#: elementor/widgets/rt-font-size-controller.php:29
+msgid "RT Font-Size Controller"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:17
+msgid "RT Forum Grid"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:18
+msgid "RT Forum List"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:17
+msgid "RT Forum Slider"
+msgstr ""
+
+#: elementor/widgets/rt-forum-status.php:20
+msgid "RT Forum Status"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:21
+msgid "RT Image"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:20
+msgid "RT Info Box"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:19
+msgid "RT Post Grid"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:18
+msgid "RT Post Slider"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:18
+msgid "RT Search Ajax"
+msgstr ""
+
+#: elementor/widgets/rt-social-icons.php:17
+msgid "RT Social Icons"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:18
+msgid "RT Tab"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:19 elementor/widgets/rt-table.php:70
+msgid "RT Table"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:18
+msgid "RT Testimonials"
+msgstr ""
+
+#: elementor/widgets/rt-timeline.php:18
+msgid "RT Timeline"
+msgstr ""
+
+#: elementor/widgets/rt-topic-list.php:17
+msgid "RT Topic List"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:561
+#: elementor/widgets/rt-contact-info.php:482
+#: elementor/widgets/rt-counter.php:317 elementor/widgets/rt-forum-grid.php:393
+#: elementor/widgets/rt-forum-list.php:315
+#: elementor/widgets/rt-forum-slider.php:561 elementor/widgets/rt-image.php:163
+#: elementor/widgets/rt-info-box.php:857 elementor/widgets/rt-post-grid.php:621
+#: elementor/widgets/rt-post-slider.php:748
+#: elementor/widgets/rt-testimonial.php:509
+#: elementor/widgets/rt-topic-list.php:220
+msgid "rubberBand"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:64
+msgid "Saved Page"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:63
+msgid "Saved Section"
+msgstr ""
+
+#: elementor/views/rt-docs-search-2.php:45
+#: elementor/views/rt-docs-search.php:41
+msgid "Search"
+msgstr ""
+
+#: widget/search-widget.php:14
+msgid "Search Here  ..."
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:190
+msgid "Search Key Text Color"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:199
+msgid "Search Key Text Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:182
+msgid "Search Key Title Color"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:28
+msgid "Search Word"
+msgstr ""
+
+#: post-meta.php:267
+msgid "Secondary Color"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:39
+msgid ""
+"Sed ut perspiciatis unde omnis iste natus error sittery voluptatem "
+"accusantium doloremque lauda awrntiu totam rem aperiam, eaque ipsa quaed "
+"ieawr nven tore veritatis et quasi architecto"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:50
+msgid "Select"
+msgstr ""
+
+#: widget/rt-post-box.php:207 widget/rt-product-box.php:218
+msgid "Select Box Style : "
+msgstr ""
+
+#: widget/rt-category.php:144
+msgid "Select Category Style : "
+msgstr ""
+
+#: post-meta.php:319
+msgid "Select Group"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:102
+#: elementor/widgets/content-toggle.php:129
+#: elementor/widgets/content-toggle.php:156
+#: elementor/widgets/content-toggle.php:183
+#: elementor/widgets/content-toggle.php:211
+msgid "Select Template"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:213
+#: elementor/widgets/rt-post-slider.php:163
+msgid "Selects posts"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:29
+msgid "Serial ID: 1"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:162
+#: elementor/widgets/rt-post-slider.php:920
+#: elementor/widgets/rt-testimonial.php:729
+msgid ""
+"Set any value for example .8 seconds to play it in every 2 seconds. Default: "
+".8 Seconds"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:154
+#: elementor/widgets/rt-post-slider.php:912
+#: elementor/widgets/rt-testimonial.php:721
+msgid ""
+"Set any value for example 5 seconds to play it in every 5 seconds. Default: "
+"5 Seconds"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:562
+#: elementor/widgets/rt-contact-info.php:483
+#: elementor/widgets/rt-counter.php:318 elementor/widgets/rt-forum-grid.php:394
+#: elementor/widgets/rt-forum-list.php:316
+#: elementor/widgets/rt-forum-slider.php:562 elementor/widgets/rt-image.php:164
+#: elementor/widgets/rt-info-box.php:858 elementor/widgets/rt-post-grid.php:622
+#: elementor/widgets/rt-post-slider.php:749
+#: elementor/widgets/rt-testimonial.php:510
+#: elementor/widgets/rt-topic-list.php:221
+msgid "shakeX"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:563
+#: elementor/widgets/rt-contact-info.php:484
+#: elementor/widgets/rt-counter.php:319 elementor/widgets/rt-forum-grid.php:395
+#: elementor/widgets/rt-forum-list.php:317
+#: elementor/widgets/rt-forum-slider.php:563 elementor/widgets/rt-image.php:165
+#: elementor/widgets/rt-info-box.php:859 elementor/widgets/rt-post-grid.php:623
+#: elementor/widgets/rt-post-slider.php:750
+#: elementor/widgets/rt-testimonial.php:511
+#: elementor/widgets/rt-topic-list.php:222
+msgid "shakeY"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:96
+msgid "Shape Background color"
+msgstr ""
+
+#: elementor/widgets/rt-social-icons.php:81
+msgid "Share"
+msgstr ""
+
+#: module/rt-post-share.php:77
+msgid "Share via Email"
+msgstr ""
+
+#: widget/rt-post-box.php:194 widget/rt-product-box.php:205
+#: elementor/widgets/docs-isotope.php:125
+#: elementor/widgets/docs-isotope.php:146 elementor/widgets/rt-counter.php:64
+#: elementor/widgets/rt-counter.php:115 elementor/widgets/rt-counter.php:133
+#: elementor/widgets/rt-docs-search.php:59
+#: elementor/widgets/rt-docs-search.php:67
+#: elementor/widgets/rt-forum-list.php:53
+#: elementor/widgets/rt-post-grid.php:261
+#: elementor/widgets/rt-post-grid.php:269
+#: elementor/widgets/rt-post-grid.php:277
+#: elementor/widgets/rt-post-grid.php:285
+#: elementor/widgets/rt-post-grid.php:293
+#: elementor/widgets/rt-post-grid.php:301
+#: elementor/widgets/rt-post-grid.php:309
+#: elementor/widgets/rt-post-grid.php:317
+#: elementor/widgets/rt-post-grid.php:425
+#: elementor/widgets/rt-post-slider.php:211
+#: elementor/widgets/rt-post-slider.php:219
+#: elementor/widgets/rt-post-slider.php:227
+#: elementor/widgets/rt-post-slider.php:235
+#: elementor/widgets/rt-post-slider.php:243
+#: elementor/widgets/rt-post-slider.php:251
+#: elementor/widgets/rt-post-slider.php:259
+#: elementor/widgets/rt-post-slider.php:267
+#: elementor/widgets/rt-post-slider.php:367
+msgid "Show"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:260
+#: elementor/widgets/rt-post-slider.php:210
+msgid "Show Author"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:276
+#: elementor/widgets/rt-post-slider.php:226
+msgid "Show Categories"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:284
+#: elementor/widgets/rt-post-slider.php:234
+msgid "Show Comment"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:268
+#: elementor/widgets/rt-post-slider.php:218
+msgid "Show Date"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:292
+#: elementor/widgets/rt-post-slider.php:242
+msgid "Show Lenght"
+msgstr ""
+
+#: widget/rt-post-box.php:191 widget/rt-product-box.php:202
+msgid "Show no preview image : "
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:89
+msgid "Show or Hide Cat Content. Default: off"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:79
+msgid "Show or Hide Content. Default: Show"
+msgstr ""
+
+#: elementor/widgets/rt-title.php:91
+msgid "Show or Hide Public Minutes. Default: On"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:183
+msgid "Show or Hide Quote. Default: On"
+msgstr ""
+
+#: elementor/widgets/rt-title.php:100
+msgid "Show or Hide Views. Default: On"
+msgstr ""
+
+#: widget/rt-post-box.php:215 widget/rt-product-box.php:225
+msgid "Show Post Image : "
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:316
+#: elementor/widgets/rt-post-slider.php:266
+msgid "Show Read More"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:308
+#: elementor/widgets/rt-post-slider.php:258
+msgid "Show Video"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:300
+#: elementor/widgets/rt-post-slider.php:250
+msgid "Show View"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:123
+msgid "Show/Hide Category"
+msgstr ""
+
+#: widget/sidebar-generator.php:113
+msgid "Sidebar ID not found"
+msgstr ""
+
+#: widget/sidebar-generator.php:66
+msgid "Sidebar name can\\'t be empty"
+msgstr ""
+
+#: widget/sidebar-generator.php:79
+msgid ""
+"Sidebar with the same name already exists. Please choose a different name"
+msgstr ""
+
+#: elementor/widgets/rt-image.php:38
+msgid "Single Image"
+msgstr ""
+
+#: widget/social-widget.php:137
+msgid "Skype URL"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:576
+#: elementor/widgets/rt-contact-info.php:497
+#: elementor/widgets/rt-counter.php:332 elementor/widgets/rt-forum-grid.php:408
+#: elementor/widgets/rt-forum-list.php:330
+#: elementor/widgets/rt-forum-slider.php:576 elementor/widgets/rt-image.php:178
+#: elementor/widgets/rt-info-box.php:872 elementor/widgets/rt-post-grid.php:636
+#: elementor/widgets/rt-post-slider.php:763
+#: elementor/widgets/rt-testimonial.php:524
+#: elementor/widgets/rt-topic-list.php:235
+msgid "slideInDown"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:577
+#: elementor/widgets/rt-contact-info.php:498
+#: elementor/widgets/rt-counter.php:333 elementor/widgets/rt-forum-grid.php:409
+#: elementor/widgets/rt-forum-list.php:331
+#: elementor/widgets/rt-forum-slider.php:577 elementor/widgets/rt-image.php:179
+#: elementor/widgets/rt-info-box.php:873 elementor/widgets/rt-post-grid.php:637
+#: elementor/widgets/rt-post-slider.php:764
+#: elementor/widgets/rt-testimonial.php:525
+#: elementor/widgets/rt-topic-list.php:236
+msgid "slideInLeft"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:578
+#: elementor/widgets/rt-contact-info.php:499
+#: elementor/widgets/rt-counter.php:334 elementor/widgets/rt-forum-grid.php:410
+#: elementor/widgets/rt-forum-list.php:332
+#: elementor/widgets/rt-forum-slider.php:578 elementor/widgets/rt-image.php:180
+#: elementor/widgets/rt-info-box.php:874 elementor/widgets/rt-post-grid.php:638
+#: elementor/widgets/rt-post-slider.php:765
+#: elementor/widgets/rt-testimonial.php:526
+#: elementor/widgets/rt-topic-list.php:237
+msgid "slideInRight"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:579
+#: elementor/widgets/rt-contact-info.php:500
+#: elementor/widgets/rt-counter.php:335 elementor/widgets/rt-forum-grid.php:411
+#: elementor/widgets/rt-forum-list.php:333
+#: elementor/widgets/rt-forum-slider.php:579 elementor/widgets/rt-image.php:181
+#: elementor/widgets/rt-info-box.php:875 elementor/widgets/rt-post-grid.php:639
+#: elementor/widgets/rt-post-slider.php:766
+#: elementor/widgets/rt-testimonial.php:527
+#: elementor/widgets/rt-topic-list.php:238
+msgid "slideInUp"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:43
+msgid "Slider Layout 01"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:44
+msgid "Slider Layout 02"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:85
+msgid "Slider Layout 1"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:86
+msgid "Slider Layout 2"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:111
+#: elementor/widgets/rt-post-slider.php:865
+#: elementor/widgets/rt-testimonial.php:673
+msgid "Slider Options"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:41
+msgid "Slider Style"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:126
+#: elementor/widgets/rt-post-slider.php:880
+#: elementor/widgets/rt-testimonial.php:689
+msgid "slides Per Group"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:130
+#: elementor/widgets/rt-post-slider.php:884
+#: elementor/widgets/rt-testimonial.php:693
+msgid "slides Per Group. Default: 1"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:145
+#: elementor/widgets/rt-post-slider.php:899
+#: elementor/widgets/rt-testimonial.php:708
+msgid "Slides Space"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:147
+msgid "Slides Space. Default: 10"
+msgstr ""
+
+#: elementor/widgets/rt-post-slider.php:905
+#: elementor/widgets/rt-testimonial.php:714
+msgid "Slides Space. Default: 24"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:79
+#: elementor/widgets/rt-post-grid.php:699
+msgid "Small Phones: < 480px"
+msgstr ""
+
+#: elementor/widgets/rt-social-icons.php:51
+msgid "Social"
+msgstr ""
+
+#: elementor/widgets/rt-social-icons.php:75
+#: elementor/widgets/rt-social-icons.php:86
+msgid "Social Icons"
+msgstr ""
+
+#: widget/social-widget.php:117 elementor/widgets/rt-social-icons.php:80
+msgid "Social Label"
+msgstr ""
+
+#: docfi-core.php:94
+msgid "Social profile information"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:309
+msgid "Spacing"
+msgstr ""
+
+#: elementor/init.php:153
+msgid "Speed"
+msgstr ""
+
+#: module/rt-post-share.php:56
+msgid "StumbleUpon"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:227
+#: elementor/widgets/rt-docs-search.php:42
+#: elementor/widgets/rt-docs-search.php:95
+#: elementor/widgets/rt-font-size-controller.php:38
+#: elementor/widgets/rt-forum-list.php:35 elementor/widgets/rt-info-box.php:35
+#: elementor/widgets/rt-info-box.php:75 elementor/widgets/rt-post-grid.php:51
+msgid "Style"
+msgstr ""
+
+#: widget/rt-category.php:146 widget/rt-post-box.php:209
+#: widget/rt-product-box.php:220 elementor/widgets/rt-button.php:35
+#: elementor/widgets/rt-docs-search.php:44
+#: elementor/widgets/rt-forum-list.php:37
+msgid "Style 1"
+msgstr ""
+
+#: widget/rt-category.php:147 widget/rt-post-box.php:210
+#: widget/rt-product-box.php:221 elementor/widgets/rt-button.php:36
+#: elementor/widgets/rt-docs-search.php:45
+#: elementor/widgets/rt-forum-list.php:38
+msgid "Style 2"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:37
+msgid "Style 3"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:38
+msgid "Style 4"
+msgstr ""
+
+#: widget/rt-contact.php:64
+msgid "Sub Title"
+msgstr ""
+
+#: demo-importer.php:56
+msgid "Support Forum Home"
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:415 elementor/widgets/rt-info-box.php:595
+msgid "SVG & Image icon Width"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:565
+#: elementor/widgets/rt-contact-info.php:486
+#: elementor/widgets/rt-counter.php:321 elementor/widgets/rt-forum-grid.php:397
+#: elementor/widgets/rt-forum-list.php:319
+#: elementor/widgets/rt-forum-slider.php:565 elementor/widgets/rt-image.php:167
+#: elementor/widgets/rt-info-box.php:861 elementor/widgets/rt-post-grid.php:625
+#: elementor/widgets/rt-post-slider.php:752
+#: elementor/widgets/rt-testimonial.php:513
+#: elementor/widgets/rt-topic-list.php:224
+msgid "swing"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:91
+msgid "Tab 1"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:118
+msgid "Tab 2"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:145
+msgid "Tab 3"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:172
+msgid "Tab 4"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:200
+msgid "Tab 5"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:132
+msgid "Tab Button"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:57
+msgid "Tab Layout 1"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:58
+msgid "Tab Layout 2"
+msgstr ""
+
+#: elementor/widgets/rt-tab.php:30
+msgid "Tab Title"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:187
+msgid "Table Body"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:152
+msgid "Table Head"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:155
+#: elementor/widgets/docs-isotope.php:185
+#: elementor/widgets/rt-forum-grid.php:65
+#: elementor/widgets/rt-post-grid.php:685
+#: elementor/widgets/rt-testimonial.php:573
+msgid "Tablets: > 767px"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:84
+#: elementor/widgets/rt-post-slider.php:836
+#: elementor/widgets/rt-testimonial.php:645
+msgid "Tablets: > 768px"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:42
+msgid "Take a look at our highly rated 20+ premium and free plugins."
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:61
+msgid "Testimonials Content"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:174 elementor/widgets/rt-table.php:209
+msgid "Text Background"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:126 elementor/widgets/rt-button.php:237
+#: elementor/widgets/rt-button.php:304 elementor/widgets/rt-button.php:389
+#: elementor/widgets/rt-font-size-controller.php:51
+#: elementor/widgets/rt-font-size-controller.php:69
+#: elementor/widgets/rt-table.php:165 elementor/widgets/rt-table.php:200
+msgid "Text Color"
+msgstr ""
+
+#: elementor/widgets/rt-title.php:204
+msgid "Text High-Light"
+msgstr ""
+
+#: elementor/widgets/rt-table.php:218
+msgid "Text Hover Background"
+msgstr ""
+
+#: elementor/widgets/rt-button.php:135 elementor/widgets/rt-button.php:246
+#: elementor/widgets/rt-button.php:313 elementor/widgets/rt-button.php:398
+msgid "Text Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-font-size-controller.php:45
+#: elementor/widgets/rt-table.php:159 elementor/widgets/rt-table.php:194
+msgid "Text Typo"
+msgstr ""
+
+#. %s: html tags
+#: docfi-core.php:134
+#, php-format
+msgid ""
+"The %1$sDocfi Optimization%2$s requires %1$sphp 7.2+%2$s. Please consider "
+"updating php version and know more about it <a href=\"https://wordpress."
+"org/about/requirements/\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: elementor/widgets/rt-counter.php:101
+msgid "The total duration of the count animation in milisecond eg. 5000"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:444
+msgid "Thumb Area"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:464
+msgid "Thumb Space"
+msgstr ""
+
+#: elementor/widgets/rt-testimonial.php:416
+msgid "Thumb Style"
+msgstr ""
+
+#: elementor/widgets/rt-timeline.php:28
+msgid "Timeline Month"
+msgstr ""
+
+#: widget/address-widget.php:73 widget/font-size-controller.php:59
+#: widget/forum-list.php:69 widget/rt-contact.php:60
+#: widget/rt-docs-post-list.php:146 widget/social-widget.php:109
+#: elementor/widgets/content-toggle.php:74
+#: elementor/widgets/content-toggle.php:80
+#: elementor/widgets/rt-accordion.php:28 elementor/widgets/rt-accordion.php:212
+#: elementor/widgets/rt-contact-info.php:44
+#: elementor/widgets/rt-contact-info.php:105
+#: elementor/widgets/rt-counter.php:81 elementor/widgets/rt-counter.php:194
+#: elementor/widgets/rt-cta.php:35 elementor/widgets/rt-forum-status.php:46
+#: elementor/widgets/rt-info-box.php:136
+#: elementor/widgets/rt-social-icons.php:50 elementor/widgets/rt-tab.php:29
+#: elementor/widgets/rt-table.php:118 elementor/widgets/rt-testimonial.php:49
+#: elementor/widgets/rt-timeline.php:64 elementor/widgets/rt-title.php:58
+#: elementor/widgets/rt-title.php:110
+msgid "Title"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:130
+msgid "Title & Description"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:131
+#: elementor/widgets/rt-forum-list.php:180
+#: elementor/widgets/rt-forum-slider.php:222
+#: elementor/widgets/rt-topic-list.php:85
+msgid "Title & Topics Style"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:275
+msgid "Title Border"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:255
+#: elementor/widgets/content-toggle.php:292
+#: elementor/widgets/docs-cat-list.php:187
+#: elementor/widgets/docs-cat-list.php:203
+#: elementor/widgets/docs-featured-tabs.php:147
+#: elementor/widgets/docs-featured-tabs.php:229
+#: elementor/widgets/docs-group-list-content.php:89
+#: elementor/widgets/docs-group-list.php:85
+#: elementor/widgets/docs-group-single.php:89
+#: elementor/widgets/docs-isotope.php:272
+#: elementor/widgets/rt-contact-info.php:237 elementor/widgets/rt-cta.php:143
+#: elementor/widgets/rt-forum-grid.php:144
+#: elementor/widgets/rt-forum-list.php:193
+#: elementor/widgets/rt-forum-slider.php:235
+#: elementor/widgets/rt-forum-status.php:135
+#: elementor/widgets/rt-info-box.php:250 elementor/widgets/rt-post-grid.php:385
+#: elementor/widgets/rt-post-slider.php:327
+#: elementor/widgets/rt-testimonial.php:244
+#: elementor/widgets/rt-timeline.php:77 elementor/widgets/rt-title.php:123
+#: elementor/widgets/rt-topic-list.php:98
+msgid "Title Color"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:151
+#: elementor/widgets/rt-post-slider.php:115
+msgid "Title count"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:152
+#: elementor/widgets/rt-forum-list.php:201
+#: elementor/widgets/rt-forum-slider.php:243
+#: elementor/widgets/rt-info-box.php:260 elementor/widgets/rt-post-grid.php:394
+#: elementor/widgets/rt-post-slider.php:336
+#: elementor/widgets/rt-topic-list.php:106
+msgid "Title Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:34
+msgid "Title List"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:162
+#: elementor/widgets/rt-forum-list.php:211
+#: elementor/widgets/rt-forum-slider.php:253
+#: elementor/widgets/rt-topic-list.php:116
+msgid "Title Margin"
+msgstr ""
+
+#: elementor/widgets/rt-forum-status.php:145
+#: elementor/widgets/rt-info-box.php:273
+#: elementor/widgets/rt-testimonial.php:254
+#: elementor/widgets/rt-timeline.php:87 elementor/widgets/rt-title.php:133
+msgid "Title Space"
+msgstr ""
+
+#: elementor/widgets/rt-contact-info.php:247
+msgid "Title Spacing"
+msgstr ""
+
+#: elementor/widgets/rt-forum-status.php:122
+#: elementor/widgets/rt-info-box.php:237 elementor/widgets/rt-post-grid.php:372
+#: elementor/widgets/rt-post-slider.php:314
+#: elementor/widgets/rt-testimonial.php:231
+msgid "Title Style"
+msgstr ""
+
+#: elementor/widgets/content-toggle.php:235
+#: elementor/widgets/rt-contact-info.php:231
+#: elementor/widgets/rt-counter.php:201 elementor/widgets/rt-cta.php:137
+#: elementor/widgets/rt-forum-status.php:129
+#: elementor/widgets/rt-info-box.php:244 elementor/widgets/rt-post-grid.php:379
+#: elementor/widgets/rt-post-slider.php:321
+#: elementor/widgets/rt-testimonial.php:238
+#: elementor/widgets/rt-timeline.php:71 elementor/widgets/rt-title.php:117
+msgid "Title Typo"
+msgstr ""
+
+#: elementor/widgets/docs-cat-list.php:181
+#: elementor/widgets/docs-cat-list.php:197
+#: elementor/widgets/docs-featured-tabs.php:141
+#: elementor/widgets/docs-featured-tabs.php:223
+#: elementor/widgets/docs-group-list-content.php:83
+#: elementor/widgets/docs-group-list.php:79
+#: elementor/widgets/docs-group-single.php:83
+#: elementor/widgets/docs-isotope.php:266
+#: elementor/widgets/rt-forum-grid.php:138
+#: elementor/widgets/rt-forum-list.php:187
+#: elementor/widgets/rt-forum-slider.php:229
+#: elementor/widgets/rt-topic-list.php:92
+msgid "Title Typography"
+msgstr ""
+
+#: widget/rt-post-box.php:179 widget/rt-product-box.php:191
+msgid "Title:"
+msgstr ""
+
+#: elementor/widgets/rt-forum-slider.php:352
+#: elementor/widgets/rt-post-slider.php:539
+#: elementor/widgets/rt-testimonial.php:766
+msgid "Top Right"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:95
+msgid "Topbar Border"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:52
+msgid "Topbar Display"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:84
+msgid "Topbar Margin"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:73
+msgid "Topbar Padding"
+msgstr ""
+
+#: elementor/views/rt-topic-list.php:27
+msgid "Topic"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:170
+#: elementor/widgets/rt-forum-list.php:219
+#: elementor/widgets/rt-forum-slider.php:261
+#: elementor/widgets/rt-topic-list.php:124
+msgid "Topics Count Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-grid.php:178
+msgid "Topics Count Hover Color"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:45
+#: elementor/widgets/rt-topic-list.php:34
+msgid "Total number of items"
+msgstr ""
+
+#: post-meta.php:87
+msgid "Transparent Header"
+msgstr ""
+
+#: module/rt-post-share.php:61
+msgid "Tumblr"
+msgstr ""
+
+#: docfi-core.php:101 module/rt-post-share.php:25
+msgid "Twitter"
+msgstr ""
+
+#: widget/social-widget.php:125
+msgid "Twitter URL"
+msgstr ""
+
+#: elementor/widgets/rt-accordion.php:219
+#: elementor/widgets/rt-accordion.php:293
+msgid "Typography"
+msgstr ""
+
+#: elementor/widgets/rt-social-icons.php:42
+msgid "URL(optional)"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:117
+msgid "Use -1 for showing all items( Showing items per category )"
+msgstr ""
+
+#: elementor/widgets/docs-featured-tabs.php:116
+msgid "Use -1 for showing all items( Showing items per Group )"
+msgstr ""
+
+#: docfi-core.php:87
+msgid "User Designation"
+msgstr ""
+
+#: module/rt-post-views.php:119
+msgid "View"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:156
+msgid "View All"
+msgstr ""
+
+#: elementor/widgets/docs-isotope.php:154
+msgid "View All Text"
+msgstr ""
+
+#: module/rt-post-views.php:63 module/rt-post-views.php:121
+#: elementor/views/rt-topic-list.php:29
+msgid "Views"
+msgstr ""
+
+#: elementor/widgets/rt-title.php:96
+msgid "views Display"
+msgstr ""
+
+#: demo-importer.php:33
+msgid ""
+"Warning: All your old data will be lost if you install One Click demo data "
+"from here, so it is suitable only for a new website."
+msgstr ""
+
+#: elementor/widgets/rt-info-box.php:137
+msgid "Web Development"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:53
+msgid "What are you looking for?"
+msgstr ""
+
+#: module/rt-post-share.php:45
+msgid "Whatsapp"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:545
+#: elementor/widgets/rt-post-slider.php:478
+msgid "Width"
+msgstr ""
+
+#: elementor/widgets/rt-post-grid.php:432
+#: elementor/widgets/rt-post-slider.php:374
+msgid "Word count"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:29
+msgid "WordPress"
+msgstr ""
+
+#: elementor/widgets/rt-docs-search.php:80
+msgid "Words"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:47
+#: elementor/widgets/rt-topic-list.php:36
+msgid "Write -1 to show all"
+msgstr ""
+
+#: elementor/widgets/rt-cta.php:36
+msgid "You will love our solutions"
+msgstr ""
+
+#: module/rt-post-share.php:30
+msgid "Youtube"
+msgstr ""
+
+#: post-meta.php:282
+msgid "Youtube Link"
+msgstr ""
+
+#: widget/social-widget.php:141
+msgid "Youtube URL"
+msgstr ""

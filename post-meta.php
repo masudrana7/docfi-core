@@ -46,13 +46,15 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docf
 						'right-sidebar' => __( 'Right Sidebar', 'docfi-core' ),
 					),
 					'default'  => 'default',
-				),		
+				),	
+
 				'docfi_sidebar' => array(
 					'label'    => __( 'Custom Sidebar', 'docfi-core' ),
 					'type'     => 'select',
 					'options'  => $sidebars,
 					'default'  => 'default',
 				),
+
 				"{$prefix}_page_menu" => array(
 					'label'    => __( 'Main Menu', 'docfi-core' ),
 					'type'     => 'select',
@@ -69,7 +71,6 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docf
 					),
 					'default'  	  => 'default',
 				),
-
 
 				"{$prefix}_cutom_logo" => array(
 					'label' => __( 'Header Dark Logo', 'docfi-core' ),
@@ -220,6 +221,16 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'docf
 				),
 				"{$prefix}_breadcrumb" => array(
 					'label'   => __( 'Breadcrumb', 'docfi-core' ),
+					'type'    => 'select',
+					'options' => array(
+						'default' => __( 'Default', 'docfi-core' ),
+						'on'      => __( 'Enable', 'docfi-core' ),
+						'off'	  => __( 'Disable', 'docfi-core' ),
+					),
+					'default'  => 'default',
+				),
+				"{$prefix}_search_ajax" => array(
+					'label'   => __( 'Search Ajax', 'docfi-core' ),
 					'type'    => 'select',
 					'options' => array(
 						'default' => __( 'Default', 'docfi-core' ),

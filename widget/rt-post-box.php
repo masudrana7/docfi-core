@@ -89,7 +89,7 @@ Class DocfiTheme_Post_Box extends WP_Widget {
 						<?php if ( $show_date || $show_cat ) { ?>
 						<div class="meta-wrap">
 							<?php if ( $show_date ) { ?>
-								<div class="entry-date"><?php echo get_the_time( get_option( 'date_format' ) ); ?></div>
+								<div class="entry-date"><i class="icon-docfi-calendar-alt"></i> <?php echo get_the_date( 'M j, Y' ); ?></div>
 							<?php } ?>
 							<?php if ( $show_cat ) { ?>
 							<div class="entry-cat"><i class="icon-docfi-tags"></i><?php
