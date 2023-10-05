@@ -32,13 +32,17 @@ class Docs_Group_list extends Custom_Widget_Base {
     }
 
     public function rt_fields(){
-        $terms  = get_terms( array( 'taxonomy' => 'docfi_docs_group', 'fields' => 'id=>name' ) );
+        
+        $terms  = get_terms( array( 
+            'taxonomy' => 'docfi_docs_group', 
+            'fields' => 'id=>name',
+             'hide_empty' => false,
+        ) );
         $category_dropdown = array( '0' => __( 'Please Selecet Group', 'docfi-core' ) );
-
         foreach ( $terms as $id => $name ) {
             $category_dropdown[$id] = $name;
         }
-        
+       
         $fields = array(
             array(
                 'mode'    => 'section_start',
@@ -50,12 +54,12 @@ class Docs_Group_list extends Custom_Widget_Base {
             array (
                 'type'    => Controls_Manager::REPEATER,
                 'id'      => 'category_list',
-                'label'   => esc_html__( 'Add as many Categories as you want', 'docfi-core' ),
+                'label'   => esc_html__( 'Add as many Groups as you want', 'docfi-core' ),
                 'fields'  => array(
                     array(
                         'type'    => Controls_Manager::SELECT2,
                         'name'    => 'cat_multi_box',
-                        'label'   => esc_html__( 'Categories', 'docfi-core' ),
+                        'label'   => esc_html__( 'Groups', 'docfi-core' ),
                         'options' => $category_dropdown,
                         'default' => '1',
                     ),
@@ -149,7 +153,6 @@ class Docs_Group_list extends Custom_Widget_Base {
         );
         return $fields;
     }
-
     protected function render() {
 		$data = $this->get_settings();
 		$template = 'docs-group-list';

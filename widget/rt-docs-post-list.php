@@ -21,7 +21,6 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 	}
 
 	public function widget( $args, $instance ){
-
 		if ( ! empty( $instance['title'] ) ) {
 			echo wp_kses_post( $args['before_title'] ) . apply_filters( 'widget_title', esc_html( $instance['title'] ) ) . wp_kses_post( $args['after_title'] );
 		}
@@ -30,10 +29,7 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 			<?php if( !empty( $instance['text_label'] ) ) { ?>
 				<h3 class="social-label"><?php echo wp_kses_post( $instance['text_label'] ); ?></h3>
 			<?php } ?>
-
-
 			<div class="rt-group-single-list rt-group-lists">
-
 				<?php 
 				$args = array(
 					'taxonomy'   => 'docfi_docs_group',
@@ -54,7 +50,7 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 						$tl = $term_name->name;
 						$uid = strtolower(str_replace(array('%', ':', '\\', '/', '*', '?', '.', ';', ' '), '', $tl));
 						$current_inner_posts = [];
-					ob_start();
+						ob_start();
 					?>
 					<ul class="explore-topics-list">
 						<?php 
@@ -112,7 +108,6 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 								</div>
 							</a>
 						</div>
-
 						<div class="explore-topics-body">
 							<?php echo wp_kses_post($post_list); ?>
 						</div>

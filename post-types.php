@@ -9,7 +9,6 @@ namespace radiustheme\Docfi_Core;
 use \RT_Posts;
 use DocfiTheme;
 
-
 if ( !class_exists( 'RT_Posts' ) ) {
 	return;
 }
@@ -32,6 +31,7 @@ $taxonomies = array(
 		'post_types'   => 'docfi_docs',
 		'rewrite'      => array( 'slug' => DocfiTheme::$options['docs_cat_slug'] ),
 	),
+
 	'docfi_docs_group' => array(
 		'title'        => __( 'Docs Group', 'docfi-core' ),
 		'plural_title' => __( 'Docs Groups', 'docfi-core' ),
@@ -39,8 +39,6 @@ $taxonomies = array(
 		'rewrite'      => array( 'slug' => DocfiTheme::$options['docs_group_slug'] ),
 	),
 );
-
-
 $Posts = RT_Posts::getInstance();
 $Posts->add_post_types( $post_types );
 $Posts->add_taxonomies( $taxonomies );

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Docfi Core\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-29 04:22+0000\n"
+"POT-Creation-Date: 2023-10-05 11:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "+"
 msgstr ""
 
-#: post-meta.php:174 post-meta.php:195
+#: post-meta.php:175 post-meta.php:196
 msgid "0px"
 msgstr ""
 
@@ -67,19 +67,19 @@ msgstr ""
 msgid "1 minute read"
 msgstr ""
 
-#: post-meta.php:184 post-meta.php:205
+#: post-meta.php:185 post-meta.php:206
 msgid "100px"
 msgstr ""
 
-#: post-meta.php:175 post-meta.php:196
+#: post-meta.php:176 post-meta.php:197
 msgid "10px"
 msgstr ""
 
-#: post-meta.php:185 post-meta.php:206
+#: post-meta.php:186 post-meta.php:207
 msgid "110px"
 msgstr ""
 
-#: post-meta.php:186 post-meta.php:207
+#: post-meta.php:187 post-meta.php:208
 msgid "120px"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr ""
 msgid "2 list type available here. (default list is normal text list)"
 msgstr ""
 
-#: post-meta.php:176 post-meta.php:197
+#: post-meta.php:177 post-meta.php:198
 msgid "20px"
 msgstr ""
 
@@ -155,7 +155,7 @@ msgstr ""
 msgid "3 Col"
 msgstr ""
 
-#: post-meta.php:177 post-meta.php:198
+#: post-meta.php:178 post-meta.php:199
 msgid "30px"
 msgstr ""
 
@@ -188,7 +188,7 @@ msgstr ""
 msgid "4 Col"
 msgstr ""
 
-#: post-meta.php:178 post-meta.php:199
+#: post-meta.php:179 post-meta.php:200
 msgid "40px"
 msgstr ""
 
@@ -204,7 +204,7 @@ msgstr ""
 msgid "5"
 msgstr ""
 
-#: post-meta.php:179 post-meta.php:200
+#: post-meta.php:180 post-meta.php:201
 msgid "50px"
 msgstr ""
 
@@ -228,15 +228,15 @@ msgstr ""
 msgid "6 Col"
 msgstr ""
 
-#: post-meta.php:180 post-meta.php:201
+#: post-meta.php:181 post-meta.php:202
 msgid "60px"
 msgstr ""
 
-#: post-meta.php:181 post-meta.php:202
+#: post-meta.php:182 post-meta.php:203
 msgid "70px"
 msgstr ""
 
-#: post-meta.php:182 post-meta.php:203
+#: post-meta.php:183 post-meta.php:204
 msgid "80px"
 msgstr ""
 
@@ -244,7 +244,7 @@ msgstr ""
 msgid "854"
 msgstr ""
 
-#: post-meta.php:183 post-meta.php:204
+#: post-meta.php:184 post-meta.php:205
 msgid "90px"
 msgstr ""
 
@@ -264,11 +264,11 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
-#: elementor/widgets/rt-accordion.php:366
+#: elementor/widgets/rt-accordion.php:390
 msgid "Active  Color"
 msgstr ""
 
-#: elementor/widgets/rt-accordion.php:243
+#: elementor/widgets/rt-accordion.php:267
 msgid "Active Color"
 msgstr ""
 
@@ -283,10 +283,13 @@ msgstr ""
 #: elementor/widgets/docs-cat-list.php:52
 #: elementor/widgets/docs-featured-tabs.php:55
 #: elementor/widgets/docs-group-list-content.php:55
-#: elementor/widgets/docs-group-list.php:53
 #: elementor/widgets/docs-group-single.php:55
 #: elementor/widgets/docs-isotope.php:54
 msgid "Add as many Categories as you want"
+msgstr ""
+
+#: elementor/widgets/docs-group-list.php:57
+msgid "Add as many Groups as you want"
 msgstr ""
 
 #: elementor/widgets/rt-testimonial.php:128
@@ -311,12 +314,12 @@ msgstr ""
 msgid "Address Widget"
 msgstr ""
 
-#: elementor/widgets/rt-button.php:46 elementor/widgets/rt-contact-info.php:81
-#: elementor/widgets/rt-counter.php:39 elementor/widgets/rt-forum-status.php:53
-#: elementor/widgets/rt-image.php:49 elementor/widgets/rt-info-box.php:50
-#: elementor/widgets/rt-post-grid.php:62
+#: elementor/widgets/rt-accordion.php:209 elementor/widgets/rt-button.php:46
+#: elementor/widgets/rt-contact-info.php:81 elementor/widgets/rt-counter.php:39
+#: elementor/widgets/rt-forum-status.php:53 elementor/widgets/rt-image.php:49
+#: elementor/widgets/rt-info-box.php:50 elementor/widgets/rt-post-grid.php:62
 #: elementor/widgets/rt-post-slider.php:52
-#: elementor/widgets/rt-testimonial.php:94 elementor/widgets/rt-title.php:35
+#: elementor/widgets/rt-testimonial.php:94 elementor/widgets/rt-title.php:45
 msgid "Alignment"
 msgstr ""
 
@@ -331,8 +334,8 @@ msgstr ""
 #: elementor/widgets/rt-counter.php:295 elementor/widgets/rt-counter.php:301
 #: elementor/widgets/rt-forum-grid.php:371
 #: elementor/widgets/rt-forum-grid.php:377
-#: elementor/widgets/rt-forum-list.php:293
-#: elementor/widgets/rt-forum-list.php:299
+#: elementor/widgets/rt-forum-list.php:319
+#: elementor/widgets/rt-forum-list.php:325
 #: elementor/widgets/rt-forum-slider.php:539
 #: elementor/widgets/rt-forum-slider.php:545 elementor/widgets/rt-image.php:125
 #: elementor/widgets/rt-image.php:147 elementor/widgets/rt-info-box.php:835
@@ -360,7 +363,7 @@ msgid "Are you sure you want to remove this custom sidebar"
 msgstr ""
 
 #: elementor/widgets/docs-group-list-content.php:98
-#: elementor/widgets/docs-group-list.php:94
+#: elementor/widgets/docs-group-list.php:98
 #: elementor/widgets/docs-group-single.php:98
 #: elementor/widgets/docs-isotope.php:281
 msgid "Articles  Color"
@@ -399,10 +402,10 @@ msgstr ""
 msgid "Autoplay Slide Speed"
 msgstr ""
 
-#: post-meta.php:237 elementor/widgets/rt-accordion.php:162
-#: elementor/widgets/rt-accordion.php:234 elementor/widgets/rt-button.php:144
+#: post-meta.php:248 elementor/widgets/rt-accordion.php:162
+#: elementor/widgets/rt-accordion.php:258 elementor/widgets/rt-button.php:144
 #: elementor/widgets/rt-button.php:219 elementor/widgets/rt-button.php:322
-#: elementor/widgets/rt-button.php:407
+#: elementor/widgets/rt-button.php:407 elementor/widgets/rt-code-syntax.php:66
 #: elementor/widgets/rt-contact-info.php:180
 #: elementor/widgets/rt-font-size-controller.php:60
 #: elementor/widgets/rt-forum-grid.php:296
@@ -420,23 +423,23 @@ msgstr ""
 msgid "Background Hover Color"
 msgstr ""
 
-#: post-meta.php:236
+#: post-meta.php:247
 msgid "Background Image"
 msgstr ""
 
-#: post-meta.php:212
+#: post-meta.php:213
 msgid "Banner"
 msgstr ""
 
-#: post-meta.php:247
+#: post-meta.php:258
 msgid "Banner Background Color"
 msgstr ""
 
-#: post-meta.php:242
+#: post-meta.php:253
 msgid "Banner Background Image"
 msgstr ""
 
-#: post-meta.php:232
+#: post-meta.php:243
 msgid "Banner Background Type"
 msgstr ""
 
@@ -450,7 +453,7 @@ msgstr ""
 #: elementor/widgets/rt-forum-grid.php:213
 #: elementor/widgets/rt-forum-grid.php:314
 #: elementor/widgets/rt-forum-grid.php:349
-#: elementor/widgets/rt-forum-list.php:254
+#: elementor/widgets/rt-forum-list.php:280
 #: elementor/widgets/rt-forum-slider.php:296
 #: elementor/widgets/rt-info-box.php:778 elementor/widgets/rt-info-box.php:815
 #: elementor/widgets/rt-topic-list.php:159
@@ -468,7 +471,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:558
 #: elementor/widgets/rt-contact-info.php:479
 #: elementor/widgets/rt-counter.php:314 elementor/widgets/rt-forum-grid.php:390
-#: elementor/widgets/rt-forum-list.php:312
+#: elementor/widgets/rt-forum-list.php:338
 #: elementor/widgets/rt-forum-slider.php:558 elementor/widgets/rt-image.php:160
 #: elementor/widgets/rt-info-box.php:854 elementor/widgets/rt-post-grid.php:618
 #: elementor/widgets/rt-post-slider.php:745
@@ -480,7 +483,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:571
 #: elementor/widgets/rt-contact-info.php:492
 #: elementor/widgets/rt-counter.php:327 elementor/widgets/rt-forum-grid.php:403
-#: elementor/widgets/rt-forum-list.php:325
+#: elementor/widgets/rt-forum-list.php:351
 #: elementor/widgets/rt-forum-slider.php:571 elementor/widgets/rt-image.php:173
 #: elementor/widgets/rt-info-box.php:867 elementor/widgets/rt-post-grid.php:631
 #: elementor/widgets/rt-post-slider.php:758
@@ -492,7 +495,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:572
 #: elementor/widgets/rt-contact-info.php:493
 #: elementor/widgets/rt-counter.php:328 elementor/widgets/rt-forum-grid.php:404
-#: elementor/widgets/rt-forum-list.php:326
+#: elementor/widgets/rt-forum-list.php:352
 #: elementor/widgets/rt-forum-slider.php:572 elementor/widgets/rt-image.php:174
 #: elementor/widgets/rt-info-box.php:868 elementor/widgets/rt-post-grid.php:632
 #: elementor/widgets/rt-post-slider.php:759
@@ -504,7 +507,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:573
 #: elementor/widgets/rt-contact-info.php:494
 #: elementor/widgets/rt-counter.php:329 elementor/widgets/rt-forum-grid.php:405
-#: elementor/widgets/rt-forum-list.php:327
+#: elementor/widgets/rt-forum-list.php:353
 #: elementor/widgets/rt-forum-slider.php:573 elementor/widgets/rt-image.php:175
 #: elementor/widgets/rt-info-box.php:869 elementor/widgets/rt-post-grid.php:633
 #: elementor/widgets/rt-post-slider.php:760
@@ -516,7 +519,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:574
 #: elementor/widgets/rt-contact-info.php:495
 #: elementor/widgets/rt-counter.php:330 elementor/widgets/rt-forum-grid.php:406
-#: elementor/widgets/rt-forum-list.php:328
+#: elementor/widgets/rt-forum-list.php:354
 #: elementor/widgets/rt-forum-slider.php:574 elementor/widgets/rt-image.php:176
 #: elementor/widgets/rt-info-box.php:870 elementor/widgets/rt-post-grid.php:634
 #: elementor/widgets/rt-post-slider.php:761
@@ -528,7 +531,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:575
 #: elementor/widgets/rt-contact-info.php:496
 #: elementor/widgets/rt-counter.php:331 elementor/widgets/rt-forum-grid.php:407
-#: elementor/widgets/rt-forum-list.php:329
+#: elementor/widgets/rt-forum-list.php:355
 #: elementor/widgets/rt-forum-slider.php:575 elementor/widgets/rt-image.php:177
 #: elementor/widgets/rt-info-box.php:871 elementor/widgets/rt-post-grid.php:635
 #: elementor/widgets/rt-post-slider.php:762
@@ -577,7 +580,7 @@ msgid "Box Padding"
 msgstr ""
 
 #: elementor/widgets/rt-docs-search.php:219
-#: elementor/widgets/rt-forum-list.php:166
+#: elementor/widgets/rt-forum-list.php:192
 #: elementor/widgets/rt-forum-status.php:109
 #: elementor/widgets/rt-info-box.php:198 elementor/widgets/rt-post-grid.php:333
 #: elementor/widgets/rt-post-grid.php:586
@@ -588,7 +591,7 @@ msgstr ""
 
 #: elementor/widgets/rt-accordion.php:180
 #: elementor/widgets/rt-docs-search.php:210
-#: elementor/widgets/rt-forum-list.php:137
+#: elementor/widgets/rt-forum-list.php:163
 #: elementor/widgets/rt-info-box.php:208
 msgid "Box Shadow"
 msgstr ""
@@ -599,7 +602,7 @@ msgstr ""
 msgid "Box Style"
 msgstr ""
 
-#: post-meta.php:222
+#: post-meta.php:223
 msgid "Breadcrumb"
 msgstr ""
 
@@ -736,7 +739,6 @@ msgstr ""
 #: elementor/widgets/docs-cat-list.php:57
 #: elementor/widgets/docs-featured-tabs.php:60
 #: elementor/widgets/docs-group-list-content.php:60
-#: elementor/widgets/docs-group-list.php:58
 #: elementor/widgets/docs-group-single.php:60
 #: elementor/widgets/docs-isotope.php:59 elementor/widgets/rt-post-grid.php:224
 #: elementor/widgets/rt-post-slider.php:174
@@ -795,9 +797,9 @@ msgstr ""
 msgid "Cloud"
 msgstr ""
 
-#: elementor/widgets/rt-accordion.php:225
-#: elementor/widgets/rt-accordion.php:299
-#: elementor/widgets/rt-accordion.php:357 elementor/widgets/rt-button.php:490
+#: elementor/widgets/rt-accordion.php:249
+#: elementor/widgets/rt-accordion.php:323
+#: elementor/widgets/rt-accordion.php:381 elementor/widgets/rt-button.php:490
 #: elementor/widgets/rt-counter.php:207 elementor/widgets/rt-counter.php:272
 msgid "Color"
 msgstr ""
@@ -826,7 +828,7 @@ msgstr ""
 msgid "Contact Widget"
 msgstr ""
 
-#: post-meta.php:111
+#: post-meta.php:112
 msgid "Container"
 msgstr ""
 
@@ -834,11 +836,11 @@ msgstr ""
 #: elementor/widgets/rt-accordion.php:36 elementor/widgets/rt-info-box.php:143
 #: elementor/widgets/rt-tab.php:38 elementor/widgets/rt-tab.php:186
 #: elementor/widgets/rt-table.php:124 elementor/widgets/rt-timeline.php:36
-#: elementor/widgets/rt-title.php:64 elementor/widgets/rt-title.php:157
+#: elementor/widgets/rt-title.php:74 elementor/widgets/rt-title.php:167
 msgid "Content"
 msgstr ""
 
-#: elementor/widgets/rt-title.php:226
+#: elementor/widgets/rt-title.php:236
 msgid "Content Background"
 msgstr ""
 
@@ -851,8 +853,8 @@ msgstr ""
 #: elementor/widgets/rt-info-box.php:310 elementor/widgets/rt-post-grid.php:447
 #: elementor/widgets/rt-post-slider.php:389 elementor/widgets/rt-tab.php:199
 #: elementor/widgets/rt-testimonial.php:336
-#: elementor/widgets/rt-timeline.php:124 elementor/widgets/rt-title.php:170
-#: elementor/widgets/rt-title.php:217
+#: elementor/widgets/rt-timeline.php:124 elementor/widgets/rt-title.php:180
+#: elementor/widgets/rt-title.php:227
 msgid "Content Color"
 msgstr ""
 
@@ -865,25 +867,25 @@ msgstr ""
 msgid "Content Hover Color"
 msgstr ""
 
-#: elementor/widgets/rt-tab.php:220 elementor/widgets/rt-title.php:236
+#: elementor/widgets/rt-tab.php:220 elementor/widgets/rt-title.php:246
 msgid "Content Padding"
 msgstr ""
 
-#: post-meta.php:191
+#: post-meta.php:192
 msgid "Content Padding Bottom"
 msgstr ""
 
-#: post-meta.php:170
+#: post-meta.php:171
 msgid "Content Padding Top"
 msgstr ""
 
-#: elementor/widgets/rt-accordion.php:199 elementor/widgets/rt-title.php:246
+#: elementor/widgets/rt-accordion.php:199 elementor/widgets/rt-title.php:256
 msgid "Content Radius"
 msgstr ""
 
 #: elementor/widgets/rt-info-box.php:330
 #: elementor/widgets/rt-testimonial.php:346
-#: elementor/widgets/rt-timeline.php:134 elementor/widgets/rt-title.php:180
+#: elementor/widgets/rt-timeline.php:134 elementor/widgets/rt-title.php:190
 msgid "Content Space"
 msgstr ""
 
@@ -909,8 +911,8 @@ msgstr ""
 #: elementor/widgets/rt-forum-status.php:176
 #: elementor/widgets/rt-info-box.php:304 elementor/widgets/rt-tab.php:193
 #: elementor/widgets/rt-testimonial.php:330
-#: elementor/widgets/rt-timeline.php:118 elementor/widgets/rt-title.php:164
-#: elementor/widgets/rt-title.php:211
+#: elementor/widgets/rt-timeline.php:118 elementor/widgets/rt-title.php:174
+#: elementor/widgets/rt-title.php:221
 msgid "Content Typo"
 msgstr ""
 
@@ -918,7 +920,7 @@ msgstr ""
 msgid "Content_typo"
 msgstr ""
 
-#: post-meta.php:160
+#: post-meta.php:161
 msgid "Copyright Area"
 msgstr ""
 
@@ -964,15 +966,16 @@ msgstr ""
 msgid "Custom Order"
 msgstr ""
 
-#: post-meta.php:51
+#: post-meta.php:52
 msgid "Custom Sidebar"
 msgstr ""
 
-#: post-meta.php:29 post-meta.php:30 post-meta.php:43 post-meta.php:66
-#: post-meta.php:90 post-meta.php:100 post-meta.php:110 post-meta.php:120
-#: post-meta.php:131 post-meta.php:142 post-meta.php:153 post-meta.php:163
-#: post-meta.php:173 post-meta.php:194 post-meta.php:215 post-meta.php:225
-#: post-meta.php:235 elementor/widgets/rt-forum-slider.php:351
+#: post-meta.php:29 post-meta.php:30 post-meta.php:43 post-meta.php:68
+#: post-meta.php:91 post-meta.php:101 post-meta.php:111 post-meta.php:121
+#: post-meta.php:132 post-meta.php:143 post-meta.php:154 post-meta.php:164
+#: post-meta.php:174 post-meta.php:195 post-meta.php:216 post-meta.php:226
+#: post-meta.php:236 post-meta.php:246
+#: elementor/widgets/rt-forum-slider.php:351
 #: elementor/widgets/rt-post-slider.php:538
 #: elementor/widgets/rt-testimonial.php:765
 msgid "Default"
@@ -989,7 +992,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:587
 #: elementor/widgets/rt-contact-info.php:508
 #: elementor/widgets/rt-counter.php:343 elementor/widgets/rt-forum-grid.php:419
-#: elementor/widgets/rt-forum-list.php:341
+#: elementor/widgets/rt-forum-list.php:367
 #: elementor/widgets/rt-forum-slider.php:587 elementor/widgets/rt-image.php:189
 #: elementor/widgets/rt-info-box.php:883 elementor/widgets/rt-post-grid.php:647
 #: elementor/widgets/rt-post-slider.php:774
@@ -999,7 +1002,7 @@ msgid "Delay"
 msgstr ""
 
 #: widget/address-widget.php:77 widget/social-widget.php:113
-#: elementor/widgets/rt-accordion.php:286
+#: elementor/widgets/rt-accordion.php:310
 msgid "Description"
 msgstr ""
 
@@ -1076,12 +1079,12 @@ msgstr ""
 msgid "Desktops: > 992px"
 msgstr ""
 
-#: post-meta.php:217 post-meta.php:227
+#: post-meta.php:218 post-meta.php:228 post-meta.php:238
 msgid "Disable"
 msgstr ""
 
-#: post-meta.php:68 post-meta.php:92 post-meta.php:133 post-meta.php:144
-#: post-meta.php:155 post-meta.php:165
+#: post-meta.php:70 post-meta.php:93 post-meta.php:134 post-meta.php:145
+#: post-meta.php:156 post-meta.php:166
 msgid "Disabled"
 msgstr ""
 
@@ -1167,19 +1170,19 @@ msgstr ""
 msgid "Docfi Core Plugin for Docfi Theme"
 msgstr ""
 
-#: elementor/init.php:122
+#: elementor/init.php:123
 msgid "Docfi Icon"
 msgstr ""
 
-#: post-types.php:19 post-types.php:20
+#: post-types.php:18 post-types.php:19
 msgid "Docs"
 msgstr ""
 
-#: post-types.php:31
+#: post-types.php:30
 msgid "Docs Categories"
 msgstr ""
 
-#: post-types.php:30
+#: post-types.php:29
 msgid "Docs Category"
 msgstr ""
 
@@ -1203,11 +1206,11 @@ msgstr ""
 msgid "Docs Groups"
 msgstr ""
 
-#: widget/rt-docs-post-list.php:16 widget/rt-docs-post-list.php:140
+#: widget/rt-docs-post-list.php:16 widget/rt-docs-post-list.php:135
 msgid "Docs Post List"
 msgstr ""
 
-#: post-meta.php:300
+#: post-meta.php:311
 msgid "Docs Post Meta"
 msgstr ""
 
@@ -1235,7 +1238,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:594
 #: elementor/widgets/rt-contact-info.php:515
 #: elementor/widgets/rt-counter.php:350 elementor/widgets/rt-forum-grid.php:426
-#: elementor/widgets/rt-forum-list.php:348
+#: elementor/widgets/rt-forum-list.php:374
 #: elementor/widgets/rt-forum-slider.php:594 elementor/widgets/rt-image.php:196
 #: elementor/widgets/rt-info-box.php:890 elementor/widgets/rt-post-grid.php:654
 #: elementor/widgets/rt-post-slider.php:781
@@ -1256,7 +1259,7 @@ msgstr ""
 msgid "Empty nonce"
 msgstr ""
 
-#: post-meta.php:216 post-meta.php:226
+#: post-meta.php:217 post-meta.php:227 post-meta.php:237
 msgid "Enable"
 msgstr ""
 
@@ -1266,8 +1269,8 @@ msgstr ""
 msgid "Enable or disable autoplay. Default: On"
 msgstr ""
 
-#: post-meta.php:67 post-meta.php:91 post-meta.php:132 post-meta.php:143
-#: post-meta.php:154 post-meta.php:164
+#: post-meta.php:69 post-meta.php:92 post-meta.php:133 post-meta.php:144
+#: post-meta.php:155 post-meta.php:165
 msgid "Enabled"
 msgstr ""
 
@@ -1280,7 +1283,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:555
 #: elementor/widgets/rt-contact-info.php:476
 #: elementor/widgets/rt-counter.php:311 elementor/widgets/rt-forum-grid.php:387
-#: elementor/widgets/rt-forum-list.php:309
+#: elementor/widgets/rt-forum-list.php:335
 #: elementor/widgets/rt-forum-slider.php:555 elementor/widgets/rt-image.php:157
 #: elementor/widgets/rt-info-box.php:851 elementor/widgets/rt-post-grid.php:615
 #: elementor/widgets/rt-post-slider.php:742
@@ -1289,7 +1292,7 @@ msgstr ""
 msgid "Entrance Animation"
 msgstr ""
 
-#: elementor/widgets/rt-table.php:125 elementor/widgets/rt-title.php:65
+#: elementor/widgets/rt-table.php:125 elementor/widgets/rt-title.php:75
 msgid "Estimated reading:"
 msgstr ""
 
@@ -1317,7 +1320,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:566
 #: elementor/widgets/rt-contact-info.php:487
 #: elementor/widgets/rt-counter.php:322 elementor/widgets/rt-forum-grid.php:398
-#: elementor/widgets/rt-forum-list.php:320
+#: elementor/widgets/rt-forum-list.php:346
 #: elementor/widgets/rt-forum-slider.php:566 elementor/widgets/rt-image.php:168
 #: elementor/widgets/rt-info-box.php:862 elementor/widgets/rt-post-grid.php:626
 #: elementor/widgets/rt-post-slider.php:753
@@ -1329,7 +1332,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:567
 #: elementor/widgets/rt-contact-info.php:488
 #: elementor/widgets/rt-counter.php:323 elementor/widgets/rt-forum-grid.php:399
-#: elementor/widgets/rt-forum-list.php:321
+#: elementor/widgets/rt-forum-list.php:347
 #: elementor/widgets/rt-forum-slider.php:567 elementor/widgets/rt-image.php:169
 #: elementor/widgets/rt-info-box.php:863 elementor/widgets/rt-post-grid.php:627
 #: elementor/widgets/rt-post-slider.php:754
@@ -1341,7 +1344,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:568
 #: elementor/widgets/rt-contact-info.php:489
 #: elementor/widgets/rt-counter.php:324 elementor/widgets/rt-forum-grid.php:400
-#: elementor/widgets/rt-forum-list.php:322
+#: elementor/widgets/rt-forum-list.php:348
 #: elementor/widgets/rt-forum-slider.php:568 elementor/widgets/rt-image.php:170
 #: elementor/widgets/rt-info-box.php:864 elementor/widgets/rt-post-grid.php:628
 #: elementor/widgets/rt-post-slider.php:755
@@ -1353,7 +1356,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:569
 #: elementor/widgets/rt-contact-info.php:490
 #: elementor/widgets/rt-counter.php:325 elementor/widgets/rt-forum-grid.php:401
-#: elementor/widgets/rt-forum-list.php:323
+#: elementor/widgets/rt-forum-list.php:349
 #: elementor/widgets/rt-forum-slider.php:569 elementor/widgets/rt-image.php:171
 #: elementor/widgets/rt-info-box.php:865 elementor/widgets/rt-post-grid.php:629
 #: elementor/widgets/rt-post-slider.php:756
@@ -1365,7 +1368,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:570
 #: elementor/widgets/rt-contact-info.php:491
 #: elementor/widgets/rt-counter.php:326 elementor/widgets/rt-forum-grid.php:402
-#: elementor/widgets/rt-forum-list.php:324
+#: elementor/widgets/rt-forum-list.php:350
 #: elementor/widgets/rt-forum-slider.php:570 elementor/widgets/rt-image.php:172
 #: elementor/widgets/rt-info-box.php:866 elementor/widgets/rt-post-grid.php:630
 #: elementor/widgets/rt-post-slider.php:757
@@ -1378,7 +1381,7 @@ msgstr ""
 msgid "Fax"
 msgstr ""
 
-#: post-meta.php:303
+#: post-meta.php:314
 msgid "Featured Post"
 msgstr ""
 
@@ -1390,7 +1393,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:559
 #: elementor/widgets/rt-contact-info.php:480
 #: elementor/widgets/rt-counter.php:315 elementor/widgets/rt-forum-grid.php:391
-#: elementor/widgets/rt-forum-list.php:313
+#: elementor/widgets/rt-forum-list.php:339
 #: elementor/widgets/rt-forum-slider.php:559 elementor/widgets/rt-image.php:161
 #: elementor/widgets/rt-info-box.php:855 elementor/widgets/rt-post-grid.php:619
 #: elementor/widgets/rt-post-slider.php:746
@@ -1403,7 +1406,7 @@ msgstr ""
 msgid "Flicker Animation"
 msgstr ""
 
-#: demo-importer.php:51
+#: demo-importer.php:45
 msgid "Focused Helpdesk Home"
 msgstr ""
 
@@ -1419,19 +1422,19 @@ msgstr ""
 msgid "Font-Size: Controller"
 msgstr ""
 
-#: post-meta.php:150
+#: post-meta.php:151
 msgid "Footer Area"
 msgstr ""
 
-#: post-meta.php:117
+#: post-meta.php:118
 msgid "Footer Layout"
 msgstr ""
 
-#: post-meta.php:128
+#: post-meta.php:129
 msgid "Footer Newsletter"
 msgstr ""
 
-#: post-meta.php:139
+#: post-meta.php:140
 msgid "Footer Shape"
 msgstr ""
 
@@ -1447,7 +1450,7 @@ msgstr ""
 msgid "Full Width"
 msgstr ""
 
-#: post-meta.php:112
+#: post-meta.php:113
 msgid "Full Width Container"
 msgstr ""
 
@@ -1458,7 +1461,7 @@ msgstr ""
 #: elementor/widgets/docs-cat-list.php:46
 #: elementor/widgets/docs-featured-tabs.php:48
 #: elementor/widgets/docs-group-list-content.php:48
-#: elementor/widgets/docs-group-list.php:46
+#: elementor/widgets/docs-group-list.php:50
 #: elementor/widgets/docs-group-single.php:48
 #: elementor/widgets/docs-isotope.php:47 elementor/widgets/rt-accordion.php:45
 #: elementor/widgets/rt-button.php:28 elementor/widgets/rt-contact-info.php:76
@@ -1481,6 +1484,10 @@ msgstr ""
 
 #: elementor/widgets/rt-post-grid.php:54
 msgid "Grid Layout 2"
+msgstr ""
+
+#: elementor/widgets/docs-group-list.php:62
+msgid "Groups"
 msgstr ""
 
 #: elementor/widgets/rt-post-grid.php:160
@@ -1513,23 +1520,23 @@ msgstr ""
 msgid "Gutters 5"
 msgstr ""
 
-#: post-meta.php:75
+#: post-meta.php:76
 msgid "Header Dark Logo"
 msgstr ""
 
-#: post-meta.php:97
+#: post-meta.php:98
 msgid "Header Layout"
 msgstr ""
 
-#: post-meta.php:81
+#: post-meta.php:82
 msgid "Header Light Logo"
 msgstr ""
 
-#: post-meta.php:63
+#: post-meta.php:65
 msgid "Header On/Off"
 msgstr ""
 
-#: post-meta.php:107
+#: post-meta.php:108
 msgid "Header Width"
 msgstr ""
 
@@ -1544,7 +1551,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:564
 #: elementor/widgets/rt-contact-info.php:485
 #: elementor/widgets/rt-counter.php:320 elementor/widgets/rt-forum-grid.php:396
-#: elementor/widgets/rt-forum-list.php:318
+#: elementor/widgets/rt-forum-list.php:344
 #: elementor/widgets/rt-forum-slider.php:564 elementor/widgets/rt-image.php:166
 #: elementor/widgets/rt-info-box.php:860 elementor/widgets/rt-post-grid.php:624
 #: elementor/widgets/rt-post-slider.php:751
@@ -1558,7 +1565,7 @@ msgstr ""
 msgid "Height"
 msgstr ""
 
-#: demo-importer.php:46
+#: demo-importer.php:40
 msgid "Help Desk Home"
 msgstr ""
 
@@ -1606,13 +1613,13 @@ msgid "Hover Background Color"
 msgstr ""
 
 #: elementor/widgets/rt-forum-grid.php:238
-#: elementor/widgets/rt-forum-list.php:279
+#: elementor/widgets/rt-forum-list.php:305
 #: elementor/widgets/rt-forum-slider.php:321
 #: elementor/widgets/rt-topic-list.php:184
 msgid "Hover Border Color"
 msgstr ""
 
-#: elementor/widgets/rt-table.php:130 elementor/widgets/rt-title.php:70
+#: elementor/widgets/rt-table.php:130 elementor/widgets/rt-title.php:80
 msgid "HTML Tag"
 msgstr ""
 
@@ -1630,7 +1637,7 @@ msgstr ""
 #: elementor/widgets/content-toggle.php:163
 #: elementor/widgets/content-toggle.php:190
 #: elementor/widgets/content-toggle.php:218
-#: elementor/widgets/rt-accordion.php:72 elementor/widgets/rt-accordion.php:334
+#: elementor/widgets/rt-accordion.php:72 elementor/widgets/rt-accordion.php:358
 #: elementor/widgets/rt-button.php:460 elementor/widgets/rt-contact-info.php:54
 #: elementor/widgets/rt-contact-info.php:114
 #: elementor/widgets/rt-contact-info.php:131
@@ -1646,13 +1653,13 @@ msgstr ""
 msgid "Icon Active Color"
 msgstr ""
 
-#: post-meta.php:308
+#: post-meta.php:319
 msgid "Icon Background"
 msgstr ""
 
 #: elementor/widgets/rt-contact-info.php:364
 #: elementor/widgets/rt-forum-grid.php:205
-#: elementor/widgets/rt-forum-list.php:246
+#: elementor/widgets/rt-forum-list.php:272
 #: elementor/widgets/rt-forum-slider.php:288
 #: elementor/widgets/rt-forum-status.php:211
 #: elementor/widgets/rt-info-box.php:482 elementor/widgets/rt-info-box.php:521
@@ -1679,7 +1686,7 @@ msgstr ""
 #: elementor/widgets/rt-contact-info.php:299
 #: elementor/widgets/rt-contact-info.php:346
 #: elementor/widgets/rt-forum-grid.php:197
-#: elementor/widgets/rt-forum-list.php:238
+#: elementor/widgets/rt-forum-list.php:264
 #: elementor/widgets/rt-forum-slider.php:280
 #: elementor/widgets/rt-forum-status.php:220
 #: elementor/widgets/rt-info-box.php:462 elementor/widgets/rt-info-box.php:501
@@ -1693,7 +1700,7 @@ msgid "Icon Display"
 msgstr ""
 
 #: elementor/widgets/rt-forum-grid.php:230
-#: elementor/widgets/rt-forum-list.php:271
+#: elementor/widgets/rt-forum-list.php:297
 #: elementor/widgets/rt-forum-slider.php:313
 #: elementor/widgets/rt-topic-list.php:176
 msgid "Icon Hover BG Color"
@@ -1701,13 +1708,13 @@ msgstr ""
 
 #: elementor/widgets/rt-contact-info.php:355
 #: elementor/widgets/rt-forum-grid.php:222
-#: elementor/widgets/rt-forum-list.php:263
+#: elementor/widgets/rt-forum-list.php:289
 #: elementor/widgets/rt-forum-slider.php:305
 #: elementor/widgets/rt-topic-list.php:168
 msgid "Icon Hover Color"
 msgstr ""
 
-#: post-meta.php:313
+#: post-meta.php:324
 msgid "Icon Image"
 msgstr ""
 
@@ -1743,7 +1750,7 @@ msgstr ""
 
 #: elementor/widgets/rt-contact-info.php:333
 #: elementor/widgets/rt-forum-grid.php:191
-#: elementor/widgets/rt-forum-list.php:232
+#: elementor/widgets/rt-forum-list.php:258
 #: elementor/widgets/rt-forum-slider.php:274
 #: elementor/widgets/rt-forum-status.php:195
 #: elementor/widgets/rt-info-box.php:353 elementor/widgets/rt-info-box.php:543
@@ -1765,9 +1772,9 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: post-meta.php:77 post-meta.php:83 post-meta.php:244 post-meta.php:249
-#: post-meta.php:254 post-meta.php:259 post-meta.php:264 post-meta.php:269
-#: post-meta.php:315
+#: post-meta.php:78 post-meta.php:84 post-meta.php:255 post-meta.php:260
+#: post-meta.php:265 post-meta.php:270 post-meta.php:275 post-meta.php:280
+#: post-meta.php:326
 msgid "If not selected, default will be used"
 msgstr ""
 
@@ -1834,7 +1841,7 @@ msgstr ""
 msgid "Instagram URL"
 msgstr ""
 
-#: demo-importer.php:26
+#: demo-importer.php:21
 msgid "Install Demo Contents"
 msgstr ""
 
@@ -1854,7 +1861,7 @@ msgstr ""
 msgid "Item Angle"
 msgstr ""
 
-#: elementor/widgets/rt-forum-list.php:125
+#: elementor/widgets/rt-forum-list.php:143
 msgid "Item Background"
 msgstr ""
 
@@ -1874,10 +1881,10 @@ msgstr ""
 #: elementor/widgets/docs-featured-tabs.php:192
 #: elementor/widgets/docs-featured-tabs.php:247
 #: elementor/widgets/docs-group-list-content.php:134
-#: elementor/widgets/docs-group-list.php:130
+#: elementor/widgets/docs-group-list.php:134
 #: elementor/widgets/docs-group-single.php:134
 #: elementor/widgets/docs-isotope.php:317
-#: elementor/widgets/rt-forum-list.php:145
+#: elementor/widgets/rt-forum-list.php:171
 #: elementor/widgets/rt-forum-slider.php:201
 #: elementor/widgets/rt-topic-list.php:64
 msgid "Item Border Color"
@@ -1888,13 +1895,17 @@ msgstr ""
 msgid "Item Gutter"
 msgstr ""
 
+#: elementor/widgets/rt-forum-list.php:153
+msgid "Item Hover Background"
+msgstr ""
+
 #: elementor/widgets/docs-cat-list.php:239
 #: elementor/widgets/docs-featured-tabs.php:183
 #: elementor/widgets/rt-forum-grid.php:118
 msgid "Item Hover Background Color"
 msgstr ""
 
-#: elementor/widgets/rt-forum-list.php:154
+#: elementor/widgets/rt-forum-list.php:180
 #: elementor/widgets/rt-forum-slider.php:209
 #: elementor/widgets/rt-topic-list.php:72
 msgid "Item Hover Border Color"
@@ -1934,7 +1945,7 @@ msgid "Join the community"
 msgstr ""
 
 #: widget/font-size-controller.php:63 widget/forum-list.php:73
-#: widget/rt-docs-post-list.php:150
+#: widget/rt-docs-post-list.php:145
 msgid "Label"
 msgstr ""
 
@@ -1947,11 +1958,11 @@ msgstr ""
 msgid "Layout"
 msgstr ""
 
-#: post-meta.php:101 post-meta.php:121
+#: post-meta.php:102 post-meta.php:122
 msgid "Layout 1"
 msgstr ""
 
-#: post-meta.php:102 post-meta.php:122
+#: post-meta.php:103 post-meta.php:123
 msgid "Layout 2"
 msgstr ""
 
@@ -2027,11 +2038,11 @@ msgid ""
 "non non fusce."
 msgstr ""
 
-#: demo-importer.php:41
+#: demo-importer.php:35
 msgid "Main Home"
 msgstr ""
 
-#: post-meta.php:57
+#: post-meta.php:59
 msgid "Main Menu"
 msgstr ""
 
@@ -2040,9 +2051,9 @@ msgid "Manually"
 msgstr ""
 
 #: elementor/widgets/rt-accordion.php:189
-#: elementor/widgets/rt-accordion.php:265
-#: elementor/widgets/rt-accordion.php:321
-#: elementor/widgets/rt-forum-list.php:115
+#: elementor/widgets/rt-accordion.php:289
+#: elementor/widgets/rt-accordion.php:345
+#: elementor/widgets/rt-forum-list.php:133
 #: elementor/widgets/rt-post-grid.php:405
 #: elementor/widgets/rt-post-grid.php:469
 #: elementor/widgets/rt-post-grid.php:525
@@ -2234,7 +2245,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:557
 #: elementor/widgets/rt-contact-info.php:478
 #: elementor/widgets/rt-counter.php:313 elementor/widgets/rt-forum-grid.php:389
-#: elementor/widgets/rt-forum-list.php:311
+#: elementor/widgets/rt-forum-list.php:337
 #: elementor/widgets/rt-forum-slider.php:557 elementor/widgets/rt-image.php:159
 #: elementor/widgets/rt-info-box.php:853 elementor/widgets/rt-post-grid.php:617
 #: elementor/widgets/rt-post-slider.php:744
@@ -2285,12 +2296,12 @@ msgstr ""
 msgid "Number Style"
 msgstr ""
 
-#: elementor/init.php:143 elementor/init.php:171
+#: elementor/init.php:144 elementor/init.php:172
 #: elementor/widgets/docs-cat-list.php:77
 #: elementor/widgets/docs-cat-list.php:87 elementor/widgets/rt-button.php:548
 #: elementor/widgets/rt-contact-info.php:469
 #: elementor/widgets/rt-counter.php:304 elementor/widgets/rt-forum-grid.php:380
-#: elementor/widgets/rt-forum-list.php:302
+#: elementor/widgets/rt-forum-list.php:328
 #: elementor/widgets/rt-forum-slider.php:118
 #: elementor/widgets/rt-forum-slider.php:137
 #: elementor/widgets/rt-forum-slider.php:170
@@ -2310,8 +2321,8 @@ msgstr ""
 #: elementor/widgets/rt-testimonial.php:700
 #: elementor/widgets/rt-testimonial.php:737
 #: elementor/widgets/rt-testimonial.php:756
-#: elementor/widgets/rt-testimonial.php:839 elementor/widgets/rt-title.php:89
-#: elementor/widgets/rt-title.php:98 elementor/widgets/rt-topic-list.php:207
+#: elementor/widgets/rt-testimonial.php:839 elementor/widgets/rt-title.php:99
+#: elementor/widgets/rt-title.php:108 elementor/widgets/rt-topic-list.php:207
 msgid "Off"
 msgstr ""
 
@@ -2320,11 +2331,11 @@ msgstr ""
 msgid "Offset ( No of Posts )"
 msgstr ""
 
-#: elementor/init.php:144 elementor/widgets/docs-cat-list.php:76
+#: elementor/init.php:145 elementor/widgets/docs-cat-list.php:76
 #: elementor/widgets/docs-cat-list.php:86 elementor/widgets/rt-button.php:547
 #: elementor/widgets/rt-contact-info.php:468
 #: elementor/widgets/rt-counter.php:303 elementor/widgets/rt-forum-grid.php:379
-#: elementor/widgets/rt-forum-list.php:301
+#: elementor/widgets/rt-forum-list.php:327
 #: elementor/widgets/rt-forum-slider.php:117
 #: elementor/widgets/rt-forum-slider.php:136
 #: elementor/widgets/rt-forum-slider.php:169
@@ -2344,20 +2355,20 @@ msgstr ""
 #: elementor/widgets/rt-testimonial.php:699
 #: elementor/widgets/rt-testimonial.php:736
 #: elementor/widgets/rt-testimonial.php:755
-#: elementor/widgets/rt-testimonial.php:838 elementor/widgets/rt-title.php:88
-#: elementor/widgets/rt-title.php:97 elementor/widgets/rt-topic-list.php:206
+#: elementor/widgets/rt-testimonial.php:838 elementor/widgets/rt-title.php:98
+#: elementor/widgets/rt-title.php:107 elementor/widgets/rt-topic-list.php:206
 msgid "On"
 msgstr ""
 
-#: elementor/init.php:170
+#: elementor/init.php:171
 msgid "on"
 msgstr ""
 
-#: post-meta.php:290
+#: post-meta.php:301
 msgid "Only work for the gallery post format"
 msgstr ""
 
-#: post-meta.php:285
+#: post-meta.php:296
 msgid "Only work for the video post format"
 msgstr ""
 
@@ -2375,14 +2386,14 @@ msgstr ""
 #: elementor/widgets/docs-featured-tabs.php:202
 #: elementor/widgets/docs-featured-tabs.php:257
 #: elementor/widgets/docs-group-list-content.php:144
-#: elementor/widgets/docs-group-list.php:140
+#: elementor/widgets/docs-group-list.php:144
 #: elementor/widgets/docs-group-single.php:144
 #: elementor/widgets/docs-isotope.php:327
-#: elementor/widgets/rt-accordion.php:254
-#: elementor/widgets/rt-accordion.php:310
+#: elementor/widgets/rt-accordion.php:278
+#: elementor/widgets/rt-accordion.php:334
 #: elementor/widgets/rt-contact-info.php:200
 #: elementor/widgets/rt-forum-grid.php:100
-#: elementor/widgets/rt-forum-list.php:104
+#: elementor/widgets/rt-forum-list.php:122
 #: elementor/widgets/rt-forum-slider.php:191
 #: elementor/widgets/rt-post-grid.php:458
 #: elementor/widgets/rt-post-slider.php:400
@@ -2390,11 +2401,11 @@ msgstr ""
 msgid "Padding"
 msgstr ""
 
-#: post-meta.php:257
+#: post-meta.php:268
 msgid "Page/Post Background Color"
 msgstr ""
 
-#: post-meta.php:252
+#: post-meta.php:263
 msgid "Page/Post Background Image"
 msgstr ""
 
@@ -2422,7 +2433,7 @@ msgstr ""
 msgid "Pagination Space"
 msgstr ""
 
-#: elementor/init.php:141
+#: elementor/init.php:142
 msgid "Parallax"
 msgstr ""
 
@@ -2430,7 +2441,7 @@ msgstr ""
 msgid "Parallax Image"
 msgstr ""
 
-#: elementor/init.php:168
+#: elementor/init.php:169
 msgid "Parallax Transition off?"
 msgstr ""
 
@@ -2536,7 +2547,7 @@ msgid "Please Selecet category"
 msgstr ""
 
 #: elementor/widgets/docs-group-list-content.php:38
-#: elementor/widgets/docs-group-list.php:36
+#: elementor/widgets/docs-group-list.php:41
 #: elementor/widgets/docs-group-single.php:38
 msgid "Please Selecet Group"
 msgstr ""
@@ -2553,12 +2564,12 @@ msgstr ""
 msgid "Post Display Widget"
 msgstr ""
 
-#: post-meta.php:288
+#: post-meta.php:299
 msgid "Post Gallery"
 msgstr ""
 
 #: elementor/widgets/docs-group-list-content.php:125
-#: elementor/widgets/docs-group-list.php:121
+#: elementor/widgets/docs-group-list.php:125
 #: elementor/widgets/docs-group-single.php:125
 #: elementor/widgets/docs-isotope.php:308
 msgid "Post Icon Color"
@@ -2571,26 +2582,26 @@ msgstr ""
 msgid "Post ID"
 msgstr ""
 
-#: post-meta.php:279
+#: post-meta.php:290
 msgid "Post Info"
 msgstr ""
 
 #: elementor/widgets/docs-group-list-content.php:107
-#: elementor/widgets/docs-group-list.php:103
+#: elementor/widgets/docs-group-list.php:107
 #: elementor/widgets/docs-group-single.php:107
 #: elementor/widgets/docs-isotope.php:290
 msgid "Post List Color"
 msgstr ""
 
 #: elementor/widgets/docs-group-list-content.php:116
-#: elementor/widgets/docs-group-list.php:112
+#: elementor/widgets/docs-group-list.php:116
 #: elementor/widgets/docs-group-single.php:116
 #: elementor/widgets/docs-isotope.php:299
 msgid "Post List Hover Color"
 msgstr ""
 
 #: elementor/widgets/docs-group-list-content.php:76
-#: elementor/widgets/docs-group-list.php:72
+#: elementor/widgets/docs-group-list.php:76
 #: elementor/widgets/docs-group-single.php:76
 #: elementor/widgets/docs-isotope.php:259
 msgid "Post List Style"
@@ -2628,7 +2639,7 @@ msgstr ""
 msgid "Prev Arrow"
 msgstr ""
 
-#: post-meta.php:262
+#: post-meta.php:273
 msgid "Primary Color"
 msgstr ""
 
@@ -2646,14 +2657,14 @@ msgid ""
 "the industry’s standard many more."
 msgstr ""
 
-#: elementor/widgets/rt-title.php:87
+#: elementor/widgets/rt-title.php:97
 msgid "Public Minutes Display"
 msgstr ""
 
 #: elementor/widgets/rt-button.php:560
 #: elementor/widgets/rt-contact-info.php:481
 #: elementor/widgets/rt-counter.php:316 elementor/widgets/rt-forum-grid.php:392
-#: elementor/widgets/rt-forum-list.php:314
+#: elementor/widgets/rt-forum-list.php:340
 #: elementor/widgets/rt-forum-slider.php:560 elementor/widgets/rt-image.php:162
 #: elementor/widgets/rt-info-box.php:856 elementor/widgets/rt-post-grid.php:620
 #: elementor/widgets/rt-post-slider.php:747
@@ -2701,7 +2712,7 @@ msgstr ""
 msgid "RadiusTheme"
 msgstr ""
 
-#: elementor/init.php:99
+#: elementor/init.php:100
 msgid "RadiusTheme Elements"
 msgstr ""
 
@@ -2788,6 +2799,11 @@ msgstr ""
 
 #: elementor/widgets/rt-button.php:18
 msgid "RT Button"
+msgstr ""
+
+#: elementor/widgets/rt-code-syntax.php:19
+#: elementor/widgets/rt-code-syntax.php:29
+msgid "RT Code Syntax"
 msgstr ""
 
 #: elementor/widgets/rt-contact-info.php:20
@@ -2886,7 +2902,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:561
 #: elementor/widgets/rt-contact-info.php:482
 #: elementor/widgets/rt-counter.php:317 elementor/widgets/rt-forum-grid.php:393
-#: elementor/widgets/rt-forum-list.php:315
+#: elementor/widgets/rt-forum-list.php:341
 #: elementor/widgets/rt-forum-slider.php:561 elementor/widgets/rt-image.php:163
 #: elementor/widgets/rt-info-box.php:857 elementor/widgets/rt-post-grid.php:621
 #: elementor/widgets/rt-post-slider.php:748
@@ -2903,9 +2919,13 @@ msgstr ""
 msgid "Saved Section"
 msgstr ""
 
-#: elementor/views/rt-docs-search-2.php:45
-#: elementor/views/rt-docs-search.php:41
+#: elementor/views/rt-docs-search-2.php:44
+#: elementor/views/rt-docs-search.php:40
 msgid "Search"
+msgstr ""
+
+#: post-meta.php:233
+msgid "Search Ajax"
 msgstr ""
 
 #: widget/search-widget.php:14
@@ -2928,7 +2948,7 @@ msgstr ""
 msgid "Search Word"
 msgstr ""
 
-#: post-meta.php:267
+#: post-meta.php:278
 msgid "Secondary Color"
 msgstr ""
 
@@ -2951,7 +2971,7 @@ msgstr ""
 msgid "Select Category Style : "
 msgstr ""
 
-#: post-meta.php:319
+#: post-meta.php:330
 msgid "Select Group"
 msgstr ""
 
@@ -2991,7 +3011,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:562
 #: elementor/widgets/rt-contact-info.php:483
 #: elementor/widgets/rt-counter.php:318 elementor/widgets/rt-forum-grid.php:394
-#: elementor/widgets/rt-forum-list.php:316
+#: elementor/widgets/rt-forum-list.php:342
 #: elementor/widgets/rt-forum-slider.php:562 elementor/widgets/rt-image.php:164
 #: elementor/widgets/rt-info-box.php:858 elementor/widgets/rt-post-grid.php:622
 #: elementor/widgets/rt-post-slider.php:749
@@ -3003,7 +3023,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:563
 #: elementor/widgets/rt-contact-info.php:484
 #: elementor/widgets/rt-counter.php:319 elementor/widgets/rt-forum-grid.php:395
-#: elementor/widgets/rt-forum-list.php:317
+#: elementor/widgets/rt-forum-list.php:343
 #: elementor/widgets/rt-forum-slider.php:563 elementor/widgets/rt-image.php:165
 #: elementor/widgets/rt-info-box.php:859 elementor/widgets/rt-post-grid.php:623
 #: elementor/widgets/rt-post-slider.php:750
@@ -3089,7 +3109,7 @@ msgstr ""
 msgid "Show or Hide Content. Default: Show"
 msgstr ""
 
-#: elementor/widgets/rt-title.php:91
+#: elementor/widgets/rt-title.php:101
 msgid "Show or Hide Public Minutes. Default: On"
 msgstr ""
 
@@ -3097,7 +3117,7 @@ msgstr ""
 msgid "Show or Hide Quote. Default: On"
 msgstr ""
 
-#: elementor/widgets/rt-title.php:100
+#: elementor/widgets/rt-title.php:110
 msgid "Show or Hide Views. Default: On"
 msgstr ""
 
@@ -3148,7 +3168,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:576
 #: elementor/widgets/rt-contact-info.php:497
 #: elementor/widgets/rt-counter.php:332 elementor/widgets/rt-forum-grid.php:408
-#: elementor/widgets/rt-forum-list.php:330
+#: elementor/widgets/rt-forum-list.php:356
 #: elementor/widgets/rt-forum-slider.php:576 elementor/widgets/rt-image.php:178
 #: elementor/widgets/rt-info-box.php:872 elementor/widgets/rt-post-grid.php:636
 #: elementor/widgets/rt-post-slider.php:763
@@ -3160,7 +3180,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:577
 #: elementor/widgets/rt-contact-info.php:498
 #: elementor/widgets/rt-counter.php:333 elementor/widgets/rt-forum-grid.php:409
-#: elementor/widgets/rt-forum-list.php:331
+#: elementor/widgets/rt-forum-list.php:357
 #: elementor/widgets/rt-forum-slider.php:577 elementor/widgets/rt-image.php:179
 #: elementor/widgets/rt-info-box.php:873 elementor/widgets/rt-post-grid.php:637
 #: elementor/widgets/rt-post-slider.php:764
@@ -3172,7 +3192,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:578
 #: elementor/widgets/rt-contact-info.php:499
 #: elementor/widgets/rt-counter.php:334 elementor/widgets/rt-forum-grid.php:410
-#: elementor/widgets/rt-forum-list.php:332
+#: elementor/widgets/rt-forum-list.php:358
 #: elementor/widgets/rt-forum-slider.php:578 elementor/widgets/rt-image.php:180
 #: elementor/widgets/rt-info-box.php:874 elementor/widgets/rt-post-grid.php:638
 #: elementor/widgets/rt-post-slider.php:765
@@ -3184,7 +3204,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:579
 #: elementor/widgets/rt-contact-info.php:500
 #: elementor/widgets/rt-counter.php:335 elementor/widgets/rt-forum-grid.php:411
-#: elementor/widgets/rt-forum-list.php:333
+#: elementor/widgets/rt-forum-list.php:359
 #: elementor/widgets/rt-forum-slider.php:579 elementor/widgets/rt-image.php:181
 #: elementor/widgets/rt-info-box.php:875 elementor/widgets/rt-post-grid.php:639
 #: elementor/widgets/rt-post-slider.php:766
@@ -3272,7 +3292,7 @@ msgstr ""
 msgid "Spacing"
 msgstr ""
 
-#: elementor/init.php:153
+#: elementor/init.php:154
 msgid "Speed"
 msgstr ""
 
@@ -3281,25 +3301,27 @@ msgid "StumbleUpon"
 msgstr ""
 
 #: elementor/widgets/content-toggle.php:227
+#: elementor/widgets/rt-code-syntax.php:44
 #: elementor/widgets/rt-docs-search.php:42
 #: elementor/widgets/rt-docs-search.php:95
 #: elementor/widgets/rt-font-size-controller.php:38
 #: elementor/widgets/rt-forum-list.php:35 elementor/widgets/rt-info-box.php:35
 #: elementor/widgets/rt-info-box.php:75 elementor/widgets/rt-post-grid.php:51
+#: elementor/widgets/rt-title.php:34
 msgid "Style"
 msgstr ""
 
 #: widget/rt-category.php:146 widget/rt-post-box.php:209
 #: widget/rt-product-box.php:220 elementor/widgets/rt-button.php:35
 #: elementor/widgets/rt-docs-search.php:44
-#: elementor/widgets/rt-forum-list.php:37
+#: elementor/widgets/rt-forum-list.php:37 elementor/widgets/rt-title.php:36
 msgid "Style 1"
 msgstr ""
 
 #: widget/rt-category.php:147 widget/rt-post-box.php:210
 #: widget/rt-product-box.php:221 elementor/widgets/rt-button.php:36
 #: elementor/widgets/rt-docs-search.php:45
-#: elementor/widgets/rt-forum-list.php:38
+#: elementor/widgets/rt-forum-list.php:38 elementor/widgets/rt-title.php:37
 msgid "Style 2"
 msgstr ""
 
@@ -3315,7 +3337,7 @@ msgstr ""
 msgid "Sub Title"
 msgstr ""
 
-#: demo-importer.php:56
+#: demo-importer.php:50
 msgid "Support Forum Home"
 msgstr ""
 
@@ -3326,7 +3348,7 @@ msgstr ""
 #: elementor/widgets/rt-button.php:565
 #: elementor/widgets/rt-contact-info.php:486
 #: elementor/widgets/rt-counter.php:321 elementor/widgets/rt-forum-grid.php:397
-#: elementor/widgets/rt-forum-list.php:319
+#: elementor/widgets/rt-forum-list.php:345
 #: elementor/widgets/rt-forum-slider.php:565 elementor/widgets/rt-image.php:167
 #: elementor/widgets/rt-info-box.php:861 elementor/widgets/rt-post-grid.php:625
 #: elementor/widgets/rt-post-slider.php:752
@@ -3407,13 +3429,15 @@ msgstr ""
 
 #: elementor/widgets/rt-button.php:126 elementor/widgets/rt-button.php:237
 #: elementor/widgets/rt-button.php:304 elementor/widgets/rt-button.php:389
+#: elementor/widgets/rt-code-syntax.php:57
+#: elementor/widgets/rt-code-syntax.php:75
 #: elementor/widgets/rt-font-size-controller.php:51
 #: elementor/widgets/rt-font-size-controller.php:69
 #: elementor/widgets/rt-table.php:165 elementor/widgets/rt-table.php:200
 msgid "Text Color"
 msgstr ""
 
-#: elementor/widgets/rt-title.php:204
+#: elementor/widgets/rt-title.php:214
 msgid "Text High-Light"
 msgstr ""
 
@@ -3426,6 +3450,7 @@ msgstr ""
 msgid "Text Hover Color"
 msgstr ""
 
+#: elementor/widgets/rt-code-syntax.php:51
 #: elementor/widgets/rt-font-size-controller.php:45
 #: elementor/widgets/rt-table.php:159 elementor/widgets/rt-table.php:194
 msgid "Text Typo"
@@ -3462,10 +3487,10 @@ msgstr ""
 
 #: widget/address-widget.php:73 widget/font-size-controller.php:59
 #: widget/forum-list.php:69 widget/rt-contact.php:60
-#: widget/rt-docs-post-list.php:146 widget/social-widget.php:109
+#: widget/rt-docs-post-list.php:141 widget/social-widget.php:109
 #: elementor/widgets/content-toggle.php:74
 #: elementor/widgets/content-toggle.php:80
-#: elementor/widgets/rt-accordion.php:28 elementor/widgets/rt-accordion.php:212
+#: elementor/widgets/rt-accordion.php:28 elementor/widgets/rt-accordion.php:236
 #: elementor/widgets/rt-contact-info.php:44
 #: elementor/widgets/rt-contact-info.php:105
 #: elementor/widgets/rt-counter.php:81 elementor/widgets/rt-counter.php:194
@@ -3473,8 +3498,8 @@ msgstr ""
 #: elementor/widgets/rt-info-box.php:136
 #: elementor/widgets/rt-social-icons.php:50 elementor/widgets/rt-tab.php:29
 #: elementor/widgets/rt-table.php:118 elementor/widgets/rt-testimonial.php:49
-#: elementor/widgets/rt-timeline.php:64 elementor/widgets/rt-title.php:58
-#: elementor/widgets/rt-title.php:110
+#: elementor/widgets/rt-timeline.php:64 elementor/widgets/rt-title.php:68
+#: elementor/widgets/rt-title.php:120
 msgid "Title"
 msgstr ""
 
@@ -3483,13 +3508,13 @@ msgid "Title & Description"
 msgstr ""
 
 #: elementor/widgets/rt-forum-grid.php:131
-#: elementor/widgets/rt-forum-list.php:180
+#: elementor/widgets/rt-forum-list.php:206
 #: elementor/widgets/rt-forum-slider.php:222
 #: elementor/widgets/rt-topic-list.php:85
 msgid "Title & Topics Style"
 msgstr ""
 
-#: elementor/widgets/rt-accordion.php:275
+#: elementor/widgets/rt-accordion.php:299
 msgid "Title Border"
 msgstr ""
 
@@ -3500,18 +3525,18 @@ msgstr ""
 #: elementor/widgets/docs-featured-tabs.php:147
 #: elementor/widgets/docs-featured-tabs.php:229
 #: elementor/widgets/docs-group-list-content.php:89
-#: elementor/widgets/docs-group-list.php:85
+#: elementor/widgets/docs-group-list.php:89
 #: elementor/widgets/docs-group-single.php:89
 #: elementor/widgets/docs-isotope.php:272
 #: elementor/widgets/rt-contact-info.php:237 elementor/widgets/rt-cta.php:143
 #: elementor/widgets/rt-forum-grid.php:144
-#: elementor/widgets/rt-forum-list.php:193
+#: elementor/widgets/rt-forum-list.php:219
 #: elementor/widgets/rt-forum-slider.php:235
 #: elementor/widgets/rt-forum-status.php:135
 #: elementor/widgets/rt-info-box.php:250 elementor/widgets/rt-post-grid.php:385
 #: elementor/widgets/rt-post-slider.php:327
 #: elementor/widgets/rt-testimonial.php:244
-#: elementor/widgets/rt-timeline.php:77 elementor/widgets/rt-title.php:123
+#: elementor/widgets/rt-timeline.php:77 elementor/widgets/rt-title.php:133
 #: elementor/widgets/rt-topic-list.php:98
 msgid "Title Color"
 msgstr ""
@@ -3522,7 +3547,7 @@ msgid "Title count"
 msgstr ""
 
 #: elementor/widgets/rt-forum-grid.php:152
-#: elementor/widgets/rt-forum-list.php:201
+#: elementor/widgets/rt-forum-list.php:227
 #: elementor/widgets/rt-forum-slider.php:243
 #: elementor/widgets/rt-info-box.php:260 elementor/widgets/rt-post-grid.php:394
 #: elementor/widgets/rt-post-slider.php:336
@@ -3535,7 +3560,7 @@ msgid "Title List"
 msgstr ""
 
 #: elementor/widgets/rt-forum-grid.php:162
-#: elementor/widgets/rt-forum-list.php:211
+#: elementor/widgets/rt-forum-list.php:237
 #: elementor/widgets/rt-forum-slider.php:253
 #: elementor/widgets/rt-topic-list.php:116
 msgid "Title Margin"
@@ -3544,7 +3569,7 @@ msgstr ""
 #: elementor/widgets/rt-forum-status.php:145
 #: elementor/widgets/rt-info-box.php:273
 #: elementor/widgets/rt-testimonial.php:254
-#: elementor/widgets/rt-timeline.php:87 elementor/widgets/rt-title.php:133
+#: elementor/widgets/rt-timeline.php:87 elementor/widgets/rt-title.php:143
 msgid "Title Space"
 msgstr ""
 
@@ -3566,7 +3591,7 @@ msgstr ""
 #: elementor/widgets/rt-info-box.php:244 elementor/widgets/rt-post-grid.php:379
 #: elementor/widgets/rt-post-slider.php:321
 #: elementor/widgets/rt-testimonial.php:238
-#: elementor/widgets/rt-timeline.php:71 elementor/widgets/rt-title.php:117
+#: elementor/widgets/rt-timeline.php:71 elementor/widgets/rt-title.php:127
 msgid "Title Typo"
 msgstr ""
 
@@ -3575,11 +3600,11 @@ msgstr ""
 #: elementor/widgets/docs-featured-tabs.php:141
 #: elementor/widgets/docs-featured-tabs.php:223
 #: elementor/widgets/docs-group-list-content.php:83
-#: elementor/widgets/docs-group-list.php:79
+#: elementor/widgets/docs-group-list.php:83
 #: elementor/widgets/docs-group-single.php:83
 #: elementor/widgets/docs-isotope.php:266
 #: elementor/widgets/rt-forum-grid.php:138
-#: elementor/widgets/rt-forum-list.php:187
+#: elementor/widgets/rt-forum-list.php:213
 #: elementor/widgets/rt-forum-slider.php:229
 #: elementor/widgets/rt-topic-list.php:92
 msgid "Title Typography"
@@ -3595,12 +3620,20 @@ msgstr ""
 msgid "Top Right"
 msgstr ""
 
-#: elementor/widgets/rt-forum-list.php:95
+#: elementor/widgets/rt-forum-list.php:94
+msgid "Topbar Background"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:113
 msgid "Topbar Border"
 msgstr ""
 
 #: elementor/widgets/rt-forum-list.php:52
 msgid "Topbar Display"
+msgstr ""
+
+#: elementor/widgets/rt-forum-list.php:103
+msgid "Topbar Hover Background"
 msgstr ""
 
 #: elementor/widgets/rt-forum-list.php:84
@@ -3616,7 +3649,7 @@ msgid "Topic"
 msgstr ""
 
 #: elementor/widgets/rt-forum-grid.php:170
-#: elementor/widgets/rt-forum-list.php:219
+#: elementor/widgets/rt-forum-list.php:245
 #: elementor/widgets/rt-forum-slider.php:261
 #: elementor/widgets/rt-topic-list.php:124
 msgid "Topics Count Color"
@@ -3631,7 +3664,7 @@ msgstr ""
 msgid "Total number of items"
 msgstr ""
 
-#: post-meta.php:87
+#: post-meta.php:88
 msgid "Transparent Header"
 msgstr ""
 
@@ -3647,8 +3680,8 @@ msgstr ""
 msgid "Twitter URL"
 msgstr ""
 
-#: elementor/widgets/rt-accordion.php:219
-#: elementor/widgets/rt-accordion.php:293
+#: elementor/widgets/rt-accordion.php:243
+#: elementor/widgets/rt-accordion.php:317
 msgid "Typography"
 msgstr ""
 
@@ -3685,11 +3718,11 @@ msgstr ""
 msgid "Views"
 msgstr ""
 
-#: elementor/widgets/rt-title.php:96
+#: elementor/widgets/rt-title.php:106
 msgid "views Display"
 msgstr ""
 
-#: demo-importer.php:33
+#: demo-importer.php:27
 msgid ""
 "Warning: All your old data will be lost if you install One Click demo data "
 "from here, so it is suitable only for a new website."
@@ -3738,7 +3771,7 @@ msgstr ""
 msgid "Youtube"
 msgstr ""
 
-#: post-meta.php:282
+#: post-meta.php:293
 msgid "Youtube Link"
 msgstr ""
 

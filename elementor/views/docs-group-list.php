@@ -30,6 +30,7 @@
         $get_image = get_term_meta( $cat['cat_multi_box'], 'rt_term_image', true );
         $image_id = wp_get_attachment_image_src( $get_image, 'full' );  
 
+
         if ( $cat['cat_multi_box'] != 0 ) {
             $term_name = get_term( $cat['cat_multi_box'], 'docfi_docs_group' ); 
             $tl = $term_name->name;
@@ -87,11 +88,7 @@
                             }
                         } wp_reset_postdata(); ?>
                 </ul>
-            </div>                   
-
-            
+            </div>  
         </div>    
-
-
     <?php } } }  ?>
 </div>

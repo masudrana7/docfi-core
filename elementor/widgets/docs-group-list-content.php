@@ -34,7 +34,7 @@ class Docs_Group_listContent extends Custom_Widget_Base {
     public function rt_fields(){
 
         
-        $terms  = get_terms( array( 'taxonomy' => 'docfi_docs_group', 'fields' => 'id=>name' ) );
+        $terms  = get_terms( array( 'taxonomy' => 'docfi_docs_group', 'fields' => 'id=>name', 'hide_empty' => false ) );
         $category_dropdown = array( '0' => __( 'Please Selecet Group', 'docfi-core' ) );
 
         foreach ( $terms as $id => $name ) {

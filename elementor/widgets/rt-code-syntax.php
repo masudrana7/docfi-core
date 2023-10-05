@@ -29,6 +29,12 @@ class RT_code_syntax extends Custom_Widget_Base {
 				'label'   => esc_html__( 'RT Code Syntax', 'docfi-core' ),
 			),
 			array(
+				'type'    => Controls_Manager::WYSIWYG,
+				'id'      => 'content',
+				'label'   => esc_html__( 'Content', 'faktorie-core' ),
+				'default' => esc_html__( 'Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm rsus consectetur elit.', 'faktorie-core' ),
+			),
+			array(
 				'mode' => 'section_end',
 			),
 			/*title section*/
