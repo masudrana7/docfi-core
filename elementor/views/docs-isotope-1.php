@@ -10,11 +10,10 @@ use DocfiTheme;
 use DocfiTheme_Helper;
 use \WP_Query;
 use Elementor\Group_Control_Typography;
+$group_number = $data['group_number'];
 $number_of_post = $data['itemnumber'];
 // sort
 $post_sorting = $data['orderby'];
-// order
-$post_ordering = $data['post_ordering'];
 $p_ids = array();
 
 foreach ( $data['posts_not_in'] as $p_idsn ) {
@@ -79,13 +78,16 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
             $term_links = array();
             foreach ( $item_terms as $term ) {
                 $term_links[] = $term->slug;
-
             }
             $terms_of_item = join( " ", $term_links );
             $args = array(
                 'taxonomy'   => 'docfi_docs_group',
+                'orderby' => 'term_order',
+                'order' => $data['orderby'],
                 'hide_empty' => false, 
+                'number'       => $data['group_number'],
             );
+
             $post_count = 0;
             $docs_groups = get_categories($args);
             if ($docs_groups) {
@@ -97,7 +99,6 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                     $r = hexdec(substr($get_item_bg,0,2));
                     $g = hexdec(substr($get_item_bg,2,2));
                     $b = hexdec(substr($get_item_bg,4,2));
-
                     
                     $get_image = get_term_meta( $docs_group->term_id, 'rt_term_image', true );
                     $image_id = wp_get_attachment_image_src( $get_image, 'full' );
@@ -106,7 +107,7 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
 
                     ob_start();
                         $args = array(
-                            'post_type' => 'docfi_docs',
+                            'post_type'      => 'docfi_docs',
                             'posts_per_page' => $number_of_post,
                             'meta_query' => array(
                                 array(
@@ -118,7 +119,6 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                             ),
                             'post__not_in'   => $p_ids,
                         );
-                        $args['orderby'] = $post_sorting;
                         $query = new WP_Query( $args );
                         $post_count = $query->found_posts;
                         $term_links = [];
@@ -141,8 +141,6 @@ $col_class = "col-xl-{$data['col_lg']} col-lg-{$data['col_md']} col-md-{$data['c
                 ?>
 
                 <div class="<?php echo esc_attr( $col_class . ' ' . $term_slug ); ?> rt-grid-item">
-
-
                     <div class="explore-topics-card" <?php if ( $data['menu_style'] == 'dynamic' ) { ?>style="--docfi-red2: <?php echo absint( $r ); ?>;--docfi-green2: <?php echo absint( $g ); ?>;--docfi-blue2: <?php echo absint( $b ); ?>" <?php } ?>>
                         <div class="explore-topics-header d-flex justify-content-between align-items-center">
                             <div class="title-area d-flex align-items-center">

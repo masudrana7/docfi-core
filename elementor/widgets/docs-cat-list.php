@@ -89,29 +89,7 @@ class Docs_Cat_List extends Custom_Widget_Base {
 				'description' => esc_html__( 'Show or Hide Cat Content. Default: off', 'docfi-core' ),
 			),
 
-            /*Post Order*/
-            array(
-                'type'    => Controls_Manager::SELECT2,
-                'id'      => 'post_ordering',
-                'label'   => esc_html__( 'Post Ordering', 'docfi-core' ),
-                'options' => array(
-                    'DESC'  => esc_html__( 'Desecending', 'docfi-core' ),
-                    'ASC'   => esc_html__( 'Ascending', 'docfi-core' ),
-                ),
-                'default' => 'DESC',
-            ),
-            array(
-                'type'    => Controls_Manager::SELECT2,
-                'id'      => 'orderby',
-                'label'   => esc_html__( 'Post Sorting', 'docfi-core' ),                
-                'options' => array(
-                    'recent'        => esc_html__( 'Recent Post', 'docfi-core' ),
-                    'rand'          => esc_html__( 'Random Post', 'docfi-core' ),
-                    'menu_order'    => esc_html__( 'Custom Order', 'docfi-core' ),
-                    'title'         => esc_html__( 'By Name', 'docfi-core' ),
-                ),
-                'default' => 'recent',
-            ),          
+            /*Post Order*/         
             array(
                 'type'    => Controls_Manager::REPEATER,
                 'id'      => 'posts_not_in',

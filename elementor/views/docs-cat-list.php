@@ -9,10 +9,6 @@ namespace radiustheme\Docfi_Core;
 use DocfiTheme;
 use DocfiTheme_Helper;
 use \WP_Query;
-// sort
-$post_sorting = $data['orderby'];
-// order
-$post_ordering = $data['post_ordering'];
 $p_ids = array();
 foreach ( $data['posts_not_in'] as $p_idsn ) {
 	$p_ids[] = $p_idsn['post_not_in'];
@@ -40,6 +36,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
             if ( !empty( $cats ) ) {
             // Category
             $category_number = count( $cats );
+                $m = $data['delay']; $n = $data['duration']; 
                 foreach ( $cats as $cat ) {
                     if ( $cat['cat_multi_box'] != 0 ) {
                     $get_image = get_term_meta( $cat['cat_multi_box'], 'rt_term_image', true );
@@ -50,9 +47,8 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                     
                 ?>
                 <div class="<?php echo esc_attr( $col_class ); ?>">
-                        
                     <a href="<?php echo esc_url($group_link); ?>">
-                        <div class="logo-card logo-card--style-1 d-flex justify-content-between align-items-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="400ms">
+                        <div class="logo-card logo-card--style-1 d-flex justify-content-between <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $m );?>s" data-wow-duration="<?php echo esc_attr( $n );?>s">
                             <div class="logo">
                                 <?php if ( $image_id ) { ?>
                                     <img src="<?php echo $image_id[0]; ?>" alt="logo" />
@@ -80,7 +76,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
                         </div>
                     </a>
                 </div>
-        <?php } } } ?>
+        <?php } $m = $m + 0.2; $n = $n + 0.1; } } ?>
     </div>
 </div>
 

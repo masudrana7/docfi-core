@@ -33,6 +33,8 @@ class DocfiTheme_DocsList_Widget extends WP_Widget {
 				<?php 
 				$args = array(
 					'taxonomy'   => 'docfi_docs_group',
+					'orderby' => 'term_order',
+    				'order' => 'ASC',
 					'hide_empty' => false, 
 				);
 				$docs_groups = get_categories($args);

@@ -30,11 +30,12 @@
         $get_image = get_term_meta( $cat['cat_multi_box'], 'rt_term_image', true );
         $image_id = wp_get_attachment_image_src( $get_image, 'full' );  
 
-
         if ( $cat['cat_multi_box'] != 0 ) {
-            $term_name = get_term( $cat['cat_multi_box'], 'docfi_docs_group' ); 
-            $tl = $term_name->name;
-            $uid = strtolower(str_replace(array('%', ':', '\\', '/', '*', '?', '.', ';', ' '), '', $tl));
+            $term_name = get_term( $cat['cat_multi_box'], 'docfi_docs_group' );
+            if(!empty($term_name->name)){
+                $tl = $term_name->name;
+                $uid = strtolower(str_replace(array('%', ':', '\\', '/', '*', '?', '.', ';', ' '), '', $tl));
+             
         ?>
         <div class="rt-single-sidebar-list" style="--docfi-red2: <?php echo absint( $r ); ?>;--docfi-green2: <?php echo absint( $g ); ?>;--docfi-blue2: <?php echo absint( $b ); ?>">
             <div class="explore-topics-header">
@@ -53,6 +54,7 @@
                                 <?php }
                             ?>
                         </div>
+           
                         <span class="title">
                             <?php echo esc_html( $term_name->name ); ?>
                         </span>
@@ -90,5 +92,5 @@
                 </ul>
             </div>  
         </div>    
-    <?php } } }  ?>
+    <?php } } } }  ?>
 </div>

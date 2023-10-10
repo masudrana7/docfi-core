@@ -80,6 +80,7 @@ class RT_Forum_Grid extends Custom_Widget_Base {
 				'options' => $this->rt_translate['cols'],
 				'default' => '12',
 			),
+			
 			array(
 				'mode' => 'section_end',
 			),

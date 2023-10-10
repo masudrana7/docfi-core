@@ -152,6 +152,7 @@ class RT_Forum_List extends Custom_Widget_Base {
 			 	'id'      => 'item_bg_hover',				
 				'label'   => esc_html__( 'Item Hover Background', 'docfi-core' ),
 				'selectors' => array(
+					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum:hover ul' => 'background: {{VALUE}}',
 					'{{WRAPPER}} #bbpress-forums li.bbp-body ul.forum:hover' => 'background: {{VALUE}}',
 				),
 			),
@@ -195,6 +196,14 @@ class RT_Forum_List extends Custom_Widget_Base {
 	            ),
 	            'separator' => 'before',
 	        ),
+			array(
+				'mode'    => 'group',
+				'type'    => Group_Control_Box_Shadow::get_type(),
+				'name'      => 'item_boxshadow_hover',
+				'label'   => esc_html__( 'Hover Box Shadow', 'docfi-core' ),
+				'selector' => '#bbpress-forums.docfi-wrapper-forums li.bbp-header:hover, {{WRAPPER}} #bbpress-forums li.bbp-body ul.forum:hover'
+
+			),
 			array(
 				'mode' => 'section_end',
 			),

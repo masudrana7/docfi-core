@@ -66,25 +66,14 @@ class Docs_Isotope extends Custom_Widget_Base {
             /*Post Order*/
             array(
                 'type'    => Controls_Manager::SELECT2,
-                'id'      => 'post_ordering',
-                'label'   => esc_html__( 'Post Ordering', 'docfi-core' ),
-                'options' => array(
-                    'DESC'  => esc_html__( 'Desecending', 'docfi-core' ),
-                    'ASC'   => esc_html__( 'Ascending', 'docfi-core' ),
-                ),
-                'default' => 'DESC',
-            ),
-            array(
-                'type'    => Controls_Manager::SELECT2,
                 'id'      => 'orderby',
                 'label'   => esc_html__( 'Post Sorting', 'docfi-core' ),                
                 'options' => array(
-                    'recent'        => esc_html__( 'Recent Post', 'docfi-core' ),
-                    'rand'          => esc_html__( 'Random Post', 'docfi-core' ),
-                    'menu_order'    => esc_html__( 'Custom Order', 'docfi-core' ),
-                    'title'         => esc_html__( 'By Name', 'docfi-core' ),
+                    'ASC'          => esc_html__( 'ASC Post', 'docfi-core' ),
+                    'DESC'          => esc_html__( 'DESC Post', 'docfi-core' ),
+                    'rand'          => esc_html__( 'Rand Post', 'docfi-core' ),
                 ),
-                'default' => 'recent',
+                'default' => 'DESC',
             ),          
             array(
                 'type'    => Controls_Manager::REPEATER,
@@ -111,8 +100,16 @@ class Docs_Isotope extends Custom_Widget_Base {
             ),
             array(
                 'type'    => Controls_Manager::NUMBER,
-                'id'      => 'itemnumber',
+                'id'      => 'group_number',
                 'label'   => esc_html__( 'Item Number', 'docfi-core' ),
+                'default' => 20,
+                'description' => esc_html__( 'Use -1 for showing all items( Showing items per category )', 'docfi-core' ),
+            ),
+
+            array(
+                'type'    => Controls_Manager::NUMBER,
+                'id'      => 'itemnumber',
+                'label'   => esc_html__( 'Post Number', 'docfi-core' ),
                 'default' => -1,
                 'description' => esc_html__( 'Use -1 for showing all items( Showing items per category )', 'docfi-core' ),
             ),

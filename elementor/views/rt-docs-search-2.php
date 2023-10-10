@@ -14,8 +14,7 @@ use Elementor\Utils;
     }
 ?>
 
-<div class="rt-hero-section-content-wrapper">
-    
+<div class="rt-hero-section-content-wrapper rt-hero-section-content-wrapper2">
         <form class="rt-searchbox-wraper2 d-flex justify-content-between align-items-center" role="search" method="get" action="<?php echo esc_url( get_post_type_archive_link( 'docfi_docs' ) ); ?>">
             <div class="rt-searchbox-container">
                 <div class="rt-searchbox-form">

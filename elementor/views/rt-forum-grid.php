@@ -25,7 +25,7 @@ $col_class = "col-xl-{$data['col_xl']} col-lg-{$data['col_lg']} col-md-{$data['c
 			?>
 			<div class="<?php echo esc_attr( $col_class );?>">
 
-			<div class="rt-card rt-card--style-4 text-center <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>">
+			<div class="rt-card rt-card--style-4 text-center <?php echo esc_attr( $data['animation'] );?> <?php echo esc_attr( $data['animation_effect'] );?>" data-wow-delay="<?php echo esc_attr( $i );?>s" data-wow-duration="<?php echo esc_attr( $j );?>s">
 				<?php if(has_post_thumbnail()){?>
 				<div class="icon d-flex justify-content-center align-items-center rt-border-radius-style-2">
 					<?php the_post_thumbnail('full'); ?>
